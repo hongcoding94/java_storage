@@ -1,6 +1,6 @@
 # Chapter1. 자바를 시작하기 전에
 
-1. [자바(Java Programming Language)](https://github.com/hongcoding94/java_storage/new/main#%EC%9E%90%EB%B0%94java-programming-language "자바(Java Programming Language)")
+1. [자바(Java Programming Language)](https://github.com/hongcoding94/java_storage/blob/main/Chapter1.%20%EC%9E%90%EB%B0%94%EB%A5%BC%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0%20%EC%A0%84%EC%97%90.md#%EC%9E%90%EB%B0%94java-programming-language "자바(Java Programming Language)")
    - [자바란 무엇인가?](https://github.com/hongcoding94/java_storage/new/main#%EC%9E%90%EB%B0%94%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80 "자바란 무엇인가?")
    - [자바 버전업 역사](https://github.com/hongcoding94/java_storage/new/main#%EC%9E%90%EB%B0%94-%EB%B2%84%EC%A0%84%EC%97%85-%EC%97%AD%EC%82%AC "자바 버전업 역사")
 2. [자바개발환경 구축하기](https://github.com/hongcoding94/java_storage/new/main#%EC%9E%90%EB%B0%94%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0 "자바개발환경 구축하기")
