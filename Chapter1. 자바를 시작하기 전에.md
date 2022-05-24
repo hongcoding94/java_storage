@@ -53,19 +53,10 @@
 **! Tip1.** 자바의 1.7버전 이전(java SE7)과 아후(java SE8) 차이점
  - 자바 7 부터 지원되는 것들 
    - Pluggable Annotation
-      - Lombok 등에서 사용되고 있다. (쉽게 말해 Annotation Processor 를 생각하면 된다.
+      - [java SE6] Lombok 등에서 사용되고 있다. (쉽게 말해 Annotation Processor 를 생각하면 된다.)
  - 자바 7 이후 지원되는 것들
-    - try-with-resource 추가 
-    - 컴파일러가 타입을 추측할 수 있도록 지원
-      ```java
-      // Before Java 7
-      ArrayList<Integer> arr = new ArrayList<Integer>();
-
-      // In Java 7
-      ArrayList<Integer> arr = new ArrayList<>();
-      ```
-   - Lambda
-   - 새로운 String 문자열 방법잉 도입
+    - [java SE7] try-with-resource 추가
+    - [java SE7] 새로운 String 문자열 방법잉 도입
       ```java
       isBlank() : 문자열이 비거나 공백일 경우 true 반환
       lines() : 문자열을 줄 단위로 쪼개어 스트림 반환
@@ -79,6 +70,16 @@
       stripTrailing() : 문자열 뒤 공백 제거
       strip() : 양쪽 공백 제거
       ```
+    - [java SE7] 컴파일러가 타입을 추측할 수 있도록 지원
+      ```java
+      // Before Java 7
+      ArrayList<Integer> arr = new ArrayList<Integer>();
+
+      // In Java 7
+      ArrayList<Integer> arr = new ArrayList<>();
+      ```
+   - [java SE8] Lambda
+
  - [참조1. java의 버전별 차이](https://velog.io/@ljo_0920/java-%EB%B2%84%EC%A0%84%EB%B3%84-%EC%B0%A8%EC%9D%B4-%ED%8A%B9%EC%A7%95 "java의 버전별 차이")
 
 ## 자바개발환경 구축하기
