@@ -86,7 +86,7 @@
 
 1. JDK 설치
 
-
+ ![alt JDK 설치] (https://github.com/hongcoding94/java_storage/issues/1#issue-1246571074)
 
 
 2. 
