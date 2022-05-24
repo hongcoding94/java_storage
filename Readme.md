@@ -21,10 +21,10 @@
 - 해당 담당자가 정리해온 자료를 토대로 주도로 자료 리뷰 및 토론을 진행합니다.
 - 그 외 인원들은 해당 주차 Chapter를 예습합니다.
 
-### 스터디 시간표
+### 스터디 시간표 ( 미완료 : :x: / 완료 : :white_check_mark: )<br/>
 |주차|진행일|진행사항|담당자|진행여부|
 |:---:|:---:|:---|:---:|:---:|
-|1주차|2022-06-01|Chapter 1 자바를 시작하기 전에<br/>Chapter 2 변수(Variable)<br/>Chapter 3 연산자(Operator)||
+|1주차|2022-06-01|Chapter 1 자바를 시작하기 전에<br/>Chapter 2 변수(Variable)<br/>Chapter 3 연산자(Operator)||  |
 |||Chapter 4 조건문과 반복문<br/>Chapter 5 배열(Array)||
 |2주차|2022-06-08|Chapter 6 객체지향 프로그래밍 I||
 |||Chapter 7 객체지향 프로그래밍 II||
