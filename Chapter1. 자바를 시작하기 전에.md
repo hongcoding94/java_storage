@@ -9,7 +9,7 @@
    - [Eclipse & STS 설치](https://github.com/hongcoding94/java_storage/blob/main/Chapter1.%20%EC%9E%90%EB%B0%94%EB%A5%BC%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0%20%EC%A0%84%EC%97%90.md#2-eclipse--sts-%EC%84%A4%EC%B9%98 "Eclipse & STS 설치")
 4. [자바로 프로그램 작성하기](https://github.com/hongcoding94/java_storage/blob/main/Chapter1.%20%EC%9E%90%EB%B0%94%EB%A5%BC%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0%20%EC%A0%84%EC%97%90.md#%EC%9E%90%EB%B0%94%EB%A1%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0 "자바로 프로그램 작성하기")
    - [Eclipse or STS에서 Hello, World](https://github.com/hongcoding94/java_storage/blob/main/Chapter1.%20%EC%9E%90%EB%B0%94%EB%A5%BC%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0%20%EC%A0%84%EC%97%90.md#1-eclipse-or-sts%EC%97%90%EC%84%9C-hello-world "Eclipse or STS에서 Hello, World")
-   - ?
+   - [Eclipse 설치]( "Eclipse 설치")
 
 ---
 ### 자바(Java Programming Language)
@@ -92,8 +92,9 @@
 ### 1. JDK 설치
 ![JDK 환경변수](https://user-images.githubusercontent.com/66407386/170052007-a72c361e-2bca-468d-9cb1-c48e7e2ed74f.png)
 
-### 2. Eclipse & STS 설치
+### 2. Eclipse 설치
 
+![Eclipse 설치](https://user-images.githubusercontent.com/66407386/170057550-78dca0b8-df57-4d72-a334-8789c0e1919e.png)
 
 
 
