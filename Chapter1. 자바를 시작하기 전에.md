@@ -85,9 +85,7 @@
 ## 자바개발환경 구축하기
 
 1. JDK 설치
-
- ![alt JDK 설치] (https://github.com/hongcoding94/java_storage/issues/1#issue-1246571074.png)
-
+![JDK 환경변수](https://user-images.githubusercontent.com/66407386/170052007-a72c361e-2bca-468d-9cb1-c48e7e2ed74f.png)
 
 2. 
 
