@@ -86,7 +86,7 @@
 
 1. JDK 설치
 
- ![alt JDK 설치] (/66407386/170048744-6e764072-adb6-4f27-ad45-956437f46f60.png)
+ ![alt JDK 설치] (https://github.com/hongcoding94/java_storage/issues/1#issue-1246571074.png)
 
 
 2. 
