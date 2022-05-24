@@ -9,6 +9,7 @@
    - [Eclipse 설치](https://github.com/hongcoding94/java_storage/blob/main/Chapter1.%20%EC%9E%90%EB%B0%94%EB%A5%BC%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0%20%EC%A0%84%EC%97%90.md#2-eclipse-%EC%84%A4%EC%B9%98 "Eclipse 설치")
 4. [자바로 프로그램 작성하기](https://github.com/hongcoding94/java_storage/blob/main/Chapter1.%20%EC%9E%90%EB%B0%94%EB%A5%BC%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0%20%EC%A0%84%EC%97%90.md#%EC%9E%90%EB%B0%94%EB%A1%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0 "자바로 프로그램 작성하기")
    - [Eclipse or STS에서 Hello, World](https://github.com/hongcoding94/java_storage/blob/main/Chapter1.%20%EC%9E%90%EB%B0%94%EB%A5%BC%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0%20%EC%A0%84%EC%97%90.md#1-eclipse-or-sts%EC%97%90%EC%84%9C-hello-world "Eclipse or STS에서 Hello, World")
+5. [참고 문서 / 블로그]( "참고 문서 / 블로그")
 
 ---
 ### 자바(Java Programming Language)
@@ -118,4 +119,7 @@
    > #### 결과물
    > ![Hello, world](https://user-images.githubusercontent.com/66407386/170055145-7fbfaf35-ebaf-4e83-9513-b6a99049970e.png)
 
-
+---
+## 참고 문서 / 블로그
+1.재밌는 Coding 하기님의 윈도우 JDK(Java Development Kit) 설치 - https://hyuntaekhong.github.io/blog/install-JDK/
+2. pinggoopark님의 이클립스 설치하기 - https://pinggoopark.tistory.com/44
