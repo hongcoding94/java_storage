@@ -54,6 +54,7 @@
  - 자바 7 부터 지원되는 것들 
    - New file system API (NIO 2.0)
  - 자바 7 이후 지원되는 것들
+    - try-with-resource 추가 
     - 컴파일러가 타입을 추측할 수 있도록 지원
       ```java
       // Before Java 7
