@@ -5,12 +5,21 @@
 > - 팀명 : 없음
 > - 주제 : 자바의 정석
 > - 참여인원 : 6명
-> - 목표 : 20주 동안 자바의 정석을 읽고 정리하기
-> - 진행일자 : 2022년 06월 01일 ~  2022년 10월 05일 (매주 수요일 8시)
-> - 방식        : <br/>
->       - **노션** : [https://www.notion.so/f0ec532176ef462abbd189c65409ebb9](https://www.notion.so/f0ec532176ef462abbd189c65409ebb9)</br>
->       - **깃 주소** : [https://github.com/hongcoding94/java_storage](https://github.com/hongcoding94/java_storage)<br/>
->       - **팀깃 주소** : [https://github.com/itsChrisJang/study-java-standard](https://github.com/itsChrisJang/study-java-standard)<br/>
+> - 목표</br>
+>   - 자바 개념 기초부터 심화까지</br>
+>   - 객체 지향 이해</br>
+>   - 필연성에 의한 코드 작성</br>
+> - 진행일자 : 2022.06.02(수) ~ 2022.07.06(수) (총 6주)
+> - 저장소<br/>
+>   - **노션** : [https://www.notion.so/f0ec532176ef462abbd189c65409ebb9](https://www.notion.so/f0ec532176ef462abbd189c65409ebb9)</br>
+>   - **깃 주소** : [https://github.com/hongcoding94/java_storage](https://github.com/hongcoding94/java_storage)<br/>
+>   - **팀깃 주소** : [https://github.com/itsChrisJang/study-java-standard](https://github.com/itsChrisJang/study-java-standard)<br/>
+
+## 📈 진행
+- 해당 Repository를 fork 합니다.
+- 매주 해당 파트 담당자는 수요일 19:30 까지 main 으로 Pull Request를 요청해야 합니다.
+- 해당 담당자가 정리해온 자료를 토대로 주도로 자료 리뷰 및 토론을 진행합니다.
+- 그 외 인원들은 해당 주차 Chapter를 예습합니다.
 
 ### 스터디 시간표
 |주차|진행일|진행사항|담당자|진행여부|
