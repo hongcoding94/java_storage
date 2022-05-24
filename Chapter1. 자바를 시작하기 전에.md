@@ -121,5 +121,6 @@
 
 ---
 ## 참고 문서 / 블로그
-1. 재밌는 Coding 하기님의 윈도우 JDK(Java Development Kit) 설치 - https://hyuntaekhong.github.io/blog/install-JDK/ <br/>
-2. pinggoopark님의 이클립스 설치하기 - https://pinggoopark.tistory.com/44
+0. [서적] 남궁성님의 Java의 정석 3rd Edition 
+1. [블로그] 재밌는 Coding 하기님의 윈도우 JDK(Java Development Kit) 설치 - https://hyuntaekhong.github.io/blog/install-JDK/ <br/>
+2. [블로그] pinggoopark님의 이클립스 설치하기 - https://pinggoopark.tistory.com/44
