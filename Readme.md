@@ -50,7 +50,7 @@
             <a href="https://github.com/je-pa"><img  width="100px" src="https://avatars.githubusercontent.com/u/76720692?v=4" /></a>
         </td>
         <td align="center">
-            <a href=""><img  width="100px" src="" /></a>
+            <a href="https://github.com/jerry-ryu"><img  width="100px" src="https://avatars.githubusercontent.com/u/62556539?v=4" /></a>
         </td>
       <td align="center">
             <a href="https://github.com/keson0326"><img  width="100px" src="https://avatars.githubusercontent.com/u/99635978?v=4" /></a>
