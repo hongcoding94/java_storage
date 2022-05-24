@@ -121,5 +121,5 @@
 
 ---
 ## 참고 문서 / 블로그
-1.재밌는 Coding 하기님의 윈도우 JDK(Java Development Kit) 설치 - https://hyuntaekhong.github.io/blog/install-JDK/ <br/>
+1. 재밌는 Coding 하기님의 윈도우 JDK(Java Development Kit) 설치 - https://hyuntaekhong.github.io/blog/install-JDK/ <br/>
 2. pinggoopark님의 이클립스 설치하기 - https://pinggoopark.tistory.com/44
