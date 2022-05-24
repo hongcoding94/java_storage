@@ -86,10 +86,10 @@
 
 ## 자바개발환경 구축하기
 
-1. JDK 설치
+### 1. JDK 설치
 ![JDK 환경변수](https://user-images.githubusercontent.com/66407386/170052007-a72c361e-2bca-468d-9cb1-c48e7e2ed74f.png)
 
-2. Eclipse & STS 설치
+### 2. Eclipse & STS 설치
 
 
 
