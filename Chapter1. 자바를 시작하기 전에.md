@@ -98,14 +98,18 @@
 
 ## 자바로 프로그램 작성하기
 
+
+#### Hello, World
 ```java
 package hello.helloworld.java
 
 public class helloworld() {
    public static void main(String[] args) {
-      System.out.println("Hello World! java");
+      System.out.println("Hello, World");
    }
 }
-
 ```
+#### 결과물
+
+
 
