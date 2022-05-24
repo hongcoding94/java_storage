@@ -52,7 +52,8 @@
 
 **! Tip1.** 자바의 1.7버전 이전(java SE7)과 아후(java SE8) 차이점
  - 자바 7 부터 지원되는 것들 
-   - New file system API (NIO 2.0)
+   - Pluggable Annotation
+      - Lombok 등에서 사용되고 있다. (쉽게 말해 Annotation Processor 를 생각하면 된다.
  - 자바 7 이후 지원되는 것들
     - try-with-resource 추가 
     - 컴파일러가 타입을 추측할 수 있도록 지원
