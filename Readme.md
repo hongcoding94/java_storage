@@ -10,7 +10,7 @@
 > - 방식        : <br/>
 >       - **노션** : [https://www.notion.so/f0ec532176ef462abbd189c65409ebb9](https://www.notion.so/f0ec532176ef462abbd189c65409ebb9)</br>
 >       - **깃 주소** : [https://github.com/hongcoding94/java_storage](https://github.com/hongcoding94/java_storage)<br/>
->       - **팀깃 주소** : [https://github.com/itsChris/study-java-standard](https://github.com/itsChris/study-java-standard)<br/>
+>       - **팀깃 주소** : [https://github.com/itsChrisJang/study-java-standard](https://github.com/itsChrisJang/study-java-standard)<br/>
 
 ### 스터디 시간표
 |주차|진행일|진행사항|담당자|진행여부|
