@@ -99,7 +99,7 @@
 ## 자바로 프로그램 작성하기
 
 
-### Eclipse or STS에서 Hello, World
+1. Eclipse or STS에서 Hello, World
 > #### Hello, World
 > ```java
 > package hello.helloworld.java
