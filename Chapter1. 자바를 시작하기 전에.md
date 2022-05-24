@@ -53,7 +53,8 @@
 **! Tip1.** 자바의 1.7버전 이전(java SE7)과 아후(java SE8) 차이점
  - 자바 7 부터 지원되는 것들 
    - New file system API (NIO 2.0)
-   - 컴파일러가 타입을 추측할 수 있도록 지원
+ - 자바 7 이후 지원되는 것들
+    - 컴파일러가 타입을 추측할 수 있도록 지원
       ```java
       // Before Java 7
       ArrayList<Integer> arr = new ArrayList<Integer>();
@@ -61,7 +62,6 @@
       // In Java 7
       ArrayList<Integer> arr = new ArrayList<>();
       ```
- - 자바 7 이후 지원되는 것들
    - Lambda
    - 새로운 String 문자열 방법잉 도입
       ```java
