@@ -3,7 +3,8 @@
 ## 목차
 1. [변수와 상수](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#%EB%B3%80%EC%88%98%EC%99%80-%EC%83%81%EC%88%98 "변수와상수")
    - [변수란?](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#%EB%B3%80%EC%88%98%EB%9E%80 "변수란?")
-   - [?]( "")
+   - [변수를 선언 방법과 종류]( "변수를 선언 방법과 종류")
+   - [변수의 규칙]( "변수의 규칙")
 2. [변수의 타입](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#%EB%B3%80%EC%88%98%EC%9D%98-%ED%83%80%EC%9E%85 "변수의타입")
    - [2-1. 기본 변수들의 설명](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#2-1-%EA%B8%B0%EB%B3%B8-%EB%B3%80%EC%88%98%EB%93%A4%EC%9D%98-%EC%84%A4%EB%AA%85 "2-1. 기본 변수들의 설명")
    - [2-2. 기본 변수들의 크기](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#2-2-%EA%B8%B0%EB%B3%B8-%EB%B3%80%EC%88%98%EB%93%A4%EC%9D%98-%ED%81%AC%EA%B8%B0 "2-2. 기본 변수들의 크기")
@@ -23,6 +24,26 @@
    > 값을 저장하는 공간(선언과 동시에 메모리 공간에 변수를 지정) <br/>
    > 즉. 큰 도화지 위에 하나의 공간을 배정하여 공간 안에 미지의 조건 데이터 입력하는 공간
 
+   ##### 변수를 선언 방법과 종류
+   ```java
+   /* 방법1. 변수를 선언하는 동시에 데이터 부여 */
+   int count = 0;
+   String name = '자바의정석';
+   
+   /* 방법2. 변수를 선언하고 후에 데이터 부여 */
+   int count;   // 실질적으로 int는 조건 숫자 데이터가 없기 때문에 0으로 처리됨
+   count = 1;   // 해당 변수에 1을 선언함으로 변수 안에 1이라는 숫자가 들어감
+   
+   String name;         // 실질적으로 String는 조건 문자 데이터가 없기 때문에 null으로 처리됨
+   name = '자바의정석';  // 해당 변수에 '자바의정석'을 선언함으로 변수 안에는 "자바의정석"이라는 문자가 들어감
+   ```
+   
+   ##### 변수의 규칙
+   1. 예약어 혹은 규칙어를 사용하지 않는다.
+   2. 특수문자는 __와 $를 제외한 나머지는 사용하면 안된다.
+   3. 첫글자에 숫자를 사용하지 않으며 되도록이면 숫자를 사용하지 않는 것을 권장한다.
+   4. 대소문자가 구분되며 길이제한이 없다.
+   
 ### 변수의 타입
 
    ##### 2-1. 기본 변수들의 설명<br/>
