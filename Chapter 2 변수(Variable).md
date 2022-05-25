@@ -38,10 +38,10 @@
        private long     cnt3;
       
        /* 문자 */
-       pravite char     strYn;
+       private char     strYn;
        
        /* 논리형 */
-       pravute Boolean  trueOrFalse;
+       private Boolean  trueOrFalse;
       }
    // 
    
