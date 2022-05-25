@@ -130,8 +130,7 @@
          
           /* 정수 */
           private int      cnt;
-          private integer  cnt2;
-          private long     cnt3;
+          private long     cnt2;
 
           /* 논리형 */
           private Boolean  trueOrFalse;
