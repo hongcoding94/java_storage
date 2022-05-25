@@ -13,7 +13,7 @@
    - [4-1]( "")
 5. [형변환](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#%ED%98%95%EB%B3%80%ED%99%98 "형변환")
    - [5-1]( "")     
-6. [참고 문서 / 블로그]( "")
+6. [참고 문서 / 블로그](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#%EC%B0%B8%EA%B3%A0-%EB%AC%B8%EC%84%9C--%EB%B8%94%EB%A1%9C%EA%B7%B8 "")
 
 ---
 ### 변수와 상수
