@@ -50,6 +50,8 @@
       // 즉. 변수에 데이터를 담은 이후 데이터가 출력되는 것을 볼 수 있다.
    ```
    
+   **! Tip0. 변수 선언(Variable declare)과 초기화(Initialize)** [](https://7942yongdae.tistory.com/22 "변수 선언(Variable declare)과 초기화(Initialize)")
+   
    ##### 변수의 규칙
    1. 예약어 혹은 규칙어를 사용하지 않는다.
    2. 특수문자는 __와 $를 제외한 나머지는 사용하면 안된다.
@@ -127,7 +129,7 @@
       }
    ```
    
-  **! Tip0.** [private와 public의 차이 - 접근 지정자](https://luyin.tistory.com/232 "private와 public의 차이")
+  **! Tip1.** [private와 public의 차이 - 접근 지정자](https://luyin.tistory.com/232 "private와 public의 차이")
 
 
 ## 진법
@@ -144,5 +146,5 @@
 
 ## 참고 문서 / 블로그
 1. [서적] 남궁성님의 Java의 정석 3rd Edition 
-2. [블로그]밥줄과 취미 사이님의 Java 객체 생성 가이드 - https://dejavuhyo.github.io/posts/java-initialization/
+2. [블로그] 밥줄과 취미 사이님의 Java 객체 생성 가이드 - https://dejavuhyo.github.io/posts/java-initialization/
 3. 
