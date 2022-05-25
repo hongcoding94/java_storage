@@ -275,7 +275,27 @@
   
   ##### 2-6. 화면에서 입력받기
   
-  
+  > Scanner 사용방법
+  > import java.util.* ; : java util에 대한 모든 클래스의 객체를 생성
+  > import java.Scanner; : java Scanner의 클래스의 객체를 생성
+
+  ```java
+  import java.util.*;
+
+  public class scanner {
+    public static voiud main(String[] args) {
+      Scanner scanner = new Scanner(System.in);
+     
+      // Scanner에 데이터를 넣기 위한 변수 생성
+      String inputData = scanner.nextLine();
+      int number = Integer.parseInt(inputData);
+
+      System.out.println("nember : " + nember);
+      // nember : "스캐너에 넣은 데이터 출력"
+      // 단. int로 출력하기 때문에 문자를 넣었을때 Error발생
+    }
+  }
+  ```
   
 
 ## 진법
