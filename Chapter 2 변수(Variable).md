@@ -7,7 +7,7 @@
 2. [변수의 타입](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#%EB%B3%80%EC%88%98%EC%9D%98-%ED%83%80%EC%9E%85 "변수의타입")
    - [2-1]( "")
    - [2-2]("")
-3. [진법]( "진법")
+3. [진법](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#%EC%A7%84%EB%B2%95 "진법")
    - [3-1]( "")
 4. [기본형]( "기본형")
    - [4-1]( "")
