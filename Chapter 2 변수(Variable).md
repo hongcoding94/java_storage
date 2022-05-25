@@ -143,4 +143,5 @@
 
 
 ## 참고 문서 / 블로그
-1. 밥줄과 취미 사이님의 Java 객체 생성 가이드 - [Java 객체 생성 가이드](https://dejavuhyo.github.io/posts/java-initialization/ "Java 객체 생성 가이드")
+1. 밥줄과 취미 사이님의 Java 객체 생성 가이드 - https://dejavuhyo.github.io/posts/java-initialization/
+2. 2
