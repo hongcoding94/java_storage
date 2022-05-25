@@ -27,7 +27,7 @@
 1. 기본 변수들의 설명<br/>
    ```java
       
-      public Class object() extends * {
+      public Class object extends * () {
        // Vo 선언 방식 현재 많이 쓰는 방식 기준으로 정렬해봤습니다.
        /* 문자열 */
        private String   str;
