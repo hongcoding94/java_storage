@@ -275,8 +275,8 @@
   
   ##### 2-6. 화면에서 입력받기
   
-  > Scanner 사용방법
-  > import java.util.* ; : java util에 대한 모든 클래스의 객체를 생성
+  > Scanner 사용방법<br/>
+  > import java.util.* ; : java util에 대한 모든 클래스의 객체를 생성<br/>
   > import java.Scanner; : java Scanner의 클래스의 객체를 생성
 
   ```java
