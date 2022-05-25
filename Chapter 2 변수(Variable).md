@@ -61,7 +61,7 @@
      </tr> 
    </table>
    <br/>
-1-2. 변수들의 선언 방법
+1-2. 변수들의 선언 방법 <br/>
    ```java
       
       public Class object extends * () {
