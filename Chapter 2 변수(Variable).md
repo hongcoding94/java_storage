@@ -68,7 +68,7 @@
            <tr>
               <td>논리</td>
               <td>boolean</td>
-              <td>논리의 참과 거짓을 의미하는 true, false 중 하나의 값을 저장합니다.</td>
+              <td>논리의 참과 거짓을 의미하는 true, false 중 하나의 값을 저장</td>
            </tr>
         </tr>   
         <tr>
@@ -139,6 +139,15 @@
    
   **! Tip1.** [private와 public의 차이 - 접근 지정자](https://luyin.tistory.com/232 "private와 public의 차이")
 
+  ##### 2-4. 상수와 리터럴
+  
+  
+  ##### 2-5. 형식화된 출력
+  
+  
+  ##### 2-6. 화면에서 입력받기
+  
+  
 
 ## 진법
 #### ?
