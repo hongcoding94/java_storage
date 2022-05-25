@@ -124,16 +124,14 @@
    
       public Class veriable() {
           // Vo 선언 방식 현재 많이 쓰는 방식 기준으로 정렬해봤습니다.
-          /* 문자열 */
+          /* 문자열 / 문자 */
           private String   str;
-
+          private char     strYn;
+         
           /* 정수 */
           private int      cnt;
           private integer  cnt2;
           private long     cnt3;
-
-          /* 문자 */
-          private char     strYn;
 
           /* 논리형 */
           private Boolean  trueOrFalse;
