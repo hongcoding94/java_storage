@@ -62,8 +62,8 @@
    </table>
    <br/>
 1-2. 변수들의 선언 방법 <br/>
+   
    ```java
-      
       public Class object extends * () {
        // Vo 선언 방식 현재 많이 쓰는 방식 기준으로 정렬해봤습니다.
        /* 문자열 */
