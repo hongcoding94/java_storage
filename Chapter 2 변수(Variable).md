@@ -143,5 +143,6 @@
 
 
 ## 참고 문서 / 블로그
-1. 밥줄과 취미 사이님의 Java 객체 생성 가이드 - https://dejavuhyo.github.io/posts/java-initialization/
-2. 2
+1. [서적] 남궁성님의 Java의 정석 3rd Edition 
+2. [블로그]밥줄과 취미 사이님의 Java 객체 생성 가이드 - https://dejavuhyo.github.io/posts/java-initialization/
+3. 
