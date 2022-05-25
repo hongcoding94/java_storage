@@ -27,14 +27,21 @@
 1. 기본 변수들의 설명<br/>
    ```java
       
-      public Class object() {
-       // Object 선언 방식
+      public Class object() extends * {
+       // Vo 선언 방식 현재 많이 쓰는 방식 기준으로 정렬해봤습니다.
        /* 문자열 */
-       private String str;
-       /* 정수 */
-       private int cnt;
-       private long won;
+       private String   str;
       
+       /* 정수 */
+       private int      cnt;
+       private integer  cnt2;
+       private long     cnt3;
+      
+       /* 문자 */
+       pravite char     strYn;
+       
+       /* 논리형 */
+       pravute Boolean  trueOrFalse;
       }
    // 
    
