@@ -2,8 +2,8 @@
 
 ## 목차
 1. [변수와 상수](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#%EB%B3%80%EC%88%98%EC%99%80-%EC%83%81%EC%88%98 "변수와상수")
-   - [1-1]( "")
-   - [1-2]( "")
+   - [1-1. 기본 변수들의 설명]( "1-1. 기본 변수들의 설명")
+   - [1-2. 변수들의 선언 방법]( "1-2. 변수들의 선언 방법")
 2. [변수의 타입](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#%EB%B3%80%EC%88%98%EC%9D%98-%ED%83%80%EC%9E%85 "변수의타입")
    - [2-1]( "")
    - [2-2]("")
@@ -22,46 +22,45 @@
 
 
 ### 변수의 타입
-#### 기본 변수들의 설명과 크기
 
-1-1. 기본 변수들의 설명<br/>
-   <table>
-   <tr>
-     <tr>
-        <td rowspan="5">숫자</td>
+   ##### 1-1. 기본 변수들의 설명<br/>
+      <table>
+      <tr>
         <tr>
-          <td rowspan="2">정수</td>
-          <td>int</td>
-          <td rowspan="2">정수(Integer)를 저장하기 위한 타입</td>
-        </tr>
+           <td rowspan="5">숫자</td>
+           <tr>
+             <td rowspan="2">정수</td>
+             <td>int</td>
+             <td rowspan="2">정수(Integer)를 저장하기 위한 타입</td>
+           </tr>
+           <tr>
+             <td>long</td>
+           </tr>
+           <tr>
+             <td rowspan="2">실수</td>
+             <td>float</td>
+             <td rowspan="2">실수(floating-point number)를 저장하기 위한 타입</td>
+           </tr>
+           <tr>
+             <td>double</td> 
+           </tr>
+        </tr> 
         <tr>
-          <td>long</td>
-        </tr>
-        <tr>
-          <td rowspan="2">실수</td>
-          <td>float</td>
-          <td rowspan="2">실수(floating-point number)를 저장하기 위한 타입</td>
-        </tr>
-        <tr>
-          <td>double</td> 
-        </tr>
-     </tr> 
-     <tr>
-        <td rowspan="3">문자</td>
-        <tr>
-          <td>문자</td>
-          <td>char</td>
-          <td>	문자(character)를 저장하기 위한 타입</td>
-        </tr>
-        <tr>
-          <td>여러문자</td>
-          <td>String</td>
-          <td>여러 문자(문자열, string)를 저장하기 위한 타입</td>
-        </tr>
-     </tr> 
-   </table>
+           <td rowspan="3">문자</td>
+           <tr>
+             <td>문자</td>
+             <td>char</td>
+             <td>	문자(character)를 저장하기 위한 타입</td>
+           </tr>
+           <tr>
+             <td>여러문자</td>
+             <td>String</td>
+             <td>여러 문자(문자열, string)를 저장하기 위한 타입</td>
+           </tr>
+        </tr> 
+      </table>
    
-1-2. 변수들의 선언 방법 <br/>
+  ##### 1-2. 변수들의 선언 방법 <br/>
    
    ```java
       public Class object extends * () {
