@@ -24,7 +24,7 @@
 ### 변수의 타입
 #### 기본 변수들의 설명과 크기
 
-1. 기본 변수들의 설명<br/>
+1-1. 기본 변수들의 설명<br/>
    <table>
    <tr>
      <tr>
@@ -46,7 +46,6 @@
           <td>double</td> 
         </tr>
      </tr> 
-   
      <tr>
         <td rowspan="3">문자</td>
         <tr>
@@ -62,7 +61,7 @@
      </tr> 
    </table>
    <br/>
-   
+1-2. 변수들의 선언 방법
    ```java
       
       public Class object extends * () {
