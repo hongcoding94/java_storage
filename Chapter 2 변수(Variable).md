@@ -2,7 +2,7 @@
 
 ## 목차
 1. [변수와 상수](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#%EB%B3%80%EC%88%98%EC%99%80-%EC%83%81%EC%88%98 "변수와상수")
-   - [?]( "")
+   - [변수란?]( "변수란?")
    - [?]( "")
 2. [변수의 타입](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#%EB%B3%80%EC%88%98%EC%9D%98-%ED%83%80%EC%9E%85 "변수의타입")
    - [2-1. 기본 변수들의 설명](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#2-1-%EA%B8%B0%EB%B3%B8-%EB%B3%80%EC%88%98%EB%93%A4%EC%9D%98-%EC%84%A4%EB%AA%85 "2-1. 기본 변수들의 설명")
@@ -18,9 +18,10 @@
 
 ---
 ### 변수와 상수
-#### ?
 
-
+   ##### 변수란?
+   > 값을 저장하는 공간(선언과 동시에 메모리 공간에 변수를 지정) <br/>
+   > 즉. 큰 도화지 위에 하나의 공간을 배정하여 공간 안에 미지의 조건 데이터 입력하는 공간
 
 ### 변수의 타입
 
@@ -76,22 +77,21 @@
       package hello.helloWorld.veriable.java
    
       public Class veriable() {
-       // Vo 선언 방식 현재 많이 쓰는 방식 기준으로 정렬해봤습니다.
-       /* 문자열 */
-       private String   str;
-      
-       /* 정수 */
-       private int      cnt;
-       private integer  cnt2;
-       private long     cnt3;
-      
-       /* 문자 */
-       private char     strYn;
-       
-       /* 논리형 */
-       private Boolean  trueOrFalse;
+          // Vo 선언 방식 현재 많이 쓰는 방식 기준으로 정렬해봤습니다.
+          /* 문자열 */
+          private String   str;
+
+          /* 정수 */
+          private int      cnt;
+          private integer  cnt2;
+          private long     cnt3;
+
+          /* 문자 */
+          private char     strYn;
+
+          /* 논리형 */
+          private Boolean  trueOrFalse;
       }
-   //
    ```
    
   **! Tip0.** [private와 public의 차이 - 접근 지정자](https://luyin.tistory.com/232 "private와 public의 차이")
