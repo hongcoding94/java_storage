@@ -50,7 +50,7 @@
       // 즉. 변수에 데이터를 담은 이후 데이터가 출력되는 것을 볼 수 있다.
    ```
    
-   **! Tip0. [변수 선언(Variable declare)과 초기화(Initialize)**](https://7942yongdae.tistory.com/22 "변수 선언(Variable declare)과 초기화(Initialize)")
+   **! Tip0.** [변수 선언(Variable declare)과 초기화(Initialize)](https://7942yongdae.tistory.com/22 "변수 선언(Variable declare)과 초기화(Initialize)")
    
    ##### 변수의 규칙
    1. 예약어 혹은 규칙어를 사용하지 않는다.
