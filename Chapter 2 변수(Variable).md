@@ -246,7 +246,6 @@
    </tr>  
 </table>
   
-  
   ```java
   int num_i = 123;
   double num_d = 1.23456789;
@@ -270,7 +269,7 @@
   System.out.printf("[%-14.10f]%n", num_d); // 전체 14자리 중 소수점 10자리까지 왼쪽정렬 출력
   ```
   
-  - 출력 결과
+  - 출력 결과 <br/>
     ![출력 결과](https://user-images.githubusercontent.com/66407386/170272305-f07ac873-5db6-4e37-b3bd-75c9ba6c1967.png)
 
   
