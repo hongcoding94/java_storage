@@ -271,7 +271,7 @@
   ```
   
   - 출력 결과
-      - ![출력 결과](https://user-images.githubusercontent.com/66407386/170272305-f07ac873-5db6-4e37-b3bd-75c9ba6c1967.png)
+    ![출력 결과](https://user-images.githubusercontent.com/66407386/170272305-f07ac873-5db6-4e37-b3bd-75c9ba6c1967.png)
 
   
   ##### 2-6. 화면에서 입력받기
