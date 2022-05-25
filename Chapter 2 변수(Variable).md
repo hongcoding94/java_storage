@@ -64,6 +64,14 @@
    <table>
       <tr>
         <tr>
+           <td rowspan="2">논리</td>
+           <tr>
+              <td>논리</td>
+              <td>boolean</td>
+              <td>논리의 참과 거짓을 의미하는 true, false 중 하나의 값을 저장합니다.</td>
+           </tr>
+        </tr>   
+        <tr>
            <td rowspan="5">숫자</td>
            <tr>
              <td rowspan="2">정수</td>
@@ -81,7 +89,7 @@
            <tr>
              <td>double</td> 
            </tr>
-        </tr> 
+        </tr>        
         <tr>
            <td rowspan="3">문자</td>
            <tr>
