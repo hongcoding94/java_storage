@@ -11,7 +11,7 @@
    - [2-3. 클래스 선언 하여 객제 담는 방법](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#2-3-%ED%81%B4%EB%9E%98%EC%8A%A4-%EC%84%A0%EC%96%B8-%ED%95%98%EC%97%AC-%EA%B0%9D%EC%A0%9C-%EB%8B%B4%EB%8A%94-%EB%B0%A9%EB%B2%95- "2-3. 클래스 선언 하여 객제 담는 방법")
    - [2-4. 상수와 리터럴](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#2-4-%EC%83%81%EC%88%98%EC%99%80-%EB%A6%AC%ED%84%B0%EB%9F%B4 "2-4. 상수와 리터럴")
    - [2-5. 형식화된 출력](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#2-5-%ED%98%95%EC%8B%9D%ED%99%94%EB%90%9C-%EC%B6%9C%EB%A0%A5 "2-5. 형식화된 출력")
-   - [2-6. 화면에서 입력받기]( "2-6. 화면에서 입력받기")
+   - [2-6. 화면에서 입력받기](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#2-6-%ED%99%94%EB%A9%B4%EC%97%90%EC%84%9C-%EC%9E%85%EB%A0%A5%EB%B0%9B%EA%B8%B0 "2-6. 화면에서 입력받기")
 3. [진법](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#%EC%A7%84%EB%B2%95 "진법")
    - [3-1]( "")
 4. [기본형](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#%EA%B8%B0%EB%B3%B8%ED%98%95 "기본형")
