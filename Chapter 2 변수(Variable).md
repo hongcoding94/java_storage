@@ -26,18 +26,28 @@
 
 1. 기본 변수들의 설명<br/>
    ```java
-   
+      
+      public Class object() {
+       // Object 선언 방식
+       /* 문자열 */
+       private String str;
+       /* 정수 */
+       private int cnt;
+       private long won;
+      
+      }
    // 
    
    ```
+  **!Tip0.** [private와 public의 차이]( "private와 public의 차이")
 
 2. 기본 변수들의 크기<br/>
-|종류/크기|1Byte|2Byte|3Byte|4Byte|
-|:---:|:---:|:---:|:---:|:---:|
-|논리형|boolean|    | | 	| 	 
-|문자형|       |char| |    |	 	 	 	 
-|정수형|byte|short|int|long| 	 	 	 
-|실수형|     ||float|double|	 	 	 
+   |종류/크기|1Byte|2Byte|3Byte|4Byte|
+   |:---:|:---:|:---:|:---:|:---:|
+   |논리형|boolean|    | | 	| 	 
+   |문자형|       |char| |    |	 	 	 	 
+   |정수형|byte|short|int|long| 	 	 	 
+   |실수형|     ||float|double|	 	 	 
 
 
 ### 진법
