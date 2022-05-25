@@ -151,12 +151,29 @@
   >    ```java
   >       package hello.helloWorld.constant.java
   >       
-  >       public void constant() {
-  >         int con = 0;
-  >         
-  >       }
+  >       public class constant() {
+  >         public void constantTest() {
+  >            // 상수 선언 및 초기화
+  >            final int con;
+  >
+  >            // 데이터 주입 
+  >            final int con = 20220525;
+  >
+  >            // 변수에 다른 데이터 주입
+  >            con = 20220524;
+  >
+  >            // 결과
+  >            System.out.println("con : " + con);
+  >        
+  >            // con : 20220525
+  >            // 상수는 처음 값을 초기화하면, 이후 상수의 값은 변경할 수 없다.
+  >         }
+  >      }
   >    ```
-      
+  
+  - *중요*
+   - JDK 1.6 이전에는 상수 선언과 동시에 초기화가 필수였으나, 1.6 이후부터는 선언과 동시에 초기화하지 않아도 자동으로 처리해준다. <br>
+     하지만 상수는 선언과 동시에 초기화하는 것을 **권장**합니다.  
   
   리터럴이란?
   > 값이 변하지 않는 데이터 <br/>
@@ -164,10 +181,19 @@
   >   예시)
   >   ```java
   >      package hello.helloWorld.literal.java
-  >      
-  >      public void literal() {
-  >        int = 1;
-  >        
+  >
+  >      public class literal() {
+  >         public void literalTest() {
+  >           // 변수 선언
+  >           int lit = 20220525;
+  >
+  >           /*
+  >           *  이렇게 생각하자
+  >           *  변수(variable)   -   하나의 값을 저장하기 위한 공간
+  >           *  상수(constant)   -   값을 한번만 저장할 수 있는 공간
+  >           *  리터럴(literal)  -   그 자체로 값을 의미하는 것
+  >           */
+  >         }
   >      }
   >   ```
       
