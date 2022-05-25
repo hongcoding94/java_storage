@@ -6,7 +6,8 @@
    - [?]( "")
 2. [변수의 타입](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#%EB%B3%80%EC%88%98%EC%9D%98-%ED%83%80%EC%9E%85 "변수의타입")
    - [2-1. 기본 변수들의 설명](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#2-1-%EA%B8%B0%EB%B3%B8-%EB%B3%80%EC%88%98%EB%93%A4%EC%9D%98-%EC%84%A4%EB%AA%85 "2-1. 기본 변수들의 설명")
-   - [2-2. 변수들의 선언 방법](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#2-2-%EB%B3%80%EC%88%98%EB%93%A4%EC%9D%98-%EC%84%A0%EC%96%B8-%EB%B0%A9%EB%B2%95- "2-2. 변수들의 선언 방법")
+   - [2-2. 기본 변수들의 크기]( "2-2. 기본 변수들의 크기")
+   - [2-3. 변수들의 선언 방법]( "2-3. 변수들의 선언 방법")
 3. [진법](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#%EC%A7%84%EB%B2%95 "진법")
    - [3-1]( "")
 4. [기본형](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#%EA%B8%B0%EB%B3%B8%ED%98%95 "기본형")
@@ -59,8 +60,17 @@
            </tr>
         </tr> 
    </table>
+  
+  ##### 2-2.기본 변수들의 크기<br/>
+   |종류/크기|1Byte|2Byte|3Byte|4Byte|
+   |:---:|:---:|:---:|:---:|:---:|
+   |논리형|boolean|    | | 	| 	 
+   |문자형|       |char| |    |	 	 	 	 
+   |정수형|byte|short|int|long| 	 	 	 
+   |실수형|     ||float|double|	
    
-  ##### 2-2. 변수들의 선언 방법 <br/>
+   
+  ##### 2-3. 변수들의 선언 방법 <br/>
    
    ```java
       package hello.helloWorld.veriable.java
@@ -85,14 +95,6 @@
    ```
    
   **! Tip0.** [private와 public의 차이 - 접근 지정자](https://luyin.tistory.com/232 "private와 public의 차이")
-
-2. 기본 변수들의 크기<br/>
-   |종류/크기|1Byte|2Byte|3Byte|4Byte|
-   |:---:|:---:|:---:|:---:|:---:|
-   |논리형|boolean|    | | 	| 	 
-   |문자형|       |char| |    |	 	 	 	 
-   |정수형|byte|short|int|long| 	 	 	 
-   |실수형|     ||float|double|	 	 	 
 
 
 ### 진법
