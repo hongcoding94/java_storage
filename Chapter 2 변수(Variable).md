@@ -172,8 +172,8 @@
   >    ```
   
   - *중요*
-   - JDK 1.6 이전에는 상수 선언과 동시에 초기화가 필수였으나, 1.6 이후부터는 선언과 동시에 초기화하지 않아도 자동으로 처리해준다. <br>
-     하지만 상수는 선언과 동시에 초기화하는 것을 **권장**합니다.  
+      - JDK 1.6 이전에는 상수 선언과 동시에 초기화가 필수였으나, 1.6 이후부터는 선언과 동시에 초기화하지 않아도 자동으로 처리해준다. <br>
+        하지만 상수는 선언과 동시에 초기화하는 것을 **권장**합니다.  
   
   리터럴이란?
   > 값이 변하지 않는 데이터 <br/>
@@ -200,8 +200,74 @@
   
   ##### 2-5. 형식화된 출력
   
+  <table>
+   <tr>
+      <th>지시자</th>
+      <th>설명</th>
+   </tr>
+   <tr>
+      <td>%d</td>
+      <td>10진(decimal) 정수의 형식으로 출력</td>
+   </tr>
+   <tr>
+      <td>%f</td>
+      <td>부동 소수점(float -point)의 형식으로 출력</td>
+   </tr>
+   <tr>
+      <td>%o</td>
+      <td>8진(octal) 정수의 형식으로 출력</td>
+   </tr>
+   <tr>
+      <td>%x, %X</td>
+      <td>16진(hexa-decimal) 정수의 형식으로 출력</td>
+   </tr>
+   <tr>
+      <td>%c</td>
+      <td>문자(charactor)로 출력</td>
+   </tr>
+   <tr>
+      <td>%s</td>
+      <td>문자열(string)로 출력</td>
+   </tr>   
+   <tr>
+      <td>%b</td>
+      <td>불리언(boolean)로 출력</td>
+   </tr>     
+   <tr>
+      <td>%e, %E</td>
+      <td>지수(exponent) 표현식의 형식으로 출력</td>
+   </tr>  
+</table>
+  
+  
+  ```java
+  int num_i = 123;
+  double num_d = 1.23456789;
+  double num_d1 = 1.2345678987654321;
+  String url = "https://hbeige.tistory.com";
+ 
+  System.out.printf("[%d]%n", num_i);   // [123]
+  System.out.printf("[%5d]%n", num_i);  // [  123]
+  System.out.printf("[%05d]%n", num_i); // [00123]
+  System.out.printf("[%-5d]%n", num_i); // [123  ]
+ 
+ 
+ 
+  System.out.println("[123456789012345678901234567890]->30칸");
+  System.out.printf("[%s]%n", url);
+  System.out.printf("[%30s]%n", url);  // 30칸 중 오른쪽 정렬
+  System.out.printf("[%-30s]%n", url); // 30칸 중 왼쪽정렬
+  System.out.printf("[%.8s]%n", url);  // 왼쪽에서 8글자만 출력
+ 
+  System.out.printf("[%f]%n", num_d); // 마지막 소수점 자리에서 반올림
+  System.out.printf("[%14.10f]%n", num_d);  // 전체 14자리 중 소수점 10자리까지 출력
+  System.out.printf("[%14.10f]%n", num_d1); // 전체 14자리 중 소수점 10자리까지 출력+마지막 소수점 자리에서 반올림
+  System.out.printf("[%-14.10f]%n", num_d); // 전체 14자리 중 소수점 10자리까지 왼쪽정렬 출력
+  ```
+  
   
   ##### 2-6. 화면에서 입력받기
+  
   
   
 
