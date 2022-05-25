@@ -25,6 +25,44 @@
 #### 기본 변수들의 설명과 크기
 
 1. 기본 변수들의 설명<br/>
+   <table>
+   <tr>
+     <tr>
+        <td rowspan="5">숫자</td>
+        <tr>
+          <td rowspan="2">정수</td>
+          <td>int</td>
+          <td rowspan="2">정수(Integer)를 저장하기 위한 타입</td>
+        </tr>
+        <tr>
+          <td>long</td>
+        </tr>
+        <tr>
+          <td rowspan="2">실수</td>
+          <td>float</td>
+          <td rowspan="2">실수(floating-point number)를 저장하기 위한 타입</td>
+        </tr>
+        <tr>
+          <td>double</td> 
+        </tr>
+     </tr> 
+   
+     <tr>
+        <td rowspan="3">문자</td>
+        <tr>
+          <td>문자</td>
+          <td>char</td>
+          <td>	문자(character)를 저장하기 위한 타입</td>
+        </tr>
+        <tr>
+          <td>여러문자</td>
+          <td>String</td>
+          <td>여러 문자(문자열, string)를 저장하기 위한 타입</td>
+        </tr>
+     </tr> 
+   </table>
+   <br/>
+   
    ```java
       
       public Class object extends * () {
@@ -43,9 +81,9 @@
        /* 논리형 */
        private Boolean  trueOrFalse;
       }
-   // 
-   
+   //
    ```
+   
   **! Tip0.** [private와 public의 차이 - 접근 지정자](https://luyin.tistory.com/232 "private와 public의 차이")
 
 2. 기본 변수들의 크기<br/>
