@@ -117,7 +117,7 @@
    |실수형|     ||float|double|	
    
    
-  ##### 2-3. 클래스 선언 하여 객 담는 방법  (쉬어가기) <br/>
+  ##### 2-3. 클래스 선언 하여 객체 담는 방법  (쉬어가기) <br/>
    
    ```java
       package hello.helloWorld.veriable.java
