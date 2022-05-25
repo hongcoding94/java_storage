@@ -51,10 +51,10 @@
            <tr>
              <td>문자</td>
              <td>char</td>
-             <td>	문자(character)를 저장하기 위한 타입</td>
+             <td>문자(character)를 저장하기 위한 타입</td>
            </tr>
            <tr>
-             <td>여러문자</td>
+             <td>여러 문자</td>
              <td>String</td>
              <td>여러 문자(문자열, string)를 저장하기 위한 타입</td>
            </tr>
