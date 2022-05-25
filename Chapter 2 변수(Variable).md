@@ -66,7 +66,7 @@
    |:---:|:---:|:---:|:---:|:---:|
    |논리형|boolean|    | | 	| 	 
    |문자형|       |char| |    |	 	 	 	 
-   |정수형|byte|short|int|long| 	 	 	 
+   |정수형|byte|short|int(difault)|long| 	 	 	 
    |실수형|     ||float|double|	
    
    
