@@ -258,8 +258,6 @@
   System.out.printf("[%05d]%n", num_i); // [00123]
   System.out.printf("[%-5d]%n", num_i); // [123  ]
  
- 
- 
   System.out.println("[123456789012345678901234567890]->30칸");
   System.out.printf("[%s]%n", url);
   System.out.printf("[%30s]%n", url);  // 30칸 중 오른쪽 정렬
