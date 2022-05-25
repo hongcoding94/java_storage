@@ -39,7 +39,7 @@
    // 
    
    ```
-  **!Tip0.** [private와 public의 차이]( "private와 public의 차이")
+  **!Tip0.** [private와 public의 차이 - 접근 지정자](https://luyin.tistory.com/232 "private와 public의 차이")
 
 2. 기본 변수들의 크기<br/>
    |종류/크기|1Byte|2Byte|3Byte|4Byte|
