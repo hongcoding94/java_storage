@@ -33,30 +33,20 @@
       System.out.println("count : " + count + ", name : " + name );
       // 출력 시 - count : 0, name : 자바의정석
 
-      /* 방법2-1. 변수(숫자)를 선언하고 후에 데이터 부여 */
-      int count;   // 실질적으로 int는 조건 숫자 데이터가 없기 때문에 0으로 처리됨
-      
-      System.out.println("count : " + count);
-      // 출력 시 - count : 0
-      
-      count = 1;   // 해당 변수에 1을 선언함으로 변수 안에 1이라는 숫자가 들어감
-      
-      System.out.println("count : " + count);
-      // 출력 시 - count : 1
-      
-      
-      /* 방법2-2. 변수(문자)를 선언하고 후에 데이터 부여 *
+      /* 방법2. 변수를 선언하고 후에 데이터 부여 */
+      int count;           // 실질적으로 int는 조건 숫자 데이터가 없기 때문에 0으로 처리됨
       String name;         // 실질적으로 String는 조건 문자 데이터가 없기 때문에 null으로 처리됨
+     
+      System.out.println("count : " + count + ", name : " + name );
+      // 출력 시 - count : 0, name : null
       
-      System.out.println("name : " + name);
-      // 출력 시 - name : null
-      
+      count = 1;           // 해당 변수에 1을 선언함으로 변수 안에 1이라는 숫자가 들어감
       name = '자바의정석';  // 해당 변수에 '자바의정석'을 선언함으로 변수 안에는 "자바의정석"이라는 문자가 들어감
-  
-      System.out.println("name : " + name);
-      // 출력 시 - name : 자바의정석
+     
+      System.out.println("count : " + count + ", name : " + name );
+      // 출력 시 - count : 1, name : 자바의정석
       
-      // 방법2-*들의 변수만 선언 후 데이터를 출력하면 데이터가 없는 빈 변수로 출력이 된다.
+      // 방법2의 변수만 선언 후 데이터를 출력하면 데이터가 없는 빈 변수로 출력이 된다.
       // 즉. 변수에 데이터를 담은 이후 데이터가 출력되는 것을 볼 수 있다.
       
    ```
