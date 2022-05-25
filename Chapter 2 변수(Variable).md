@@ -4,7 +4,7 @@
 1. [변수와 상수](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#%EB%B3%80%EC%88%98%EC%99%80-%EC%83%81%EC%88%98 "변수와상수")
    - [변수란?](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#%EB%B3%80%EC%88%98%EB%9E%80 "변수란?")
    - [변수를 선언 방법과 종류](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#%EB%B3%80%EC%88%98%EB%A5%BC-%EC%84%A0%EC%96%B8-%EB%B0%A9%EB%B2%95%EA%B3%BC-%EC%A2%85%EB%A5%98 "변수를 선언 방법과 종류")
-   - [변수의 규칙]( "변수의 규칙")
+   - [변수의 규칙](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#%EB%B3%80%EC%88%98%EC%9D%98-%EA%B7%9C%EC%B9%99 "변수의 규칙")
 2. [변수의 타입](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#%EB%B3%80%EC%88%98%EC%9D%98-%ED%83%80%EC%9E%85 "변수의타입")
    - [2-1. 기본 변수들의 설명](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#2-1-%EA%B8%B0%EB%B3%B8-%EB%B3%80%EC%88%98%EB%93%A4%EC%9D%98-%EC%84%A4%EB%AA%85 "2-1. 기본 변수들의 설명")
    - [2-2. 기본 변수들의 크기](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#2-2-%EA%B8%B0%EB%B3%B8-%EB%B3%80%EC%88%98%EB%93%A4%EC%9D%98-%ED%81%AC%EA%B8%B0 "2-2. 기본 변수들의 크기")
