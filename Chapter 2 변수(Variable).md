@@ -17,7 +17,10 @@
 4. [기본형](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#%EA%B8%B0%EB%B3%B8%ED%98%95 "기본형")
    - [4-1]( "")
 5. [형변환](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#%ED%98%95%EB%B3%80%ED%99%98 "형변환")
-   - [5-1]( "")     
+   - [5-1. 형변환(캐스팅 Casting)이란?]( "5-1. 형변환(캐스팅 Casting)이란?")
+   - [5-2. 형변환 방법]( "5-2. 형변환 방법")
+   - [5-3. 정수형과 실수형 간의 형 변환]( "5-3. 정수형과 실수형 간의 형 변환")
+   - [5-4. 자동 형 변환]( "5-4. 자동 형 변환")     
 6. [참고 문서 / 블로그](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#%EC%B0%B8%EA%B3%A0-%EB%AC%B8%EC%84%9C--%EB%B8%94%EB%A1%9C%EA%B7%B8 "")
 
 ---
@@ -399,8 +402,9 @@
    // c : 61
    ```
   **! Tip2.** [아스키코드] (https://stepbystep1.tistory.com/10 "아스키코드") 
-   
-  ##### 5-3. 정수형과 실수형 간의 형변환
+  **! Tip3.** [오버라이딩과 오버로딩의 차이] (https://gmlwjd9405.github.io/2018/08/09/java-overloading-vs-overriding.html "오버라이딩과 오버로딩의 차이") 
+  
+  ##### 5-3. 정수형과 실수형 간의 형 변환
   - 정수형 간의 형 변환
   > 큰 타입에서 작은 타입으로의 변환, 예를 들어 int타입(4byte)의 값을 byte타입(1byte)으로 변환하는 경우
   > 아래와 같은 크기의 만큼 잘려나간다. 그래서 경우에 따라 '값 손실'이 발생한다.
@@ -416,12 +420,20 @@
   - 작은 타입(btye)에서 큰 타입(int)으로 변환 / 빈 공간은 부호에 맞춰 0 또는 1로 채워진다.
   ![image](https://user-images.githubusercontent.com/66407386/170480297-10d31b77-3cc0-435b-be76-30d853ef6cdd.png)
 
-  ##### 5-4. 자동 형변환
-  
-  
+  ##### 5-4. 자동 형 변환
+  - 자동 형 변환
+  > 일반적으로 서로 다른 두 타입간의 덧셈에서는 두 타입 중 표현범위가 더 넓은 타입으로 형변환하여
+  > 타입을 일치시킨 다음에 연산을 수행하여 값 손실을 줄이기 위함.
+  > 이처럼 연산과정에서 자동적으로 발생하는 형변환을 산술 변환이라고 한다.
+  >  - boolean을 제외한 7개(char, String, btye, int, long, short, float)의 기본형은 서로 형 변환이 가능하다.
+  >  - 기본형과 참조형은 서로 형 변환이 불가능하다.
+  >  - 서로 다른 타입의 변수간의 연산은 형 변환을 하는 것이 원칙이지만, 값의 범위가 작은 타입에서 큰 타입으로의 형변환은 생략
+  >    - char와 short는 서로 같은 byte 크기를 갖고 있지만, 부호가 있고 없고의 차이 때문에 서로 형변환이 될 수 없음
+  >    -  int보다 작은 타입은 자동으로 int로 형변환된다.
 
+  
 ## 참고 문서 / 블로그
 1. [서적] 남궁성님의 Java의 정석 3rd Edition 
 2. [블로그] 밥줄과 취미 사이님의 Java 객체 생성 가이드 - https://dejavuhyo.github.io/posts/java-initialization/
 3. [블로그] 헤이베이지님의 형식화된 출력 - https://hbeige.tistory.com/m/16
-4. 
+4. [블고그] Jake, Seo님의 자바의 정석 -변수 (형변환) - https://placeforjake.tistory.com/14
