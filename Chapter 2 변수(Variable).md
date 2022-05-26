@@ -431,7 +431,8 @@
   >    - char와 short는 서로 같은 byte 크기를 갖고 있지만, 부호가 있고 없고의 차이 때문에 서로 형변환이 될 수 없음
   >    - int보다 작은 타입은 자동으로 int로 형변환된다.
 
-  
+
+<br/>  
 ## 참고 문서 / 블로그
 1. [서적] 남궁성님의 Java의 정석 3rd Edition 
 2. [블로그] 밥줄과 취미 사이님의 Java 객체 생성 가이드 - https://dejavuhyo.github.io/posts/java-initialization/
