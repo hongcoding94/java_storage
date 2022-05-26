@@ -391,16 +391,16 @@
   - 강제 형변환
       - 강제 형변환의 경우는 사용자 바꿀 자료형을 명시적으로 적지 않으면 오류가 발생 
       - 강제 형변환을 한다면 **OverFlow** 형상이 발생할 수 있다.
-   ```java
-   char c = 'A';
-   int a = 10;
+      ```java
+      char c = 'A';
+      int a = 10;
 
-   char c = (char)a;
-   
-   System.out.println("c : " + c);
-   // c : 61
-   ```
-  **! Tip2.** [아스키코드] (https://stepbystep1.tistory.com/10 "아스키코드") 
+      char c = (char)a;
+
+      System.out.println("c : " + c);
+      // c : 61
+      ```
+  **! Tip2.** [아스키코드] (https://stepbystep1.tistory.com/10 "아스키코드") <br/>
   **! Tip3.** [오버라이딩과 오버로딩의 차이] (https://gmlwjd9405.github.io/2018/08/09/java-overloading-vs-overriding.html "오버라이딩과 오버로딩의 차이") 
   
   ##### 5-3. 정수형과 실수형 간의 형 변환
@@ -408,10 +408,10 @@
   > 큰 타입에서 작은 타입으로의 변환, 예를 들어 int타입(4byte)의 값을 byte타입(1byte)으로 변환하는 경우
   > 아래와 같은 크기의 만큼 잘려나간다. 그래서 경우에 따라 '값 손실'이 발생한다.
   
-     ```java
+   ```java
       System.out.println(300);
       System.out.println((byte)300);
-     ```
+   ```
   
   - 큰 타입(int)에서 작은 타입(byte)으로 변환 / 값 손실 발생 
   ![image](https://user-images.githubusercontent.com/66407386/170480169-b98d8697-987a-41d0-9f1e-ce2447f5ba36.png)
