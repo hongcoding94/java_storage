@@ -401,7 +401,7 @@
       System.out.println("c : " + c);
       // c : 61
       ```
-  **! Tip2.** [아스키코드] (https://stepbystep1.tistory.com/10 "아스키코드") <br/>
+  **! Tip2.** [아스키코드](https://stepbystep1.tistory.com/10 "아스키코드") <br/>
   **! Tip3.** [오버라이딩과 오버로딩의 차이](https://gmlwjd9405.github.io/2018/08/09/java-overloading-vs-overriding.html "오버라이딩과 오버로딩의 차이") 
   
   ##### 5-3. 정수형과 실수형 간의 형 변환
