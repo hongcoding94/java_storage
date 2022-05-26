@@ -334,7 +334,7 @@
    - 바이트(Byte) - 데이터 파일의 크기, 디스크 또는 그 외 저장 매체의 공간, 그리고 네트워크를 통하여 전송 되는 데이터의 양을 표현하는데 
                    사용 되는 측정 단위, 1바이트는 8비트 (1Byte = 8bit) 와 같다.
    
-   **Tip5.** [Bit와 Byte차이점](https://roxxy.tistory.com/entry/Bit-%EC%99%80-Byte-%EC%B0%A8%EC%9D%B4%EC%A0%90 "Bit와 Byte차이점")
+   **!Tip5.** [Bit와 Byte차이점](https://roxxy.tistory.com/entry/Bit-%EC%99%80-Byte-%EC%B0%A8%EC%9D%B4%EC%A0%90 "Bit와 Byte차이점")
    
    ##### 3-3. 8진법과 16진법
    
@@ -347,6 +347,8 @@
    
    ##### 3-6. 6음수의 2진표현 -2의 보수법
 
+
+   **!Tip6.** [진법 총정리](https://itbeginner2020.tistory.com/17 "진법 총정리")
 
 ## 기본형
 
