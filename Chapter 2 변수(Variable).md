@@ -401,6 +401,8 @@
   **! Tip2.** [아스키코드] (https://stepbystep1.tistory.com/10 "아스키코드") 
    
   ##### 5-3. 정수형과 실수형 간의 형변환
+  ![image](https://user-images.githubusercontent.com/66407386/170480169-b98d8697-987a-41d0-9f1e-ce2447f5ba36.png)
+
   
   
   
