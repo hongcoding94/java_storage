@@ -304,7 +304,7 @@
 ## 기본형
 
  - 논리형(True or False)
-   - 논리형에는 'boolean' 한가지 밖에 없다. true, false 둘 중 한가지 값만을 허락한다. default 값은 'false'이다. 
+   - 논리형에는 'boolean' 한가지 밖에 없다. true, false 둘 중 한가지 값만을 허락한다. <br/> default 값은 'false'이다. 
  >  - boolean
  >  > ```java
  >  > public statice void main(String[] args) {
