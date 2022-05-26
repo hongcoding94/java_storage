@@ -305,8 +305,13 @@
    - 논리형에는 'boolean' 한가지 밖에 없다. true, false 둘 중 한가지 값만을 허락한다. default 값은 'false'이다. 
  >  - boolean
  >  > ```java
+ >  > public statice void main(String[] args) {
  >  >  boolean power = true;
- >  >  boolean check = False; // 에러발생. 대소문자가 구분됨
+ >  >  -- boolean check = False; // 에러발생. 대소문자가 구분됨
+ >  >  
+ >  >  System.out.println("power : " + power);
+ >  >  // power : true
+ >  > }
  >  > ```
 
  - 문자형
@@ -314,16 +319,25 @@
      '문자'가 저장되는 것 같지만, 사실은 문자가 아닌 '문자의 유니코드(정수)'가 저장된다. 컴퓨터는 숫자 밖에 모른다.
  > - char(character)
  >  > ```java
+ >  > public statice void main(String[] args) {
  >  >  char ch = 'A'; // 문자 'A'를 char타입의 변수 ch에 저장
- >  >  char ch = 29;  // 문자의 코드를 직접 변수 ch에 저장
+ >  >  -- char ch = 29;  // 문자의 코드를 직접 변수 ch에 저장
+ >  > 
+ >  >  System.out.println("ch : " + ch);
+ >  >  // ch : A
+ >  > }
  >  > ```
  
  - 참조형
-   - 
+   - 어떤 값이 저장되어 있는 주소를 값으로 가진다. 8개의 기본형을 제외한 나머지 모든 타입
  >  - String
  >  > ```java
- >  >  char ch = 'A'; // 문자 'A'를 char타입의 변수 ch에 저장
- >  >  char ch = 29;  // 문자의 코드를 직접 변수 ch에 저장
+ >  > public statice void main(String[] args) {
+ >  >  String str = '자바의 정석';
+ >  >  
+ >  >  System.out.println("str : " + str);
+ >  >  // str : 자바의 정석
+ >  > }
  >  > ```
 
  - 정수형
@@ -331,22 +345,65 @@
      ex) 정수나 실수 범위가 벗어나면 오버플로우 혹은 언더플로우 를 발생시킨다.
  >  - byte
  >  > 
- >  - short  
+ >  - short
  >  > 
  >  - int(integer)
  >  > 
  >  - long
- >  >
+ >  > 
 
  - 실수형
  > - float
- > >
+ > > ```java
+ > > public static void main(String[] args) {
+ > >  float number = 0.1f;
+ > >  
+ > >  System.out.println("number : " + number);
+ > >  // number : 0.1
+ > > }
+ > > ```
  > - double
- > > 
+ > > ```java
+ > > public static void main(String[] args) {
+ > >  double number = 0.01;       
+ > >  
+ > >  System.out.println("number : " +number);
+ > >  // number: 0.01
+ > > }
+ > > ```
 
 ## 형변환
-#### ?
 
+  ##### 5-1. 형변환(캐스팅 Casting)이란?
+  - 형변환이란? 
+  > 변수 도는 상수의 타입을 다른 타입으로 변환하는 것
+  >  - 자동 형변환
+  >      - 서로 다른 두타입을 일치시키기 위해서
+  >  - 강제 형변환
+  >      - 사용자가 강제로 변수의 자료형을 바꿔주는 것
+  
+  ##### 5-2. 형변환 방법
+  - 자동 형변환
+      - 기본형 포함범위 포함 관계에서 왼쪽에서 오른쪽으로 이동하는 것은 자동 형변환 
+
+  - 강제 형변환
+      - 강제 형변환의 경우는 사용자 바꿀 자료형을 명시적으로 적지 않으면 오류가 발생 
+      - 강제 형변환을 한다면 **OverFlow** 형상이 발생할 수 있다.
+   ```java
+   char c = 'A';
+   int a = 10;
+
+   char c = (char)a;
+   ```
+   
+  **! Tip2.** 아스키코드 
+   
+  ##### 5-3. 정수형과 실수형 감의 형변환
+  
+  
+  ##### 5-4. 자동 형변환
+  
+  
 
 ## 참고 문서 / 블로그
 1. [서적] 남궁성님의 Java의 정석 3rd Edition 
