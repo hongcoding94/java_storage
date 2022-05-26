@@ -321,7 +321,7 @@
    <tr>
       <td>바이트(Byte)</td>
       <td>1 바이트</td>
-      <td>8 </td>
+      <td>8 비트</td>
    </tr>
    </table>
    
