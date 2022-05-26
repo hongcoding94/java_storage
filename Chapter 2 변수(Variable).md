@@ -401,11 +401,21 @@
   **! Tip2.** [아스키코드] (https://stepbystep1.tistory.com/10 "아스키코드") 
    
   ##### 5-3. 정수형과 실수형 간의 형변환
+  - 정수형 간의 형 변환
+  > 큰 타입에서 작은 타입으로의 변환, 예를 들어 int타입(4byte)의 값을 byte타입(1byte)으로 변환하는 경우
+  > 아래와 같은 크기의 만큼 잘려나간다. 그래서 경우에 따라 '값 손실'이 발생한다.
+  
+     ```java
+      System.out.println(300);
+      System.out.println((byte)300);
+     ```
+  
+  - 큰 타입(int)에서 작은 타입(byte)으로 변환 / 값 손실 발생 
   ![image](https://user-images.githubusercontent.com/66407386/170480169-b98d8697-987a-41d0-9f1e-ce2447f5ba36.png)
 
-  
-  
-  
+  - 작은 타입(btye)에서 큰 타입(int)으로 변환 / 빈 공간은 부호에 맞춰 0 또는 1로 채워진다.
+  ![image](https://user-images.githubusercontent.com/66407386/170480297-10d31b77-3cc0-435b-be76-30d853ef6cdd.png)
+
   ##### 5-4. 자동 형변환
   
   
