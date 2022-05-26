@@ -18,7 +18,7 @@
    - [4-1]( "")
 5. [형변환](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#%ED%98%95%EB%B3%80%ED%99%98 "형변환")
    - [5-1. 형변환(캐스팅 Casting)이란?](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#5-1-%ED%98%95%EB%B3%80%ED%99%98%EC%BA%90%EC%8A%A4%ED%8C%85-casting%EC%9D%B4%EB%9E%80 "5-1. 형변환(캐스팅 Casting)이란?")
-   - [5-2. 형변환 방법]( "5-2. 형변환 방법")
+   - [5-2. 형변환 방법](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#5-2-%ED%98%95%EB%B3%80%ED%99%98-%EB%B0%A9%EB%B2%95 "5-2. 형변환 방법")
    - [5-3. 정수형과 실수형 간의 형 변환]( "5-3. 정수형과 실수형 간의 형 변환")
    - [5-4. 자동 형 변환]( "5-4. 자동 형 변환")     
 6. [참고 문서 / 블로그](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#%EC%B0%B8%EA%B3%A0-%EB%AC%B8%EC%84%9C--%EB%B8%94%EB%A1%9C%EA%B7%B8 "")
