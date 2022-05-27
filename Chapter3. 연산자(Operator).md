@@ -365,7 +365,7 @@
 
   ##### 4-1. 대소비교 연산자 - 〈, 〉, 〈=, 〉=
 
-  <table>
+<table>
     <tr>
         <th>기호</th>
         <th>문법</th>
@@ -381,59 +381,59 @@
         <td> i >= x <br/> i <= x </td>
         <td> i가 x보다 같거나 큰가? <br/> i가 x보다 같거나 작은가? </td>
     </tr>
-    </table>
+</table>
 
-     ```java
-     public class main {
-        public static void main(String[] args) {
-            int i = 60;
+ ```java
+ public class main {
+    public static void main(String[] args) {
+        int i = 60;
 
-            // 작다 / 크다 (< / >)
-            System.out.println("결과 : " + i > 100); // 출력 결과 : false
-            System.out.println("결과 : " + i < 100); // 출력 결과 : true
+        // 작다 / 크다 (< / >)
+        System.out.println("결과 : " + i > 100); // 출력 결과 : false
+        System.out.println("결과 : " + i < 100); // 출력 결과 : true
 
-            int j = 1994;
+        int j = 1994;
 
-            // 같거나 작다 / 같거나 크다 (<= / >=)
-            System.out.println("결과 : " + j >= 100); // 출력 결과 : true
-            System.out.println("결과 : " + j <= 100); // 출력 결과 : false  
-            System.out.println("결과 : " + j <= 1994); // 출력 결과 : true   
+        // 같거나 작다 / 같거나 크다 (<= / >=)
+        System.out.println("결과 : " + j >= 100); // 출력 결과 : true
+        System.out.println("결과 : " + j <= 100); // 출력 결과 : false  
+        System.out.println("결과 : " + j <= 1994); // 출력 결과 : true   
 
-        }
-     }
-     ```
+    }
+ }
+ ```
   
   ##### 4-2. 등가비교 연산자 - ==, !=
   
-    <table>
-        <tr>
-            <th>기호</th>
-            <th>문법</th>
-            <th>의미</th>
-        </tr>
-        <tr>
-            <td> == </td>
-            <td>i == x</td>
-            <td>i와 x가 같은가?</td>
-        </tr>
-        <tr>
-            <td> != </td>
-            <td>i != x</td>
-            <td>i와 x가 다른가?</td>
-        </tr>
-    </table>
+<table>
+    <tr>
+        <th>기호</th>
+        <th>문법</th>
+        <th>의미</th>
+    </tr>
+    <tr>
+        <td> == </td>
+        <td>i == x</td>
+        <td>i와 x가 같은가?</td>
+    </tr>
+    <tr>
+        <td> != </td>
+        <td>i != x</td>
+        <td>i와 x가 다른가?</td>
+    </tr>
+</table>
   
-    ```java
-      public class main {
-        public static boid main(String[] args){
-            int i = 60;
+```java
+  public class main {
+    public static boid main(String[] args){
+        int i = 60;
 
-            // 같다 / 다르다 ( == / != )
-            System.out.println("결과 : " + i == 100); // 출력 결과 : false
-            System.out.println("결과 : " + i != 100); // 출력 결과 : true
-        }
-      }  
-    ```
+        // 같다 / 다르다 ( == / != )
+        System.out.println("결과 : " + i == 100); // 출력 결과 : false
+        System.out.println("결과 : " + i != 100); // 출력 결과 : true
+    }
+  }  
+```
   
 ## 논리 연산자
 
