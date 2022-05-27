@@ -580,4 +580,4 @@
   1. [서적] 남궁성님의 Java의 정석 3rd Edition
   2. [동영상] 생활코딩님의 자바(JAVA) 연산자 中 - [자바(JAVA) 연산자 中](https://edu.goorm.io/lecture/41/%25EB%25B0%2594%25EB%25A1%259C%25EC%258B%25A4%25EC%258A%25B5-%25EC%2583%259D%25ED%2599%259C%25EC%25BD%2594%25EB%2594%25A9-%25EC%259E%2590%25EB%25B0%2594-java "자바(JAVA) 연산자 中")
   3. [블로그] 알통몬의 인생님의 자바 이항 연산자.. - https://blog.naver.com/rain483/220570928160
-  4. [블로그] 님의 대입연산자 - [대입연산자](https://velog.io/@foeverna/Java-%EC%97%B0%EC%82%B0%EC%9E%90-%EB%8C%80%EC%9E%85-%EB%B6%80%ED%98%B8-%EC%82%B0%EC%88%A0-%EB%B3%B5%ED%95%A9%EB%8C%80%EC%9E%85-%EC%A6%9D%EA%B0%90%EC%97%B0%EC%82%B0%EC%9E%90 "대입연산자")
+  4. [블로그] foeverna님의 대입연산자 - [대입연산자](https://velog.io/@foeverna/Java-%EC%97%B0%EC%82%B0%EC%9E%90-%EB%8C%80%EC%9E%85-%EB%B6%80%ED%98%B8-%EC%82%B0%EC%88%A0-%EB%B3%B5%ED%95%A9%EB%8C%80%EC%9E%85-%EC%A6%9D%EA%B0%90%EC%97%B0%EC%82%B0%EC%9E%90 "대입연산자")
