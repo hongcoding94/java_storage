@@ -330,7 +330,7 @@
         // 나눗셈(/) - 방식2
         x = ((double) i / j); // 출력 결과 : 21.51063829787234
         // 소수 둘째까지 처리
-        String formattedResult = String.format("%.2f", result); 
+        String formattedResult = String.format("%.2f", x); 
         System.out.println("출력 결과 : " + formattedResult); // 출력 결과 : 21.51  
         x = 0; // 변수 초기화
         
@@ -340,9 +340,43 @@
   
   ##### 3-2. 나머지 연산자 - %
   
+  - java에서 나머지 값을 구하는 산술연산자는 %로 표기한다.
+
+  ```java
+  public class main {
+    public static void main(String[] args) {
+        int x;
+        int i = 1000;
+        int j = 3;
+        
+        // 나머지 값(%)
+        x = i % j; // 출력 결과 : 1
+        x = 0; // 변수 초기화
+    }
+  }
+  ```
+  
 ## 비교 연산자
 
+   - 비교 연산자
+   > 
+
   ##### 4-1. 대소비교 연산자 - 〈, 〉, 〈=, 〉=
+
+ ```java
+ public class main {
+    public static void main(String[] args) {
+        int i = 2022;
+        
+        // 작다 / 크다 (< / >)
+        
+
+        // 같거나 작다 / 같거나 크다 (<= / >=)
+        
+        
+    }
+ }
+ ```
   
   ##### 4-2. 등가비교 연산자 - ==, !=
   
