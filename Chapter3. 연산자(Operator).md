@@ -359,26 +359,62 @@
 ## 비교 연산자
 
    - 비교 연산자
-   > 
+   > 비교란? 주어진 값들이 같은지, 다른지, 큰지, 작은지를 구분하는 것
+
+   - 비교 연산자종류
+   <table>
+    <tr>
+        <th>기호</th>
+        <th>문법</th>
+        <th>의미</th>
+    </tr>
+    <tr>
+        <td> == </td>
+        <td>i == x</td>
+        <td>i와 x가 같은가?</td>
+    </tr>
+    <tr>
+        <td> != </td>
+        <td>i != x</td>
+        <td>i와 x가 다른가?</td>
+    </tr>
+    <tr>
+        <td> > / < </td>
+        <td> i > x / i < x </td>
+        <td> i가 x보다 큰가? / i가 x보다 작은가? </td>
+    </tr>
+    <tr>
+        <td> >= / <= </td>
+        <td> i >= x / i <= x </td>
+        <td> i가 x보다 같거나 큰가? / i가 x보다 같거나 작은가? </td>
+    </tr>
+    </table>
 
   ##### 4-1. 대소비교 연산자 - 〈, 〉, 〈=, 〉=
 
  ```java
  public class main {
     public static void main(String[] args) {
-        int i = 2022;
+        int i = 60;
         
         // 작다 / 크다 (< / >)
+        System.out.println("결과 : " + i > 100); // 출력 결과 : false
+        System.out.println("결과 : " + i < 100); // 출력 결과 : true
         
-
+        int j = 1994;
+        
         // 같거나 작다 / 같거나 크다 (<= / >=)
-        
+        System.out.println("결과 : " + j >= 100); // 출력 결과 : true
+        System.out.println("결과 : " + j <= 100); // 출력 결과 : false  
+        System.out.println("결과 : " + j <= 1994); // 출력 결과 : true   
         
     }
  }
  ```
   
   ##### 4-2. 등가비교 연산자 - ==, !=
+  
+  
   
 ## 논리 연산자
 
