@@ -358,10 +358,8 @@
   
 ## 비교 연산자
 
-   - 비교 연산자
-   > 비교란? 주어진 값들이 같은지, 다른지, 큰지, 작은지를 구분하는 것
-
-   - 비교 연산자종류
+   - 비교 연산자란?
+   > 주어진 값들이 같은지, 다른지, 큰지, 작은지를 구분하는 것
 
   ##### 4-1. 대소비교 연산자 - 〈, 〉, 〈=, 〉=
 
@@ -436,10 +434,71 @@
 ```
   
 ## 논리 연산자
+    
+   - 논리 연산자란?
+   > 논리 자료형를 사칙 연산처럼 True / false를 계산하여 하나의 결과를 만드는 것 <br/>
+   > 대표적으로 조건문에 사용한다.
 
   ##### 5-1. 논리 연산자 - &&, ||, !
   
+ <table>
+    <tr>
+        <th>기호</th>
+        <th>문법</th>
+        <th>의미</th>
+    </tr>
+    <tr>
+        <td> && </td>
+        <td> i && x </td>
+        <td>i와 x가 모두 참일 경우</td>
+    </tr>
+    <tr>
+        <td> || </td>
+        <td> i || x </td>
+        <td>i와 x가 둘 중 하나라도 참일 경우</td>
+    </tr>
+    <tr>
+        <td> ! </td>
+        <td> !i </td>
+        <td>i가 참이면 거짓, 거짓이면 참</td>
+    </tr>
+ </table>
+
+ ```java
+  public class main {
+    public static boid main(String[] args){
+      int X = 2022;
+      
+      // 그리고(AND) (&&)
+      if( (x>=1) && (x>=2022) ) {
+        System.out.println("출력 결과 : PASS");
+      } else {
+        System.out.println("출력 결과 : FAIL");
+      }
+      // 출력 결과 : FAIL
+      
+      // 혹은(OR) (||)
+      if( (x>=1) || (x>=2022) ) {
+        System.out.println("출력 결과 : PASS");
+      } else {
+        System.out.println("출력 결과 : FAIL");
+      }
+      // 출력 결과 : PASS
+      
+      // 아니다(NOT) (!)
+      if( !(x>=1) || !(x>=2022) ) {
+        System.out.println("출력 결과 : PASS");
+      } else {
+        System.out.println("출력 결과 : FAIL");
+      }
+      // 출력 결과 : FAIL
+    }
+  } 
+ ```
+  
   ##### 5-2. 비트 연산자 - &, |, ^, ~, 〈〈, 〉〉
+  
+  
   
 ## 그 외의 연산자
 
