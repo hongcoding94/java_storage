@@ -232,7 +232,71 @@
 
   ##### 2-1. 증감 연산자 - ++, --
   
+  <table>
+   <tr>
+       <th>증감 종류</th>
+       <th>설명</th>
+   </tr>
+   <tr>
+       <td> ++ </td>
+       <td>증가(increment) 연산자로 항의 값을 1씩 증가 시킨다.</td>
+   </tr> 
+   <tr>
+       <td> -- </td>
+       <td>감소(Decrement) 연산자로 항의 값을 1씩 감소 시킨다.</td>
+   </tr> 
+  </table>
+  
+  ```java
+    class Main {
+      public static void main(String[] args) {
+        int i = 2022;
+        i++;
+        System.out.println(i); // 2023 출력
+        ++i;
+        System.out.println(i); // 2024 출력
+        System.out.println(++i); // 2025 출력
+        System.out.println(i++); // 2026 출력
+        System.out.println(i); // 7 출력
+      }
+    }
+  ```
+  
+  
   ##### 2-2. 부호 연산자 - +, -
+  
+  <table>
+   <tr>
+       <th>부호 종류</th>
+       <th>설명</th>
+   </tr>
+   <tr>
+       <td> + </td>
+       <td>양수를 표현한다</td>
+   </tr> 
+   <tr>
+       <td> - </td>
+       <td>음수를 표현한다</td>
+   </tr> 
+  </table>
+  
+ ```java
+    class Main {
+      public static void main(String[] args) {
+        int x = 0;
+        int i = 2022;
+        int j = 1994;
+        
+        x = i+j; // 4016 출력
+        
+        // 변수 초기화
+        x = 0;
+        
+        x = i-j; // 28 출력
+        
+      }
+    }
+  ```
   
 ## 산술 연산자
 
