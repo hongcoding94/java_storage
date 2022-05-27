@@ -108,10 +108,124 @@
   </table>
   
   ##### 1-4. 연산자의 우선순위와 결합규칙
+  1. 산술 > 비교 > 논리 > 대입 순
+  2. 단항(1) > 이항(2) > 삼항(3)
+  3. 단항 연산자와 대입 연산자를 제외한 모든 연산자의 진행 방향은 왼쪾에서 오른쪽 진행
 
+  <table>
+    <tr>
+        <th>종류</th>
+        <th>결합규칙</th>
+        <th>연산자</th>
+        <th>비교</th>
+        <th>우선순위</th>
+    </tr>
+    <tr>
+        <td>단항 연산자</td>
+        <td> ← </td>
+        <td> ++ – + - ~ ! (type) </td>
+        <td> + -는 부호연산자임 </td>
+        <td> 1 </td>
+    </tr>
+    <tr>
+        <td>산술 연산자</td>
+        <td> → </td>
+        <td> * / % </td>
+        <td></td>
+        <td> 2 </td>
+    </tr>
+    <tr>
+        <td>산술 연산자</td>
+        <td> → </td>
+        <td> + - </td>
+        <td> 계산 연산자임 </td>
+        <td> 3 </td>
+    </tr>
+    <tr>
+        <td>산술 연산자</td>
+        <td> → </td>
+        <td> << >> </td>
+        <td></td>
+        <td> 4 </td>
+    </tr>
+    <tr>
+        <td>비교 연산자</td>
+        <td> → </td>
+        <td> < > <= >= </td>
+        <td> instance of </td>
+        <td> 5 </td>
+    </tr>
+    <tr>
+        <td>비교 연산자</td>
+        <td> → </td>
+        <td> == != </td>
+        <td></td>
+        <td> 6 </td>
+    </tr>
+    <tr>
+        <td>논리 연산자</td>
+        <td> → </td>
+        <td> & </td>
+        <td></td>
+        <td> 7 </td>
+    </tr>
+    <tr>
+        <td>논리 연산자</td>
+        <td> → </td>
+        <td> ^ </td>
+        <td></td>
+        <td> 8 </td>
+    </tr>
+    <tr>
+        <td>논리 연산자</td>
+        <td> → </td>
+        <td> | </td>
+        <td></td>
+        <td> 9 </td>
+    </tr>
+    <tr>
+        <td>논리 연산자</td>
+        <td> → </td>
+        <td> && </td>
+        <td></td>
+        <td> 10 </td>
+    </tr>
+    <tr>
+        <td>논리 연산자</td>
+        <td> → </td>
+        <td> || </td>
+        <td></td>
+        <td> 11 </td>
+    </tr>
+    <tr>
+        <td>삼항 연산자</td>
+        <td> → </td>
+        <td> ?: </td>
+        <td></td>
+        <td> 12 </td>
+    </tr>
+    <tr>
+        <td>대입 연산자</td>
+        <td> → </td>
+        <td> = += -= *= /= %= </td>
+        <td></td>
+        <td> 13 </td>
+    </tr>
+    <tr>
+        <td>대입 연산자</td>
+        <td> ← </td>
+        <td> «= >>= &= ^= |= </td>
+        <td></td>
+        <td> 14 </td>
+    </tr>
+  </table>  
 
   ##### 1-5. 산술 변환(usual arithmetic conversion)
   
+  - 연산 전에 피연산자의 타입을 일치시키는 것 
+  >  - 두 피연산자의 타입을 같게 일치시킨다. (보다 큰 타입으로 일치)
+
+  >  - 피연산자의 타입이 int 보다 작은 타입이면 int로 변환 
   
 ## 단항 연산자
 
