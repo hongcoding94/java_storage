@@ -1,4 +1,4 @@
-# Chapter 2 변수(Variable)
+# Chapter2. 변수(Variable)
 
 ## 목차
 1. [변수와 상수](https://github.com/hongcoding94/java_storage/blob/main/Chapter%202%20%EB%B3%80%EC%88%98(Variable).md#%EB%B3%80%EC%88%98%EC%99%80-%EC%83%81%EC%88%98 "변수와상수")
