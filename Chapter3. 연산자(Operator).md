@@ -248,16 +248,16 @@
   </table>
   
   ```java
-    class Main {
+    public class Main {
       public static void main(String[] args) {
         int i = 2022;
         i++;
-        System.out.println(i); // 2023 출력
+        System.out.println(i); // 출력 결과 : 2023
         ++i;
-        System.out.println(i); // 2024 출력
-        System.out.println(++i); // 2025 출력
-        System.out.println(i++); // 2026 출력
-        System.out.println(i); // 2027 출력
+        System.out.println(i); // 출력 결과 : 2024 
+        System.out.println(++i); // 출력 결과 : 2025 
+        System.out.println(i++); // 출력 결과 : 2026 
+        System.out.println(i); // 출력 결과 : 2027 
       }
     }
   ```
@@ -281,18 +281,17 @@
   </table>
   
  ```java
-    class Main {
+    public class Main {
       public static void main(String[] args) {
         int x = 0;
         int i = 2022;
         int j = 1994;
         
-        x = i+j; // 4016 출력
+        x = i+j; // 출력 결과 : 4016
+        x = 0; // 변수 초기화
         
-        // 변수 초기화
-        x = 0;
+        x = i-j; // 출력 결과 : 28 
         
-        x = i-j; // 28 출력
         
       }
     }
@@ -301,6 +300,43 @@
 ## 산술 연산자
 
   ##### 3-1. 사칙 연산자 - +, -, *, /
+  
+  - 사칙연산자
+  > 산수의 기본이 되는 덧셈, 뺄셈, 곱셈, 나눗셈의 4가지 연산을 일컫는다.
+  
+  ```java
+  public calass main {
+    public static void main(String[] args) {
+        int x;   // 0으로 처리
+        int i = 2022;
+        int j = 94;
+        
+        // 덧셈(+)
+        x = i + j; // 출력 결과 : 2116
+        x = 0; // 변수 초기화
+        
+        // 뺄셈(-) 
+        x = i - j; // 출력 결과 : 1928
+        x = 0; // 변수 초기화
+        
+        // 곱셈(*)
+        x = i x j; / 출력 결과 : 190068
+        x = 0; // 변수 초기화
+        
+        // 나눗셈(/) - 방식1
+        x = i / j; // 출력 결과 : 21.51063829787234
+        x = 0; // 변수 초기화
+        
+        // 나눗셈(/) - 방식2
+        x = ((double) i / j); // 출력 결과 : 21.51063829787234
+        // 소수 둘째까지 처리
+        String formattedResult = String.format("%.2f", result); 
+        System.out.println("출력 결과 : " + formattedResult); // 출력 결과 : 21.51  
+        x = 0; // 변수 초기화
+        
+    }
+  }
+  ```
   
   ##### 3-2. 나머지 연산자 - %
   
