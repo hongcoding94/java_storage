@@ -31,7 +31,34 @@
   - 연산자란?
   > 주어진 식을 계산하여 결과를 얻어내는 과정을 연산이라고 하며, 연산을 수행하는 기호를 연산자라고한다.
 
-  - 연산자의 종류
+  ##### 1-1. 연산자와 피연산자
+  
+  - 연산자와 피연산자
+  > 연산을 수행하려면 반드시 연산의 대상이 있어야 하는데, 이를 피연산자라고 한다. <br/>
+  > A &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; B <br/>
+  > ▲ 피연산자 ▲ 연산자 ▲ 피연산자
+  
+  ##### 1-2. 식(式)과 대입연산자
+  
+  - 식
+  > 연산자와 피연산자를 조합하여 계산을 하는 방식 <br/>
+  > 즉. 하나의 식을 계산하면, 단 하나의 결과를 얻을 수 있다.
+  >  - 대입연산자'='를 사용하면 변수와 같이 값을 저장 할 수 있음
+  >  - 식을 저장하지 않고 출력만 할 경우, "System.out.println("2 * 2");"으로 식을 써도 무관
+  
+  ```java
+  public static void operation() {
+   int i = 0;
+   int j = 7;
+   int k = 7;
+   
+   i = j * k;
+   System.out.println("i : " + i);
+   // i : 49
+  }
+  ```
+  
+  ##### 1-3. 연산자의 종류
   <table>
     <tr>
         <th>종류</th>
@@ -79,19 +106,6 @@
         <td>우변의 값을 좌변에 저장</td>
     </tr>
   </table>
-
-  ##### 1-1. 연산자와 피연산자
-  
-  - 연산자와 피연산자
-  > 연산을 수행하려면 반드시 연산의 대상이 있어야 하는데, 이를 피연산자라고 한다. <br/>
-  > A &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; B <br/>
-  > ▲ 피연산자 ▲ 연산자 ▲ 피연산자
-  
-  ##### 1-2. 식(式)과 대입연산자
-  
-  
-  ##### 1-3. 연산자의 종류
-  
   
   ##### 1-4. 연산자의 우선순위와 결합규칙
 
