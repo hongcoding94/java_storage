@@ -450,14 +450,22 @@
  - 정수형
    - 기본 자료형은 'int'이다. 어떤 진법의 리터럴을 변수에 저장해도 실제로는 2진수로 바뀌어 저장된다. <br/>
      ex) 정수나 실수 범위가 벗어나면 오버플로우 혹은 언더플로우 를 발생시킨다.
- >  - byte
+ >  - byte(1Btye) : -128 ~ 127 (2^7 ~ 2^7-1)
+ >  > ```java
+ >  > public statice void main(String[] args) {
+ >  >  
+ >  > }
+ >  > ``` 
  >  > 
- >  - short
+ >  - short(2Btye) : -32,768 ~ 32,767 (2^15 ~ 2^15-1)
  >  > 
- >  - int(integer)
+ >  - int(2Btye) : - 2,147,483,648 ~ 0 ~ 2,147,483,647 (2^31 ~ 2^31-1)
  >  > 
- >  - long
+ >  - long(4Byte) : -9,223,372,036,854,775,808 ~ 0 ~ 9,223,372,036,854,775,807 (2^63 ~ 2^63-1)
  >  > 
+
+ **!Tip2.** [BigInteger 사용법 & 예제 총정리](https://coding-factory.tistory.com/604 "BigInteger 사용법 & 예제 총정리")
+ **!Tip3.** [오버플로우와 언더플로우](https://nkt-docs.tistory.com/45 "오버플로우와 언더플로우")
 
  - 실수형
  > - float
@@ -505,8 +513,8 @@
       System.out.println("c : " + c);
       // c : 61
       ```
-  **! Tip2.** [아스키코드](https://stepbystep1.tistory.com/10 "아스키코드") <br/>
-  **! Tip3.** [오버라이딩과 오버로딩의 차이](https://gmlwjd9405.github.io/2018/08/09/java-overloading-vs-overriding.html "오버라이딩과 오버로딩의 차이") 
+  **! Tip4.** [아스키코드](https://stepbystep1.tistory.com/10 "아스키코드") <br/>
+  **! Tip5.** [오버라이딩과 오버로딩의 차이](https://gmlwjd9405.github.io/2018/08/09/java-overloading-vs-overriding.html "오버라이딩과 오버로딩의 차이") 
   
   ##### 5-3. 정수형과 실수형 간의 형 변환
   - 정수형 간의 형 변환
