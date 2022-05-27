@@ -257,7 +257,7 @@
         System.out.println(i); // 2024 출력
         System.out.println(++i); // 2025 출력
         System.out.println(i++); // 2026 출력
-        System.out.println(i); // 7 출력
+        System.out.println(i); // 2027 출력
       }
     }
   ```
