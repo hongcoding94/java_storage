@@ -34,29 +34,49 @@
   - 연산자의 종류
   <table>
     <tr>
-        <td>산술 연산자</td>
-        <td>+ - * / << >></td>
-        <td>사칙 연산과 나머지 연산(%)</td>
-    </tr> 
+        <th>종류</th>
+        <th>연산자</th>
+        <th>설명</th>
+    </tr>
     <tr>
-        <td>비교 연산자</td>
-        <td>> < >= <= == !=</td>
+        <td>증감</td>
+        <td> ++   -- </td>
+        <td>피연산자에 저장된 값을 1증가 또는 감소</td>
+    </tr>
+    <tr>
+        <td>산술</td>
+        <td> +   -   *   /   % </td>
+        <td>사칙 연산과 나머지 연산(%)</td>
+    </tr>
+    <tr>
+        <td>시프트</td>
+        <td> >>   <<  >>> </td>
+        <td>피연산자의 각 비트들을 대상으로 연산</td>
+    </tr>
+    <tr>
+        <td>비교</td>
+        <td> >   <   >=   <=   ==   != </td>
         <td>크고 작음과 같고 다름을 비교</td>
     </tr>
     <tr>
-        <td>논리 연산자</td>
-        <td>&& || ! </td>
-        <td>그리고(AND)와 또는(OR) 으로 조건을 연결</td>
+        <td>비트</td>
+        <td> &   |   ^   ~ </td>
+        <td>비트단위 논리 연산</td>
     </tr>
     <tr>
-        <td>대입 연산자</td>
-        <td>=</td>
+        <td>논리</td>
+        <td> &&   ||   !   ^ </td>
+        <td>논리연산으로 결과값은 true 또는 false</td>
+    </tr>
+    <tr>
+        <td>조건</td>
+        <td> ? : </td>
+        <td>조건문으로 참,거짓에 따라 작업을 수행</td>
+    </tr>
+    <tr>
+        <td>대입</td>
+        <td> =   *=   /=   +=   -=   &=   ^=   |= </td>
         <td>우변의 값을 좌변에 저장</td>
-    </tr>
-    <tr>
-        <td>기타</td>
-        <td>(type) ? :  instance of </td>
-        <td>형변환 연산자, 삼항 연산자, instanceof 연산자 </td>
     </tr>
   </table>
 
@@ -64,7 +84,7 @@
   
   - 연산자와 피연산자
   > 연산을 수행하려면 반드시 연산의 대상이 있어야 하는데, 이를 피연산자라고 한다. <br/>
-  > A &nbsp;&nbsp;&nbsp;&nbsp; + &nbsp;&nbsp;&nbsp;&nbsp; B
+  > A &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; B <br/>
   > ▲ 피연산자 ▲ 연산자 ▲ 피연산자
   
   ##### 1-2. 식(式)과 대입연산자
