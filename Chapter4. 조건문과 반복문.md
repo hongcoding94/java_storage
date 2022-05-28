@@ -23,11 +23,12 @@
   - 조건문이란?
   > 조건의 참, 거짓을 구분지어 서로 다른 작업을 수행을 도와주는 구문
   >     - 조건문의 종류
-  >         - if / if-else
-  >         - swith
+  >         - if문 / if-else
+  >         - 중첩 if문
+  >         - swith문
 
   ##### 1-1. if문
-
+    
   ```java
   public class main {
     public static void main(String[] args) {
