@@ -210,10 +210,10 @@
    public static void main(String[] args) {
         int i = 1; 
         
-		do {
-			System.out.println("출력결과 : " + i); // 실행문
-			i++; // 증감식
-		} while (i <= 5); // 조건식
+	do {
+		System.out.println("출력결과 : " + i); // 실행문
+		i++; // 증감식
+	} while (i <= 5); // 조건식
    
     // 출력결과
     // 출력결과 : 1 
@@ -271,7 +271,7 @@
   ```java
   public class main {
    public static void main(String[] args) {
-        outer:
+    outer:
 	while(true) {
 	    ···
 	    for(;;) {
@@ -284,10 +284,8 @@
 		    break outer;    // for문과 while문 모두 벗어난다.
 		    continue outer; // while문의 시작으로 돌아간다.
 		}
-
-	    }//for문 끝
-
-	}//while문 끝
+	    }
+	}
    }
   }
   ```
