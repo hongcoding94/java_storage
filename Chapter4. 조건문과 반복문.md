@@ -28,20 +28,27 @@
   >     - swith문 <br/>
 
   ##### 1-1. if문
-    
   ```java
   public class main {
     public static void main(String[] args) {
         int i = 1;
-        
-        //  if문 
+
         if(i >= 1) {
             System.out.println("출력결과 : 조건 성공(if)");
         }
         
         // 출력결과 : 조건 성공(if)
-        
-        // if-else문
+      
+    }
+  }
+  ```
+
+  ##### 1-2. if-else문
+  ```java
+  public class main {
+    public static void main(String[] args) {
+        int i = 1;
+
         if(i > 0) {
             System.out.println("출력결과 : 조건 성공(if)");
         } else {
@@ -53,10 +60,25 @@
     }
   }
   ```
-
-  ##### 1-2. if-else문
   
   ##### 1-3. if-else if문
+
+  ```java
+  public class main {
+    public static void main(String[] args) {
+        int i = 0;
+        
+        if() {
+        
+        } else if() {
+        
+        } else {
+        
+        }
+        
+    }
+  }
+  ```
 
   ##### 1-4. 중첩 if문
   
