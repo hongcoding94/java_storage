@@ -102,8 +102,25 @@
   ```java
   public class main {
     public static void main(String[] args) {
+        String string = "B";
         
-        
+        swith(string) {
+            //만약 값이 A라면 다음 내용 출력
+            case "A" :
+                ...
+                break;
+                //만약 값이 B라면 다음 내용 출력
+                case "B" :
+                ...
+                break;
+                //만약 값이 C라면 다음 내용 출력
+                case "C" :
+                ...
+                break;
+                //그 외의 값이라면 다음 내용 출력
+                default :
+                ...
+         }
     }
   }
   ```
