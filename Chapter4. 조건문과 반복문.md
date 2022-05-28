@@ -34,7 +34,7 @@
         int i = 1;
 
         if(i >= 1) {
-            System.out.println("출력결과 : 조건 성공(if)");
+            System.out.println("출력결과 : 조건 (if)");
         }
         
         // 출력결과 : 조건 성공(if)
@@ -50,9 +50,9 @@
         int i = 1;
 
         if(i > 0) {
-            System.out.println("출력결과 : 조건 성공(if)");
+            System.out.println("출력결과 : 조건 (if)");
         } else {
-            System.out.println("출력결과 : 조건 실패(else)");
+            System.out.println("출력결과 : 다른 조건 (else)");
         }
         
         // 출력결과 : 조건 실패(else)
@@ -69,12 +69,14 @@
         int i = 0;
         
         if() {
-        
+            System.out.println("출력결과 : 조건 (if)");
         } else if() {
-        
+            System.out.println("출력결과 : 다른 조건 1(else-if)");
         } else {
-        
+            System.out.println("출력결과 : 다른 조건 2(else)");
         }
+        
+        // 출력결과 : 
         
     }
   }
