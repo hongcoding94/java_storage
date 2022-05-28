@@ -32,19 +32,23 @@
   ```java
   public class main {
     public static void main(String[] args) {
-        int i = 0;
+        int i = 1;
         
         //  if문 
-        if() {
-        
+        if(i >= 1) {
+            System.out.println("출력결과 : 조건 성공(if)");
         }
+        
+        // 출력결과 : 조건 성공(if)
         
         // if-else문
-        if() {
-        
+        if(i > 0) {
+            System.out.println("출력결과 : 조건 성공(if)");
         } else {
-        
+            System.out.println("출력결과 : 조건 실패(else)");
         }
+        
+        // 출력결과 : 조건 실패(else)
     
     }
   }
