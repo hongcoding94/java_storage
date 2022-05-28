@@ -38,7 +38,6 @@
         }
         
         // 출력결과 : 조건 성공(if)
-      
     }
   }
   ```
@@ -56,7 +55,6 @@
         }
         
         // 출력결과 : 조건 실패(else)
-    
     }
   }
   ```
@@ -76,7 +74,6 @@
         }
         
         // 출력결과 : 
-        
     }
   }
   ```
@@ -102,7 +99,14 @@
   ```
   
   ##### 1-5. switch문
-  
+  ```java
+  public class main {
+    public static void main(String[] args) {
+        
+        
+    }
+  }
+  ```
 
 ## 반복문 - for, while, do-while
 
