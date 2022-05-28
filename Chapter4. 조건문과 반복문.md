@@ -212,9 +212,24 @@
   ```java
   public class main {
    public static void main(String[] args) {
+        int i = 0;
         
+        while(i < 10) {
+            i++;
+            if(i % 2 == 0) {
+                continue;
+            }
+            System.out.println("출력결과 : " + i);
+        }
    }
   }
+  
+  // 출력 결과
+  // 출력 결과 : 1
+  // 출력 결과 : 3
+  // 출력 결과 : 5
+  // 출력 결과 : 7
+  // 출력 결과 : 9
   ```
   
   ##### 2-6. 이름 붙은 반복문
