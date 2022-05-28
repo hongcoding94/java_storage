@@ -229,7 +229,14 @@
   ```java
   public class main {
    public static void main(String[] args) {
-        
+        int i = 0;
+	
+	while(true){  // 특별한 제어가 없다면 이 while문은 무한으로 반복한다.
+	    if(i == 3){  // i가 3이 되면 if문 실행
+		break;      // 멈춘다
+	    }
+	    i++;
+	}
    }
   }
   ```
@@ -264,7 +271,23 @@
   ```java
   public class main {
    public static void main(String[] args) {
-        
+        outer:
+	while(true) {
+	    ···
+	    for(;;) {
+		···
+		if(num==0){    
+		    break;   // for문을 벗어난다
+		    continue // for문의 시작으로 돌아간다.
+		}
+		if(num==9){ 
+		    break outer;    // for문과 while문 모두 벗어난다.
+		    continue outer; // while문의 시작으로 돌아간다.
+		}
+
+	    }//for문 끝
+
+	}//while문 끝
    }
   }
   ```
