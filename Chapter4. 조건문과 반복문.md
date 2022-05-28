@@ -178,7 +178,9 @@
   
   - while문이란?
   >  조건식이 true일 경우에 계속해서 반복 <br/>
-  >  비교 또는 논리 연산식이 주로 오는데, 조건식이 false가 되면 반복 행위를 멈추고 while문을 정지한다.
+  >  비교 또는 논리 연산식이 주로 오는데, 조건식이 false가 되면 반복 행위를 멈추고 while문을 정지한다. <br/>
+  >  단, 조건이 맞지 않으면 무한 루프가 돌 수 있기 때문에 조건을 잘 주어야한다.
+  
   ```java
   public class main {
    public static void main(String[] args) {
