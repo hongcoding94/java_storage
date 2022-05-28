@@ -127,7 +127,36 @@
 
 ## 반복문 - for, while, do-while
 
+  - 반복문이란?
+  > 어떤 코드들을 반복적으로 실행되도록 할때 사용한다.
+  >  - 반복문의 종류
+  >     - for문
+  >     - while문 / do - while문
+
   ##### 2-1. for문
+  
+  - for문이란?
+  > 반복 횟수를 알고 있을 때 사용한다.
+  ```java
+  public class main {
+   public static void main(String[] args) {
+     int testNum = 5;
+     
+     for(int i = 0; i<=testNum; i++) {
+        System.out.println("출력 결과 : " + i);
+     }
+     
+     // 출력결과 
+     // 출력 결과 : 0
+     // 출력 결과 : 1
+     // 출력 결과 : 2
+     // 출력 결과 : 3
+     // 출력 결과 : 4
+     // 출력 결과 : 5
+   }
+  }
+  ```
+  
   
   ##### 2-2. while문
 
