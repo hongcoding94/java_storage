@@ -184,17 +184,37 @@
   ```java
   public class main {
    public static void main(String[] args) {
+        int treeHit = 0;
         
+        while (treeHit < 10) {
+            treeHit++;
+            System.out.println("나무를  " + treeHit + "번 찍었습니다.");
+            if (treeHit == 10) {
+                System.out.println("나무 넘어갑니다.");
+            }
+        }
    }
   }
   ```
+  **!Tip0.** [while문](https://wikidocs.net/212 "While문")
 
   ##### 2-3. do-while문
 
   ```java
   public class main {
    public static void main(String[] args) {
+        int i = 1; 
         
+		do {
+			System.out.println("출력결과 : " + i); // 실행문
+			i++; // 증감식
+		} while (i <= 5); // 조건식
+   
+    // 출력결과
+    // 출력결과 : 1 
+    // 출력결과 : 2
+    // 출력결과 : 3
+    // 출력결과 : 4
    }
   }
   ```
