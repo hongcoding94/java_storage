@@ -26,6 +26,23 @@
   >     - if문 / if-else <br/>
   >     - 중첩 if문 <br/>
   >     - swith문 <br/>
+    
+  <table>
+    <tr>
+        <th> for 문을 사용하는 경우 </th>
+        <th>while 문을 사용하는 경우 </th>
+    </tr>
+    <tr>
+        <td>
+            1. 반복 횟수가 정해진 경우 <br/>
+            2. 배열과 함께 주로 많이 사용
+        </td>
+        <td>
+           1. 무한 루프나 특정 조건에 만족할 때까지 반복해야하는 경우 <br/>
+           2. 주로 파일을 읽고 쓰기에 많이 사용 
+        </td>
+    </tr>
+  </table>
 
   ##### 1-1. if문
   ```java
@@ -157,8 +174,18 @@
   }
   ```
   
-  
   ##### 2-2. while문
+  
+  - while문이란?
+  >  조건식이 true일 경우에 계속해서 반복 <br/>
+  >  비교 또는 논리 연산식이 주로 오는데, 조건식이 false가 되면 반복 행위를 멈추고 while문을 정지한다.
+  ```java
+  public class main {
+   public static void main(String[] args) {
+        
+   }
+  }
+  ```
 
   ##### 2-3. do-while문
 
