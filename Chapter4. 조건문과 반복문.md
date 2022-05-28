@@ -62,7 +62,6 @@
   ```
   
   ##### 1-3. if-else if문
-
   ```java
   public class main {
     public static void main(String[] args) {
@@ -83,6 +82,24 @@
   ```
 
   ##### 1-4. 중첩 if문
+  ```java
+  public class main {
+    public static void main(String[] args) {
+        int i = 2002;
+        int j = 2022;
+        
+        if(i<2022) {
+            System.out.println("출력결과 : " + i + "년 입니다.");
+        }
+        
+        if(j == 2022) {
+            System.out.println("출력결과 : " + j + "년 입니다.");
+        }
+
+        // 출력결과 : 2022년입니다.
+    }  
+  }
+  ```
   
   ##### 1-5. switch문
   
