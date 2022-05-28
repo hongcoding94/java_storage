@@ -82,15 +82,15 @@
     public static void main(String[] args) {
         int i = 0;
         
-        if() {
+        if(0 < 2002) {
             System.out.println("출력결과 : 조건 (if)");
-        } else if() {
+        } else if(0 == 0) {
             System.out.println("출력결과 : 다른 조건 1(else-if)");
         } else {
             System.out.println("출력결과 : 다른 조건 2(else)");
         }
         
-        // 출력결과 : 
+        // 출력결과 : 다른 조건 1(else-if)
     }
   }
   ```
@@ -164,7 +164,6 @@
      }
      
      // 출력결과 
-     // 출력 결과 : 0
      // 출력 결과 : 1
      // 출력 결과 : 2
      // 출력 결과 : 3
@@ -186,13 +185,19 @@
    public static void main(String[] args) {
         int treeHit = 0;
         
-        while (treeHit < 10) {
+        while (treeHit < 3) {
             treeHit++;
             System.out.println("나무를  " + treeHit + "번 찍었습니다.");
-            if (treeHit == 10) {
+            if (treeHit == 3) {
                 System.out.println("나무 넘어갑니다.");
             }
         }
+	
+	// 출력 결과
+	// 나무를 1번 찍었습니다.
+	// 나무를 2번 찍었습니다.
+	// 나무를 3번 찍었습니다.
+	// 나무 넘어갑니다.
    }
   }
   ```
