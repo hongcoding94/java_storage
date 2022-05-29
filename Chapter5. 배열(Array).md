@@ -71,10 +71,37 @@
         <td> </td>
     </tr>
   </table>
-    
   
+  - 예시
+  ```java
+  
+  ```
+  <table>
+    <tr>
+        <th>1007</th>
+        <th>1008</th>
+        <th>1009</th>
+        <th>1010</th>
+        <th>1011</th>
+    </tr>
+    <tr>
+        <td>[0]</td>
+        <td>[1]</td>
+        <td>[2]</td>
+        <td>[3]</td>
+        <td>[4]</td>
+    </tr>
+    <tr>
+        <td> 1 </td>
+        <td> 2 </td>
+        <td> 3 </td>
+        <td> 4 </td>
+        <td> 5 </td>
+    </tr>
+  </table>
   
   ##### 배열의 길이와 인덱스
+  
   
   
   ##### 배열의 초기화
