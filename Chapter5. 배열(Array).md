@@ -85,8 +85,6 @@
             
             // 정식 방식 : 배열에 담을때 int를 String으로 형변환
             arr[i] = Integer.toString(i);
-            
-            
         }
     }
   }
