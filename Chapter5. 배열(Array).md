@@ -145,20 +145,35 @@
   > 배열은 생성과 동시에 자동적으로 기본값(0)으로 초기화되기 때문에 배열을 <br/>
   > 사용하기 전에 따로 초기화를 해주지 않아도 되지만 원하는 값을 저장하려면 각 요소마다 값을 지정해 주어야 한다.
 
-  - for문을 이용한 배열 초기화
-  ```java
-  public class main {
-    public static void main(String[] args) {
-    
-    }
-  }
-  ```
-
   - 배열의 생성과 초기화
   ```java
   public class main {
     public static void main(String[] args) {
-    
+        // 방법 1
+        int[] arr1 = new int[4];
+        
+        arr1[0] = 10;
+        arr1[1] = 20;
+        arr1[2] = 30;
+        arr1[3] = 40;
+        
+        // 방법 2
+        int[] arr2 = new int[]{10, 20, 30, 40};
+        // 혹은
+        int[] arr2 = {10, 20, 30, 40};  // arr2 int[]를 생략할 수 있다.
+    }
+  }
+  ``` 
+
+  - for문을 이용한 배열 초기화
+  ```java
+  public class main {
+    public static void main(String[] args) {
+        int[] arr = new int[4];
+        
+        for(int i=0; i<arr.length; i++) {
+            arr[i] = i * 10;
+        }
     }
   }
   ```
