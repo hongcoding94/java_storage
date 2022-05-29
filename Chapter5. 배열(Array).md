@@ -186,36 +186,36 @@
   
   ##### 배열의 활용
   
-    - Lotto
-    ```java
-    public class Lotto {
-        public static void main(String[] args) {
-            // 섞기(Shuffle)  배열의 요소의 순서를 반복해서 바꾼다. (숫자 섞기, 로또번호 생성) 
-            int[] ball = new int[45];
+- Lotto
+```java
+public class Lotto {
+    public static void main(String[] args) {
+        // 섞기(Shuffle)  배열의 요소의 순서를 반복해서 바꾼다. (숫자 섞기, 로또번호 생성) 
+        int[] ball = new int[45];
 
-            for(int i =0; i<ball.length; i++)
-                ball[i] = i+1;            //ball[0] = 1이 저장 
+        for(int i =0; i<ball.length; i++)
+            ball[i] = i+1;            //ball[0] = 1이 저장 
 
-            int tmp = 0; 
-            int j = 0; 
+        int tmp = 0; 
+        int j = 0; 
 
-            for(int i =0; i<6; i++) {
-                j=(int)(Math.random()*45); //0~44까지의 범위 
-                tmp = ball[i];
-                ball[i] = ball[j];
-                ball[j] = tmp;
-            }
+        for(int i =0; i<6; i++) {
+            j=(int)(Math.random()*45); //0~44까지의 범위 
+            tmp = ball[i];
+            ball[i] = ball[j];
+            ball[j] = tmp;
+        }
 
-            for(int i =0; i<6;i++) {
-                System.out.printf("ball[%d]=%d%n",i,ball[i]);
-            }
+        for(int i =0; i<6;i++) {
+            System.out.printf("ball[%d]=%d%n",i,ball[i]);
+        }
 
-            for(int i =0; i<6; i++) {
-                System.out.print(ball[i]+" ");
-            }
+        for(int i =0; i<6; i++) {
+            System.out.print(ball[i]+" ");
         }
     }
-    ```
+}
+```
 
   - 가위바위보
   ```java
