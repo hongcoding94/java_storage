@@ -363,7 +363,7 @@ public class Lotto {
         <td>a</td>
         <td>v</td>
         <td>a</td>
-        <td>null</td>
+        <td> null </td>
     </tr>  
   </table>
   
