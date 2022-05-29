@@ -51,13 +51,13 @@
         <th>1007</th>
     </tr>
     <tr>
+        <td></td>
+        <td></td>
         <td>null [0]</td>
         <td>null [1]</td>
         <td>null [2]</td>
         <td>null [3]</td>
-        <td>null [4]</td>
-        <td>null [5]</td>
-        <td>null [6]</td>
+        <td></td>
     </tr>
     <tr>
         <td> - </td>
