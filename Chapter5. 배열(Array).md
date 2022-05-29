@@ -470,8 +470,9 @@ public class Lotto {
 
 ## 참고 문서 / 블로그
   1. [서적] 남궁성님의 Java의 정석 3rd Edition
-  2. [블로그] 무니의 개발 로그님의 배열내용  - https://devmoony.tistory.com/20 
-
+  2. [블로그] 무니의 개발 로그님의 배열내용 - https://devmoony.tistory.com/20 
+  3. [블로그] hi.anna님의 가변 길이 배열 - https://hianna.tistory.com/518
+  4. 
 
 
   ```java
