@@ -262,6 +262,15 @@
 
   ##### String배열의 선언과 생성
   
+  - String 배열
+  > 기본 배열과 선언 방법과 생성 방법은 다르지 않다.
+  ```java
+  public class main {
+    public static void main(String[] args) {
+    
+    }
+  }
+  ```
   
   ##### String배열의 초기화
   
@@ -291,3 +300,13 @@
 ## 참고 문서 / 블로그
   1. [서적] 남궁성님의 Java의 정석 3rd Edition
   2. [블로그] 무니의 개발 로그님의 배열내용  - https://devmoony.tistory.com/20 
+
+
+
+  ```java
+  public class main {
+    public static void main(String[] args) {
+    
+    }
+  }
+  ```
