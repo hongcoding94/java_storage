@@ -183,7 +183,77 @@
   
   ##### 배열의 활용
   
+  - Lotto
+    ```java
+    public class Lotto {
+        public static void main(String[] args) {
+            // 섞기(Shuffle)  배열의 요소의 순서를 반복해서 바꾼다. (숫자 섞기, 로또번호 생성) 
+            int[] ball = new int[45];
+
+            for(int i =0; i<ball.length; i++)
+                ball[i] = i+1;            //ball[0] = 1이 저장 
+
+            int tmp = 0; 
+            int j = 0; 
+
+            for(int i =0; i<6; i++) {
+                j=(int)(Math.random()*45); //0~44까지의 범위 
+                tmp = ball[i];
+                ball[i] = ball[j];
+                ball[j] = tmp;
+            }
+
+            for(int i =0; i<6;i++) {
+                System.out.printf("ball[%d]=%d%n",i,ball[i]);
+            }
+
+            for(int i =0; i<6; i++) {
+                System.out.print(ball[i]+" ");
+            }
+        }
+    }
+    ```
+
+  - 가위바위보
+  ```java
+  import java.util.Arrays;
+ 
+    public class rock_Paper_Scissors {
+        public static void main(String[] args) {
+            // TODO Auto-generated method stub
+            String[] strArr = {"가위","바위","보"};
+
+            System.out.println(Arrays.toString(strArr));
+            for(int i =0; i<3; i++) {
+                int tmp = (int)(Math.random()*3);
+                System.out.println(strArr[tmp]);
+            }
+        }
+    }
+  ```
   
+  - 배열 순서 섞기
+  ```java
+  import java.util.Arrays;
+ 
+    public class arrRandom {
+
+        public static void main(String[] args) {
+            // 섞기(Shuffle)  배열의 요소의 순서를 반복해서 바꾼다. (숫자 섞기, 로또번호 생성) 
+            int[] numArr = {0,1,2,3,4,5,6,7,8,9};
+            System.out.println(Arrays.toString(numArr));
+
+            for(int i = 0; i<numArr.length; i++) {
+                int n = (int)(Math.random() *10);      // 0~9 임의의 수 
+                int tmp = numArr[i];
+                numArr[i] = numArr[n];
+                numArr[n] = tmp;
+
+            }
+            System.out.println(Arrays.toString(numArr));
+        }
+    }
+  ```
   
 ## String배열
 
