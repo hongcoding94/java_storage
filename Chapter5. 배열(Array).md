@@ -271,7 +271,7 @@ public class Lotto {
     }
   }
   ```
-    <table>
+   <table>
     <tr>
         <th>1011</th>
         <th>1012</th>
