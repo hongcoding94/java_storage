@@ -27,8 +27,19 @@
 
   ##### 배열(array)이란?
   
+  - 배열이란?
+  > 연관된 데이터를 모아서 관리하기 위해서 사용되는 데이터 타입 <br/>
+  > 단일의 데이터를 변수로 저장한다면 배열은 여러 개의 데이터를 저장하는 것.
   
   ##### 배열의 선언과 생성
+  
+  ```java
+  public class main {
+    public static main(String[] args) {
+        String[] arr = new String[4];
+    }
+  }
+  ```
   
   
   ##### 배열의 길이와 인덱스
