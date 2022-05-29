@@ -40,6 +40,36 @@
     }
   }
   ```
+  <table>
+    <tr>
+        <th>1001</th>
+        <th>1002</th>
+        <th>1003</th>
+        <th>1004</th>
+        <th>1005</th>
+        <th>1006</th>
+        <th>1007</th>
+    </tr>
+    <tr>
+        <td>null [0]</td>
+        <td>null [1]</td>
+        <td>null [2]</td>
+        <td>null [3]</td>
+        <td>null [4]</td>
+        <td>null [5]</td>
+        <td>null [6]</td>
+    </tr>
+    <tr>
+        <td> - </td>
+        <td> - </td>
+        <td> - </td>
+        <td> - </td>
+        <td> - </td>
+        <td> - </td>
+        <td> - </td>
+    </tr>
+  </table>
+    
   
   
   ##### 배열의 길이와 인덱스
