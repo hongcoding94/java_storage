@@ -404,6 +404,41 @@ public class Lotto {
 
   ##### 2차원 배열의 선언과 인덱스
   
+  - 2차원 선언 방식과 인덱스 
+  > 1. 타입[][] 변수이름;
+  > 2. 타입 변수이름[][];
+  > 3. 타입[] 변수이름[];
+  > 행 index의 범위는 0~행의 길이-1 이며, 열 index의 범위는 0~열의 길이-1
+  
+  ```java
+  public class main {
+    public static void main(String[] argd) {
+        int[][] arr = new int[2][3];
+    }
+  }
+  ```
+  <table>
+    <tr>
+       <th>1000</th>
+       <th>1001</th>
+       <th>1002</th>
+    </tr>
+    <tr>
+       <td>1004</td>
+       <td>-</td>
+       <td>-</td>
+    </tr>
+    <tr>
+       <td>1005</td>
+       <td>-</td>
+       <td>-</td>
+    </tr>
+    <tr>
+       <td>1006</td>
+       <td>-</td>
+       <td>-</td>
+    </tr>
+  </table>
   
   ##### 2차원 배열의 초기화
   
