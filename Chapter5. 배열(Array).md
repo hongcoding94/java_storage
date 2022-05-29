@@ -286,16 +286,19 @@
         company[2] = 'JPN';
         
         // 방법 2
-        String[] country = new int[]{'KOR', 'USA', 'JPN'};
+        String[] country = new String[]{'KOR', 'USA', 'JPN'};
         // 혹은
         String[] country = {'KOR', 'USA', 'JPN'};  // new String[]를 생략할 수 있다.
     }
   }
   ```  
   
-  
   ##### char배열과 String클래스
   
+  - 
+  > 
+
+
   
   ##### 커맨드 라인을 통해 입력받기
   
