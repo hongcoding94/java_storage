@@ -468,8 +468,6 @@ public class Lotto {
   
   - 좌표에 X표 구하기
  ```java
- package Array;
-
  import java.util.Scanner;
  import java.util.concurrent.CountDownLatch;
 
@@ -527,8 +525,6 @@ public class Lotto {
   
   - 단어 맞추기
   ```java
-  package Array;
-
   import java.util.Scanner;
 
   public class main {
