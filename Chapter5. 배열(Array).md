@@ -351,7 +351,7 @@ public class Lotto {
         <td>[6]</td>
         <td>[7]</td>
         <td>[8]</td>
-        <td>  </td>
+        <td>[9]</td>
     </tr>
     <tr>
         <td>h</td>
@@ -363,7 +363,7 @@ public class Lotto {
         <td>a</td>
         <td>v</td>
         <td>a</td>
-        <td></td>
+        <td>null</td>
     </tr>  
   </table>
   
