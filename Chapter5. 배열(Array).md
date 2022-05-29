@@ -79,8 +79,14 @@
         String arr = new String[5];
         
         for(int i=0; i<6; i++) {
-            // 배열에 담을때 int를 String으로 형변환
-            arr[i] = Integer.toString(i);        
+            
+            // 잘못된 방식 : error : java.lang.NumberFormatException
+            arr[i] = i;
+            
+            // 정식 방식 : 배열에 담을때 int를 String으로 형변환
+            arr[i] = Integer.toString(i);
+            
+            
         }
     }
   }
