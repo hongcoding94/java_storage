@@ -289,6 +289,34 @@ public class Lotto {
     </tr>
   </table>
   
+  - String클래스의 주요 메서드
+  <table>
+     <tr>
+        <th>메서드</th>
+        <th>설명</th>
+    </tr>
+    <tr>
+        <td> char charAt(int index) </td>
+        <td> 문자열에서 해당 위치(index)에 있는 문자를 반환  </td>
+    </tr>
+    <tr>
+        <td> int length() </td>
+        <td> 문자열의 길이를 반환한다. </td>
+    </tr>
+    <tr>
+        <td> String substring(int from, int to) </td>
+        <td> 문자열에서 해당 범위(from ~ to)에 있는 문자열을 반환 to는 범위에 포함되지 않는다. </td>
+    </tr>
+    <tr>
+        <td> boolean equals(String str) </td>
+        <td> 문자열의 내용이 같은지 확인한다. 같으면 결과는 true, 다르면 false이 된다. </td>
+    </tr>
+    <tr>
+        <td> char[] toCharArray() </td>
+        <td> 문자열을 문자배열(char[])로 변환하여  </td>
+    </tr>
+  </table>
+  
   ##### String배열의 초기화
 
   - String 배열의 초기화 생성
@@ -309,6 +337,7 @@ public class Lotto {
     }
   }
   ```  
+  
   
   ##### char배열과 String클래스
   
