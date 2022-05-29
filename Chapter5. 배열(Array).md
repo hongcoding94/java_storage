@@ -125,6 +125,20 @@
   > '배열이름[index]'의 형식으로 배열의 요소에 접근한다. <br/>
   > index는 배열의 공간의 일련번호이며 각 요소를 구별하는데 사용한다. index의 범위는 0부터 지정한 배열의 길이-1까지이다.
   
+  - 배열의 길이 (배열이름.length)
+  > 배열은 한번 생성하면 길이를 변경할 수 없기 때문에 배열이름.legth는 상수이며 값을 읽을 수만 있고 변경 할 수 없다.
+  ```java
+  public class main {
+    public static void main(String[] args) {
+        int[] array = new int[4];
+        
+        int len = array.length;
+        
+        System.out.println("결과 출력 : " + len);
+        // 결과 출력 : 4
+    }
+  }
+  ```
   
   ##### 배열의 초기화
   
