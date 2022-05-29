@@ -312,10 +312,60 @@ public class Lotto {
   
   ##### char배열과 String클래스
   
-  - 
-  > 
+  > String클래스는 char배열에 기능(메서드)을 추가한 것 <br/>
+  > 단, char배열과 String클래스의 한 가지 중요한 차이가 있다. <br/>
+  > String객체(문자열)는 읽을 수만 있을 뿐 내용을 변경할 수 없다.
 
+  ```java
+  public class main {
+    public static void main(String[] args) {
+        String[] ch = new String[10]; 
+        String str = 'helloJava';  
 
+        for(int i=0; i< str.legnth; i++) {
+            ch[i] = str.charAt(i);
+        }
+    }
+  }
+  ```
+  <table>
+    <tr>
+        <th>1017</th>
+        <th>1018</th>
+        <th>1019</th>
+        <th>1020</th>
+        <th>1021</th>
+        <th>1022</th>
+        <th>1023</th>
+        <th>1024</th>
+        <th>1025</th>
+        <th>1026</th>
+    </tr>
+    <tr>
+        <td>[0]</td>
+        <td>[1]</td>
+        <td>[2]</td>
+        <td>[3]</td>
+        <td>[4]</td>
+        <td>[5]</td>
+        <td>[6]</td>
+        <td>[7]</td>
+        <td>[8]</td>
+        <td>[9]</td>
+    </tr>
+    <tr>
+        <td>h</td>
+        <td>e</td>
+        <td>l</td>
+        <td>l</td>
+        <td>o</td>
+        <td>J</td>
+        <td>a</td>
+        <td>v</td>
+        <td>a</td>
+        <td></td>
+    </tr>  
+  </table>
   
   ##### 커맨드 라인을 통해 입력받기
   
