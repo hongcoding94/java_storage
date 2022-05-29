@@ -413,7 +413,7 @@ public class Lotto {
   ```java
   public class main {
     public static void main(String[] argd) {
-        int[][] arr = new int[2][3];
+        int[][] arr = new int[3][2];
     }
   }
   ```
@@ -466,7 +466,93 @@ public class Lotto {
   
   ##### 다차원 배열의 활용
   
+  - 좌표에 X표 구하기
+ ```java
+ package Array;
+
+ import java.util.Scanner;
+ import java.util.concurrent.CountDownLatch;
+
+  public class main {
+    public static void main(String[] args) {
+        final int SIZE = 10;
+		int x=0, y=0;
+		
+		char[][] board = new char [SIZE][SIZE];
+		byte[][] shipBoard = {
+			   //1,2,3,4,5,6,7,8,9
+				{0,0,0,0,0,0,1,0,0},
+				{1,1,1,1,0,0,1,0,0},
+				{0,0,0,0,0,0,1,0,0},
+				{0,0,0,0,0,0,1,0,0},
+				{0,0,0,0,0,0,0,0,0},
+				{1,1,0,1,0,0,0,0,0},
+				{0,0,0,1,0,0,0,0,0},
+				{0,0,0,1,0,0,0,0,0},
+				{0,0,0,0,0,1,1,1,0}
+		};
+		
+		for(int i=1; i<SIZE; i++)
+			board[0][i] = board[i][0] = (char)(i+'0');
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		while(true) {
+			System.out.printf("좌표를 입력하세요 (종료 00) : ");
+			String input = scanner.nextLine();
+			
+			if(input.length()==2) {
+				x = input.charAt(0) - '0'; //문자를 숫자로 변환
+				y = input.charAt(1) - '0';
+				
+				if(x==0 && y==0)
+					break;
+			}
+			
+			if(input.length() != 2 || x<=0 || x>=SIZE || y<=0 || y>=SIZE) {
+				System.out.println("잘못된 입력입니다. 다시 입력해주세요.");
+				continue;
+			}
+			
+			board[x][y] = shipBoard[x-1][y-1]==1 ? '0' : 'x';
+			
+			for(int i=0; i<SIZE; i++) {
+				System.out.println(board[i]);
+			}
+			System.out.println();
+		}
+    }
+  }
+  ```
   
+  - 단어 맞추기
+  ```java
+  public class main {
+    public static void main(String[] args) {
+        String[][] words = {
+				{"chair", "의자"},
+				{"computer", "컴퓨터"},
+				{"integer", "정수"}
+		};
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		for(int i=0; i<words.length; i++) {
+			System.out.printf("Q%d. %s의 뜻은?", i+1, words[i][0]);
+			
+			String tmp = scanner.nextLine();
+			
+			if(tmp.equals(words[i][1])) {
+				System.out.printf("정답입니다. %n%n");
+			}else {
+				System.out.printf("틀렸습니다. 정답은 %s입니다. %n%n", words[i][1]);
+			}
+		}
+    }
+  }
+  ```
+  
+  **Tip0.** [다차원 배열의 이해](https://better-tomorrow.tistory.com/entry/%EB%8B%A4%EC%B0%A8%EC%9B%90-%EB%B0%B0%EC%97%B416-1-%EB%8B%A4%EC%B0%A8%EC%9B%90-%EB%B0%B0%EC%97%B4%EC%9D%98-%EC%9D%B4%ED%95%B4%EC%99%80-%ED%99%9C%EC%9A%A9 "다차원 배열의 이해")
 
 ## 참고 문서 / 블로그
   1. [서적] 남궁성님의 Java의 정석 3rd Edition
@@ -476,10 +562,3 @@ public class Lotto {
   5. [블로그] 심플심플심플심플님의 2차 배열에 대한 내용 - https://simplex3510.tistory.com/214
 
 
-  ```java
-  public class main {
-    public static void main(String[] args) {
-    
-    }
-  }
-  ```
