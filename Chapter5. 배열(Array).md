@@ -351,7 +351,7 @@ public class Lotto {
         <td>[6]</td>
         <td>[7]</td>
         <td>[8]</td>
-        <td>[9]</td>
+        <td>  </td>
     </tr>
     <tr>
         <td>h</td>
