@@ -441,7 +441,25 @@ public class Lotto {
   </table>
   
   ##### 2차원 배열의 초기화
-  
+  ```java
+  public class main {
+    public static void main(String[] args) {
+        // 방법 1
+        // 2차원 배열의 선언
+        int[][] arr1;
+        
+        // 2차원 배열의 초기화
+        arr1 = new int[2][3];
+        
+        // 방법 2
+        // 선언 및 동시에 초기화 하는방법
+        int[] [] arr2 = new int[2][3];
+        
+        // 방법 3
+        int[][] arr3 = {{1,2}, {1,2,3}};
+    }
+  }
+  ```
   
   ##### 가변 배열
   
