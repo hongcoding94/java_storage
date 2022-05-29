@@ -74,8 +74,17 @@
   
   - 예시
   ```java
-  
+  public class main {
+    public static void main(String[] args) {
+        String arr = new String[5];
+        
+        for(int i=0; i<6; i++) {
+            arr[i] = String(i);        
+        }
+    }
+  }
   ```
+  -  출력 결과
   <table>
     <tr>
         <th>1007</th>
