@@ -267,12 +267,31 @@
   ```java
   public class main {
     public static void main(String[] args) {
-    
+        String[] country = new String[3];
     }
   }
   ```
   
   ##### String배열의 초기화
+
+  - String 배열의 초기화 생성
+  ```java
+  public class main {
+    public static void main(String[] args) {
+        // 방법 1
+        String[] country = new String[3];
+        
+        company[0] = 'KOR';
+        company[1] = 'USA';
+        company[2] = 'JPN';
+        
+        // 방법 2
+        String[] country = new int[]{'KOR', 'USA', 'JPN'};
+        // 혹은
+        String[] country = {'KOR', 'USA', 'JPN'};  // new String[]를 생략할 수 있다.
+    }
+  }
+  ```  
   
   
   ##### char배열과 String클래스
