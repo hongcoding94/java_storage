@@ -527,6 +527,10 @@ public class Lotto {
   
   - 단어 맞추기
   ```java
+  package Array;
+
+  import java.util.Scanner;
+
   public class main {
     public static void main(String[] args) {
         String[][] words = {
