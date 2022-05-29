@@ -79,7 +79,8 @@
         String arr = new String[5];
         
         for(int i=0; i<6; i++) {
-            arr[i] = String(i);        
+            // 배열에 담을때 int를 String으로 형변환
+            arr[i] = Integer.toString(i);        
         }
     }
   }
