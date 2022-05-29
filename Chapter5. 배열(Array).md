@@ -271,6 +271,23 @@ public class Lotto {
     }
   }
   ```
+    <table>
+    <tr>
+        <th>1011</th>
+        <th>1012</th>
+        <th>1013</th>
+    </tr>
+    <tr>
+        <td>[0]</td>
+        <td>[1]</td>
+        <td>[2]</td>
+    </tr>
+    <tr>
+        <td> null </td>
+        <td> null </td>
+        <td> null </td>
+    </tr>
+  </table>
   
   ##### String배열의 초기화
 
