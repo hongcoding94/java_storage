@@ -186,7 +186,7 @@
   
   ##### 배열의 활용
   
-  - Lotto
+    - Lotto
     ```java
     public class Lotto {
         public static void main(String[] args) {
