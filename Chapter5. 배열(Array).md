@@ -472,7 +472,8 @@ public class Lotto {
   1. [서적] 남궁성님의 Java의 정석 3rd Edition
   2. [블로그] 무니의 개발 로그님의 배열내용 - https://devmoony.tistory.com/20 
   3. [블로그] hi.anna님의 가변 길이 배열 - https://hianna.tistory.com/518
-  4. 
+  4. [서적] 윤성우님의 열혈 java 프로그래밍
+  5. [블로그] 심플심플심플심플님의 2차 배열에 대한 내용 - https://simplex3510.tistory.com/214
 
 
   ```java
