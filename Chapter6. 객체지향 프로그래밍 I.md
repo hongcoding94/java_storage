@@ -174,4 +174,8 @@
   ##### 초기화 블럭(initialization block)
   
   ##### 멤버변수의 초기화 시기와 순서
+  
+## 참고 문서 / 블로그
+  1. [서적] 남궁성님의 Java의 정석 3rd Edition
+  2. [블로그] 더블에스님의 객체와 인스턴스, 객체의 구성요소(속성과 기능) - https://doublesprogramming.tistory.com/68
 
