@@ -144,8 +144,8 @@
         Machine phone, desktop; // '객체'
 
         // 인스턴스화
-        phone = new Animal(); // phone은 Machine 클래스의 '인스턴스'(객체를 메모리에 할당)
-        desktop = new Animal(); // desktop은 Machine 클래스의 '인스턴스'(객체를 메모리에 할당)
+        phone = new Machine(); // phone은 Machine 클래스의 '인스턴스'(객체를 메모리에 할당)
+        desktop = new Machine(); // desktop은 Machine 클래스의 '인스턴스'(객체를 메모리에 할당)
       }
     }
   ```
