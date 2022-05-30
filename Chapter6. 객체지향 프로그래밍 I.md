@@ -11,7 +11,6 @@
     - [2-3. 객체의 구성요소 - 속성과 기능](https://github.com/hongcoding94/java_storage/blob/main/Chapter6.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20I.md#%EA%B0%9D%EC%B2%B4%EC%9D%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C---%EC%86%8D%EC%84%B1%EA%B3%BC-%EA%B8%B0%EB%8A%A5 "객체의 구성요소 - 속성과 기능")
     - [2-4. 인스턴스의 생성과 사용](https://github.com/hongcoding94/java_storage/blob/main/Chapter6.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20I.md#%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4%EC%9D%98-%EC%83%9D%EC%84%B1%EA%B3%BC-%EC%82%AC%EC%9A%A9 "인스턴스의 생성과 사용")
     - [2-5. 객체 배열](https://github.com/hongcoding94/java_storage/blob/main/Chapter6.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20I.md#%EA%B0%9D%EC%B2%B4-%EB%B0%B0%EC%97%B4 "객체 배열")
-    - [2-6. 클래스의 또 다른 정의](https://github.com/hongcoding94/java_storage/blob/main/Chapter6.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20I.md#%ED%81%B4%EB%9E%98%EC%8A%A4%EC%9D%98-%EB%98%90-%EB%8B%A4%EB%A5%B8-%EC%A0%95%EC%9D%98 "클래스의 또 다른 정의")
 3. [변수와 메서드](https://github.com/hongcoding94/java_storage/blob/main/Chapter6.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20I.md#%EB%B3%80%EC%88%98%EC%99%80-%EB%A9%94%EC%84%9C%EB%93%9C "변수와 메서드")
     - [3-1. 선언위치에 따른 변수의 종류](https://github.com/hongcoding94/java_storage/blob/main/Chapter6.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20I.md#%EC%84%A0%EC%96%B8%EC%9C%84%EC%B9%98%EC%97%90-%EB%94%B0%EB%A5%B8-%EB%B3%80%EC%88%98%EC%9D%98-%EC%A2%85%EB%A5%98 "선언위치에 따른 변수의 종류")
     - [3-2. 클래스변수와 인스턴스변수](https://github.com/hongcoding94/java_storage/blob/main/Chapter6.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20I.md#%ED%81%B4%EB%9E%98%EC%8A%A4%EB%B3%80%EC%88%98%EC%99%80-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4%EB%B3%80%EC%88%98 "클래스변수와 인스턴스변수")
@@ -153,12 +152,10 @@
   
   ##### 객체 배열
   
+  ![image](https://user-images.githubusercontent.com/66407386/170925295-b89691a5-deea-4f20-b03b-0696fa4bbf61.png)
   
-  
-  **!Tip2.** 
-  
-  ##### 클래스의 또 다른 정의
-  
+  **!Tip2.** [객체배열](https://www.scientecheasy.com/2021/10/arrays-of-objects-in-java.html/ "객체배열")
+
 
 ## 변수와 메서드
   
@@ -223,4 +220,4 @@
 ## 참고 문서 / 블로그
   1. [서적] 남궁성님의 Java의 정석 3rd Edition
   2. [블로그] 더블에스님의 객체와 인스턴스, 객체의 구성요소(속성과 기능) - https://doublesprogramming.tistory.com/68
-
+  3. [블로그] Master Neokay님의 자바 객체 배열 | 자바 입문강좌 18 - https://smoothiecoding.kr/%EC%9E%90%EB%B0%94-%EA%B0%9D%EC%B2%B4-%EB%B0%B0%EC%97%B4/
