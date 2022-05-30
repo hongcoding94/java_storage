@@ -137,7 +137,8 @@
 ##### JVM(Java Virtual Machine)
 
 - JVM이란?
-> Java Virtual Machine은 OS에 종속 받지 않고 CPU가 Java를 실행 시키기 위해서 가상 컴퓨터이다. <br/>
+> Java Virtual Machine은 OS에 종속 받지 않고 CPU가 Java를 실행 시키기 위해서 가상 컴퓨터이다. 
+> 
 ![컴파일 과정](https://user-images.githubusercontent.com/66407386/170973677-857268ef-5770-4b7f-85db-f2f1320568ba.png "컴파일 과정")
 <br/>
 
