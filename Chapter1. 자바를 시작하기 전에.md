@@ -5,7 +5,7 @@
    - [자바란 무엇인가?](https://github.com/hongcoding94/java_storage/blob/main/Chapter1.%20%EC%9E%90%EB%B0%94%EB%A5%BC%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0%20%EC%A0%84%EC%97%90.md#%EC%9E%90%EB%B0%94%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80 "자바란 무엇인가?")
    - [자바 버전의 역사](https://github.com/hongcoding94/java_storage/blob/main/Chapter1.%20%EC%9E%90%EB%B0%94%EB%A5%BC%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0%20%EC%A0%84%EC%97%90.md#%EC%9E%90%EB%B0%94-%EB%B2%84%EC%A0%84%EC%9D%98-%EC%97%AD%EC%82%AC "자바 버전의 역사")
    - [자바언어의 특징]( "자바언어의 특징")
-   - [JVM(Java Virtual Machine)]( "JVM(Java Virtual Machine)")
+   - [JVM(Java Virtual Machine]( "JVM(Java Virtual Machine)")
 2. [자바개발환경 구축하기](https://github.com/hongcoding94/java_storage/blob/main/Chapter1.%20%EC%9E%90%EB%B0%94%EB%A5%BC%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0%20%EC%A0%84%EC%97%90.md#%EC%9E%90%EB%B0%94%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0 "자바개발환경 구축하기")
    - [JDK 설치](https://github.com/hongcoding94/java_storage/blob/main/Chapter1.%20%EC%9E%90%EB%B0%94%EB%A5%BC%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0%20%EC%A0%84%EC%97%90.md#1-jdk-%EC%84%A4%EC%B9%98 "JDK 설치")
    - [Eclipse 설치](https://github.com/hongcoding94/java_storage/blob/main/Chapter1.%20%EC%9E%90%EB%B0%94%EB%A5%BC%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0%20%EC%A0%84%EC%97%90.md#2-eclipse-%EC%84%A4%EC%B9%98 "Eclipse 설치")
@@ -88,6 +88,10 @@
    - [java SE8] Lambda
 
  - [참조1. java의 버전별 차이](https://velog.io/@ljo_0920/java-%EB%B2%84%EC%A0%84%EB%B3%84-%EC%B0%A8%EC%9D%B4-%ED%8A%B9%EC%A7%95 "java의 버전별 차이")
+
+##### 자바언어의 특징
+
+##### JVM(Java Virtual Machine
 
 ## 자바개발환경 구축하기
 
