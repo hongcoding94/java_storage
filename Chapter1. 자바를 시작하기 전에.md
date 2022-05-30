@@ -132,7 +132,7 @@
  > JVM을 기반으로 하는 언어들의 공통적인 특징이다.
  > 
 
-**!Tip2.** [동적 로딩, 정적 로딩, static 키워드](https://ubange.tistory.com/223 "동적 로딩, 정적 로딩, static 키워드")
+**!Tip2.** [동적 로딩, 정적 로딩, static 키워드](https://ubange.tistory.com/223 "동적 로딩, 정적 로딩, static 키워드") <br/>
 **!Tip3.** [심화 : 동적 로딩](https://velog.io/@shlee7131/Java-%EB%B2%88%EC%99%B8-%EB%8F%99%EC%A0%81-%EB%A1%9C%EB%94%A9 "심화 : 동적 로딩") 
 
 ##### JVM(Java Virtual Machine
