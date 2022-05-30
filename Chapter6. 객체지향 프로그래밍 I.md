@@ -102,8 +102,6 @@
   >  ▶ 인스턴스는 객체에 포함된다고 볼 수 있다.<br/> &nbsp; &nbsp; &nbsp; 즉, 객체를 소프트웨어에 실체화하면 인스턴스화라고 한다.<br/>
   >  ▶ 실체화된 인스턴스는 메모리에 할당된다.
 
-
-
   **!Tip0.** [클래스, 객체, 인스턴스의 차이](https://gmlwjd9405.github.io/2018/09/17/class-object-instance.html "클래스, 객체, 인스턴스의 차이")
 
   ##### 객체의 구성요소 - 속성과 기능
@@ -138,9 +136,25 @@
   
   ##### 인스턴스의 생성과 사용
   
-  
+  - 인스턴스 생성과 사용 방식
+  ```java
+  /* 객체와 인스턴스 */
+    public class Main {
+      public static void main(String[] args) {
+        Machine phone, desktop; // '객체'
+
+        // 인스턴스화
+        phone = new Animal(); // phone은 Machine 클래스의 '인스턴스'(객체를 메모리에 할당)
+        desktop = new Animal(); // desktop은 Machine 클래스의 '인스턴스'(객체를 메모리에 할당)
+      }
+    }
+  ```
   
   ##### 객체 배열
+  
+  
+  
+  **!Tip1.** 
   
   ##### 클래스의 또 다른 정의
   
