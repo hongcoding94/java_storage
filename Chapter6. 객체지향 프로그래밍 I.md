@@ -108,6 +108,30 @@
 
   ##### 객체의 구성요소 - 속성과 기능
   
+ -  객체의 구성 요소
+ >    - 객체의 속성 <br/>
+ >     ▶  <br/>
+ >    - 객체의 속성(Property) 종류
+ >      - 멤버 변수(Member Variable)
+ >      - 특성 (attribute)
+ >      - 필드 (filed)
+ >      - 상태 (state) 
+ >    - 예시
+ >      - 스마트폰의 구현도 - 크기, 길이, 높이, 색상, 해상도 등등
+ >    ![객체의 속성](https://t1.daumcdn.net/cfile/tistory/25608F42589045692E)
+ >     <br/>
+ >    - 객체의 기능 <br/>
+ >     ▶  <br/>
+ >    - 개체의 기능(Function) 종류
+ >      - 메서드 (method)
+ >      - 함수 (Function)
+ >      - 행위 (behavior)
+ >    - 예시
+ >      - 스마트폰의 기능 - 전원on/off, 잠금해제, 볼륨up/down 등등
+ >    ![객체의 기능1](https://t1.daumcdn.net/cfile/tistory/2753E146589045E815)
+ >     <br/>
+ >    ![객체의 기능2](https://t1.daumcdn.net/cfile/tistory/264738405890463720)
+  
   ##### 인스턴스의 생성과 사용
   
   ##### 객체 배열
