@@ -139,7 +139,9 @@
 - JVM이란?
 > Java Virtual Machine은 OS에 종속 받지 않고 CPU가 Java를 실행 시키기 위해서 가상 컴퓨터이다. <br/>
 ![컴파일 과정](https://user-images.githubusercontent.com/66407386/170973677-857268ef-5770-4b7f-85db-f2f1320568ba.png "컴파일 과정")
+<br/>
 
+![JVM 구성요소](https://user-images.githubusercontent.com/66407386/170974326-23a25d45-09fb-40d9-b131-383378c6c367.png "JVM 구성요소")
 
  
 ## 자바개발환경 구축하기
