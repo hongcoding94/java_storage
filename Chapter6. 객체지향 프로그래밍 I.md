@@ -220,4 +220,4 @@
 ## 참고 문서 / 블로그
   1. [서적] 남궁성님의 Java의 정석 3rd Edition
   2. [블로그] 더블에스님의 객체와 인스턴스, 객체의 구성요소(속성과 기능) - https://doublesprogramming.tistory.com/68
-  3. [블로그] Master Neokay님의 자바 객체 배열 | 자바 입문강좌 18 - https://smoothiecoding.kr/%EC%9E%90%EB%B0%94-%EA%B0%9D%EC%B2%B4-%EB%B0%B0%EC%97%B4/
+  3. [블로그] [Master Neokay님의 자바 객체 배열 | 자바 입문강좌 18](https://smoothiecoding.kr/%EC%9E%90%EB%B0%94-%EA%B0%9D%EC%B2%B4-%EB%B0%B0%EC%97%B4/ "Master Neokay님의 자바 객체 배열 | 자바 입문강좌 18")
