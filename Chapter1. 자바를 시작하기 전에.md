@@ -129,17 +129,19 @@
  **!Tip1.** [멀티쓰레드 자세한 설명](https://goodgid.github.io/What-is-Multi-Thread/ "멀티쓰레드 자세한 설명")
 
  - 동적 로딩 지원
- > JVM을 기반으로 하는 언어들의 공통적인 특징이다.
- > 
+ > ?? 밍>?
 
 **!Tip2.** [동적 로딩, 정적 로딩, static 키워드](https://ubange.tistory.com/223 "동적 로딩, 정적 로딩, static 키워드") <br/>
 **!Tip3.** [심화 : 동적 로딩](https://velog.io/@shlee7131/Java-%EB%B2%88%EC%99%B8-%EB%8F%99%EC%A0%81-%EB%A1%9C%EB%94%A9 "심화 : 동적 로딩") 
 
-##### JVM(Java Virtual Machine
+##### JVM(Java Virtual Machine)
 
- - 
- >
+- JVM이란?
+> Java Virtual Machine은 OS에 종속 받지 않고 CPU가 Java를 실행 시키기 위해서 가상 컴퓨터이다. <br/>
+![컴파일 과정](https://user-images.githubusercontent.com/66407386/170973677-857268ef-5770-4b7f-85db-f2f1320568ba.png "컴파일 과정")
 
+
+ 
 ## 자바개발환경 구축하기
 
 ### 1. JDK 설치
