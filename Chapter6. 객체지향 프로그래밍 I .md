@@ -2,9 +2,9 @@
 
 ## 목차
 
-1. [객체지향언어]( "객체지향언어")
-    - [1-1. 객체지향언어의 역사]( "객체지향언어의 역사")
-    - [1-2. 객체지향언어]( "객체지향언어")
+1. [객체지향언어](https://github.com/hongcoding94/java_storage/blob/main/Chapter6.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20I%20.md#%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%96%B8%EC%96%B4 "객체지향언어")
+    - [1-1. 객체지향언어의 역사](https://github.com/hongcoding94/java_storage/blob/main/Chapter6.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20I%20.md#%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%96%B8%EC%96%B4%EC%9D%98-%EC%97%AD%EC%82%AC "객체지향언어의 역사")
+    - [1-2. 객체지향언어](https://github.com/hongcoding94/java_storage/blob/main/Chapter6.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20I%20.md#%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%96%B8%EC%96%B4-1 "객체지향언어")
 2. [클래스와 객체]( "클래스와 객체")
     - [2-1. 클래스와 객체의 정의와 용도]( "클래스와 객체의 정의와 용도")
     - [2-2. 객체와 인스턴스]( "객체와 인스턴스")
