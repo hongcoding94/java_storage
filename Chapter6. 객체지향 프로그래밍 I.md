@@ -194,6 +194,39 @@
   
   ##### 메서드의 선언과 구현
   
+  - 메소드 선언 방법
+  > ```java
+  > public static 리턴타입(자료형, void) 메서드명() {
+  >      메서드 작성
+  >      return 리턴 데이터;
+  >  }
+  > ```
+  > 리턴 타입에는 int, String, boolean등 자료형을 넣어주며, <br/>
+  > 리턴 타입에 **void가 들어가는 경우 return 받는 데이터가 없는 것을 의미하기 때문에 return을 할 필요가 없다.** <br/>
+  
+  - 메소드 구현
+  > ```java
+  > public class Person {
+  >     /* 변수 */
+  >     int age;
+  >     String name;
+  >
+  >     /* 메서드 */
+  >     public void eat(String name, int age) {
+  >         // eat()이 실행될 때 작업할 내용을 여기에 작성
+  >         System.out.println(age + "살의 " + name + "은(는) 음식을 먹는다");
+  >     }
+  > }
+  > 
+  > public class Main {
+  >   public static void main(String[] args) {
+  >       Person person = new Person();
+  >       person.eat("정아무개", 29);
+  >   }
+  > }
+  > ```
+  >  - 출력 결과 : 29살 정아무개는 음식을 먹는다.
+  
   ##### 메서드의 호출
   
   ##### return문
