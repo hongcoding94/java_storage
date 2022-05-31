@@ -318,7 +318,9 @@
   >         return result;
   >     }
   > }
+  > 
   > // ========================================================================== //
+  > 
   > public class FactorialTest2 {
   >      static long factorial(int n) {
   >          if (n <= 0 || n > 20)
