@@ -240,11 +240,34 @@
   
   ##### JVM의 메모리구조
   
-  - 자바 프로그램의 실행 단계
+  - 자바 프로그램의 실행 단계 <br/>
   ![JVM의 메모리구조](https://user-images.githubusercontent.com/66407386/171080811-f51c3527-71cc-4aee-9991-f11577725206.png "JVM의 메모리구조")
   
-  
+  - 진행 과정
+  1. 자바 컴파일러에 의해 자바 소스파일은 바이트 코드로 변환
+  2. 바이트 코드를 JVM에서 읽어 들이면서 여러 과정을 통해 OS에 상관없이 실행 할 수 있도록 처리
 
+  > JVM 특징 - 운영체제에 종속적이라는 특징이 나타난다.
+
+  - JVM 메모리 구조
+  > JVM의 구조
+  >   - GC(Garbage Collector) <br/>
+  >     ▶ GC는 힙 메모리 영역에 생성된 객체들 중에서 참조되지 않은 객체들을 탐색 후 제거하는 역할 <br/>
+  >   - Execution Engine <br/>
+  >     ▶ Class Loader를 통해 JVM 내의 Runtime Data Area에 배치된 바이트 코드들을 명령어 단위로 읽어 실행 <br/>
+  >   - Class Loader <br/>
+  >     ▶ JVM 내로 클래스 파일을 로드하고, 링크를 통해 배치하는 작업을 수행하는 모듈 <br/>
+  >     &nbsp; &nbsp; &nbsp; 런타임 시에 동적으로 클래스를 로드한다.
+  >   - Runtime Data Area <br/>
+  >     ▶ JVM의 메모리 영역으로 자바 애플리케이션을 실행 할 때 사용되는 데이터들을 기록하는 영역 <br/>
+  >     &nbsp; &nbsp; &nbsp; - 영역의 종류 <br/>
+  >     &nbsp; &nbsp; &nbsp;    - Method Area <br/>
+  >     &nbsp; &nbsp; &nbsp;    - Heap Area <br/>
+  >     &nbsp; &nbsp; &nbsp;    - Stack Area <br/>
+  >     &nbsp; &nbsp; &nbsp;    - PC Register <br/>
+  >     &nbsp; &nbsp; &nbsp;    - Native Method Stack <br/>
+  
+  ![JVM 메모리 구조](https://user-images.githubusercontent.com/66407386/171094310-e9f6c5fd-b7ae-4b29-a655-b5126221fdeb.png "JVM 메모리 구조")
   
   **!Tip4.** [JVM메모리 구조란?](https://steady-coding.tistory.com/305 "JVM메모리 구조란?")
   
