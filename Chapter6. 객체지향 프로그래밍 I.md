@@ -358,13 +358,98 @@
   
   ##### 오버로딩이란?
   
+  - 오버로딩이란?
+  > 한 클래스 내에 같은 이름의 메서드를 여러개 정의하는 것
+  > ```java
+  > public int abs(int  변수명){
+  >   리턴타입    파라미터
+  >   
+  >   return 변수명;
+  > }
+  > ```
+
+  **!Tip5.** [overloading (오버로딩)](https://blog.naver.com/vjvl4642/221799851014 "overloading (오버로딩)")
+  **!Tip6.** [오버로딩과 오버라이딩 차이](https://88240.tistory.com/450 "오버로딩과 오버라이딩 차이")
+  
   ##### 오버로딩의 조건
+  
+  - 오버로딩의 조건
+  >  - 메서드 이름이 같아야한다.
+  >  - 매개 변수의 개수 또는 타입이 달라야한다.
+  >  - **매게변수는 같고 리턴 타입이 다른 경우는 오버로딩이 성립되지 않는다.** <br/>
+  >  ▶ 예시 <br/>
+  >     ```java
+  >     //조건 1 : 매개변수의 이름만 다른것은 오버로딩 성립하지 않음
+  >     int add(int a, int b) { return a+b; }
+  >     int add(int x, int y) { return x+y; }
+  >
+  >     //조건 2 : 매개변수 타입과 개수가 일치하므로 어떤 매소드가 호출된것인지 구분할 수 없으므로 오버로딩 성립하지 않음
+  >     int add(int a, int b) { return a+b; }
+  >     long add(int a, int b) { return (long)a+b; }
+  >
+  >     //조건 3 : 서로 순서가 다른 매개변수가 하나씩 선언. 매개 변수의 값에 의해 호출될 메서드가 구분 될 수 있으므로 오버로딩 성립
+  >     long add(int a, long b) { return a+b; }
+  >     long add(long a, int b) { return a+b; }
+  > ```
   
   ##### 오버로딩의 예
   
+  - 오버로딩의 예시
+  > ```java
+  > class OverloadingTest {
+  >      public static void main(String args[]) {
+  >          MyMath3 mm = new MyMath3();
+  >          System.out.println("mm.add(3, 3) 결과:"    + mm.add(3,3));
+  >          System.out.println("mm.add(3L, 3) 결과: "  + mm.add(3L,3));
+  >          System.out.println("mm.add(3, 3L) 결과: "  + mm.add(3,3L));
+  >          System.out.println("mm.add(3L, 3L) 결과: " + mm.add(3L,3L));
+  >
+  >          int[] a = {100, 200, 300};
+  >          System.out.println("mm.add(a) 결과: " + mm.add(a));
+  >     }
+  >  }
+  >
+  >  class MyMath3 {
+  >      int add(int a, int b) {
+  >          System.out.print("int add(int a, int b) - ");
+  >          return a+b;
+  >      }
+  >
+  >      long add(int a, long b) {
+  >          System.out.print("long add(int a, long b) - ");
+  >          return a+b;
+  >      }
+  >
+  >      long add(long a, int b) {
+  >          System.out.print("long add(long a, int b) - ");
+  >          return a+b;
+  >      }
+  >      long add(long a, long b) {
+  >          System.out.print("long add(long a, long b) - ");
+  >          return a+b;
+  >      }
+  >
+  >      int add(int[] a) {        // 배열의 모든 요소의 합을 결과로 돌려준다.
+  >          System.out.print("int add(int[] a) - ");
+  >          int result = 0;
+  >          for(int i=0; i < a.length;i++) {
+  >              result += a[i];
+  >          }    
+  >          return result;
+  >      }
+  >  }
+  >
+  > ```
+  
   ##### 오버로딩의 장점
   
+  - 오버로딩의 장점
+  > - 여러 메서드들이 하나의 이름으로 정의 될 수 있으며 오류의 가능성을 저하시켜준다.
+  > - 메소드의 이름을 절약 할 수 있다.
+
   ##### 가변인자(varargs)와 오버로딩
+  
+  
 
 ## 생성자(constructor)
   
