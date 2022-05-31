@@ -261,11 +261,11 @@
   >   - Runtime Data Area <br/>
   >     ▶ JVM의 메모리 영역으로 자바 애플리케이션을 실행 할 때 사용되는 데이터들을 기록하는 영역 <br/>
   >     &nbsp; &nbsp; &nbsp; - 영역의 종류 <br/>
-  >     &nbsp; &nbsp; &nbsp;    - Method Area <br/>
-  >     &nbsp; &nbsp; &nbsp;    - Heap Area <br/>
-  >     &nbsp; &nbsp; &nbsp;    - Stack Area <br/>
-  >     &nbsp; &nbsp; &nbsp;    - PC Register <br/>
-  >     &nbsp; &nbsp; &nbsp;    - Native Method Stack <br/>
+  >     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    - Method Area <br/>
+  >     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    - Heap Area <br/>
+  >     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   - Stack Area <br/>
+  >     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    - PC Register <br/>
+  >     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    - Native Method Stack <br/>
   
   ![JVM 메모리 구조](https://user-images.githubusercontent.com/66407386/171094310-e9f6c5fd-b7ae-4b29-a655-b5126221fdeb.png "JVM 메모리 구조")
   
