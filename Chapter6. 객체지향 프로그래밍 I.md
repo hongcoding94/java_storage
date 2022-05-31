@@ -290,7 +290,63 @@
   
   ##### 참조형 반환타입
   
+  ?
+  
   ##### 재귀호출(recursive call)
+  
+  - 재귀호출
+  > 1. 메서드의 내부에서 메서드 자신을 다시 호출하는 것 <br/>
+  > 2. 호출된 메서드는 **'값에 의한 호출'** 을 통해 원래의 값이 아닌 복사된 값으로 작업하기 때문에<br/> 
+  > &nbsp; &nbsp; &nbsp; 호출한 메서드와 관계없이 독립적인 작업 수행이 가능하다. 
+  >     - 대표적인 재귀호출의 예는 팩토리얼을 구하는 것 <br/>
+  >     ▶ f(n) = n * f(n-1), 단 f(1) = 1  <br/>
+  > ```java
+  > public class FactorialTest {
+  >     public static void main(String[] args) {
+  >         int result = factorial(4);
+  >         System.out.println(result);
+  >     }
+  >
+  >     static int factorial(int n) {
+  >         int result = 0;
+  >
+  >         if (n == 1) {
+  >             result = 1;
+  >         } else {
+  >             return n * factorial(n - 1); // 다시 메서드 자신을 호출한다.
+  >         }
+  >         return result;
+  >     }
+  > }
+  > // ========================================================================== //
+  > public class FactorialTest2 {
+  >      static long factorial(int n) {
+  >          if (n <= 0 || n > 20)
+  >              return -1; // 매개변수의 유효성 검사.
+  >          if (n <= 1)
+  >              return 1;
+  >          return n * factorial(n - 1);
+  >      }
+  >
+  >      public static void main(String[] args) {
+  >          int n = 21;
+  >          long result = 0;
+  >
+  >          for (int i = 1; i <= n; i++) {
+  >              result = factorial(i);
+  >
+  >              if (result == -1) {
+  >                  System.out.printf("유효하지 않은 값입니다. (0<n<=20) : %d\n", n);
+  >                  break;
+  >              }
+  >
+  >              System.out.printf("%2d!=%20d%n", i, result);
+  >          }
+  >
+  >      }
+  >
+  >  }
+  > ```
   
   ##### 클래스 메서드(static메서드)와 인스턴스 메서드
   
