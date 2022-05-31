@@ -273,6 +273,21 @@
   
   ##### 기본형 매개변수와 참조형 매개변수
   
+  <table>
+    <tr>
+        <th>종류</th>
+        <th>내용</th>
+    </tr>
+    <tr>
+        <td>기본형 매개변수</td>
+        <td>변수의 값을 읽기만 할 수 있다. (read only)</td>
+    </tr>
+     <tr>
+        <td>참조형 매개변수</td>
+        <td>변수의 값을 읽고 변경할 수 있다. (read & write)</td>
+    </tr>
+  </table>
+  
   ##### 참조형 반환타입
   
   ##### 재귀호출(recursive call)
