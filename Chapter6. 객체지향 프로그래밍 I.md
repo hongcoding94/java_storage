@@ -234,11 +234,17 @@
   ##### return문
   
   - return이란?
-  > 반환값이 있을 떄만 return문을 작성했지만 반환값의 유무와 관계없이 모든 메서드에는 하나 이상의 return문이 있어야한다. <br/>
+  > 반환값이 있을 떄만 return문을 작성했지만 반환값의 유무와 관계없이 <br/>
+  > 모든 메서드에는 하나 이상의 return문이 있어야한다. <br/>
   > void일 때, return문이 오류가 나지 않는 이유는 컴파일러가 자동으로 추가해서 넘어가기 때문이다.
   
   ##### JVM의 메모리구조
   
+  - 자바 프로그램의 실행 단계
+  ![JVM의 메모리구조](https://user-images.githubusercontent.com/66407386/171080811-f51c3527-71cc-4aee-9991-f11577725206.png "JVM의 메모리구조")
+  
+  
+
   
   **!Tip4.** [JVM메모리 구조란?](https://steady-coding.tistory.com/305 "JVM메모리 구조란?")
   
