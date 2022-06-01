@@ -298,7 +298,39 @@
   
   ##### 참조형 반환타입
   
-  ?
+  ```
+  class Data2 { int x; } // class의 멤버변수 x
+    class Ex6_8 {
+       public static void main(String[] args) // main() 메소드가 올라가면서 프로그램이 실행된다
+       Data3 = new Data3(); // 참조변수 d가 만들어지고 객체 Data3이 만들어진다
+       d.x = 10; // d가 가리키는 x값에 10을 저장한다
+       
+       Data3 = copy(d); // copy 메소드 호출 -> 실행 상태가 된다 -> 이때 main 메소드는 대기 상태가 된다
+                        // d값을 복사한다 -> 이 d는 main 메소드의 d이다, 밑 copy 메소드의 d와는 다른 저장공가닝다
+                        // 여기서 참조변수가 없는 이유는 static이기 때문이다
+                        // 아래 copy 메소드도 static, 같은 클래스내에 두 메소드가 있다면 참조변수 생략이 가능하다
+                        // static 메소드는 객체 생성 없이 호출 가능하다
+       System.out.println("d.x = " + d.x); // d가 가리키는 값은 10
+       System.out.println("d2.x = " + d2.x); // d2.x가 가리키는 값은 10
+       
+       }
+       static Data3 copy(Data3 d) { // copy 메소드의 d
+                                    // 이 메소드의 반환타입이 참조형임 -> 객체의 주소를 반환한다/주소가 아닌 객체를 반환한다고 생각해도 된다
+       Data tmp = new Data3(); // 새로운 객체 tmp를 생성한다
+
+       tmp.x = d.x; // d.x의 값을 tmp.x에 복사한다, 여기서 d는 copy가 가리키는 지역변수 x이다
+       
+       return tmp; // 복사한 객체의 주소를 반환한다
+                   // 호출 결과는 반환타입과 변수의 타입이 일치해야한다
+                   // 반환타입이 참조형이라면 그 결과를 받는 변수도 참조형이어한다(Data3)
+                   // copy 메소드가 하는일은 새로운 객체를 만든 후 값을 복사해서 생성된 객체의 주소를 반환한다 -> 이걸 d2로 받는것이다
+                   // 그래서 copy 메소드가 생성한 객체를 이 main 메소드가 사용할 수 있게 하는것이다
+      }
+   }   
+   // 결과 
+   // d.x = 10
+   // d2.x = 10
+  ```
   
   ##### 재귀호출(recursive call)
   
