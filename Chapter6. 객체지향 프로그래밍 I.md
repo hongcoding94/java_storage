@@ -449,29 +449,234 @@
 
   ##### 가변인자(varargs)와 오버로딩
   
-  
-
 ## 생성자(constructor)
   
   ##### 생성자란?
-  
+
+  - 생성자란?
+  > 생성자는 간단하게 애기하면 인스턴스가 생성될 떄 호출되는 '인스턴스 초기화 메소드'이다 <br/>
+  > 즉, 인스턴스 변수의 초기화 작업에 사용되고, 인스턴스 생성 시에 실행되어야 할 작업을 위햐서 사용 <br/>
+  >     - **생성 조건** <br/>
+  >        - 생성자의 이름은 클래스의 이름과 같아야 한다. <br/>
+  >        - 생성자는 리턴 값이 없으며 void 또한 사용하지 않는다. <br/>
+  >        - 생성자는 몇 가지 특징을 제외하면 메소드와 다르지 않다. <br/>
+  >        - 생성자는 메소드처럼 클래스 내에 선언되고, 오버 로딩이 가능하므로 
+  >          하나의 클래스에 여러 개의 생성자가 존재 할 수 있다. <br/>
+
   ##### 기본 생성자(default constructor)
+
+  - 기본 생성자란?  
+  > 컴파일을 할 때, 소스파일의 클래스에 생성자가 하나도 정의되어있지 않으면 <br/>
+  > 컴파일러가 자동으로 기본생성자를 생성하여 컴파일 해준다. <br/>
+  >
+  > 즉. **기본 생성자가 컴파일러에 의해서 추가되는 경우는 클래스에 정의된 생성자가 하나도 없을 때**
+
+  ```java
+  class Data1 {
+	int value;
+  }
   
+  class Data2 {
+  	int value;
+  
+  	Data2(int x) { 	// 매개변수가 있는 생성자.
+  		value = x;
+  	}
+  }
+
+  class ConstructorTest {
+  	public static void main(String[] args) {
+  		Data1 d1 = new Data1();
+  		Data2 d2 = new Data2(); //에러('*.java : 'ilne' : connot resolve symbol') 발생
+  	}
+  }
+  ```
+  - 에러 발생 이유
+  > Data2 d2 = new Data2() 부분에서 에러가 발생하는 이유는 <br/>
+  > Data2()는 기본 생성자가 아닌 매개변수가 있는 생성자이기 때문이다.
+
   ##### 매개변수가 있는 생성자
+
+  - 매개변수가 있는 생성자
+  > 매개변수가 있는 생성자를 사용한다면 인스턴스를 **생성함과 동시에 원하는 값으로 초기화 할 수 있어 간결하면서 직관적**이다.
+  > - 매개변수의 종류
+  >   - 기본형 매개변수 <br/>
+  >   ▶ (read only)변수의 값을 읽기만 할 수 있다. <br/>
+  >   - 참조형 매개변수 <br/>
+  >   ▶ (read & write)변수의 값을 읽고 변경할 수 있다.
+
+  ```java
+  public class Phone {
+   String color;		// 색깔
+   String production           // 제품
+   int amount;		// 수량
+
+   phone() {};		// 생성자
+   phone(String c, String p, int a) {
+	color = c;
+	production = p;
+	amount = a;
+   }
+  }
+ 
+  public class main {
+   public static void main(String[] args) {  
+          
+     // 방법 1
+     Phone phone1 = new Phone();
+
+     phone1.color = "silver";
+     phone1.production = "i-phone7"; 
+     phone1.amount = 2;
+
+     // 방법 2
+     Phone phone2 = new Phone("red", "i-phone11 pro max", 1);
+
+     // 결과 확인
+     System.out.println("방법1. 손님이 원하는 제품은" + phone1.production + "이며 원하는 색깔은 " + phone1.color + "이며 수량은 " + phone1.amount + "개 입니다.");
+     System.out.println("방법2. 손님이 원하는 제품은" + phone2.production + "이며 원하는 색깔은 " + phone2.color + "이며 수량은 " + phone2.amount + "개 입니다.");
+   }
+  }
+  ```
+  - 출력결과
+  > 방법1. 손님이 원하는 제품은 i-phone7이며 원하는 색깔은 silver 이며 수량은 2개 입니다.
+  > 방법2. 손님이 원하는 제품은 i-phone11 pro max이며 원하는 색깔은 red이며 수량은 1개 입니다.
+
+  ##### 생성자에서 다른 생성자 호출하기 - this(),
   
-  ##### 생성자에서 다른 생성자 호출하기 - this(), this
-  
+  - this의 의미 <br/>
+  > ▶ this 키워드는 이클래스를 기반으로 생성된 인스턴스를 가리키는 참조
+  > &nbsp; &nbsp; &nbsp; 즉, 이벤트 발생한 주어(인스턴스 자신)를 가르키는 구간(this : 이것)
+ 
+  ![this의 예제](https://user-images.githubusercontent.com/66407386/170989536-5a916338-ca1d-49e9-945a-1fa5ce529506.png)
+   
+  **!Tip7.** [자바 this/의미/사용법](https://taewooblog.tistory.com/119 "자바 this/의미/사용법")
+  **!Tip8.** [★★★★★ / 자바 this 예약어](https://digiconfactory.tistory.com/entry/%EC%9E%90%EB%B0%94-this-%EC%98%88%EC%95%BD%EC%96%B4-this-%EC%9D%98%EB%AF%B8-%EC%9E%90%EB%B0%94%EA%B0%95%EC%A2%8C "자바 this 예약어")
+ 
   ##### 생성자를 이용한 인스턴스의 복사
+
+  
   
 ## 변수의 초기화
   
   ##### 변수의 초기화
+
+  - 변수의 초기화란?
+  > 1. 변수를 선언하고 사용한 변수를 다시 처음의 값으로 저장하는 것
+  > 2. 멤버 변수(인스턴스  변수, 클래스 변수)와 배열은 각 타입의 기본값으로 자동 초기화를 생략 가능
+  > 3. 지역변수는 사용하기 전에 반드시 초기화 해주어야한다.
+  >   - 멤버 변수의 초기화 방법 
+  >       - 명시적 초기화(explicit initialization)
+  >       - 생성자(constructor)
+  >       - 초기화 블럭(initialization block)
+  >             - 인스턴스 초기화 블럭 : {}
+  >             - 클래스 초기화 블럭 : static{}
   
   ##### 명시적 초기화(explicit initialization)
+   
+   - 명시적 초기화는 변수를 선언과 동시에 초기화하는 것을 말한다.
+   ```java
+    public class Main {
+     public static main(String[] args) {
+      int i = 0;
+      Phone phone = new Phone();
+     }
+   }
+   ```
   
   ##### 초기화 블럭(initialization block)
-  
+
+  - 클래스 초기화 블럭 - 클래스 변수의 복잡한 초기화에 사용되며 클래스가 메모리에 처음 로딩될 떄 단 한번만 실행  
+  ```java
+  public class StaticBlockTest {
+    static int[] arr = new int[10];
+    
+    static {
+      for(int i=0; i<arr.length; i++) {
+	// 1과 10사이의 임의의 값을 배열 arr에 저장한다.
+	arr[i] = (int)(Math.random()*10) + 1;      
+      }
+    }
+   
+    public static void main(String[] args) {
+     for(int i=0; i<arr.length; i++) {
+      System.out.println("arr[ " + i + " ] : " + arr[i]);
+     }
+    }
+  }   
+  ```
+  (예제 6-28 p.304)
+
+  - 인스턴스 초기화 블럭 - 인스턴스를 생성할 때 마다 수행되며 생성자 보다 인스턴스 초기화 블럭이 먼저 수행
+  ```java
+  {
+    count++;
+    serialNo = count;
+  }
+
+  Car() {
+    color = "red";
+    gearType = "Auto";
+  }
+
+  Car(String color, String gearType){
+   this.color = color;
+   this.gearType = gearType;
+  }  
+  ```
+  (예제 6-28 p.304)
+ 
+  - 명시적 초기화를 통해 배열 arr을 생성하고, 클래스 초기화 블럭을 이용해서 배열의 각 요소들을 ramdom으로 임의의 값을 채우도록 한다.
+    &nbsp; &nbsp; &nbsp; **즉, 이처럼 배열이나 예외처리가 필요한 초기화에서는 명시적 초기화만으로는 복잡한 초기화 작업을 할 수 없으며,** <br/>
+    &nbsp; &nbsp; &nbsp; **이런 경우에는 추가적으로 클래스 초기화 블럭을 사용한다.**
+
   ##### 멤버변수의 초기화 시기와 순서
+  
+  - 변수의 초기화 시기와 순서
+  > 1. 클래스 변수의 초기화 시점
+  > ▶ 클래스가 처음 로딩 될때 단 한번 초기화
+  >    - 순서
+  >    ▶ 기본 값 → 명시적 초기화 → 클래스 초기화블럭
+  > 2. 인스턴스 변수의 초기화 시점
+  > ▶ 인스턴스가 생성될 때 마다 각 인스턴스 별로 초기화
+  >    - 순서
+  >    ▶ 기본 값 → 명시적 초기화 → 인스턴스 초기화 블럭 → 생성자
+  ```java
+  public class Main {
+   public static int cnt = 0; // 생성된 인스턴스의 수를 저장하기 위한 변수
+   public int serNo;          // 인스턴스 고유의 번호
+
+   {
+      ++cnt;
+      serNo = cnt;
+   }
+  
+   public Main(){};            // 기본생성자. 생략가능
+  }
+
+  public class MainTest {
+   public static void main(String[] args) {
+    Mainpage m1 = new Main();
+    Mainpage m2 = new Main();
+    Mainpage m3 = new Main();
+
+    System.out.println("m1의 번호는 " + m1.serNo);
+    System.out.println("m2의 번호는 " + m2.serNo);
+    System.out.println("m3의 번호는 " + m3.serNo);
+    System.out.println("갯수는 " + Main.cnt + "개 이다.");
+   }
+  }
+  ```
+  - 출력 결과
+  > m1의 번호는 1
+  > m2의 번호는 2
+  > m3의 번호는 3
+  > 갯수는 3개 이다.
+
+  **Main 클래스의 인스턴스를 생성할 때마다 인스턴스 블럭이 수행 되어, 클래스 변수(cnt)의 값을 1증가 시킨다.**
+  만약. cnt를 인스턴스 변수로 선언했다면, 인스턴스가 생성될 때 초기화 되었기 때문에 serNo는 1로 출력 될 것이다.
+
+  
   
 ## 참고 문서 / 블로그
   1. [서적] 남궁성님의 Java의 정석 3rd Edition
