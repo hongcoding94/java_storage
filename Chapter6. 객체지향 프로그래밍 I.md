@@ -298,7 +298,7 @@
   
   ##### 참조형 반환타입
   
-  ```
+  ```java
   class Data2 { int x; } // class의 멤버변수 x
     class Ex6_8 {
        public static void main(String[] args) // main() 메소드가 올라가면서 프로그램이 실행된다
