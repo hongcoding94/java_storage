@@ -550,12 +550,11 @@
  
   ![this의 예제](https://user-images.githubusercontent.com/66407386/170989536-5a916338-ca1d-49e9-945a-1fa5ce529506.png)
    
-  **!Tip7.** [자바 this/의미/사용법](https://taewooblog.tistory.com/119 "자바 this/의미/사용법")
+  **!Tip7.** [자바 this/의미/사용법](https://taewooblog.tistory.com/119 "자바 this/의미/사용법") <br/>
   **!Tip8.** [★★★★★ / 자바 this 예약어](https://digiconfactory.tistory.com/entry/%EC%9E%90%EB%B0%94-this-%EC%98%88%EC%95%BD%EC%96%B4-this-%EC%9D%98%EB%AF%B8-%EC%9E%90%EB%B0%94%EA%B0%95%EC%A2%8C "자바 this 예약어")
  
   ##### 생성자를 이용한 인스턴스의 복사
 
-  
   
 ## 변수의 초기화
   
