@@ -5,7 +5,7 @@
 <table>
   <tr>
     <td>작성자</td>
-    <td>hongcoding</td>
+    <td>hongcoding94</td>
   </tr>
   <tr>
     <td>일정 기간</td>
