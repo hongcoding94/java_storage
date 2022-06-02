@@ -301,7 +301,52 @@ public class Child extends Parent {
 
 ##### super() - 조상 클래스의 생성자
 
+ - super()
+ > 부모 클래스의 생성자를 호출하는 메서드 상속받은 자식 클래스가 부모 클래스의 멤버를 <br/>
+ > 사용할 경우가 있을 수도 있으므로 **부모 클래스를 우선적으로 초기화**해야한다.<br/>
+ > 즉, **자신의 클래스의 또다른 생성자, this() 또는 부모클래스의 생성자, super()를 호출**해줘야 한다.
 
+```java
+public class JavaApp {
+	public static void main(String[] args) {
+		Point3D point3d = new Point3D();    // Point3D() 생성자로 초기화 및 인스턴스 생성
+		System.out.println("point3d.x=" + point3d.x);
+		System.out.println("point3d.y=" + point3d.y);
+		System.out.println("point3d.z=" + point3d.z);
+	}
+}
+
+public class Point {
+	int x = 10;
+	int y = 20;
+
+	Point(int x, int y) {
+		// 생성자의 첫줄에 다른 생성자를 호출하지 않았기 때문에,
+		// 컴파일러가 이 부분에 super()를 호출합니다.
+		// 부모 클래스이므로 Object 클래스의 super()가 호출됩니다.
+		this.x = x;
+		this.y = y;
+	}
+}
+
+public class Point3D extends Point {
+	int z = 30;
+
+	Point3D() {
+		this(100, 200, 300);	// 자신의 클래스의 또다른 생성자 호출
+	}
+
+	Point3D(int x, int y, int z) {
+		super(x, y);	// 부모 클래스 생성자 호출
+		this.z = z;
+	}	
+}
+
+// 출력결과
+// point3d.x=100
+// point3d.y=200
+// point3d.z=300
+```
 
 ##
 
