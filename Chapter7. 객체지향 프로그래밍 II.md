@@ -259,8 +259,48 @@
 
 ##### super
 
+- super
+> 자식 클래스가 부모 클래스로부터 상속받은 멤버를 참조 할 때 사용하는 참조 변수.<br/>
+> 클래스 내의 멤버변수와 지역변수의 이름이 같을 경우 구분을 위한 this를 사용하듯이<br/>
+> 부모 클래스와 자식 클래스의 멤버의 이름이 같을 경우 super를 사용<br/>
+> this와 super는 인스턴스의 주소값을 저장하는데 static 메소드(class Method)와는 무관하게 사용
+
+```java
+import hello.helloWorld.Java.java
+
+class Java {
+	public static void main(String[] args) {
+		Child child = new Child();
+		child.childMethod();
+	}
+}
+
+import hello.helloWorld.Parent.java
+
+class Parent {
+	int x = 10;
+}
+
+import hello.helloWorld.Child.java
+
+class Child extends Parent {
+	int x = 20;
+
+	void childMethod() {
+		System.out.println("x=" + x);
+		System.out.println("this.x=" + this.x);
+		System.out.println("super.x=" + super.x);
+	}
+}
+
+// 출력결과
+// x = 20
+// this.x = 20
+// super.x = 10
+```
 
 ##### super() - 조상 클래스의 생성자
+
 
 
 ##
