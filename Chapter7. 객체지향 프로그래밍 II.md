@@ -356,7 +356,7 @@ public class Point3D extends Point {
 > Package는 클래스나 인터페이스를 관련된 것들을 모아준다.
 > 보통 package가 없는 클래스나 인터페이스는 만들지 않는다.
 
-- 자바의 패키지 구조 / 패키지 - 디렉토리
+- 자바의 패키지 구조 / 패키지 - 디렉토리 <br/>
 ![PACKAGE](https://user-images.githubusercontent.com/66407386/171619156-5e34c51e-6f21-442e-a78b-b263328c70b4.png)
 
 
