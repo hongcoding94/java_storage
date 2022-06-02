@@ -119,7 +119,94 @@
 
 ##### 오버라이딩이란?
 
+- 오버라이딩이란?
+> 부모 클래스에서 이미 정의된 메소드를 자식 클래스에서 같은 시그니쳐를 갖는 메소드로 다시 정의
+> 상속 받은 메서드에서 더 나아가 자식클래스 본인에 맞는 데이터 변경하는 경우가 있는데 조상의 메서드를 받아 오는 것을 오버라이딩이라 한다.
+> 즉, **상속받은 부모 클래스의 메소드를 재정의하여 사용하는 것** 
+
 ##### 오버라이딩의 조건
+
+- 오버라이딩의 조건
+> 1. 동작만을 재정의하는 것이기에 메소드의 선언부는 기존 메소드와 완전히 같아야한다. <br/>
+> &nbsp; &nbsp; &nbsp; 메소드의 반환 타입은 부모 클래스의 반환타입으로 타입이라면 변경 할 수 있음 <br/>
+>   - 예시
+>   ```java
+>   import hello.helloWrold.Main.java
+>   
+>   public class Main {
+>       public static void main(String[] args) {
+>           // Person 클래스의 인스턴스 생성
+>           Person p1 = new Person();
+>           p1.setName("정아무개");
+>           p1.showInfo();
+>           System.out.println();
+>
+>           // BusinessPerson 클래스의 인스턴스를 생성
+>           BusinessPerson p2 = new BusinessPerson();
+>           p2.setName("정아무개");
+>           p2.setCompany("(주)한국IT");
+>           p2.showInfo();
+>       }
+>   }
+>   
+>   import hello.helloWrold.Mainvo.java
+>   
+>   public class MainVo {
+>       private String name;
+>       
+>       public String getName() {
+>           return name;
+>       }
+>       
+>       public void setName(String name) {
+>           this.name = name;
+>       }
+>
+>       public void showInfo() {
+>           System.ouyt.println("이름 : " + name);
+>       }
+>       
+>       public final void whoAreYou() {
+>           System.out.println("이름 : ");
+>       }
+>   }
+>   
+>   import hello.helloWrold.BusinessMain.java
+>   
+>   public class BusinessMain extends MainVo {
+>       private String company;
+>       
+>       public String getCompany() {
+>           return company;
+>       }
+>       
+>       public void setCompany(String company) {
+>           this.company = company;
+>       }
+>       
+>       @Override
+>       public void showInfo() {
+>           System.out.println("이름 : 회사 : " + company);
+>       }
+>       
+>       // Overloading
+>       public void showInfo(int id) {
+>           System.out.println("id : " + id);
+>           showInfo();
+>       }
+>       
+>       @Override // 오류 -> "Cannot override the final method from Person" error 발생
+>       public void whoAre You() {
+>           super.WhoAreyou();
+>       }
+>   }
+>   ```
+>   // 실행 결과
+>   이름 : 정아무개
+>   이름 : 정아무개           회사 : (주)IT
+>   
+> 2. 부모 클래스의 메소드 보다 접근제어자를 더 좁은 범위로 변경할 수 없다.
+> 3. 부모 클래스의 메소드보다 더 큰 범위의 예외를 선언할 수 없다.
 
 ##### 오버로딩 vs. 오버라이딩
 
