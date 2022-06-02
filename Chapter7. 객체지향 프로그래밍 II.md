@@ -1,12 +1,12 @@
 # Chapter7. 객체지향 프로그래밍 II
 
 ## 목차
-1. [상속(inheritance)]( "상속(inheritance)")
-    - [1-1. 상속의 정의와 장점]( "상속의 정의와 장점")
-    - [1-2. 클래스간의 관계 - 포함관계]( "클래스간의 관계 - 포함관계")
-    - [1-3. 클래스간의 관계 결정하기]( "클래스간의 관계 결정하기")
-    - [1-4. 단일상속(single inheritance)]( "단일상속(single inheritance)")
-    - [1-5. Object클래스 - 모든 클래스의 조상]( "Object클래스 - 모든 클래스의 조상")
+1. [상속(inheritance)](https://github.com/hongcoding94/java_storage/blob/main/Chapter7.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20II.md#%EC%83%81%EC%86%8Dinheritance "상속(inheritance)")
+    - [1-1. 상속의 정의와 장점](https://github.com/hongcoding94/java_storage/blob/main/Chapter7.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20II.md#%EC%83%81%EC%86%8D%EC%9D%98-%EC%A0%95%EC%9D%98%EC%99%80-%EC%9E%A5%EC%A0%90 "상속의 정의와 장점")
+    - [1-2. 클래스간의 관계 - 포함관계](https://github.com/hongcoding94/java_storage/blob/main/Chapter7.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20II.md#%ED%81%B4%EB%9E%98%EC%8A%A4%EA%B0%84%EC%9D%98-%EA%B4%80%EA%B3%84---%ED%8F%AC%ED%95%A8%EA%B4%80%EA%B3%84 "클래스간의 관계 - 포함관계")
+    - [1-3. 클래스간의 관계 결정하기](https://github.com/hongcoding94/java_storage/blob/main/Chapter7.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20II.md#%ED%81%B4%EB%9E%98%EC%8A%A4%EA%B0%84%EC%9D%98-%EA%B4%80%EA%B3%84-%EA%B2%B0%EC%A0%95%ED%95%98%EA%B8%B0 "클래스간의 관계 결정하기")
+    - [1-4. 단일상속(single inheritance)](https://github.com/hongcoding94/java_storage/blob/main/Chapter7.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20II.md#%EB%8B%A8%EC%9D%BC%EC%83%81%EC%86%8Dsingle-inheritance "단일상속(single inheritance)")
+    - [1-5. Object클래스 - 모든 클래스의 조상](https://github.com/hongcoding94/java_storage/blob/main/Chapter7.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20II.md#object%ED%81%B4%EB%9E%98%EC%8A%A4---%EB%AA%A8%EB%93%A0-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%9D%98-%EC%A1%B0%EC%83%81 "Object클래스 - 모든 클래스의 조상")
 2. [오버라이딩(overriding)]( "오버라이딩(overriding)")
     - [2-1. 오버라이딩이란?]( "오버라이딩이란?")
     - [2-2. 오버라이딩의 조건]( "오버라이딩의 조건")
@@ -92,8 +92,15 @@
 > &nbsp; &nbsp; &nbsp; 부모 클래스 수정 시 모든 자식 클래스의 테스트 및 수정 작업을 해야하는 번거로움이 생긴다.
 > 
 > - 리스코프 치환 원칙의 위배 <br/>
-> ▶ 
+> ▶ 상위에서 말했던 것처럼 잘못된 상속으로 인한 캡슐화 약화, 클래스 간 결합도 문제로 인하여 리스코프 치환 원칙에 위배가 된다. <br/>
+> <br/> 
+> 리스코프 치환 원칙이란?<br/>
+> 상위 타입을 사용하는 메소드에 하위 타입의 객체를 매개변수로 전달할 경우에도 정상 동작 해야함을 의미 <br/>
+> 즉, 부모 클래스의 메소드 동작으로 어떤 인과관계가 정해지는 메소드에 자식 클래스의 성질에 기반하여 <br/>
+>  overriding한 setter 동작이 그 인과관계를 해치는 경우가 발생하는데 이러한 경우 자식 클래스가 아니라 별도의 타입으로 정의해야한다.
 
+**!Tip1.** [자바 디자인패턴- LSP : 리스코프 치환 원칙](https://ktko.tistory.com/entry/%EC%9E%90%EB%B0%94-%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5%EC%9D%98-%EC%9B%90%EB%A6%AC-SOLID-LSP-%EB%A6%AC%EC%8A%A4%EC%BD%94%ED%94%84-%EC%B9%98%ED%99%98-%EC%9B%90%EC%B9%99 "바 디자인패턴- LSP : 리스코프 치환 원칙") <br/>
+**!Tip2.** [리스코프 치환 원칙 예제](https://sas-study.tistory.com/438 "리스코프 치환 원칙 예제")
 
 ##### 클래스간의 관계 - 포함관계
 
