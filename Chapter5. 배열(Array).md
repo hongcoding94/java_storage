@@ -219,7 +219,7 @@ public class Lotto {
 
   - 가위바위보
   ```java
-  import java.util.Arrays;
+  package java.util.Arrays;
  
     public class rock_Paper_Scissors {
         public static void main(String[] args) {
@@ -237,7 +237,7 @@ public class Lotto {
   
   - 배열 순서 섞기
   ```java
-  import java.util.Arrays;
+  package java.util.Arrays;
  
     public class arrRandom {
 
@@ -468,6 +468,7 @@ public class Lotto {
   
   - 좌표에 X표 구하기
  ```java
+ 
  import java.util.Scanner;
  import java.util.concurrent.CountDownLatch;
 
@@ -525,7 +526,7 @@ public class Lotto {
   
   - 단어 맞추기
   ```java
-  import java.util.Scanner;
+  package java.util.Scanner;
 
   public class main {
     public static void main(String[] args) {
