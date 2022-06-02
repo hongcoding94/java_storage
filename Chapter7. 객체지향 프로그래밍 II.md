@@ -268,7 +268,7 @@
 ```java
 import hello.helloWorld.Java.java
 
-class Java {
+public class Java {
 	public static void main(String[] args) {
 		Child child = new Child();
 		child.childMethod();
@@ -277,13 +277,13 @@ class Java {
 
 import hello.helloWorld.Parent.java
 
-class Parent {
+public class Parent {
 	int x = 10;
 }
 
 import hello.helloWorld.Child.java
 
-class Child extends Parent {
+public class Child extends Parent {
 	int x = 20;
 
 	void childMethod() {
