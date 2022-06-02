@@ -348,11 +348,17 @@ public class Point3D extends Point {
 // point3d.z=300
 ```
 
-##
+## package와 import
 
-#####
+##### 패키지(package)
 
-#####
+##### 패키지의 선언
+
+##### import문
+
+##### import문의 선언
+
+##### static import문
 
 
 ##
