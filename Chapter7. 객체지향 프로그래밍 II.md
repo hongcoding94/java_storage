@@ -131,7 +131,7 @@
 > &nbsp; &nbsp; &nbsp; 메소드의 반환 타입은 부모 클래스의 반환타입으로 타입이라면 변경 할 수 있음 <br/>
 >   - 예시
 >   ```java
->   import hello.helloWrold.Main.java
+>   package hello.helloWrold.Main.java
 >   
 >   public class Main {
 >       public static void main(String[] args) {
@@ -149,7 +149,7 @@
 >       }
 >   }
 >   
->   import hello.helloWrold.Maino.java
+>   package hello.helloWrold.Maino.java
 >   
 >   public class MainVo {
 >       private String name;
@@ -171,7 +171,7 @@
 >       }
 >   }
 >   
->   import hello.helloWrold.BusinessMain.java
+>   package hello.helloWrold.BusinessMain.java
 >   
 >   public class BusinessMain extends MainVo {
 >       private String company;
@@ -266,7 +266,7 @@
 > this와 super는 인스턴스의 주소값을 저장하는데 static 메소드(class Method)와는 무관하게 사용
 
 ```java
-import hello.helloWorld.Java.java
+package hello.helloWorld.Java.java
 
 public class Java {
 	public static void main(String[] args) {
@@ -275,13 +275,13 @@ public class Java {
 	}
 }
 
-import hello.helloWorld.Parent.java
+package hello.helloWorld.Parent.java
 
 public class Parent {
 	int x = 10;
 }
 
-import hello.helloWorld.Child.java
+package hello.helloWorld.Child.java
 
 public class Child extends Parent {
 	int x = 20;
@@ -351,6 +351,14 @@ public class Point3D extends Point {
 ## package와 import
 
 ##### 패키지(package)
+
+- 패키지이란?
+> Package는 클래스나 인터페이스를 관련된 것들을 모아준다.
+> 보통 package가 없는 클래스나 인터페이스는 만들지 않는다.
+
+- 자바의 패키지 구조 / 패키지 - 디렉토리
+![PACKAGE](https://user-images.githubusercontent.com/66407386/171619156-5e34c51e-6f21-442e-a78b-b263328c70b4.png)
+
 
 ##### 패키지의 선언
 
