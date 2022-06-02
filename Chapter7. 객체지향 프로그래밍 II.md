@@ -149,7 +149,7 @@
 >       }
 >   }
 >   
->   import hello.helloWrold.Mainvo.java
+>   import hello.helloWrold.Maino.java
 >   
 >   public class MainVo {
 >       private String name;
