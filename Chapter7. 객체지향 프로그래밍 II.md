@@ -361,7 +361,7 @@ public class Point3D extends Point {
 - 자바의 패키지 구조 / 패키지 - 디렉토리 <br/>
 ![PACKAGE](https://user-images.githubusercontent.com/66407386/171619156-5e34c51e-6f21-442e-a78b-b263328c70b4.png)
 
-> - 패키지 종류 <br/>
+> - 패키지 구조 <br/>
 > ▶ 클래스 : 클래스 파일(* .class) <br/>
 > ▶ 패키지 : 폴더 <br/>
 > ▶ 하위 패키지 : 하위폴더
