@@ -446,6 +446,52 @@ import java.util.*;
 
 ##### 제어자란?
 
+- 제어자란?
+> 클래스와 클래스 멤버의 선언 시 사용하여 부가적인 의미를 부여하는 키워드
+
+- 접근 제어자의 종류
+> <br/> ▶ public - 접근 제한이 없음
+> <br/> ▶ protected - 같은 클래스,패키지 혹은 자손 클래스에서 접근 가능 
+> <br/> ▶ default - 같은 클래스,패키지에서 접근 가능
+> <br/> ▶ private - 같은 클래스 내에서만 접근가능
+
+<table>
+	<tr>
+		<th>제어자 명</th>
+		<th>같은 클래스</th>
+		<th>같은 패키지</th>
+		<th>자손 클래스</th>
+		<th>전체</th>
+	</tr>
+	<tr>
+		<td>public</td>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+	</tr>
+	<tr>
+		<td>protected</td>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>default</td>
+		<td>O</td>
+		<td>O</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>private</td>
+		<td>O</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
 
 ##### static - 클래스의, 공통적인
 
