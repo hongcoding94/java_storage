@@ -387,10 +387,39 @@ public class Point3D extends Point {
 > package hello.helloworld.package.java
 >    `` 해당 내용 작성
 > ```
+> - 간단한 프로그램이나 애플릿은 패키지를 지정하지 않아도 별 문제 없지만,<br/>
+>  &nbsp; &nbsp; &nbsp; 큰 프로젝트나 Java API와 같은 클래스 라이브러리를 작성하는 <br/>
+>  &nbsp; &nbsp; &nbsp; 경우는 미리 패키지를 구성하여 적용하여야 함
 
 ##### import문
 
+- import문
+> 컴파일러에게 소스파일에 사용된 클래스의 패키지에 대한 정보를 제공
+> - 사용하고자 하는 클래스의 패키지를 미리 명시하면 소스코드에 사용되는 클래스 이름에서 패키지명은 생략 가능
+> - package와 달리 한 소스파일에 여러 번 선언 가능
+
 ##### import문의 선언
+
+```java
+import 패키지명,클래스명;
+   `` 해당 내용 작성
+```
+
+- 선언방식
+```java
+// 예제 1
+package hello.helloWrold.main.java
+
+import java.util.ArrayList;
+import java.util.Calendar;
+   `` 해당 내용 작성
+   
+// 예제 2
+package hello.helloWrold.main.java
+
+import java.util.*;
+   `` 해당 내용 작성
+```
 
 ##### static import문
 
