@@ -385,11 +385,10 @@ public class Point3D extends Point {
 > ```java
 > // 예제
 > package hello.helloworld.package.java
->    `` 해당 내용 작성
+>    // `` 해당 내용 작성
 > ```
-> - 간단한 프로그램이나 애플릿은 패키지를 지정하지 않아도 별 문제 없지만,<br/>
->  &nbsp; &nbsp; &nbsp; 큰 프로젝트나 Java API와 같은 클래스 라이브러리를 작성하는 <br/>
->  &nbsp; &nbsp; &nbsp; 경우는 미리 패키지를 구성하여 적용하여야 함
+> - 간단한 프로그램이나 애플릿은 패키지를 지정하지 않아도 별 문제 없지만, 큰 프로젝트나 Java API와 <br/> 
+>  같은 클래스 라이브러리를 작성하는 경우는 미리 패키지를 구성하여 적용하여야 함
 
 ##### import문
 
@@ -402,7 +401,7 @@ public class Point3D extends Point {
 
 ```java
 import 패키지명,클래스명;
-   `` 해당 내용 작성
+   // `` 해당 내용 작성
 ```
 
 - 선언방식
@@ -418,7 +417,7 @@ import java.util.Calendar;
 package hello.helloWrold.main.java
 
 import java.util.*;
-   `` 해당 내용 작성
+   // `` 해당 내용 작성
 ```
 
 ##### static import문
