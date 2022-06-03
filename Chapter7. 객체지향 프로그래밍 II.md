@@ -450,10 +450,14 @@ import java.util.*;
 > 클래스와 클래스 멤버의 선언 시 사용하여 부가적인 의미를 부여하는 키워드
 
 - 접근 제어자의 종류
-> ▶ public - 접근 제한이 없음
-> <br/> ▶ protected - 같은 클래스,패키지 혹은 자손 클래스에서 접근 가능 
-> <br/> ▶ default - 같은 클래스,패키지에서 접근 가능
-> <br/> ▶ private - 같은 클래스 내에서만 접근가능
+> ▶ public - 접근 제한이 없음 <br/> 
+> ![image](https://user-images.githubusercontent.com/66407386/171772312-156ab46d-2d4f-4f8c-ac67-88c4045529c5.png)
+> <br/> ▶ protected - 같은 클래스,패키지 혹은 자손 클래스에서 접근 가능 <br/> 
+> ![image](https://user-images.githubusercontent.com/66407386/171772335-7e2dbb8e-4987-450d-9071-e4b9439614e4.png)
+> <br/> ▶ default - 같은 클래스,패키지에서 접근 가능 <br/> 
+> ![image](https://user-images.githubusercontent.com/66407386/171772325-6fafbb0f-1c08-46c2-aa96-80f587eb6cf5.png)
+> <br/> ▶ private - 같은 클래스 내에서만 접근가능 <br/> 
+> ![image](https://user-images.githubusercontent.com/66407386/171772263-794d87c3-6fad-4819-9866-fd4d68fe71c8.png)
 
 <table>
 	<tr>
@@ -513,3 +517,7 @@ import java.util.*;
 #####
 
 #####
+
+## 
+1. 
+2. [블로그] 영보님의 접근제어자 - https://qh5944.tistory.com/133
