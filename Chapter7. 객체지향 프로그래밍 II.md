@@ -401,10 +401,15 @@ public class Point3D extends Point {
 
 ```java
 import 패키지명,클래스명;
+// 혹은
+import 패키지명.* ;
    // `` 해당 내용 작성
 ```
 
 - 선언방식
+> 클래스명을 쓰는 것과 모든 클래스를 사용할 수 있는 * 의 성능 차이
+> - import 문은 컴파일 시에 처리되므로 프로그램의 성능에 영향이 없습니다. <br/>
+> 하지만 사용할 클래스를 작성하는 것이 무엇을 썻는지 알 수 있어서 가독성에 좋습니다.
 ```java
 // 예제 1
 package hello.helloWrold.main.java
@@ -422,6 +427,19 @@ import java.util.*;
 
 ##### static import문
 
+ - static import
+ > static 멤버를 사용할 때 클래스 이름을 생략할 수 있게 해준다.
+ > ```java
+ > import static java.lang.Math.* ; // Math 클래스의 모든 static 멤버 사용
+ > import static java.lang.System.out; 
+
+ > class Main {
+ >  public static main(String[] args){
+ >	out.println(random());
+ >  }
+ > }
+ > ```
+**!Tip4.** [static import 사용 방법](https://offbyone.tistory.com/283 "static import 사용 방법")
 
 ##
 
