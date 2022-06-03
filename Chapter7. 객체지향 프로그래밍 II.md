@@ -432,13 +432,14 @@ import java.util.*;
  > ```java
  > import static java.lang.Math.* ; // Math 클래스의 모든 static 멤버 사용
  > import static java.lang.System.out; 
-
+ >
  > class Main {
  >  public static main(String[] args){
  >	out.println(random());
  >  }
  > }
  > ```
+
 **!Tip4.** [static import 사용 방법](https://offbyone.tistory.com/283 "static import 사용 방법")
 
 ##
