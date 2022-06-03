@@ -53,7 +53,7 @@
     - [5-3. 내부 클래스의 선언]( "내부 클래스의 선언")
     - [5-4. 내부 클래스의 제어자와 접근성]( "내부 클래스의 제어자와 접근성")
     - [5-5. 익명 클래스(anonymous class)]( "익명 클래스(anonymous class)")
-9. [참고 문서 / 블로그]( "참고 문서 / 블로그")
+9. [참고 문서 / 블로그](https://github.com/hongcoding94/java_storage/blob/main/Chapter7.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20II.md#%EC%B0%B8%EA%B3%A0-%EB%AC%B8%EC%84%9C--%EB%B8%94%EB%A1%9C%EA%B7%B8 "참고 문서 / 블로그")
 
 ---
 
@@ -500,6 +500,31 @@ import java.util.*;
 
 ##### static - 클래스의, 공통적인
 
+-  static의 의미 역할
+> - static의 의미
+> '클래스의' 또는 '공통적인'의 의미를 가지고 있다.
+> - static의 역할
+> <br/> ▶ 인스턴스 변수는 하나의 클래스로 부터 생성되었더라도 각기 다른 값을 유지하지만, 클래스변수(static 멤버 변수)는<br/>
+> 인스턴스에 관계 없이 같은 값을 갖는다.
+> <br/> ▶ 그 이유는 하나의 변수를 모든 인스턴스가 공유하기 때문이며 static이 붙은 멤버변수와 메서드, <br/>
+> 그리고 초기화 블럭은 신스턴스가 아닌 클래스에 관계된것이기 때문에 인스턴스를 생성하지 않고도 사용할 수 있음
+> <br/> ▶ static이 사용될 수 있는 곳 : 멤버변수, 메서드, 초기화 블럭
+
+- 예시 
+> ```java
+> class StaticTest {
+>     static int width = 200; //클래스 변수
+>     static int height = 120; //클래스 변수
+>     
+>     static {
+>         //static 변수의 복잡한 초기화 수행 (초기화 블록)
+>     }
+>     
+>     static int max(int a, int b) { //클래스 메서드
+>         return a > b ? a : b;
+>     }
+> }
+> ```
 
 ##### final - 마지막의, 변경될 수 없는
 
@@ -522,3 +547,4 @@ import java.util.*;
 ## 참고 문서 / 블로그
 1. [서적] 남궁성님의 Java의 정석 3rd Edition
 2. [블로그] 영보님의 접근제어자 - https://qh5944.tistory.com/133
+3. [블로그] shaking님의 [JAVA] 제어자(modifier) - static, final, abstract - https://88240.tistory.com/447
