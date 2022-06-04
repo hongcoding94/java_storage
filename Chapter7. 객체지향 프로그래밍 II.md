@@ -632,9 +632,16 @@ import java.util.*;
 
  - instanceof 사용방법
  > ```java
- > A instanceod B
- > // A : (인스턴스 이름)
- > // B : (클래스 or 인터페이스 이름)
+ > package hello.helloWorld.Main.java
+ >
+ > public class main {
+ >  public static void main(String[] args) {
+ > 
+ >    System.out.println(A instanceod B);
+ >    // A : (인스턴스 이름)
+ >    // B : (클래스 or 인터페이스 이름)
+ >  }
+ > }
  > ```
 
 ##### 참조변수와 인스턴스의 연결
