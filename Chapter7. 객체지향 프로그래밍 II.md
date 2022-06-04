@@ -538,11 +538,132 @@ import java.util.*;
 ##### 제어자(modifier)의 조합
 
 
-##
 
-#####
+## 다형성(polymorphism)
 
-#####
+##### 다형성이란?
+
+ - 다형성이란?
+ > - 하나의 코드가 여러 자료형으로 구현되어 실행되는 것
+ > - 같은 코드에서 여러 실행 결과가 나옴
+ > - 정보은닉, 상속과 더불어 객체지향 프로그래밍의 가장 큰 특징 중 하나
+ > - 객체지향 프로그래밍의 유연성, 재활용성, 유지보수성에 기본이 되는 특징
+ > - 조상클래스 타입의 참조변수로 자손 클래스의 인스턴스를 참조 가능
+
+![image](https://user-images.githubusercontent.com/66407386/171991654-8cf9468f-0ccb-4e0c-b21a-5d70d7ffb773.png)
+
+ **!Tip5.** [다형성 이해도 높이기](https://jjine926.tistory.com/68?category=934233 "다형성 이해도 높이기")
+
+##### 참조변수의 형변환
+
+ - 참조변수의 형변환
+ > 서로 다른 데이터 타입 간 표현이나 연산을 위해 데이터의 타입을 바꿔야 하는 경우가 있는데 
+ > 데이터의 타입으 ㄹ바꾸는 걸 형변환이라 한다.
+
+ - 형변환 종류
+ > - int ▶String
+ >   ```java
+ >   package hello.helloWorld.Main.java {
+ >     public class main (String[] args) {
+ >       String str = 100 + ""; // 100dms "100"으로 변환
+ >     }    
+ >   }  
+ >   ```
+ > - String ▶ int 
+ >   ```java
+ >   package hello.helloWorld.Main.java {
+ >     public class main (String[] args) {
+ >       int number = Integer.parseInt("100");  // "100"이 100으로 변환. 
+ >     }    
+ >   }  
+ >   ```
+
+ - 참조 변수 간 형변환
+ > 참조 변수 간의 형변환은 상속 관계에 있는 타입에 한해서 가능 <br/>
+ > 즉, 자손 타입 <-> 조상 타입 간 형변환이 가능한데, 두 경우 역시 표현 문법이 다르다.
+ >
+ > - 참조 변수 간 형변환
+ >   - 자손 타입 ▶ 조상 타입 (형변환이 생략)
+ >   - 조상 타입 ▶ 자손 타입 (형변환이 생략되지 않음)
+
+ - 예제
+ ```java
+ class Car { // 조상 클래스 Car
+    String color;
+    int door;
+ 
+    void drive(){}
+    void stop() {}
+ }
+ 
+ class FireEngine extends Car { // 자손 클래스 FireEngine
+     void water(){}
+ }
+ 
+ public static void main(String[] args) {
+     Car car = null; // Car 타입의 참조변수 car에 null 값 선언
+     FireEngine fe = new FireEngine(); // FireEngine 타입의 참조변수 fe로 FireEngine 객체 생성
+     FireEngine fe2 = null; // FireEngine 타입의 참조변수 fe2로에 null 값 선언 
+ 
+     car = fe; 
+         /*조상 <- 자손 형변환. "(데이터 타입)값" 같은 형식의 형변환 생략함.
+         조상타입의 참조변수로 자손의 인스턴스를 참조. 
+         기본형 변수의 형변환에서 작은 자료형에서 큰 자료형의 형변환은 생략이 가능하듯이, 
+         참조형 변수의 형변환에서는 자손타입의 참조변수를 조상타입으로 형변환하는 경우에는 형변환을 생략.*/
+     car.drive(); // okay.
+     car.water(); // error. FireEngine 클래스에만 있는 water() 메서드는 사용 못함. 
+
+     fe2 = (FireEngine)car; 
+     	/* 자손 <- 조상 형변환. 
+         자손타입의 참조변수로 조상의 인스턴스를 참조 (FireEngine)로 형변환.*/
+     fe2.drive(); // okay.
+     fe2.water(); // okay.
+ }
+```
+
+##### instanceof연산자
+
+ - 연산자
+ > - 프로그램 실행시 참조 데이터형을 검사하기 위해 사용되는 연산자
+ > - 형변환이 가능한지 묻는 연산자
+
+ - instanceof 반환 내역
+ > 오른쪽 피연산자인 클래스 또는 인터페이스로부터 생성되었다면 true 그렇지 않으면 false 를 반환
+
+ - instanceof 사용방법
+ > ```java
+ > A instanceod B
+ > // A : (인스턴스 이름)
+ > // B : (클래스 or 인터페이스 이름)
+ > ```
+
+##### 참조변수와 인스턴스의 연결
+
+
+
+##### 매개변수의 다형성
+
+
+
+##### 여러 종류의 객체를 배열로 다루기
+
+
+
+## 추상클래스(abstract class)
+
+##### 추상클래스란?
+
+ - 추상클래스란?
+ > 하나 이상의 추상 메소드(abstract method)를 포함하는 클래스이다.
+ > 추상 메소드는 선언만 있고 본체는 없는 함수이며 선언부에 'abstract'라는 키워드를 붙인다.
+ > 추상 메소드가 포함되었다면 클래스도 추상 클래스이므로 클래스명 앞에도 'abstract' 키워드를 붙여야한다.
+
+##### 추상메서드(abstract method)
+
+
+##### 추상클래스의 작성
+
+
 
 ## 참고 문서 / 블로그
 1. [서적] 남궁성님의 Java의 정석 3rd Edition
