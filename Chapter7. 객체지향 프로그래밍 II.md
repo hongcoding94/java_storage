@@ -37,16 +37,16 @@
     - [6-1. 추상클래스란?](https://github.com/hongcoding94/java_storage/blob/main/Chapter7.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20II.md#%EC%B6%94%EC%83%81%ED%81%B4%EB%9E%98%EC%8A%A4%EB%9E%80 "추상클래스란?")
     - [6-2. 추상메서드(abstract method)](https://github.com/hongcoding94/java_storage/blob/main/Chapter7.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20II.md#%EC%B6%94%EC%83%81%EB%A9%94%EC%84%9C%EB%93%9Cabstract-method "추상메서드(abstract method)")
     - [6-3. 추상클래스의 작성](https://github.com/hongcoding94/java_storage/blob/main/Chapter7.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20II.md#%EC%B6%94%EC%83%81%ED%81%B4%EB%9E%98%EC%8A%A4%EC%9D%98-%EC%9E%91%EC%84%B1 "추상클래스의 작성")
-7. [인터페이스(interface)]( "인터페이스(interface)")
-    - [7-1. 인터페이스란?]( "인터페이스란?")
-    - [7-2. 인터페이스의 작성]( "인터페이스의 작성")
-    - [7-3. 인터페이스의 상속]( "인터페이스의 상속")
-    - [7-4. 인터페이스의 구현]( "인터페이스의 구현")
-    - [7-5. 인터페이스를 이용한 다중상속]( "인터페이스를 이용한 다중상속")
-    - [7-6. 인터페이스를 이용한 다형성]( "인터페이스를 이용한 다형성")
-    - [7-7. 인터페이스의 장점]( "인터페이스의 장점")
-    - [7-8. 인터페이스의 이해]( "인터페이스의 이해")
-    - [7-9. 디폴트 메서드와 static메서드]( "디폴트 메서드와 static메서드")
+7. [인터페이스(interface)](https://github.com/hongcoding94/java_storage/blob/main/Chapter7.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20II.md#%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4interface "인터페이스(interface)")
+    - [7-1. 인터페이스란?](https://github.com/hongcoding94/java_storage/blob/main/Chapter7.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20II.md#%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%9E%80 "인터페이스란?")
+    - [7-2. 인터페이스의 작성](https://github.com/hongcoding94/java_storage/blob/main/Chapter7.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20II.md#%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%9D%98-%EC%9E%91%EC%84%B1 "인터페이스의 작성")
+    - [7-3. 인터페이스의 상속](https://github.com/hongcoding94/java_storage/blob/main/Chapter7.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20II.md#%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%9D%98-%EC%83%81%EC%86%8D "인터페이스의 상속")
+    - [7-4. 인터페이스의 구현](https://github.com/hongcoding94/java_storage/blob/main/Chapter7.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20II.md#%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%9D%98-%EA%B5%AC%ED%98%84 "인터페이스의 구현")
+    - [7-5. 인터페이스를 이용한 다중상속](https://github.com/hongcoding94/java_storage/blob/main/Chapter7.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20II.md#%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%8B%A4%EC%A4%91%EC%83%81%EC%86%8D "인터페이스를 이용한 다중상속")
+    - [7-6. 인터페이스를 이용한 다형성](https://github.com/hongcoding94/java_storage/blob/main/Chapter7.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20II.md#%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%8B%A4%ED%98%95%EC%84%B1 "인터페이스를 이용한 다형성")
+    - [7-7. 인터페이스의 장점](https://github.com/hongcoding94/java_storage/blob/main/Chapter7.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20II.md#%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%9D%98-%EC%9E%A5%EC%A0%90 "인터페이스의 장점")
+    - [7-8. 인터페이스의 이해](https://github.com/hongcoding94/java_storage/blob/main/Chapter7.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20II.md#%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%9D%98-%EC%9D%B4%ED%95%B4 "인터페이스의 이해")
+    - [7-9. 디폴트 메서드와 static메서드](https://github.com/hongcoding94/java_storage/blob/main/Chapter7.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20II.md#%EB%94%94%ED%8F%B4%ED%8A%B8-%EB%A9%94%EC%84%9C%EB%93%9C%EC%99%80-static%EB%A9%94%EC%84%9C%EB%93%9C "디폴트 메서드와 static메서드")
 8. [내부 클래스(inner class)]( "내부 클래스(inner class)")
     - [5-1. 내부 클래스란?]( "내부 클래스란?")
     - [5-2. 내부 클래스의 종류와 특징]( "내부 클래스의 종류와 특징")
@@ -730,13 +730,69 @@ abstract class AbstractPlayer extends Player {
 
 ##### 인터페이스란?
 
+ - 인터페이스란?
+ > 자식 클래스가 여러 부모 클래스를 상속받을 수 있다면, 다양한 동작을 수행할 수 있다는 장점을 가지게 된다.<br/>
+ > 하지만 클래스를 이용하여 다중 상속을 할 경우 메소드 출처의 모호성 등 여러가지 문제가 발생 할 수 있어<br/>
+ > 자바에서는 클래스를 통한 다중 상속을 지원하지 않는다.<br/>
+ > 다중 상속의 이점을 버릴 수는 없기에 자바에서는 인터페이스라는 것을 통해 다중 상속을 지원한다.<br/>
+ > **다른 클래스를 작성할 때 기본이 되는 틀을 제공하면서, 다른 클래스 사이의 중간 매개 역할까지 담당하는 일종의 추상 클래스를 의미**
+
 ##### 인터페이스의 작성
+ 
+ - 인터페이스 선언
+ > ```java
+ > 접근제어자 interface 인터페이스이름 {
+ >    public static final 타입 상수이름 = 값;
+ >    ...
+ >    public abstract 메소드이름(매개변수목록);
+ >    ...
+ > }
+ > ```
+ > 단, 클래스와는 달리 인터페이스의 모든 필드는 public static final이어야 하며, 모든 메소드는 public abstract이어야 합니다.<br/>
+ > 이 부분은 모든 인터페이스에 공통으로 적용되는 부분이므로 이 제어자는 생략할 수 있습니다.
+ 
 
 ##### 인터페이스의 상속
 
 ##### 인터페이스의 구현
 
+ - 인터페이스의 구현 문법
+ > ```java
+ >  class 클래스이름 implements 인터페이스이름 { ... }
+ > ```
+
+ - 예제 
+ > ```java
+ > interface Animal { public abstract void cry(); }
+ > 
+ > class Cat implements Animal {
+ >     public void cry() {
+ >         System.out.println("냐옹냐옹!");
+ >     }
+ > }
+ >  
+ > class Dog implements Animal {
+ >     public void cry() {
+ >         System.out.println("멍멍!");
+ >     }
+ > }
+ > 
+ > public class Polymorphism03 {
+ >     public static void main(String[] args) {
+ >         Cat c = new Cat();
+ >         Dog d = new Dog();
+ >         c.cry();
+ >         d.cry();
+ >     }
+ > }
+ > ```
+ > 출력 결과
+ > 냐옹냐옹!
+ > 멍멍!
+
 ##### 인터페이스를 이용한 다중상속
+
+
 
 ##### 인터페이스를 이용한 다형성
 
