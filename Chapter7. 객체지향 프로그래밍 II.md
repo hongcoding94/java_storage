@@ -737,6 +737,30 @@ abstract class AbstractPlayer extends Player {
  > 다중 상속의 이점을 버릴 수는 없기에 자바에서는 인터페이스라는 것을 통해 다중 상속을 지원한다.<br/>
  > **다른 클래스를 작성할 때 기본이 되는 틀을 제공하면서, 다른 클래스 사이의 중간 매개 역할까지 담당하는 일종의 추상 클래스를 의미**
 
+ - class와 interface의 차이점
+ <table>
+  <tr>
+	  <th>순서 / 내용</th>
+	  <th>Class</th>
+	  <th>interface</th>  
+  </tr>
+  <tr>
+	  <td>1</td>
+	  <td></td>
+	  <td></td>
+  </tr>
+  <tr>
+	  <td>2</td>
+	  <td></td>
+	  <td></td>
+  </tr>
+  <tr>
+	  <td>3</td>
+	  <td></td>
+	  <td></td>
+  </tr>
+ </table>	
+
 ##### 인터페이스의 작성
  
  - 인터페이스 선언
@@ -787,12 +811,24 @@ abstract class AbstractPlayer extends Player {
  > }
  > ```
  > 출력 결과
- > 냐옹냐옹!
- > 멍멍!
+ > <br/>냐옹냐옹!
+ > <br/>멍멍!
 
 ##### 인터페이스를 이용한 다중상속
 
-
+ - 다중상속
+ > 하나의 부모 클래스를 상속할 수 있지만 인터페이스는 다중 상속이 가능하다.<br/>
+ > extends 키워드와 콤마를 이용해서 여러 개 인터페이스를 지정한다.
+ > ```java
+ > package hello.helloWorld.Main.java
+ > 
+ > public class Main() {
+ > 	public interface A extends B, C{
+ > 		public void strMsg();
+ > 		public void numCnt();
+ > 	} 
+ > }
+ > ```
 
 ##### 인터페이스를 이용한 다형성
 
@@ -806,3 +842,4 @@ abstract class AbstractPlayer extends Player {
 1. [서적] 남궁성님의 Java의 정석 3rd Edition
 2. [블로그] 영보님의 접근제어자 - https://qh5944.tistory.com/133
 3. [블로그] shaking님의 [JAVA] 제어자(modifier) - static, final, abstract - https://88240.tistory.com/447
+4. [홈페이지] geeksforgeeks 공홈 - https://www.geeksforgeeks.org/interfaces-in-java/
