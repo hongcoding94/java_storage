@@ -843,11 +843,17 @@ abstract class AbstractPlayer extends Player {
 ##### 인터페이스를 이용한 다형성
 
  - 인터페이스를 이용한 다형성 
- > 
+ > 몰루
 
 ##### 인터페이스의 장점
 
-
+ - 인터페이스의 장점
+ > - 개발 시간을 단축 시킬 수 있다.
+ > <br/>▶ 서로 다른 개발자들이 각각의 부분을 완성할 때까지 기다리지 않고 부분을<br/> 나눠서 작성된 코드를 컴파일 할 수 있다.
+ > - 클래스간 결합도를 낮출 수 있다.
+ > <br/>▶ 코드의 종속성을 줄이고 유지보수성을 향상시킨다.
+ > - 표준화가 가능하다.
+ > <br/>▶ 클래스의 기본틀을 제공하여 개발자들에게 정형화된 개발을 강요
 
 ##### 인터페이스의 이해
 
@@ -861,4 +867,4 @@ abstract class AbstractPlayer extends Player {
 1. [서적] 남궁성님의 Java의 정석 3rd Edition
 2. [블로그] 영보님의 접근제어자 - https://qh5944.tistory.com/133
 3. [블로그] shaking님의 [JAVA] 제어자(modifier) - static, final, abstract - https://88240.tistory.com/447
-4. [홈페이지] geeksforgeeks 공홈 - https://www.geeksforgeeks.org/interfaces-in-java/
+4. [홈페이지] geeksforgeeks 공식문서 - https://www.geeksforgeeks.org/interfaces-in-java/
