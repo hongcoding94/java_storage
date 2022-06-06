@@ -967,6 +967,10 @@ abstract class AbstractPlayer extends Player {
 
 ##### 내부 클래스의 제어자와 접근성
 
+
+
+**!Tip6.** [내부 클래스의 제어자와 접근성](https://velog.io/@oyeon/7-4550-%EB%82%B4%EB%B6%80-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%9D%98-%EC%A0%9C%EC%96%B4%EC%9E%90%EC%99%80-%EC%A0%91%EA%B7%BC%EC%84%B1 "내부 클래스의 제어자와 접근성")
+
 ##### 익명 클래스(anonymous class)
 
 
