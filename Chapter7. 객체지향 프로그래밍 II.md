@@ -746,18 +746,28 @@ abstract class AbstractPlayer extends Player {
   </tr>
   <tr>
 	  <td>1</td>
-	  <td></td>
-	  <td></td>
+	  <td>인스턴스화 할 수 있다.<br/>즉, 개체를 생성 가능</td>
+	  <td>인스턴스화 할 수 없다.<br/>즉, 개체 생성이 불가능</td>
   </tr>
   <tr>
 	  <td>2</td>
-	  <td></td>
-	  <td></td>
+	  <td>상속은 지원 하지만 다중상속을 지원하지 않는다.</td>
+	  <td>상속은 지원 하지 않지만 다중 상속을 지원한다.</td>
   </tr>
   <tr>
 	  <td>3</td>
-	  <td></td>
-	  <td></td>
+	  <td>생성자를 포함 할 수 있다.</td>
+	  <td>생성자를 포함 할 수 없다.</td>
+  </tr>
+  <tr>
+	  <td>4</td>
+	  <td>추상 메서드를 포함할 수 없다.</td>
+	  <td>추상 메서드만 포함 한다.</td>
+  </tr>
+  <tr>
+	  <td>5</td>
+	  <td>변수 및 메서드는 제어 지정자를 사용하여 선언한다.</td>
+	  <td>변수와 메서드는 고용으로 선언되어야 한다.</td>
   </tr>
  </table>	
 
@@ -832,11 +842,20 @@ abstract class AbstractPlayer extends Player {
 
 ##### 인터페이스를 이용한 다형성
 
+ - 인터페이스를 이용한 다형성 
+ > 
+
 ##### 인터페이스의 장점
+
+
 
 ##### 인터페이스의 이해
 
+
+
 ##### 디폴트 메서드와 static메서드
+
+
 
 ## 참고 문서 / 블로그
 1. [서적] 남궁성님의 Java의 정석 3rd Edition
