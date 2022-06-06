@@ -868,9 +868,102 @@ abstract class AbstractPlayer extends Player {
 
 ##### 내부 클래스란?
 
+ - 내부 클래스란?
+ > 단어로 표현을 하자면 inner 내부의 라는 의미를 내포하고 있다. <br/>
+ > 따라서 하나의 클래스 내부에 선언된 또 다른 클래스를 의미하며 <br>/>
+ > 내부 클래스는 외부 클래스에 대해 두개의 클래스가 서로 긴밀한 관계를 맺고 있을 때 선언할 수 있다. 
+
 ##### 내부 클래스의 종류와 특징
 
+ - 내부 클래스의 종류
+ > 1. 정적 클래스 (static class)
+ > 	- 외부 클래스 영역에 선언된 클래스 중에서 static 키워드를 가지는 클래스를 정적 클래스
+ > 	<br/>▶ 외부 클래스의 인스턴스 멤버들과 관련된 작업에 사용될 목적으로 선언
+ > 	
+ > 2. 인스턴스 클래스 (instance class)
+ > 	- 외부 클래스 영역에 선언된 클래스 중에 static 키워드를 가지지 않는 클래스를 인스턴스 클래스
+ > 	<br/>▶ 외부 클래스의 static멤버, 특히 static메서드에서 사용될 목적으로 선언
+ > 
+ > 3. 지역 클래스 (local class)
+ > 	- 외부 클래스의 메소드나 초기화 블록에 선언된 클래스
+ > 	<br/>▶ 선언된 영역 내부에서 사용
+ > 
+ > 4. 익명 클래스 (anonymous class)
+ > 	- 달리 이름을 가지지 않은 클래스<br/>
+ > 	  즉, 선언과 동시에 객체를 생성하므로, 단 하나의 객체만을 생성하는 일회용 클래스
+ > 	<br/>▶ 일회성
+
+![image](https://user-images.githubusercontent.com/66407386/172124920-94b9375a-f662-40b3-9fb5-7f19123cf6fd.png)
+
 ##### 내부 클래스의 선언
+
+ - 내부 클래스 종류들의 선언 방식
+	 - 내부 클래스
+	 > ```java
+	 > public class Outer {
+	 >  변수;
+	 >  메소드;
+	 >  
+	 >  public class Inner {
+	 >  
+	 >  }
+	 > }
+	 > 
+	 > // 객체 생성
+	 > Outer 객체1 = new Outer();
+	 > Outer.Inner 객체2 = 객체1.new Inner();
+	 > ```
+
+	 - 정적 클래스
+	 > ```java
+	 > public class Outer {
+	 >   변수;
+	 >   메소드;
+	 >   
+	 >   public static class Inner {
+	 >   
+	 >   }
+	 > }
+	 > 
+	 > // 객체 생성
+	 > outer.Inner 객체 = new outer.Inner();
+	 > ```
+
+	 - 지역 클래스
+	 > ```java
+	 > public class outer {
+	 >   변수;
+	 >   메소드1;
+	 >   
+	 >   메소드2() {
+	 >      지역 변수;
+	 >      
+	 >      public class Inner {
+	 >      
+	 >      }
+	 >   }
+	 > }
+	 > ```
+
+	 - 익명 클래스
+	 > ```java
+	 > public class Inner {
+	 >   변수;
+	 >   메소드;
+	 > }
+	 > public class Outer {
+	 >   변수;
+	 >   메소드1;
+	 >   
+	 >   메소드2 {
+	 >     지역변수;
+	 >     
+	 >     new inner() {
+	 >       override된 내용들..
+	 >     }
+	 >   }
+	 > }
+
 
 ##### 내부 클래스의 제어자와 접근성
 
