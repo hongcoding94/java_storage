@@ -863,6 +863,19 @@ abstract class AbstractPlayer extends Player {
 
 
 
+## 내부 클래스(inner class)
+
+##### 내부 클래스란?
+
+##### 내부 클래스의 종류와 특징
+
+##### 내부 클래스의 선언
+
+##### 내부 클래스의 제어자와 접근성
+
+##### 익명 클래스(anonymous class)
+
+
 ## 참고 문서 / 블로그
 1. [서적] 남궁성님의 Java의 정석 3rd Edition
 2. [블로그] 영보님의 접근제어자 - https://qh5944.tistory.com/133
