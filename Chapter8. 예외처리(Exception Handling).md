@@ -19,6 +19,24 @@
   
   ##### 프로그램 오류
   
+   - 프로그램 오류에 대하여
+   > 프로그램 실행 중 어떠한 원인으로 인한 오작동하거나 비정상적으로 종료되는 경우<br/>
+   > 결과를 초래하는 원인을 프로그램 에러 또는 오류라고 지칭한다.<br/>
+   > 발생시점에 따라 에러와 오류를 구분한다.
+   
+   - 에러와 오류의 종류
+   >  - 에러의 종류
+   >    - 컴파일 에러(compile error) : 컴파일 시에 발생하는 에러
+   >    - 런타임 에러(runtime error) : 실행 시에 발생하는 에러
+   >    - 논리적 에러(logical error) : 실행은 되지만 의도와 다르게 동작하는 것
+   >  - 오류의 종류
+   >    - 에러(error) : IOException, OutOfMemoryError, StackOverflowError와 같이 수습될 수 없는 심각한 오류
+   >    - 예외(exception) : 코드에 의해 수습될 수 있는 다소 미약한 오류
+  
+   ![]()
+  
+   **!Tip0.** [OutOfMemoryError에 대한 정보](https://dahye-jeong.gitbook.io/java/java/advanced/2021-01-23-outofmemoryerror)
+  
   ##### 예외 클래스의 계층구조
   
   ##### 예외처리하기 try-catch문
