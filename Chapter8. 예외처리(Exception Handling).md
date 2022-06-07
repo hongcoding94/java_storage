@@ -322,41 +322,68 @@
   </table>
   
   <br/>🌟 중요 : [Checked Exception과 Unchecked Exception 차이점](https://steady-coding.tistory.com/583) <br/>
-  
-   - 예외 방식을 테스트 하기 위한 공통
-   ```java
-   public class TestException {
-      public static void Main(String[] args) {
-        
-        try{
-          
-        } catch (Exception e) {
-        
-        }
-      }
-   }
-   ```
-  
-   - 예외 방식1 (try/catch/finally) - UnChecked Exception
-   ```java
-   public 
-   ```
-   
+
    <br/>☑️ throw와 throws의 차이점? <br/> 
    >  - throw : 예외를 일부러 발생 시키기 위해 사용 - 본인이 예외를 발생시킴
    >    - 느낌 🤔 : *내가 어떻게든 해결해야해!*<br/>
+   >    - 문법 
+   >    ```java
+   >     throw new 예외 처리 클래스명("예외 메세지");
+   >    ```
    >  - throws: 예외객체를 호출한 쪽에 전달하기 위해 사용 - 제3자가 처리하도록 던짐 <br/>
    >    - 느낌 🤔 : *일단 던져 누군가 해주겠지?* 
+   >    - 문법   
+   >    ```java
+   >      접근제어자 반환형 메소드명() throws 예외 처리 클래스명 {
+   >        // 작성 내용
+   >      }
+   >    ```
 
-   - 예외 방식2 (throw Exception) - Checked Exception
+   - 예외 방식1 (throw Exception)
    ```java
- 
+   public class TestException {
+        static void handlingException() {
+            try {
+                throw new Exception();
+            } catch (Exception e) {
+                System.out.println("호출된 메소드 -> 예외가 처리");
+            }
+        }
+
+        public static void main(String[] args) {
+            try {
+                handlingException();
+            } catch (Exception e) {
+                System.out.println("main() 메소드에서 예외가 처리");
+            }
+        }
+   }
+   ```
+   - 출력 결과
+   ```text
+   호출된 메소드 -> 예외가 처리
    ```
    
-   - 예외 방식3 (throws Exception) - Checked Exception
+   - 예외 방식2 (throws Exception)
    ```java
- 
+    public class TestException {
+        static void handlingException() throws Exception { 
+          throw new Exception(); 
+        }
+        
+        public static void main(String[] args) {
+          try {
+              handlingException();
+          } catch (Exception e) {
+              System.out.println("메소드에서 예외가 처리");
+          }
+      }
+    }
    ```
+  - 출력 결과
+  ```text
+  메소드에서 예외가 처리
+  ```
   
   ##### finally블럭
   
