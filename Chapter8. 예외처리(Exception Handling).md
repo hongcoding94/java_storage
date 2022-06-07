@@ -210,9 +210,28 @@
   > *여기서 예외처리를 반드시 해야하는 경우는 checked Exception이라 부른다.*
   
   - 그 외 Exception의 예제
-  >   - ClassNotFoundException : 
-  >   - DataFormatException : 
-  >   - FileNotFoundException : 
+  >   - ClassNotFoundException : 프로그램 실행 중 객체를 생성할 때 클래스를 찾지 못하면 발생하는 예외<br/> 
+  >   ▶ 예시 <br/>
+  >       - IDE의 컴파일 문제로 개발자가 추가한 **클래스가 JAR에 추가되지 않은 상태로 실행된 경우**<br/>
+  >       ▶ 해결 방법<br/>
+  >         1. 설정한 ClassPath 경로에서 클래스 확인하기
+  >       - 라이브러리에서 **호환성 문제로 클래스를 찾지 못하는 경우**<br/>
+  >       ▶  해결 방법<br/>
+  >         1. 설정한 ClassPath 경로에서 클래스 확인하기
+  >         2. 라이브러리의 호환성 확인하기 <br/>
+  > **!Tip2.** [ClassNotFoundException을 자세히 알아보기](https://mkil.tistory.com/392)<br/>
+  >   - DataFormatException : <br/> 
+  >   ▶ 예시 <br/>
+  > ```java
+  > 
+  > ```
+  >  
+  >   - FileNotFoundException : <br/> 
+  >   ▶ 예시 <br/>
+  > ```java
+  > 
+  > ```
+  >  
 
   **즉, Exception을 불필요하게 남발하지 말고 상황에 맞게 잘 판단 하여 Exception처리를 하자.**
 
