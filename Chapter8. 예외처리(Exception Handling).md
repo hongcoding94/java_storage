@@ -352,7 +352,7 @@
             try {
                 handlingException();
             } catch (Exception e) {
-                System.out.println("main() 메소드에서 예외가 처리");
+                System.out.println("두둠! 메소드 등장! 메소드가 예외가 처리해버렸다구");
             }
         }
    }
@@ -373,14 +373,14 @@
           try {
               handlingException();
           } catch (Exception e) {
-              System.out.println("메소드에서 예외가 처리");
+              System.out.println("두둠! 메소드 등장! 메소드가 예외가 처리해버렸다구");
           }
       }
     }
    ```
   - 출력 결과
   ```text
-  메소드에서 예외가 처리
+  두둠! 메소드 등장! 메소드가 예외가 처리해버렸다구
   ```
   
   ##### finally블럭
@@ -418,6 +418,62 @@
   
   ##### 자동 자원 반환 try-with-resources문
   
+  - try-with-resources문
+  > Java1.7부터 추가된 try-with-resources문을 사용하면 간결하게 문제를 해결 할 수 있다.<br/>
+  > 입출력에 사용되는 클래스 중에서는 사용한 후에 꼭 닫아줘야하는 File, DB등이 있다.<br/>
+  > 자원(resources)들이 반환 되기 때문이다.
+  ```java
+  // Java 1.7 이전 try/catch/finally문
+  import java.io.BufferedOutputStream;
+  import java.io.FileInputStream;
+  import java.io.FileOutputStream;
+  import java.io.IOException;
+  import java.io.OutputStream;
+  
+  public class TestException {
+    public static void Main(String[] args) {
+
+      try {
+	        fis = new FileInputStream("scroe.dat");
+          dis = new DataInputStream(fis);
+      } catch(IOException e) {
+          e.printStackTrace();
+      } finally {
+        dis.close();          // 작업 중에 예외가 발생하더라도, dis 닫기
+      }
+    }
+  }  
+  
+  // ================================================== //
+  
+  // Java 1.7부터 나온 try/catch/resources문
+  
+  import java.io.BufferedOutputStream;
+  import java.io.FileInputStream;
+  import java.io.FileOutputStream;
+  import java.io.IOException;
+  import java.io.OutputStream;
+  
+  public class TestException {
+    public static void Main(String[] args) {
+
+      try(
+        fis = new FileInputStream("score.dat");
+        dis = new DataInputStream(fis)
+      ) {
+        while (true) {
+          score = dis.readInt();
+          system.out.println(score);
+          
+          sum += score;
+        }
+      } catch(lOException e) {
+          e.printStackTrace();
+      }
+    }
+  }
+  ```
+  
   ##### 사용자정의 예외 만들기
   
   ##### 예외 되던지기(exception re-throwing)
@@ -427,8 +483,10 @@
 ## 참고 문서 / 블로그
 1. [서적] 남궁성님의 Java의 정석 3rd Edition
 2. [블로그] [codepark_kr님의 java-이론편](https://velog.io/@codepark_kr/%EC%9E%90%EB%B0%94-%EC%9D%B4%EB%A1%A0-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC ) 
-3. [블로그] [cheershennah님의 try-catch문이란?](https://cheershennah.tistory.com/147)
-4. [블로그] [coding captain님의 예외강제 발생시키기 & 사용자 정의 예외](https://makecodework.tistory.com/entry/Java-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC104-%EB%8B%A4%EC%A4%91-catch-%EB%A9%80%ED%8B%B0-catch)
-5. [블로그] [국브님의 throw throws(예외발생 및 예외처리)](https://bvc12.tistory.com/196)
-6. [블로그] [고코딩님의 throw, throws와 Exception Handle(예외처리) 개념 및 설명](https://go-coding.tistory.com/10)
+3. [블로그] [damiing님의 자바의정석 8. 예외처리(Exception handling)](https://jungdami-ing.tistory.com/entry/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%95%EC%84%9D-8-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%ACException-Handling)
+4. [블로그] [cheershennah님의 try-catch문이란?](https://cheershennah.tistory.com/147)
+5. [블로그] [coding captain님의 예외강제 발생시키기 & 사용자 정의 예외](https://makecodework.tistory.com/entry/Java-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC104-%EB%8B%A4%EC%A4%91-catch-%EB%A9%80%ED%8B%B0-catch)
+6. [블로그] [국브님의 throw throws(예외발생 및 예외처리)](https://bvc12.tistory.com/196)
+7. [블로그] [고코딩님의 throw, throws와 Exception Handle(예외처리) 개념 및 설명](https://go-coding.tistory.com/10)
+8. [블로그] [Libi님의 try-with-resources:자원을 할당하는 방법](https://sorjfkrh5078.tistory.com/103)
 
