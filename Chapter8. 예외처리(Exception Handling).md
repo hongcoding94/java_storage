@@ -497,13 +497,13 @@
    - 커스텀 예외 예시
    ```java
 	public class ReservedException extends RuntimeException {     
-		public ReservedException(String msg) {        
-		super(msg);    
+	 public ReservedException(String msg) {        
+	    super(msg);    
 	 }     
 	}
 
 	public class JoinMember {         
-		String[] reserved = {"admin", "tester", "member"};         
+	   String[] reserved = {"admin", "tester", "member"};         
 
 	   public void regId(String userId) {        
 		// userId가 reserved에 있는 값과 일치 하면 안됨        
@@ -516,16 +516,16 @@
 			// throw new Exception("일반 예외"); 
 			// java에서 잡아주는 예외이므로 빨간줄                
 			throw new ReservedException(userId + "는 예약어 입니다.");            
-			}        
+		    }        
 		 }    
 	   }
 	}
 
 	public class Main { // 임의의 예외처리 만들기     
-		public static void main(String[] args) {        
+	   public static void main(String[] args) {        
 		JoinMember join = new JoinMember();        
 		join.regId("admin");    
-	 } 
+	   }  
 	}
    ```
   
