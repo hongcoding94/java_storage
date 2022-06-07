@@ -164,11 +164,11 @@
   >       String str = "";
   >       
   >       try{
-  >         str = "1543OO";  // 숫자 1543 & 문자 OO
-  >         System.out.println(Integer.parseInt(str));    
+  >         str1 = "1543OO";  // 숫자 1543 & 문자 OO
+  >         System.out.println(Integer.parseInt(str1));    
   >       } catch(NumberFormatException e) {
-  >         str = "2022";
-  >         System.out.println(Integer.parseInt(str));
+  >         str2 = "2022";
+  >         System.out.println(Integer.parseInt(str2));
   >       } catch(Exception e) {
   >         e.printStackTrace();
   >       }
