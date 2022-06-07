@@ -372,4 +372,5 @@
 1. [서적] 남궁성님의 Java의 정석 3rd Edition
 2. [블로그] [codepark_kr님의 java-이론편](https://velog.io/@codepark_kr/%EC%9E%90%EB%B0%94-%EC%9D%B4%EB%A1%A0-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC ) 
 3. [블로그] [cheershennah님의 try-catch문이란?](https://cheershennah.tistory.com/147)
+4. [블로그] [coding captain님의 예외강제 발생시키기 & 사용자 정의 예외](https://makecodework.tistory.com/entry/Java-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC104-%EB%8B%A4%EC%A4%91-catch-%EB%A9%80%ED%8B%B0-catch)
 
