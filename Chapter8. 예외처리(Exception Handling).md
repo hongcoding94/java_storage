@@ -235,14 +235,10 @@
 
   ##### 예외처리하기 try-catch문
 
-  ![image](https://user-images.githubusercontent.com/66407386/172298079-a675d3d9-fd72-404d-8247-c8beaec46b00.png)
-
   - try/catch문
   > 반드시 실행은 되어야 하는 코드이지만 예외 처리하는 코드를 작성하여 사용자가 알수 있도록 하는 문
   > *finally블록 사용 시점*
-  >   - 자원이나 DB에 커넷션 한 경우, 파일 닫기, 연결 닫기 등과 같은 **"정리 코드"를 넣는데 사용**
-
-  [정리내용](https://cheershennah.tistory.com/147)
+  >   - 자원이나 DB에 커넥션 한 경우, 파일 닫기, 연결 닫기 등과 같은 **"정리 코드"를 넣는데 사용**
 
   - try/catch문 문법
   > ```java
@@ -267,6 +263,18 @@
   ![image](https://user-images.githubusercontent.com/66407386/172298117-1fa95da8-e3bd-4971-afa7-ff28796b0f5d.png)
   
   ##### try-catch문에서의 흐름
+  
+   ![image](https://user-images.githubusercontent.com/66407386/172298079-a675d3d9-fd72-404d-8247-c8beaec46b00.png)
+  
+   - try-catch문 흐름
+   >  - try 불록에서 발생한 경우
+   >    1. 발생한 예외와 일치하는 catch문이 있는 경우
+   >    2. 일치하는 catch문이 있다면 catch블럭 내의 문자을 실핼하고 try/catch문을 벗어나 다음을 수행
+   >    3. 일치하는 catch문이 없다면 예외는 처리되지 못 하고 console에 * .Exception 반환됨
+   >  - try 블럭 안에서 발생하지 않은 경우
+   >    1. catch블럭을 거치지 않고 전체 try/catch문을 빠져나가서 다음을 수행
+   >  - try 블럭 밖에서 발생한 경우
+   >    1. 예외는 아무 처리되지 못 하고 console에 * .Exception 반환됨
   
   ##### 예외의 발생과 catch블럭
   
