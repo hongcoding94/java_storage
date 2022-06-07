@@ -52,7 +52,7 @@
   </tr>
   <tr>
     <td>void printStackTrace()</td>
-    <td>해당 throwable 객체와 표준 오류 스트림(standard error stram)에서 해당 객체의 스택 트레이스(stack trace)를 출력함</td>
+    <td>해당 throwable 객체와 표준 오류 스트림(standard error stram)에서 해당 객체의<br/> 스택 트레이스(stack trace)를 출력함</td>
   </tr>
   <tr>
     <td>String toString()</td>
@@ -71,11 +71,89 @@
   > try/catch문을 사용하기 보다는 프로그램을 작성하면서 예외가 발생하지 않도록 처리하는 것이 좋다.<br/>
   > *여기서 예외처리를 개발자의 판단에 맞기는 경우를 Unchecked Exception이라 부른다.*
 
+  - RuntimeException의 예제
+  >   - ArrayIndexOutOfBoundException : 잘못된 인덱스를 사용해서 배열에 접근했다는 것을 알려주기 위한 예외<br/>
+  >   ▶ 예시 <br/>
+  >   ```java
+  >   int[] array = new int[5];
+  >   int boom = array[10]; // throws the exception
+  >   
+  >   // ============================================== //
+  >   
+  >   int[] array = new int[5];
+  >   // 잘못된 예제
+  >   for (int index = 1; index <= array.length; index++) { // 여기서 ArrayIndexOutOfBoundException 발생!!
+  >     System.out.println(array[index]);
+  >   }
+  >   
+  >   // 올바른 예제
+  >   for (int index = 0; index < array.length; index++) {
+  >     System.out.println(array[index]);
+  >   }
+  >   ```
+  >   
+  >   - ArithmeticException : 예외적인 산술 조건이 발생하여 알려주기 위한 예외
+  >   ▶ 예시 <br/>
+  >   ```java
+  >   // 잘못된 예제
+  >   public class TestException {
+  >     public static void main(String[] args) {
+  >       // 변수 생성
+  >       int i = 1994;
+  >       int j = 0;
+  >       
+  >       System.out.println( i / j );   // 여기서 ArithmeticException 발생!!
+  >     }
+  >   }
+  >   
+  >   // 올바른 예제 1 (if문)
+  >   public class TestException {
+  >     public static void main(String[] args) {
+  >       // 변수 생성
+  >       int i = 1994;
+  >       int j = 0;
+  >       if(j != 0 ) {     // 조건식으로 막혀서 해당 코드가 돌지 않기 때문에 에러발생 없음.
+  >         System.out.println( i / j );
+  >       }
+  >     }
+  >   }
+  >   
+  >   // 올바른 예제 2 (try/catch)
+  >   public class TestException {
+  >     public static void main(String[] args) {
+  >       // 변수 생성
+  >       int i = 1994;
+  >       int j = 0;
+  >       int k;
+  >       
+  >       try{
+  >         k = i / j;
+  >       } catch(ArithmeticException e) {
+  >           System.out.println("ArithmeticException 발생");
+  >       } finally {
+  >           System.out.println("모든지 넘겨~");
+  >       }
+  >     }
+  >   } 
+  >   ```
+  >   
+  >   - ClassCastException : 코드가 하위 유형이 아닌 유형에 대한 참조를 캐스팅 시도했을 때 확인되지 않은 예외<br/>
+  >   
+  >   - NumberFormatException : 
+  >   - NullPointerException : 
+
   - 그 외 Exception
   > 사용자의 실수와 같은 외적인 요인에 의해 발생하는 예외<br/>
   > Exception 클래스에 속하는 자식 클래스들은 치명적인 예외 상황을 발생시키므로, 반드시<br/>
   > try/catch문을 사용하여 예외 처리를 해야한다.<br/>
   > *여기서 예외처리를 반드시 해야하는 경우는 checked Exception이라 부른다.*
+  
+  - 그 외 Exception의 예제
+  >   - ClassNotFoundException : 
+  >   - DataFormatException : 
+  >   - FileNotFoundException : 
+
+  **즉, Exception을 불필요하게 남발하지 말고 상황에 맞게 잘 판단 하여 Exception처리를 하자.**
 
   ##### 예외처리하기 try-catch문
   
