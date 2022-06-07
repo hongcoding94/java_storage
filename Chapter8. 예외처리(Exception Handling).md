@@ -477,7 +477,7 @@
   
    - 커스텀 예외(Custom Exception)
    > ```text
-   > 일반 예외로 선언할 경우 Exception을 상속받아 구현<br/>
+   > 일반 예외로 선언할 경우 Exception을 상속받아 구현
    > 실행 예외로 선언할 경우 RuntimeException을 상속받아 구현
    > ```
    > 	- 사용자 정의 예외 클래스는 컴파일러가 체크하는 일반 예외로 선언할 수도 있고,<br/>
@@ -489,8 +489,23 @@
    >    	- 예외 발생원인(예외 메시지)을 전달하기 위해 String 타입의 매개변수를 갖는 생성자
    >    - 예외 메시지의 용도는 catch{} 블록의 예외처리 코드에서 이용하기 위해서
 
-   - 커스텀 예외 예시
+   - 사용자 정의 예외 객체
+   > 	- 기본 라이브러리(API)에서 제공하는 예외 객체 외 개발자가 선언해서 사용하는 예외 객체
+   > 	- Exception클래스 또는 Exception의 자식클래스를 반드시 상속받아야함
+   > 	- 일반적으로 Exception에서 선언된 형태의 생성자 외에는 다른 멤버를 가지지 않음
 
+   - 커스텀 예외 예시
+   ```java
+   // 사용자 정의 예외 클래스 생성
+   public class NumException extends Exception {
+	public NumException() {
+		super();
+	}
+	 public void numError() {
+		 System.out.println("100보다 큽니다.");
+	 }
+   }
+   ```
 
    - 커스텀 예외 활용
    
