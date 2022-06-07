@@ -292,11 +292,72 @@
   
   ##### 예외 발생시키기 / 메서드에 예외 선언하기
   
-   - 예외 방식1 (try/catch/finally)
+  - **Checked Exception과 Unchecked Exception 차이점**
+  <table>
+  <tr>
+    <th>구분</th>
+    <th>Checked Exception</th>
+    <th>UnChecked Exception</th>
+  </tr>
+  <tr>
+    <td>확인 시점</td>
+    <td>컴파일(Compile)</td>
+    <td>런타임(RunTime)</td>
+  </tr>
+  <tr>
+    <td>처리 여부</td>
+    <td>반드시 예외 처리해야한다.</td>
+    <td>명시적으로 하지 않아도 된다.</td>
+  </tr>
+  <tr>
+    <td>트랜잭션 처리</td>
+    <td>예외 발생시 롤백하지 않음</td>
+    <td>예외 발생시 롤백 해야함</td>
+  </tr>
+  <tr>
+    <td>종류</td>
+    <td>IOException<br/>, ClassNotFoundException등</td>
+    <td>NullPointException<br/>, ClassCastException</td>
+  </tr>
+  </table>
+  
+  <br/>🌟 중요 : [Checked Exception과 Unchecked Exception 차이점](https://steady-coding.tistory.com/583) <br/>
+  
+   - 예외 방식을 테스트 하기 위한 공통
+   ```java
+   public class TestException {
+      public static void Main(String[] args) {
+        
+        try{
+          
+        } catch (Exception e) {
+        
+        }
+      }
+   }
+   ```
+  
+   - 예외 방식1 (try/catch/finally) - UnChecked Exception
+   ```java
+   public 
+   ```
    
-   
-   - 예외 방식2 (throw Exception)
+   <br/>☑️ throw와 throws의 차이점? <br/> 
+   > throw : 예외를 일부러 발생 시키기 위해 사용 - 본인이 예외를 발생시킴 <br/>
+   >  - 느낌 🤔 : *내가 어떻게든 해결해야해*<br/>
+   > throws: 예외객체를 호출한 쪽에 전달하기 위해 사용 - 제3자가 처리하도록 던짐 <br/>
+   >  - 느낌 🤔 : *누군가 해주겠지* 
 
+   
+   - 예외 방식2 (throw Exception) - Checked Exception
+   ```java
+ 
+   ```
+   
+   - 예외 방식3 (throws Exception) - Checked Exception
+   ```java
+ 
+   ```
   
   ##### finally블럭
   
