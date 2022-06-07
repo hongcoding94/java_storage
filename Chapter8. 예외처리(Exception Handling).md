@@ -33,8 +33,8 @@
    >    - 에러(error) : IOException, OutOfMemoryError, StackOverflowError와 같이 수습될 수 없는 심각한 오류
    >    - 예외(exception) : 코드에 의해 수습될 수 있는 다소 미약한 오류
   
-   **!Tip0.** [OutOfMemoryError에 대한 정보](https://dahye-jeong.gitbook.io/java/java/advanced/2021-01-23-outofmemoryerror)
-   **!Tip1.** [예외처리 Best설명](https://catsbi.oopy.io/92cfa202-b357-4d47-8de2-b9b3968dfb2e)
+   **!Tip0.** [OutOfMemoryError에 대한 정보](https://dahye-jeong.gitbook.io/java/java/advanced/2021-01-23-outofmemoryerror)<br/>
+   **!Tip1.** [예외처리 Best설명](https://catsbi.oopy.io/92cfa202-b357-4d47-8de2-b9b3968dfb2e)<br/>
   ##### 예외 클래스의 계층구조
   
   ![image](https://velog.velcdn.com/images%2Fcodepark_kr%2Fpost%2Fa70025be-d97d-4ba4-81de-bf9b8fe48d2b%2FExceptionClassHierarchy.png)
