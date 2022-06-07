@@ -496,19 +496,38 @@
 
    - 커스텀 예외 예시
    ```java
-   // 사용자 정의 예외 클래스 생성
-   public class NumException extends Exception {
-	public NumException() {
-		super();
+   public class ReservedException extends RuntimeException {     
+   	public ReservedException(String msg) {        
+		super(msg);    
+	}     
+   }
+   
+   public class JoinMember {         
+   	String[] reserved = {"admin", "tester", "member"};         
+	
+	public void regId(String userId) {        
+		// userId가 reserved에 있는 값과 일치 하면 안됨        
+		for(String name : reserved) {            
+			if(name.equals(userId)) {
+				// System.out.println("예약어 입니다.");
+				// 예외 발생이 목적이므로 변경
+				// throw new XXXException("msg");                
+				// throw new RuntimeException("실행 예외");
+				// throw new Exception("일반 예외"); 
+				// java에서 잡아주는 예외이므로 빨간줄                
+				throw new ReservedException(userId + "는 예약어 입니다.");            
+			}        
+		}    
 	}
-	 public void numError() {
-		 System.out.println("100보다 큽니다.");
-	 }
+   }
+   
+   public class Main { // 임의의 예외처리 만들기     
+   	public static void main(String[] args) {        
+		JoinMember join = new JoinMember();        
+		join.regId("admin");    
+	} 
    }
    ```
-
-   - 커스텀 예외 활용
-   
   
   ##### 예외 되던지기(exception re-throwing)
   
@@ -523,4 +542,5 @@
 6. [블로그] [국브님의 throw throws(예외발생 및 예외처리)](https://bvc12.tistory.com/196)
 7. [블로그] [고코딩님의 throw, throws와 Exception Handle(예외처리) 개념 및 설명](https://go-coding.tistory.com/10)
 8. [블로그] [Libi님의 try-with-resources:자원을 할당하는 방법](https://sorjfkrh5078.tistory.com/103)
+9. [블로그] [Yskin's님의 Throw 예외처리, 커스텀 예외처](https://qdgbjsdnb.tistory.com/33)
 
