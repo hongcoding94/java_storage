@@ -92,7 +92,7 @@
   >   }
   >   ```
   >   
-  >   - ArithmeticException : 예외적인 산술 조건이 발생하여 알려주기 위한 예외
+  >   - ArithmeticException : 예외적인 산술 조건이 발생하여 알려주기 위한 예외<br/> 
   >   ▶ 예시 <br/>
   >   ```java
   >   // 잘못된 예제
@@ -144,7 +144,7 @@
   >     - 숫자로 변경하는 도중 숫자형이 아닌 그외 문자열 등인 경우 예외
   >     - 변경하는 자료형보다 범위가 큰 경우
   >     - Null입력 시 예외
-  >     - 문자 앞뒤로 공백이 있는 경우
+  >     - 문자 앞뒤로 공백이 있는 경우 <br/> 
   >   ▶ 예시 <br/> 
   >   ```java
   >   // 잘못된 예제
@@ -176,12 +176,32 @@
   >   }
   >   ```
   > 
-  >   - NullPointerException : 
+  >   - NullPointerException : 실제 값이 아닌 null을 가지고 있는 개체 혹은 변수 등을 호출 할 경우 예외<br/> 
   >   ▶ 예시 <br/> 
-  > 
-  > 
-  > 
-  > 
+  >   ```java
+  >   // 잘못된 예제
+  >   public class TestException {
+  >     public static void main(String[] args) {
+  >       String str = null;
+  >       System.out.println(str); // 여기서 NullPointerException 발생
+  >     }
+  >   }
+  >   
+  >   // 올바른 예제
+  >   public class TestException {
+  >     public static void main(String[] args) {
+  >     
+  >       try{
+  >           String str = null;
+  >           System.out.println(str); 
+  >       } catch(NullPointException e) {
+  >           System.out.println("NullPointerException 발생");
+  >       } funally {
+  >           System.out.println("모든지 넘겨~");
+  >       }
+  >     }
+  >   }
+  >   ```
 
   - 그 외 Exception
   > 사용자의 실수와 같은 외적인 요인에 의해 발생하는 예외<br/>
