@@ -33,12 +33,50 @@
    >    - 에러(error) : IOException, OutOfMemoryError, StackOverflowError와 같이 수습될 수 없는 심각한 오류
    >    - 예외(exception) : 코드에 의해 수습될 수 있는 다소 미약한 오류
   
-   ![]()
-  
    **!Tip0.** [OutOfMemoryError에 대한 정보](https://dahye-jeong.gitbook.io/java/java/advanced/2021-01-23-outofmemoryerror)
-  
+   **!Tip1.** [예외처리 Best설명](https://catsbi.oopy.io/92cfa202-b357-4d47-8de2-b9b3968dfb2e)
   ##### 예외 클래스의 계층구조
   
+  ![image](https://velog.velcdn.com/images%2Fcodepark_kr%2Fpost%2Fa70025be-d97d-4ba4-81de-bf9b8fe48d2b%2FExceptionClassHierarchy.png)
+  
+  - **Throwable 클래스**
+  > Throwable 클래스는 모든 예외의 조상이 되는 Exception 클래스와 모든 오류의 조상이 되는 Error 클래스의 부모 클래스
+  <table>
+  <tr>
+    <th>종류 메소드</th>
+    <th>내용 설명</th>
+  </tr>
+  <tr>
+    <td>String getMessage()</td>
+    <td>해당 throwable 객체에 대한 자세한 내용을 문자열로 반환</td>
+  </tr>
+  <tr>
+    <td>void printStackTrace()</td>
+    <td>해당 throwable 객체와 표준 오류 스트림(standard error stram)에서 해당 객체의 스택 트레이스(stack trace)를 출력함</td>
+  </tr>
+  <tr>
+    <td>String toString()</td>
+    <td>해당 throwable 객체에 대한 간략한 내용을 문자열로 반환함</td>
+  </tr>
+  </table>
+  
+  - **Exception 클래스의 두 하위 클래스**
+  > Exception 하위 클래스 
+  >   - RuntimeException 클래스
+  >   - 그 외 Exception 클래스의 자식
+  
+  - RuntimeException
+  > 발생 원인은 프로그래머들의 실수로 발생되는 예외<br/>
+  > RuntimeException 클래스를 상속받는 자식 클래스들은 치명적인 예외 상활을 발생 시키지 않는 예외들로 구성<br/>
+  > try/catch문을 사용하기 보다는 프로그램을 작성하면서 예외가 발생하지 않도록 처리하는 것이 좋다.<br/>
+  > *여기서 예외처리를 개발자의 판단에 맞기는 경우를 Unchecked Exception이라 부른다.*
+
+  - 그 외 Exception
+  > 사용자의 실수와 같은 외적인 요인에 의해 발생하는 예외<br/>
+  > Exception 클래스에 속하는 자식 클래스들은 치명적인 예외 상황을 발생시키므로, 반드시<br/>
+  > try/catch문을 사용하여 예외 처리를 해야한다.<br/>
+  > *여기서 예외처리를 반드시 해야하는 경우는 checked Exception이라 부른다.*
+
   ##### 예외처리하기 try-catch문
   
   ##### try-catch문에서의 흐름
@@ -60,5 +98,6 @@
   ##### 연결된 예외(chained exception)
   
 ## 참고 문서 / 블로그
-0. [서적] 남궁성님의 Java의 정석 3rd Edition
+1. [서적] 남궁성님의 Java의 정석 3rd Edition
+2. [블로그] [codepark_kr님의 java-이론편](https://velog.io/@codepark_kr/%EC%9E%90%EB%B0%94-%EC%9D%B4%EB%A1%A0-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC "") 
 
