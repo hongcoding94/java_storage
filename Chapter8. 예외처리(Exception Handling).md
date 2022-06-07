@@ -186,7 +186,7 @@
   >       } catch(ArithmeticException e) {
   >           System.out.println("ArithmeticException 발생");
   >       } finally {
-  >           System.out.println("모든지 넘겨~");
+  >           System.out.println("마지막에 한번은 요것도~");
   >       }
   >     }
   >   } 
@@ -252,7 +252,7 @@
   >       } catch(NullPointException e) {
   >           System.out.println("NullPointerException 발생");
   >       } funally {
-  >           System.out.println("모든지 넘겨~");
+  >           System.out.println("마지막에 한번은 요것도~");
   >       }
   >     }
   >   }
@@ -386,6 +386,8 @@
   ```
   
   ##### finally블럭
+  
+    - 
   
   ##### 자동 자원 반환 try-with-resources문
   
