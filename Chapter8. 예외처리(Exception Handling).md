@@ -242,6 +242,8 @@
 
   **즉, Exception을 불필요하게 남발하지 말고 상황에 맞게 잘 판단 하여 Exception처리를 하자.**
 
+  **!Tip3.** [unchecked Exception와 checked Exception에 ](https://steady-coding.tistory.com/583)
+
   ##### 예외처리하기 try-catch문
 
   - try/catch문
