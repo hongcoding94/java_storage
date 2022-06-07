@@ -234,6 +234,33 @@
   **즉, Exception을 불필요하게 남발하지 말고 상황에 맞게 잘 판단 하여 Exception처리를 하자.**
 
   ##### 예외처리하기 try-catch문
+
+  ![image](https://user-images.githubusercontent.com/66407386/172298079-a675d3d9-fd72-404d-8247-c8beaec46b00.png)
+
+  - try/catch문
+  > 반드시 실행은 되어야 하는 코드이지만 예외 처리하는 코드를 작성하여 사용자가 알수 있도록 하는 문
+  
+  - try/catch문 문법
+  > ```java
+  > try {
+  >   //예외발생할 가능성이 있는 문장 
+  >   
+  > }catch(Exception1 e1) {
+  >   //Exception1이 발생했을 경우, 이를 처리하지 위한 문장적는다.
+  >   //보통 이곳에 예외메세지를 출력하고 로그로 남김.
+  >   
+  > }catch(Exception2 e2) {
+  >   //Exception2이 발생했을 경우, 이를 처리하지 위한 문장적는다.
+  >   
+  > }catch(ExceptionN eN) {
+  >   //ExceptionN이 발생했을 경우, 이를 처리하지 위한 문장적는다.
+  >   
+  > }finally{
+  >   //예외발생여부에 관계없이 상항 수행되어야 하는 문장적는다.
+  > 
+  > ```
+  
+  ![image](https://user-images.githubusercontent.com/66407386/172298117-1fa95da8-e3bd-4971-afa7-ff28796b0f5d.png)
   
   ##### try-catch문에서의 흐름
   
@@ -255,5 +282,6 @@
   
 ## 참고 문서 / 블로그
 1. [서적] 남궁성님의 Java의 정석 3rd Edition
-2. [블로그] [codepark_kr님의 java-이론편](https://velog.io/@codepark_kr/%EC%9E%90%EB%B0%94-%EC%9D%B4%EB%A1%A0-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC "") 
+2. [블로그] [codepark_kr님의 java-이론편](https://velog.io/@codepark_kr/%EC%9E%90%EB%B0%94-%EC%9D%B4%EB%A1%A0-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC ) 
+3. [블로그] [cheershennah님의 try-catch문이란?](https://cheershennah.tistory.com/147)
 
