@@ -70,7 +70,12 @@
   > RuntimeException 클래스를 상속받는 자식 클래스들은 치명적인 예외 상활을 발생 시키지 않는 예외들로 구성<br/>
   > try/catch문을 사용하기 보다는 프로그램을 작성하면서 예외가 발생하지 않도록 처리하는 것이 좋다.<br/>
   > *여기서 예외처리를 개발자의 판단에 맞기는 경우를 Unchecked Exception이라 부른다.*
-
+  
+  - Unchecked Exception 부가 설명
+    > 명시적인 예외 처리를 강제하지 않기 때문에 Uncheked Exception이라고 한다.<br/>
+    > 명시적인 예외 처리란 try ~ catch로 예외를 잡거나 throw로 호출한<br/>
+    > 메소드에게 예외를 던지지 않는 행위를 말한다.
+  
   - RuntimeException의 예제
   >   - ArrayIndexOutOfBoundException : 잘못된 인덱스를 사용해서 배열에 접근했다는 것을 알려주기 위한 예외<br/>
   >   ▶ 예시 <br/>
@@ -208,6 +213,10 @@
   > Exception 클래스에 속하는 자식 클래스들은 치명적인 예외 상황을 발생시키므로, 반드시<br/>
   > try/catch문을 사용하여 예외 처리를 해야한다.<br/>
   > *여기서 예외처리를 반드시 해야하는 경우는 checked Exception이라 부른다.*
+
+  - checked Exception 부가 설명
+    > 명시적인 예외 처리를 강제하기 때문에 Checked Exception이라 한다.<br/>
+    > 반드시 try ~ catch로 예외를 잡거나 throw로 호출한 메소드에게 예외를 던져야 한다.
   
   - 그 외 Exception의 예제
   >   - ClassNotFoundException : 프로그램 실행 중 객체를 생성할 때 클래스를 찾지 못하면 발생하는 예외<br/> 
@@ -260,11 +269,7 @@
   > 
   > ```
   
-  ![image](https://user-images.githubusercontent.com/66407386/172298117-1fa95da8-e3bd-4971-afa7-ff28796b0f5d.png)
-  
   ##### try-catch문에서의 흐름
-  
-   ![image](https://user-images.githubusercontent.com/66407386/172298079-a675d3d9-fd72-404d-8247-c8beaec46b00.png)
   
    - try-catch문 흐름
    >  - try 불록에서 발생한 경우
@@ -275,6 +280,12 @@
    >    1. catch블럭을 거치지 않고 전체 try/catch문을 빠져나가서 다음을 수행
    >  - try 블럭 밖에서 발생한 경우
    >    1. 예외는 아무 처리되지 못 하고 console에 * .Exception 반환됨
+  
+    - 
+   ![image](https://user-images.githubusercontent.com/66407386/172298079-a675d3d9-fd72-404d-8247-c8beaec46b00.png)
+  
+    - 
+   ![image](https://user-images.githubusercontent.com/66407386/172298117-1fa95da8-e3bd-4971-afa7-ff28796b0f5d.png)
   
   ##### 예외의 발생과 catch블럭
   
