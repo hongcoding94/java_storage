@@ -117,10 +117,10 @@
    >  - try 블럭 밖에서 발생한 경우
    >    1. 예외는 아무 처리되지 못 하고 console에 * .Exception 반환됨
   
-   - 흐름의 이해도1. 코드가 try/catch/finally 지나가는 방식
+   - 흐름의 이해도1. 코드가 try/catch/finally 지나가는 방식<br/>
    ![image](https://user-images.githubusercontent.com/66407386/172298079-a675d3d9-fd72-404d-8247-c8beaec46b00.png)
   
-   - 흐름의 이해도2. 코드가 throw Exception을 지나가는 방식
+   - 흐름의 이해도2. 코드가 throw Exception을 지나가는 방식<br/>
    ![image](https://user-images.githubusercontent.com/66407386/172298117-1fa95da8-e3bd-4971-afa7-ff28796b0f5d.png)
   
   ##### 예외의 발생과 catch블럭
