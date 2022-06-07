@@ -531,15 +531,55 @@
   
   ##### 예외 되던지기(exception re-throwing)
   
-  - 예외 되던지기
+  - 예외 되던지기(exception re-throwing)
   > 메서드에서 발생 하는 예외가 여러개 일때, 몇개는 try-catch문을 통해 메서드에서 자체적으로 처리하고<br/>
   > 나머지는 선언부에 지장하여 호출한 메서드에서 처리하도록 할 수 있다.
+  ```java
+  public static void main(String[] args) {
+  	try {
+		method1();
+	} catch(Exception e) {
+		System.out.println("main()에서 예외가 처리 되었다.");
+		throw e;
+	}
+  }
+  
+  public static void method1() throws Exception {
+  	try {
+		throw new Exception();
+	} catch(Exception e) {
+		System.out.println("method1()에서 예외가 처리 되었다.");
+		throw e;	// 다시 예외를 발생
+	}
+  }
+  ```
+  
+  - 출력 결과
+  ```text
+  method1()에서 예외가 처리 되었다.
+  main()에서 예외가 처리 되었다.
+  ```
   
   ##### 연결된 예외(chained exception)
   
-  - 연결된 예외
+
+  - 연결된 예외(Chained Exception)
   > 예외가 다른 예외를 발생 시킬 수 있는 데 예를 들어 예외 A가 예외 B를 발생시켰다면<br/>
   > A를 B의 '원인 예외(Cause Exception)라고 한다.
+  ```java
+  public static void method1() throws Exception {
+  	try {
+		System.out.println("method1()에서 호출")
+	} catch(Exception e) {
+		customException ce = new customException();
+		ce.initCause(e);
+		throw ce;
+	}
+  }
+  // 먼저 customException를 생성한 후에, intiCause()로 Exception를 customException의
+  // 원인 예외로 등록한 뒤 'throw'로 이 예외를 던진다.
+  ```
+
   
 ## 참고 문서 / 블로그
 1. [서적] 남궁성님의 Java의 정석 3rd Edition
