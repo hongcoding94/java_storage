@@ -7,13 +7,12 @@
       - [1-3. 예외처리하기 try-catch문](https://github.com/hongcoding94/java_storage/blob/main/Chapter8.%20%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC(Exception%20Handling).md#%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0-try-catch%EB%AC%B8 "예외처리하기 try-catch문")
       - [1-4. try-catch문에서의 흐름](https://github.com/hongcoding94/java_storage/blob/main/Chapter8.%20%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC(Exception%20Handling).md#try-catch%EB%AC%B8%EC%97%90%EC%84%9C%EC%9D%98-%ED%9D%90%EB%A6%84 "try-catch문에서의 흐름")
       - [1-5. 예외의 발생과 catch블럭](https://github.com/hongcoding94/java_storage/blob/main/Chapter8.%20%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC(Exception%20Handling).md#%EC%98%88%EC%99%B8%EC%9D%98-%EB%B0%9C%EC%83%9D%EA%B3%BC-catch%EB%B8%94%EB%9F%AD "예외의 발생과 catch블럭")
-      - [1-6. 예외 발생시키기](https://github.com/hongcoding94/java_storage/blob/main/Chapter8.%20%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC(Exception%20Handling).md#%EC%98%88%EC%99%B8-%EB%B0%9C%EC%83%9D%EC%8B%9C%ED%82%A4%EA%B8%B0 "예외 발생시키기")
-      - [1-7. 메서드에 예외 선언하기](https://github.com/hongcoding94/java_storage/blob/main/Chapter8.%20%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC(Exception%20Handling).md#%EB%A9%94%EC%84%9C%EB%93%9C%EC%97%90-%EC%98%88%EC%99%B8-%EC%84%A0%EC%96%B8%ED%95%98%EA%B8%B0 "메서드에 예외 선언하기")
-      - [1-8. finally블럭](https://github.com/hongcoding94/java_storage/blob/main/Chapter8.%20%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC(Exception%20Handling).md#finally%EB%B8%94%EB%9F%AD "finally블럭")
-      - [1-9. 자동 자원 반환 try-with-resources문](https://github.com/hongcoding94/java_storage/blob/main/Chapter8.%20%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC(Exception%20Handling).md#%EC%9E%90%EB%8F%99-%EC%9E%90%EC%9B%90-%EB%B0%98%ED%99%98-try-with-resources%EB%AC%B8 "자동 자원 반환 try-with-resources문")
-      - [1-10. 사용자정의 예외 만들기](https://github.com/hongcoding94/java_storage/blob/main/Chapter8.%20%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC(Exception%20Handling).md#%EC%82%AC%EC%9A%A9%EC%9E%90%EC%A0%95%EC%9D%98-%EC%98%88%EC%99%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0 "사용자정의 예외 만들기")
-      - [1-11. 예외 되던지기(exception re-throwing)](https://github.com/hongcoding94/java_storage/blob/main/Chapter8.%20%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC(Exception%20Handling).md#%EC%98%88%EC%99%B8-%EB%90%98%EB%8D%98%EC%A7%80%EA%B8%B0exception-re-throwing "예외 되던지기(exception re-throwing)")
-      - [1-12. 연결된 예외(chained exception)](https://github.com/hongcoding94/java_storage/blob/main/Chapter8.%20%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC(Exception%20Handling).md#%EC%97%B0%EA%B2%B0%EB%90%9C-%EC%98%88%EC%99%B8chained-exception "연결된 예외(chained exception)")
+      - [1-6. 예외 발생시키기 / 메서드에 예외 선언하기]( "예외 발생시키기 / 메서드에 예외 선언하기")
+      - [1-7. finally블럭](https://github.com/hongcoding94/java_storage/blob/main/Chapter8.%20%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC(Exception%20Handling).md#finally%EB%B8%94%EB%9F%AD "finally블럭")
+      - [1-8. 자동 자원 반환 try-with-resources문](https://github.com/hongcoding94/java_storage/blob/main/Chapter8.%20%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC(Exception%20Handling).md#%EC%9E%90%EB%8F%99-%EC%9E%90%EC%9B%90-%EB%B0%98%ED%99%98-try-with-resources%EB%AC%B8 "자동 자원 반환 try-with-resources문")
+      - [1-9. 사용자정의 예외 만들기](https://github.com/hongcoding94/java_storage/blob/main/Chapter8.%20%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC(Exception%20Handling).md#%EC%82%AC%EC%9A%A9%EC%9E%90%EC%A0%95%EC%9D%98-%EC%98%88%EC%99%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0 "사용자정의 예외 만들기")
+      - [1-10. 예외 되던지기(exception re-throwing)](https://github.com/hongcoding94/java_storage/blob/main/Chapter8.%20%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC(Exception%20Handling).md#%EC%98%88%EC%99%B8-%EB%90%98%EB%8D%98%EC%A7%80%EA%B8%B0exception-re-throwing "예외 되던지기(exception re-throwing)")
+      - [1-11. 연결된 예외(chained exception)](https://github.com/hongcoding94/java_storage/blob/main/Chapter8.%20%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC(Exception%20Handling).md#%EC%97%B0%EA%B2%B0%EB%90%9C-%EC%98%88%EC%99%B8chained-exception "연결된 예외(chained exception)")
   
   ## 예외처리(exception handling)
   
@@ -75,8 +74,59 @@
     > 명시적인 예외 처리를 강제하지 않기 때문에 Uncheked Exception이라고 한다.<br/>
     > 명시적인 예외 처리란 try ~ catch로 예외를 잡거나 throw로 호출한<br/>
     > 메소드에게 예외를 던지지 않는 행위를 말한다.
+
+  **즉, Exception을 불필요하게 남발하지 말고 상황에 맞게 잘 판단 하여 Exception처리를 하자.**
+
+  **!Tip3.** [unchecked Exception와 checked Exception에 대하여](https://steady-coding.tistory.com/583)
+
+  ##### 예외처리하기 try-catch문
+
+  - try/catch문
+  > 반드시 실행은 되어야 하는 코드이지만 예외 처리하는 코드를 작성하여 사용자가 알수 있도록 하는 문
+  > *finally블록 사용 시점*
+  >   - 자원이나 DB에 커넥션 한 경우, 파일 닫기, 연결 닫기 등과 같은 **"정리 코드"를 넣는데 사용**
+
+  - try/catch문 문법
+  > ```java
+  > try {
+  >   //예외발생할 가능성이 있는 문장 
+  >   
+  > }catch(Exception1 e1) {
+  >   //Exception1이 발생했을 경우, 이를 처리하지 위한 문장적는다.
+  >   //보통 이곳에 예외메세지를 출력하고 로그로 남김.
+  >   
+  > }catch(Exception2 e2) {
+  >   //Exception2이 발생했을 경우, 이를 처리하지 위한 문장적는다.
+  >   
+  > }catch(ExceptionN eN) {
+  >   //ExceptionN이 발생했을 경우, 이를 처리하지 위한 문장적는다.
+  >   
+  > }finally{
+  >   //예외발생여부에 관계없이 상항 수행되어야 하는 문장적는다.
+  > 
+  > ```
   
-  - RuntimeException의 예제
+  ##### try-catch문에서의 흐름
+  
+   - try-catch문 흐름
+   >  - try 불록에서 발생한 경우
+   >    1. 발생한 예외와 일치하는 catch문이 있는 경우
+   >    2. 일치하는 catch문이 있다면 catch블럭 내의 문자을 실핼하고 try/catch문을 벗어나 다음을 수행
+   >    3. 일치하는 catch문이 없다면 예외는 처리되지 못 하고 console에 * .Exception 반환됨
+   >  - try 블럭 안에서 발생하지 않은 경우
+   >    1. catch블럭을 거치지 않고 전체 try/catch문을 빠져나가서 다음을 수행
+   >  - try 블럭 밖에서 발생한 경우
+   >    1. 예외는 아무 처리되지 못 하고 console에 * .Exception 반환됨
+  
+    - 흐름의 이해도1. 코드가 try/catch/finally 지나가는 방식
+   ![image](https://user-images.githubusercontent.com/66407386/172298079-a675d3d9-fd72-404d-8247-c8beaec46b00.png)
+  
+    - 흐름의 이해도2. 코드가 throw Exception을 지나가는 방식
+   ![image](https://user-images.githubusercontent.com/66407386/172298117-1fa95da8-e3bd-4971-afa7-ff28796b0f5d.png)
+  
+  ##### 예외의 발생과 catch블럭
+  
+    - RuntimeException의 예제
   >   - ArrayIndexOutOfBoundException : 잘못된 인덱스를 사용해서 배열에 접근했다는 것을 알려주기 위한 예외<br/>
   >   ▶ 예시 <br/>
   >   ```java
@@ -239,61 +289,14 @@
   >       - 파일의 대한 권한이 있는지 확인<br/>
   >       ▶ 해결 방법<br/>
   >         1. 파일 읽기, 쓰기 권한이 있는지 체크
+  
+  ##### 예외 발생시키기 / 메서드에 예외 선언하기
+  
+   - 예외 방식1 (try/catch/finally)
+   
+   
+   - 예외 방식2 (throw Exception)
 
-  **즉, Exception을 불필요하게 남발하지 말고 상황에 맞게 잘 판단 하여 Exception처리를 하자.**
-
-  **!Tip3.** [unchecked Exception와 checked Exception에 ](https://steady-coding.tistory.com/583)
-
-  ##### 예외처리하기 try-catch문
-
-  - try/catch문
-  > 반드시 실행은 되어야 하는 코드이지만 예외 처리하는 코드를 작성하여 사용자가 알수 있도록 하는 문
-  > *finally블록 사용 시점*
-  >   - 자원이나 DB에 커넥션 한 경우, 파일 닫기, 연결 닫기 등과 같은 **"정리 코드"를 넣는데 사용**
-
-  - try/catch문 문법
-  > ```java
-  > try {
-  >   //예외발생할 가능성이 있는 문장 
-  >   
-  > }catch(Exception1 e1) {
-  >   //Exception1이 발생했을 경우, 이를 처리하지 위한 문장적는다.
-  >   //보통 이곳에 예외메세지를 출력하고 로그로 남김.
-  >   
-  > }catch(Exception2 e2) {
-  >   //Exception2이 발생했을 경우, 이를 처리하지 위한 문장적는다.
-  >   
-  > }catch(ExceptionN eN) {
-  >   //ExceptionN이 발생했을 경우, 이를 처리하지 위한 문장적는다.
-  >   
-  > }finally{
-  >   //예외발생여부에 관계없이 상항 수행되어야 하는 문장적는다.
-  > 
-  > ```
-  
-  ##### try-catch문에서의 흐름
-  
-   - try-catch문 흐름
-   >  - try 불록에서 발생한 경우
-   >    1. 발생한 예외와 일치하는 catch문이 있는 경우
-   >    2. 일치하는 catch문이 있다면 catch블럭 내의 문자을 실핼하고 try/catch문을 벗어나 다음을 수행
-   >    3. 일치하는 catch문이 없다면 예외는 처리되지 못 하고 console에 * .Exception 반환됨
-   >  - try 블럭 안에서 발생하지 않은 경우
-   >    1. catch블럭을 거치지 않고 전체 try/catch문을 빠져나가서 다음을 수행
-   >  - try 블럭 밖에서 발생한 경우
-   >    1. 예외는 아무 처리되지 못 하고 console에 * .Exception 반환됨
-  
-    - 
-   ![image](https://user-images.githubusercontent.com/66407386/172298079-a675d3d9-fd72-404d-8247-c8beaec46b00.png)
-  
-    - 
-   ![image](https://user-images.githubusercontent.com/66407386/172298117-1fa95da8-e3bd-4971-afa7-ff28796b0f5d.png)
-  
-  ##### 예외의 발생과 catch블럭
-  
-  ##### 예외 발생시키기
-  
-  ##### 메서드에 예외 선언하기
   
   ##### finally블럭
   
