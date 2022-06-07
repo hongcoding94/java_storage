@@ -138,9 +138,50 @@
   >   ```
   >   
   >   - ClassCastException : 코드가 하위 유형이 아닌 유형에 대한 참조를 캐스팅 시도했을 때 확인되지 않은 예외<br/>
+  >   ▶ 예시 : 참고 블로그 - https://recordsoflife.tistory.com/583
   >   
-  >   - NumberFormatException : 
+  >   - NumberFormatException 
+  >     - 숫자로 변경하는 도중 숫자형이 아닌 그외 문자열 등인 경우 예외
+  >     - 변경하는 자료형보다 범위가 큰 경우
+  >     - Null입력 시 예외
+  >     - 문자 앞뒤로 공백이 있는 경우
+  >   ▶ 예시 <br/> 
+  >   ```java
+  >   // 잘못된 예제
+  >   public class TestException {
+  >     
+  >     public static void main(String[] args) throws Exception {
+  >       String str = "";
+  >       
+  >         str = "1543OO";  // 숫자 1543 & 문자 OO
+  >         System.out.println(Integer.parseInt(str));    // 여기서 NumberFormatException 발생
+  >     }
+  >   }
+  >   // 올바른 예제
+  >   public class TestException {
+  >     
+  >     public static void main(String[] args) throws Exception {
+  >       String str = "";
+  >       
+  >       try{
+  >         str = "1543OO";  // 숫자 1543 & 문자 OO
+  >         System.out.println(Integer.parseInt(str));    
+  >       } catch(NumberFormatException e) {
+  >         str = "2022";
+  >         System.out.println(Integer.parseInt(str));
+  >       } catch(Exception e) {
+  >         e.printStackTrace();
+  >       }
+  >     }
+  >   }
+  >   ```
+  > 
   >   - NullPointerException : 
+  >   ▶ 예시 <br/> 
+  > 
+  > 
+  > 
+  > 
 
   - 그 외 Exception
   > 사용자의 실수와 같은 외적인 요인에 의해 발생하는 예외<br/>
