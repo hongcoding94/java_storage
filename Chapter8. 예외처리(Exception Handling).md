@@ -445,8 +445,8 @@
   }  
   
   // ================================================== //
-  // Java 1.7부터 나온 try/catch/resources문
   
+  // Java 1.7부터 나온 try/catch/resources문
   import java.io.BufferedOutputStream;
   import java.io.FileInputStream;
   import java.io.FileOutputStream;
