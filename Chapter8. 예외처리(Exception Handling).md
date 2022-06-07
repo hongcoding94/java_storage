@@ -439,7 +439,7 @@
       } catch(IOException e) {
           e.printStackTrace();
       } finally {
-        dis.close();          // 작업 중에 예외가 발생하더라도, dis 닫기
+        dis.close();
       }
     }
   }  
