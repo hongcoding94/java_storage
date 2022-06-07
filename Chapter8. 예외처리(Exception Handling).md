@@ -13,7 +13,7 @@
       - [1-9. 사용자정의 예외 만들기](https://github.com/hongcoding94/java_storage/blob/main/Chapter8.%20%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC(Exception%20Handling).md#%EC%82%AC%EC%9A%A9%EC%9E%90%EC%A0%95%EC%9D%98-%EC%98%88%EC%99%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0 "사용자정의 예외 만들기")
       - [1-10. 예외 되던지기(exception re-throwing)](https://github.com/hongcoding94/java_storage/blob/main/Chapter8.%20%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC(Exception%20Handling).md#%EC%98%88%EC%99%B8-%EB%90%98%EB%8D%98%EC%A7%80%EA%B8%B0exception-re-throwing "예외 되던지기(exception re-throwing)")
       - [1-11. 연결된 예외(chained exception)](https://github.com/hongcoding94/java_storage/blob/main/Chapter8.%20%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC(Exception%20Handling).md#%EC%97%B0%EA%B2%B0%EB%90%9C-%EC%98%88%EC%99%B8chained-exception "연결된 예외(chained exception)")
-   2. [참고 문서 / 블로그]( "참고 문서 / 블로그")
+   2. [참고 문서 / 블로그](https://github.com/hongcoding94/java_storage/blob/main/Chapter8.%20%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC(Exception%20Handling).md#%EC%B0%B8%EA%B3%A0-%EB%AC%B8%EC%84%9C--%EB%B8%94%EB%A1%9C%EA%B7%B8 "참고 문서 / 블로그")
 
   ## 예외처리(exception handling)
   
