@@ -219,19 +219,17 @@
   >       ▶  해결 방법<br/>
   >         1. 설정한 ClassPath 경로에서 클래스 확인하기
   >         2. 라이브러리의 호환성 확인하기 <br/>
-  > **!Tip2.** [ClassNotFoundException을 자세히 알아보기](https://mkil.tistory.com/392)<br/>
-  >   - DataFormatException : <br/> 
+  > **!Tip2.** [ClassNotFoundException을 자세히 알아보기](https://mkil.tistory.com/392)<br/> <br/> 
+  >   - DataFormatException : 데이터 형식 오류가 발생 했음을 알려주는 예외<br/> 
+  >   ▶ 예시 : [DataFormatException 예제](http://www.javased.com/?api=java.util.zip.DataFormatException) <br/><br/> 
+  >   - FileNotFoundException : 파일을 찾을수 없어서 발생 했음을 알려주는 예외 혹은 파일이 있어도 파일 읽기, 쓰기 권한이 없어서 발생<br/>
   >   ▶ 예시 <br/>
-  > ```java
-  > 
-  > ```
-  >  
-  >   - FileNotFoundException : <br/> 
-  >   ▶ 예시 <br/>
-  > ```java
-  > 
-  > ```
-  >  
+  >       - 파일의 경로를 확인하기<br/>
+  >       ▶ 해결 방법<br/>
+  >         1. 해당 경로와 파일명을 체크  
+  >       - 파일의 대한 권한이 있는지 확인<br/>
+  >       ▶ 해결 방법<br/>
+  >         1. 파일 읽기, 쓰기 권한이 있는지 체크
 
   **즉, Exception을 불필요하게 남발하지 말고 상황에 맞게 잘 판단 하여 Exception처리를 하자.**
 
