@@ -89,21 +89,19 @@
   - try/catch문 문법
   > ```java
   > try {
-  >   //예외발생할 가능성이 있는 문장 
+  >   // 예외발생할 가능성이 있는 문장 
   >   
   > }catch(Exception1 e1) {
-  >   //Exception1이 발생했을 경우, 이를 처리하지 위한 문장적는다.
-  >   //보통 이곳에 예외메세지를 출력하고 로그로 남김.
+  >   // Exception1이 발생했을 경우, 이를 처리하지 위한 문장적는다.
+  >   // 보통 이곳에 예외메세지를 출력하고 로그로 남김.
   >   
   > }catch(Exception2 e2) {
-  >   //Exception2이 발생했을 경우, 이를 처리하지 위한 문장적는다.
+  >   // Exception2이 발생했을 경우, 이를 처리하지 위한 문장적는다.
   >   
   > }catch(ExceptionN eN) {
-  >   //ExceptionN이 발생했을 경우, 이를 처리하지 위한 문장적는다.
+  >   // ExceptionN이 발생했을 경우, 이를 처리하지 위한 문장적는다.
   >   
-  > }finally{
-  >   //예외발생여부에 관계없이 상항 수행되어야 하는 문장적는다.
-  > 
+  > }
   > ```
   
   ##### try-catch문에서의 흐름
@@ -118,10 +116,10 @@
    >  - try 블럭 밖에서 발생한 경우
    >    1. 예외는 아무 처리되지 못 하고 console에 * .Exception 반환됨
   
-    - 흐름의 이해도1. 코드가 try/catch/finally 지나가는 방식
+   - 흐름의 이해도1. 코드가 try/catch/finally 지나가는 방식
    ![image](https://user-images.githubusercontent.com/66407386/172298079-a675d3d9-fd72-404d-8247-c8beaec46b00.png)
   
-    - 흐름의 이해도2. 코드가 throw Exception을 지나가는 방식
+   - 흐름의 이해도2. 코드가 throw Exception을 지나가는 방식
    ![image](https://user-images.githubusercontent.com/66407386/172298117-1fa95da8-e3bd-4971-afa7-ff28796b0f5d.png)
   
   ##### 예외의 발생과 catch블럭
@@ -387,7 +385,36 @@
   
   ##### finally블럭
   
-    - 
+  - finally
+  >   - try/catch문으로 진입을 하게되면 마지막에 코드가 실행된다.
+  >   - try/catch문 중간에 return으로 해당 try/catch문을 빠져 나가게 되어도 실행된 후 빠져나간다.
+  >   - 예외가 발생하든 발생하지 않든 무조건 수행하는 부분
+  >   - **DataBase처리 혹은 File처리를 할 때 꼭 필요한 부분이다.** <br/>
+  >   이유는 해당 부분을 열면 꼭 닫아주어야 프로그램이 종료가 되기때문에 finally 부분에서 수행하기 때문이다.
+  
+  - try/catch/finally 문법
+  > ```java
+  > try {
+  >   // 예외발생할 가능성이 있는 문장 
+  >   
+  > }catch(Exception1 e1) {
+  >   // Exception1이 발생했을 경우, 이를 처리하지 위한 문장적는다.
+  >   // 보통 이곳에 예외메세지를 출력하고 로그로 남김.
+  >   
+  > }catch(Exception2 e2) {
+  >   // Exception2이 발생했을 경우, 이를 처리하지 위한 문장적는다.
+  >   
+  > }catch(ExceptionN eN) {
+  >   // ExceptionN이 발생했을 경우, 이를 처리하지 위한 문장적는다.
+  >   
+  > }finally{
+  >   // 예외발생여부에 관계없이 상항 수행되어야 하는 문장적는다.
+  > }
+  
+  - finally 블럭
+  >   - finally블럭은 예외가 발생하건 발생하지 않건간에 항상 수행되어져야 할 코드를 명시
+  >   - 객체의 소멸은 프로그래머가 컨트롤 할 수 없지만 finally블럭에서 IO와<br/>
+  >   DB, File등을 사용한 후 관계를 끊는 용도로 사용한다.
   
   ##### 자동 자원 반환 try-with-resources문
   
