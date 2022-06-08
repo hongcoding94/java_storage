@@ -146,8 +146,9 @@
  > 	즉, 원시 타입이 아닌 참조형 객체 클래스이며 불변 객체로 동일한 객체가 공유되면서 사용
 
  ![제목 없음](https://user-images.githubusercontent.com/66407386/172546584-ae84fb4e-d6d9-4ef4-b188-5c61d2400501.png)
+ **!Tip1.** [스트링의 내부구현](https://pjh3749.tistory.com/255) <br/>
 
- **!Tip1.** [자바 데이터 타입, 변수 그리고 배열 - 프리미티브 타입](https://minikuma-laboratory.tistory.com/26)
+ **!Tip2.** [자바 데이터 타입, 변수 그리고 배열 - 프리미티브 타입](https://minikuma-laboratory.tistory.com/26)
 
  - 스트링 클래스는 2가지 선언 방법
  > 	- 리터럴
@@ -172,7 +173,7 @@
  > "="은 왜 다른 걸까? 리터럴과 new의 선언 후 저장되는 **객체의 위치**가 다르기 때문 [이유는 위 내용 참조] <br/>
  > "=="은 왜 같다고 하는 걸까? 불면 객체이기 때문에 미리 ***intern()메서드***에서 탐색되어 객체가 공유되어 비교하기 때문
 
- **!Tip2.** [String.intern() 이란? 언제 사용하는가?](https://simple-ing.tistory.com/3)
+ **!Tip3.** [String.intern() 이란? 언제 사용하는가?](https://simple-ing.tistory.com/3)
 
 ##### StringBuffer클래스와 StringBuilder클래스
 
@@ -191,8 +192,9 @@
  > 	String은 너무 직관적이며 객체 생성 후 문자열을 더하면 객체가 변경된 것으로 착각 할 수 있다.<br/>
  > 	새로운 메모리 영역을 가르키며 변경되고 기존에 있는 값으로 할당된 메모리 영역은 GC에 의해 살아진다.<br/>
  > 	따라서 String은 불변성이기 때문에 **변하지 않는 문자열을 읽어들이는 경우에만 사용하는 것이 좋다.**
+ > 	
  > 	- StringBuffer & StringBuilder
- >      문자열이 추가, 수정, 삭제 등등 연산이 많이 일어나는 경우 알고리즘에서 String를 쓰는 것은 Heap 또는 GC를<br/>
+ >      문자열이 추가, 수정, 삭제 등등 연산이 많이 일어나는 경우 알고리즘에서 String를 쓰는 것은 Heap 또는 GC를
  >      계속 사용하면 Heap 메모리 부족으로 성능에 크게 영향을 미칠 수도 있다.<br/>
  >      때문에 동일 객체내에서 문자열을 변경 편한 **가변성을 지닌 StringBuffer 혹은 StringBuilder를 사용하는 것이 좋다.**
 
