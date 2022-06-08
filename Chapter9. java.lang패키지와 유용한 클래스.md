@@ -198,9 +198,50 @@
  >      String를 쓰는 것은 Heap 또는 GC를 계속 사용하면 Heap 메모리 부족으로 성능에 크게 영향을 미칠 수도 있다.<br/>
  >      따라서 동일 객체 내에서 변경 편한 **가변성을 지닌 StringBuffer 혹은 StringBuilder를 사용하는 것이 좋다.**
 
- - StringBuffer & StringBuilder의 차이점
+ - String & StringBuffer & StringBuilder의 차이점
  > 
+ <table>
+  <tr>
+    <th></th>
+    <th>String</th>
+    <th>StringBuffer</th>
+    <th>StringBuilder</th>
+  </tr>
+  <tr>
+    <td>저장소</td>
+    <td>String ppol</td>
+    <td>Heap Memory</td>
+    <td>Heap Memory</td>
+  </tr>
+  <tr>
+    <td>수정 여부</td>
+    <td>불가능(불변성)</td>
+    <td>가능(가변성)</td>
+    <td>가능(가변성)</td>
+  </tr>
+  <tr>
+    <td>스레드 지원</td>
+    <td>가능</td>
+    <td>가능</td>
+    <td>불가능</td>
+  </tr>
+  <tr>
+    <td>동기화 여부</td>
+    <td>가능</td>
+    <td>가능</td>
+    <td>불가능</td>
+  </tr>
+  <tr>
+    <td>성능</td>
+    <td>빠름</td>
+    <td>느림</td>
+    <td>빠름</td>
+  </tr>
+ </table>
 
+ - StringBuffer & StringBuilder가 적정한 경우
+ > StringBuffer : 멀티 쓰레드 환경의 경우<br/>
+ > StringBuilder: 싱글 쓰레드 환경 혹은 멀티 쓰레드에서 동기화가 필요없는 경우
 
 ##### Math클래스
 
