@@ -125,7 +125,7 @@
   
   ##### 예외의 발생과 catch블럭
   
-    - RuntimeException의 예제
+  - RuntimeException의 예제
   >   - ArrayIndexOutOfBoundException : 잘못된 인덱스를 사용해서 배열에 접근했다는 것을 알려주기 위한 예외<br/>
   >   ▶ 예시 <br/>
   >   ```java
