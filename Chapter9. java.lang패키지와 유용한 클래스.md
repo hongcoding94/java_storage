@@ -194,9 +194,9 @@
  > 	따라서 String은 불변성이기 때문에 **변하지 않는 문자열을 읽어들이는 경우에만 사용하는 것이 좋다.**
  > 	
  > 	- StringBuffer & StringBuilder
- >      문자열이 추가, 수정, 삭제 등등 연산이 많이 일어나는 경우 알고리즘에서 String를 쓰는 것은 Heap 또는 GC를
- >      계속 사용하면 Heap 메모리 부족으로 성능에 크게 영향을 미칠 수도 있다.<br/>
- >      때문에 동일 객체내에서 문자열을 변경 편한 **가변성을 지닌 StringBuffer 혹은 StringBuilder를 사용하는 것이 좋다.**
+ >      문자열이 추가, 수정, 삭제 등등 연산이 많이 일어나는 경우 알고리즘에서<br/>
+ >      String를 쓰는 것은 Heap 또는 GC를 계속 사용하면 Heap 메모리 부족으로 성능에 크게 영향을 미칠 수도 있다.<br/>
+ >      따라서 동일 객체 내에서 변경 편한 **가변성을 지닌 StringBuffer 혹은 StringBuilder를 사용하는 것이 좋다.**
 
  - StringBuffer & StringBuilder의 차이점
  > 
