@@ -49,9 +49,10 @@
  > 	```text
  > 	동일O
  > 	```
+ > 	
  > 	- hashCode() 메소드 : 객체의 메모리 번지를 이용해서 해시코드를 만들어 리턴하며 객체마다 다른값을 가지고 있따.<br/>
  > 	▶ 예시 : 예시로 들만한게 없다.
- > 	<br/>
+ > 
  > 	- toString() 메소드 : 객체의 문자 정보를 리턴하며 객체를 문자열로 표현해준다.<br/>
  > 	▶ 예시
  > 	```java
@@ -85,6 +86,54 @@
  > 	first, 2001
  > 	second, 2018
  > 	```
+
+ - Object 클래스의 메서드
+  <table>
+   <tr>
+     <th>Object 클래스의 메서드</th>
+     <th>설명</th>
+   </tr>
+   <tr>
+     <td>public boolean equals(Object obj)</td>
+     <td>객체 자신과 객체 obj가 같은 객체 인지 여부를 반환 (같으면 true)</td>
+   </tr>
+   <tr>
+     <td>public int hashCode()</td>
+     <td>객체 자신의 해시코드를 반환</td>
+   </tr>
+   <tr>
+     <td>public String toString()</td>
+     <td>객체 자신의 정보를 문자열로 반환</td>
+   </tr>
+   <tr>
+     <td>protected Object clone()</td>
+     <td>객체 자신의 복사본을 반환</td>
+   </tr>
+   <tr>
+     <td>public Class getClass()</td>
+     <td>객체 자신의 클래스 정보를 담고 있는 Class인스턴스를 반환</td>
+   </tr>
+   <tr>
+     <td>public void notify()</td>
+     <td>객체 자신을 사용하려고 기다리는 쓰레드를 하나만 깨움</td>
+   </tr>
+   <tr>
+     <td>public void notifyAll()</td>
+     <td>객체 자신을 사용하려고 기다리는 모든 쓰레드를 깨움</td>
+   </tr>
+   <tr>
+     <td>publid void wait() <br/> public void wait(long timeout) <br/> public void wait(long timeout, int nanos)</td>
+     <td>다른 쓰레드가 notify()나 notifyAll()을 호출할 때까지 현재 쓰레드를 무한히 또는 지정된 시간(timeout, nanos)동안 기다리게 한다.<br/>
+(timeout은 천 분의 1초, nanos는 10^9분의 1초)</td>
+   </tr>
+   <tr>
+     <td>protected void finalize()</td>
+     <td>객체가 소멸될 때 가비지 컬렉터에 의해 자동적으로 호출<br/>
+이 때 수행되어야하는 코드가 있을 때 오버라이딩 (거의 사용안함)</td>
+   </tr>
+  </table>	
+  
+**!Tip0.** [java.lang패키지와 유용한(util) 클래스](https://rebeccacho.gitbooks.io/java-study-group/content/chapter9.html)
 
 ##### String클래스
 
