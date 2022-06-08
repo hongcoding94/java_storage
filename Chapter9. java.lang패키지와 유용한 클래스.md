@@ -144,18 +144,22 @@
  - String 클래스 선언
  > 	- 원시 타입처럼 보여서 원시타입으로 착각은 근물!<br/>
  > 	즉, 원시 타입이 아닌 참조형 객체 클래스이며 불변 객체로 동일한 객체가 공유되면서 사용
- > 	- 스트링 클래스는 2가지 선언 방법
- > 		- 리터럴
- > 		▶ 예시
- > 		```java
- > 		String str1 = "String1";
- > 		```
+
+ **!Tip1.** [자바 데이터 타입, 변수 그리고 배열 - 프리미티브 타입](https://minikuma-laboratory.tistory.com/26)
+
+ - 스트링 클래스는 2가지 선언 방법
+ > 	- 리터럴
+ > 	▶ 예시
+ > 	```java
+ > 	String str1 = "String1";
+ > 	```
  > 		
- > 		- new를 사용한 선언
- > 		▶ 예시
- > 		```java
- > 		String str2 = new String("String2");
- > 		```
+ > 	- new를 사용한 선언
+ > 	▶ 예시
+ > 	```java
+ > 	String str2 = new String("String2");
+ > 	```
+ > 	
  > 	☑️ 둘다 똑같은 값이 나오긴 하지만 차이가 있음!!
  > 	- 리터럴 선언은 String 클래스는 선언언시 객체가 *String constant pool*에 저장
  > 	- new는 *Heap영역*에 저장되어 사용됨 <br/>
@@ -166,7 +170,7 @@
  > "="은 왜 다른 걸까? 리터럴과 new의 선언 후 저장되는 **객체의 위치**가 다르기 때문 [이유는 위 내용 참조] <br/>
  > "=="은 왜 같다고 하는 걸까? 불면 객체이기 때문에 미리 ***intern()메서드***에서 탐색되어 객체가 공유되어 비교하기 때문
 
- **!Tip1.** [String.intern() 이란? 언제 사용하는가?](https://simple-ing.tistory.com/3)
+ **!Tip2.** [String.intern() 이란? 언제 사용하는가?](https://simple-ing.tistory.com/3)
 
 ##### StringBuffer클래스와 StringBuilder클래스
 
