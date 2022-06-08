@@ -146,7 +146,7 @@
  > 	즉, 원시 타입이 아닌 참조형 객체 클래스이며 불변 객체로 동일한 객체가 공유되면서 사용
 
  ![제목 없음](https://user-images.githubusercontent.com/66407386/172546584-ae84fb4e-d6d9-4ef4-b188-5c61d2400501.png)
- **!Tip1.** [스트링의 내부구현](https://pjh3749.tistory.com/255) <br/>
+ <br/> **!Tip1.** [스트링의 내부구현](https://pjh3749.tistory.com/255) <br/>
 
  **!Tip2.** [자바 데이터 타입, 변수 그리고 배열 - 프리미티브 타입](https://minikuma-laboratory.tistory.com/26)
 
