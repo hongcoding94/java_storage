@@ -412,9 +412,48 @@
  > ```
 
  - 자동박싱(AutoBoxing)과 자동언박싱(AutoUnBoxing)
+ > - 자동박싱 : 원시 타입의 값을 해당하는 래퍼 클래스의 객체로 바꾸는 과정 
+ > 	- 원시 타입이 래퍼 클래스 타입의 파라미터를 받는 메서드를 통과할때
+ > 	- 원시 타입이 래퍼 클래스의 변수호 할당 될때<br/>
+ >      ▶ 예제
+ > 	```java
+ >	public class Test {
+ >	  // 변수 초기화
+ >	  private int inte;
+ >	  
+ >	  public Integer getInte() {
+ >	  	return inte;
+ >	  }
+ >	}
+ >	// 숨은 과정 보여주기
+ >	public class Test {
+ >	  // 변수 초기화
+ >	  private int inte;
+ >	  
+ >	  public Integer getInte() {
+ >	  	return Integer.valueOf(inte);
+ >	  }
+ >	}
+ > 	```
+ > - 자동언박싱 : 래퍼 클래스 타입을 원시 타입으로 변환하는 과정
+ > 	- 래퍼 클래스 타입이 원시 타입의 파라미터를 받는 메서드를 통과할 때
+ > 	- 래퍼 클래스 타입이 원시 타입의 변수로 할당 될때<br/>
+ >      ▶ 예제
+ > 	```java
+ > 	public class Test {
+ > 	  public static void main(String[] args) {
+ > 	  Inertger i = new Integer(1994);
+ > 	  
+ > 	  int j = i;
+ > 	  
+ > 	  System.out.pintln("i의 값은 : " + i); 
+ > 	  System.out.pintln("j의 값은 : " + j);
+ > 	  
  >
-
-
+ > 	  
+ > 	  }
+ > 	}
+ > 	```
 
 
 ## 유용한 클래스
@@ -437,6 +476,6 @@
 1. [서적] 남궁성님의 Java의 정석 3rd Edition
 2. [블로그] [donglee99님의 JavaStringClass정리](https://velog.io/@donglee99/JAVA-String-%ED%81%B4%EB%9E%98%EC%8A%A4-%EC%A0%95%EB%A6%AC)
 3. [블로그] [_JSPark님의 래퍼 클래스](https://jusungpark.tistory.com/17)
-4. 
+4. [블로그] 
 
 https://rebeccacho.gitbooks.io/java-study-group/content/chapter9.html
