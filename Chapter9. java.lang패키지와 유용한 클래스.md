@@ -244,6 +244,91 @@
  > StringBuilder: 싱글 쓰레드 환경 혹은 멀티 쓰레드에서 동기화가 필요없는 경우
 
 ##### Math클래스
+ - Math 클래스
+ > 수학에 자주 사용하는 상수들과 함수들을 미리 구현해 놓은 클래스<br/>
+ > 객체를 생성하지 않고도 바로 사용 가능하다.
+
+- 대표적인 Math 메소드
+ <table>
+  <tr>
+    <th>메소드</th>
+    <th>설명</th>
+  </tr>
+  <tr>
+    <td>static double random()</td>
+    <td>0.0 이상 1.0 미만의 범위에서 임의의 double형 값을 하나 생성하여 반환함.</td>
+  </tr>
+  <tr>
+    <td>
+	static double abs(double a)<br/>
+	static double abs(float a)<br/>
+	static double abs(int a)<br/>
+	static double abs(long a)
+    </td>
+    <td>전달된 값이 음수이면 그 값의 절댓값을 반환하며, 전달된 값이 양수이면 인수를 그대로 반환함.</td>
+  </tr>
+  <tr>
+    <td>static double ceil(double a)</td>
+    <td>전달된 double형 값의 소수 부분이 존재하면 소수 부분을 무조건 올리고 반환함.</td>
+  </tr>
+  <tr>
+    <td>static double floor(double a)</td>
+    <td>전달된 double형 값의 소수 부분이 존재하면 소수 부분을 무조건 버리고 반환함.</td>
+  </tr>
+  <tr>
+    <td>
+	static long round(double a)<br/>
+	static int round(float a)
+    </td>
+    <td>전달된 값을 소수점 첫째 자리에서 반올림한 정수를 반환함.</td>
+  </tr>
+  <tr>
+    <td>static double rint(double a)</td>
+    <td>전달된 double형 값과 가장 가까운 정수값을 double형으로 반환함.</td>
+  </tr>
+  <tr>
+    <td>
+	static double max(double a, double b)<br/>
+	static float max(float a, float b)<br/>
+	static long max(long a, long b)<br/>
+	static int max(int a, int b)
+    </td>
+    <td>전달된 두 값을 비교하여 큰 값을 반환함.</td>
+  </tr>
+  <tr>
+    <td>
+	static double min(double a, double b)
+	static float min(float a, float b)
+	static long min(long a, long b)
+	static int min(int a, int b)
+    </td>
+    <td>전달된 두 값을 비교하여 작은 값을 반환함.</td>
+  </tr>
+  <tr>
+    <td>static double pow(double a, double b)</td>
+    <td>전달된 두 개의 double형 값을 가지고 제곱 연산을 수행하여, ab을 반환함.</td>
+  </tr>
+  <tr>
+    <td>static double sqrt(double a)</td>
+    <td>전달된 double형 값의 제곱근 값을 반환함.</td>
+  </tr>
+  <tr>
+    <td>
+	static double sin(double a)
+	static double cos(double a)
+	static double tan(double a)
+    </td>
+    <td>전달된 double형 값에 해당하는 각각의 삼각 함숫값을 반환함.</td>
+  </tr>
+  <tr>
+    <td>static double toDegrees(double angrad)</td>
+    <td>호도법의 라디안 값을 대략적인 육십분법의 각도 값으로 변환함.</td>
+  </tr>
+  <tr>
+    <td>static double toRaidans(double angdeg)</td>
+    <td>육십분법의 각도 값을 대략적인 호도법의 라디안 값으로 변환함.</td>
+  </tr>
+ </table>
 
 ##### 래퍼(wrapper) 클래스
 
