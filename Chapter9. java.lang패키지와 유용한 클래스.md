@@ -446,17 +446,39 @@
 
 ##### java.util.Objects클래스 
 
+ - Objects 클래스
+ > 객체 비교, null 여부등을 조사할 때 사용
+ > 
+
 ##### java.util.Random클래스
+
+ - Random 클래스
+ > 난수를 얻을 때 사용
+ > 
 
 ##### 정규식(Regular Expression) - java.util.regex패키지
 
 ##### java.util.Scanner클래스
 
+ - Scanner클래스
+ >
+
 ##### java.util.StringTokenizer클래스
+
+ - StringTokenizer클래스
+ > 특정 문자로 구분된 문자열을 뽑아낼 때
+ > 
 
 ##### java.math.BigInteger클래스
 
+ - BigInteger클래스
+ > 
+
 ##### java.math.BigDecimal클래스
+
+ - BigDecimal클래스
+ > 
+
 
 ## 참고 문서 / 블로그
 1. [서적] 남궁성님의 Java의 정석 3rd Edition
@@ -464,5 +486,6 @@
 3. [블로그] [_JSPark님의 래퍼 클래스](https://jusungpark.tistory.com/17)
 4. [블로그] [coco3o님의 [java]Wrapper클래스란?](AutoUnBoxing)
 5. [블로그] [code0xff님의 Autoboxing과 AutoUnboxing](https://code0xff.tistory.com/150)
+6. 
 https://rebeccacho.gitbooks.io/java-study-group/content/chapter9.html
 https://kyleyj.tistory.com/28
