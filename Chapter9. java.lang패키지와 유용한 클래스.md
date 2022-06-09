@@ -297,9 +297,9 @@
   </tr>
   <tr>
     <td>
-	static double min(double a, double b)
-	static float min(float a, float b)
-	static long min(long a, long b)
+	static double min(double a, double b)<br/>
+	static float min(float a, float b)<br/>
+	static long min(long a, long b)<br/>
 	static int min(int a, int b)
     </td>
     <td>전달된 두 값을 비교하여 작은 값을 반환함.</td>
@@ -314,8 +314,8 @@
   </tr>
   <tr>
     <td>
-	static double sin(double a)
-	static double cos(double a)
+	static double sin(double a)<br/>
+	static double cos(double a)<br/>
 	static double tan(double a)
     </td>
     <td>전달된 double형 값에 해당하는 각각의 삼각 함숫값을 반환함.</td>
