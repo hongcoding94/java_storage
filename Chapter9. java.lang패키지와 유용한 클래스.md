@@ -335,7 +335,11 @@
 ##### 래퍼(wrapper) 클래스
 
  - 래퍼란?
- > 
+ > 래핑의 어원으로 **"감싼다"** 혹은 **"포장한다"** 라는 의미를 내포하고 있다.<br/>
+ > 기본 타입의 데이터를 객체로 표현해야하는 경우가 있는데 이때 기본 자료타입을<br/>
+ > 객체로 다루기 위해서 사용하는 것이 래퍼 클래스이다.<br/>
+ > 단, 래퍼 클래스로 감싸고 있는 기본 타입 값은 외부에서 변경할 수 없다.<br/>
+ > 변경을 하고 싶다면 새로운 객체를 생성해야한다.
 
  - 래퍼의 종류 
  <table>
@@ -386,14 +390,27 @@
   </tr>
  </table>
 
-
-
  - 래퍼 클래스 구조<br/>
  ![image](https://user-images.githubusercontent.com/66407386/172748457-07033e9f-cace-4bb0-9331-b2a42f9bcb9f.png)
  > 최초 부모는 Object로 내부적으로 숫자를 다루는 래퍼 클래스는 Number로 지칭한다.
 
  - 박싱과 언박싱
- > 
+ > 박싱 : 기본 타입의 값을 포장 객체로 만드는 과정<br/>
+ > 언박싱 : 포장 객체에서 기본타입의 값을 받아오는 과정
+ > ▶ 예제
+ > ```java
+ > public class Wrapper_Ex {
+ >    public static void main(String[] args)  {
+ >       Integer num = new Integer(17); // 박싱
+ >       int n = num.intValue(); //언박싱
+ >       System.out.println(n);
+ >    }
+ > }
+ > ```
+
+ 
+
+ ![image](https://user-images.githubusercontent.com/66407386/172786447-f0a8f526-b819-40a4-a18d-190d6d391133.png)
 
 
 ## 유용한 클래스
