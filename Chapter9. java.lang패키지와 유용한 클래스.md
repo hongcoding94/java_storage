@@ -394,9 +394,12 @@
  ![image](https://user-images.githubusercontent.com/66407386/172748457-07033e9f-cace-4bb0-9331-b2a42f9bcb9f.png)
  > 최초 부모는 Object로 내부적으로 숫자를 다루는 래퍼 클래스는 Number로 지칭한다.
 
- - 박싱과 언박싱
+ - 박싱과 언박싱<br/>
+
+ ![image](https://user-images.githubusercontent.com/66407386/172787084-df02cf8b-d61c-4453-b868-5901959e07db.png)
+
  > 박싱 : 기본 타입의 값을 포장 객체로 만드는 과정<br/>
- > 언박싱 : 포장 객체에서 기본타입의 값을 받아오는 과정
+ > 언박싱 : 포장 객체에서 기본타입의 값을 받아오는 과정<br/>
  > ▶ 예제
  > ```java
  > public class Wrapper_Ex {
@@ -408,9 +411,10 @@
  > }
  > ```
 
- 
+ - 자동박싱(AutoBoxing)과 자동언박싱(AutoUnBoxing)
+ >
 
- ![image](https://user-images.githubusercontent.com/66407386/172786447-f0a8f526-b819-40a4-a18d-190d6d391133.png)
+
 
 
 ## 유용한 클래스
