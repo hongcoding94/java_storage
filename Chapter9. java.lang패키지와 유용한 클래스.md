@@ -334,6 +334,68 @@
 
 ##### 래퍼(wrapper) 클래스
 
+ - 래퍼란?
+ > 
+
+ - 래퍼의 종류 
+ <table>
+  <tr>
+    <th>원어(Primitive)</th>
+    <th>Boxing<br/>&<br/>Unboxing</th>
+    <th>래퍼 클래스(Wrapper Class)</th>
+  </tr>
+  <tr>
+    <td>byte</td>
+    <td></td>
+    <td>Byte</td>
+  </tr>
+  <tr>
+    <td>short</td>
+    <td></td>
+    <td>Shrot</td>
+  </tr>
+  <tr>
+    <td>int</td>
+    <td>Boxing(박싱)<br/>→</td>
+    <td>Interger</td>
+  </tr>
+  <tr>
+    <td>long</td>
+    <td></td>
+    <td>Long</td>
+  </tr>
+  <tr>
+    <td>float</td>
+    <td>UnBoxing(언박싱)<br/>←</td>
+    <td>Float</td>
+  </tr>
+  <tr>
+    <td>double</td>
+    <td></td>
+    <td>Double</td>
+  </tr>
+  <tr>
+    <td>char</td>
+    <td></td>
+    <td>Character</td>
+  </tr>
+  <tr>
+    <td>bollean</td>
+    <td></td>
+    <td>Boolean</td>
+  </tr>
+ </table>
+
+
+
+ - 래퍼 클래스 구조<br/>
+ ![image](https://user-images.githubusercontent.com/66407386/172748457-07033e9f-cace-4bb0-9331-b2a42f9bcb9f.png)
+ > 최초 부모는 Object로 내부적으로 숫자를 다루는 래퍼 클래스는 Number로 지칭한다.
+
+ - 박싱과 언박싱
+ > 
+
+
 ## 유용한 클래스
 
 ##### java.util.Objects클래스 
@@ -353,5 +415,7 @@
 ## 참고 문서 / 블로그
 1. [서적] 남궁성님의 Java의 정석 3rd Edition
 2. [블로그] [donglee99님의 JavaStringClass정리](https://velog.io/@donglee99/JAVA-String-%ED%81%B4%EB%9E%98%EC%8A%A4-%EC%A0%95%EB%A6%AC)
+3. [블로그] [_JSPark님의 래퍼 클래스](https://jusungpark.tistory.com/17)
+4. 
 
 https://rebeccacho.gitbooks.io/java-study-group/content/chapter9.html
