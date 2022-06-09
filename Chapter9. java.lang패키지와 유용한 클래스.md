@@ -472,12 +472,14 @@
 ##### java.math.BigInteger클래스
 
  - BigInteger클래스
- > 
+ > 큰 정수형 타입인 long은 10진수 19자리 정도이다. 만약 이보다 더 큰값을 사용할때는 BigInteger를 사용
+ > long 보다는 큰값을 다룰 수 있지만 성능은 long타입보다 떨어진다.
 
 ##### java.math.BigDecimal클래스
 
  - BigDecimal클래스
- > 
+ > double타입의 값은 범위가 넓지만 정밀도가 최대 13자리 빡에 되지 않기 떄문에 특성상 오차를 피할 수 없다.
+ > 때문에 오차가 없는 2진 정수로 변환하여 다루면서 실수를 정수와 10의 제곱의 곱으로 표현한다.
 
 
 ## 참고 문서 / 블로그
@@ -487,5 +489,6 @@
 4. [블로그] [coco3o님의 [java]Wrapper클래스란?](AutoUnBoxing)
 5. [블로그] [code0xff님의 Autoboxing과 AutoUnboxing](https://code0xff.tistory.com/150)
 6. 
+
 https://rebeccacho.gitbooks.io/java-study-group/content/chapter9.html
 https://kyleyj.tistory.com/28
