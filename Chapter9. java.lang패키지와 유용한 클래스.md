@@ -448,7 +448,76 @@
 
  - Objects 클래스
  > 객체 비교, null 여부등을 조사할 때 사용
- > 
+ 
+ - Objects 클래스의 정적 메소드
+ <table>
+  <tr>
+    <th>리턴 타입</th>
+    <th>메소드(매개변수)</th>
+    <th>설명</th>
+  </tr>
+  <tr>
+    <td>int</td>
+    <td>compare(T a, T b, Comparator<T> c)</td>
+    <td>두 객체 a, b를 Comparator를 사용해서 비교</td>
+  </tr>
+  <tr>
+    <td>boolean</td>
+    <td>deepEquals(Object a, Object b)</td>
+    <td>두 객체의 깊은 비교(배열의 항목까지 비교)</td>
+  </tr>
+  <tr>
+    <td>boolean</td>
+    <td>equals(Object a, Object b)</td>
+    <td>두 객체의 얕은 비교(번지 값만 비교)</td>
+  </tr>
+  <tr>
+    <td>int</td>
+    <td>hash(Object ... values)</td>
+    <td>매개 값이 저장된 배열의 해시코드 생성</td>
+  </tr>
+  <tr>
+    <td>int</td>
+    <td>hashCode(Object o)</td>
+    <td>객체의 해시코드 생성</td>
+  </tr>
+  <tr>
+    <td>boolean</td>
+    <td>isNull(Object obj)</td>
+    <td>객체가 null인지 조사</td>
+  </tr>
+  <tr>
+    <td>boolean</td>
+    <td>nonNull(Object obj)</td>
+    <td>객체가 null이 아닌지 조사</td>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>requireNonNull(T obj)</td>
+    <td>객체가 null인경우 예외 발생</td>
+  </tr>
+  <tr>
+    <tdT></td>
+    <td>requireNonNull(T obj, String message)</td>
+    <td>객체가 null 인경우 에외 발생<br/>(주어진 예외 메시지 포함)</td>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>requireNonNull(T obj, Supplier<String> messageSupplier)</td>
+    <td>객체가 null인 경우 예외 발생<br/>(람다식이 만든 예외 메시지 포함)</td>
+  </tr>
+  <tr>
+    <td>String</td>
+    <td>toString(Object o)</td>
+    <td>객체의 toString()리턴 값 리턴</td>
+  </tr>
+  <tr>
+    <td>String</td>
+    <td>toString(Object o, String nullDefault)</td>
+    <td>객체의 toString() 리턴 값 리턴,<br/>첫 번째 매개 값이 null인 경우 두번째 매개 값 리턴</td>
+  </tr>
+</table>
+
 
 ##### java.util.Random클래스
 
