@@ -618,11 +618,58 @@
 ##### java.util.Random클래스
 
  - Random 클래스
- > 난수를 얻을 때 사용
- > 
+ > 임의의 난수를 발생시킬 수 있는 객체이며 다양한 데이터 타입형 발생 시키거나 일정한 범위에 존재하는 난수를 발생되게 할 수도 있다.
+ > - Random() : 디폴트 생성자. 현재 시간을 초기 값으로 하는 난수 발생기 객체를 생성
+ > - Random(longseed) : long형의 seed값을 매개변수로 받아 난수 발생기 객체를 생성
 
+ - Random 메소드
+ <table>
+  <tr>
+    <th>메소드</th>
+    <th>설명</th>
+  </tr>
+  <tr>
+    <td>void nextBytes(byte[] bytes)</td>
+    <td>buffer를 난수로 채운다.</td>
+  </tr>
+  <tr>
+    <td>boolean nextBoolean()</td>
+    <td>boolean 형태의 난수를 반환한다.</td>
+  </tr>
+  <tr>
+    <td>double nextDouble()</td>
+    <td>double 형태의 난수를 반환한다.</td>
+  </tr>
+  <tr>
+    <td>float nextFloat()</td>
+    <td>float 형태의 난수를 반환한다.</td>
+  </tr>
+  <tr>
+    <td>int nextInt()</td>
+    <td>int 형태의 난수를 반환한다.</td>
+  </tr>
+  <tr>
+    <td>long nextLong()</td>
+    <td>long 형태의 난수를 반환한다.</td>
+  </tr>
+  <tr>
+    <td>int nextInt(int bound)</td>
+    <td>한계 값(bound)을 받아서 난수를 반환한다.</td>
+  </tr>
+  <tr>
+    <td>double nextGaussian()</td>
+    <td>가우스의 형의 난수를 double 형태의 난수를 반환한다.</td>
+  </tr>
+  <tr>
+    <td>void setSeed(long seed)</td>
+    <td>난수 발생기의 seed 값을 새로 설정한다.</td>
+  </tr>
+</table>
+	
 ##### 정규식(Regular Expression) - java.util.regex패키지
 
+	
+	
 ##### java.util.Scanner클래스
 
  - Scanner클래스
