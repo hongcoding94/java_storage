@@ -595,8 +595,8 @@
 > ```
 >  
 > - requireNonNull()
-> <br/>
-> 
+> 개발자라면 못 본 사람이 없는 아주 친숙한 단어이자 제일 만나기 싫은 문제의 단어 NullPointerException의 원리가 여기 있다.<br/>
+> 반환형태는 파라미터로 입력된 값이 null이라면 NullPointerException이 발생하고, 그렇지 않다면 입력값을 그대로 반환하며 java.util.Objects의 내용 속 requireNonNull은 아래와 같다.
 > ```java
 > public static <T> T requireNonNull(T obj, Supplier<String> messageSupplier) {
 >     if (obj == null)
