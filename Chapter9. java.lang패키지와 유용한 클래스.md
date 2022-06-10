@@ -675,6 +675,61 @@
  - Scanner클래스
  >
 
+ - Scanner 선언
+ > ```java
+ > import java.util.Scanner; // 스캐너를 사용하기 위해서 사용하는 필요 import
+ > 
+ > Scanner sc = new Scanner(System.in); // Scanner 객체
+ > ```
+
+ - Scanner의 주요 메소드
+ <table>
+  <tr>
+    <th>메소드</th>
+    <th>설명</th>
+  </tr>
+  <tr>
+    <td> String next() </td>
+    <td> 다음 토큰을 문자열로 리턴 </td>
+  </tr>
+  <tr>
+    <td> byte nextByte() </td>
+    <td> 다음 토큰을 byte 타입으로 리턴 </td>
+  </tr>
+  <tr>
+    <td> short nextShort() </td>
+    <td> 다음 토큰을 short 타입으로 리턴 </td>
+  </tr>
+  <tr>
+    <td> int nextInt() </td>
+    <td> 다음 토큰을 int 타입으로 리턴 </td>
+  </tr>
+  <tr>
+    <td> long nextLong() </td>
+    <td> 다음 토큰을 long 타입으로 리턴 </td>
+  </tr>
+  <tr>
+    <td> float nextFloat() </td>
+    <td>다음 토큰을 float 타입으로 리턴 </td>
+  </tr>
+  <tr>
+    <td> double nextDouble() </td>
+    <td> 다음 토큰을 double 타입으로 리턴 </td>
+  </tr>
+  <tr>
+    <td> String nextLine() </td>
+    <td> ' \n '을 포함하는 한 라인을 읽고 ' \n '을 버린 나머지만 리턴 </td>
+  </tr>
+  <tr>
+    <td> void close() </td>
+    <td> Scanner의 사용 종료 </td>
+  </tr>
+  <tr>
+    <td> boolean hasNext() </td>
+    <td>재 입력된 토큰이 있으면 true, 아니면 새로운 입력이 들어올 때까지 무한정 기다려서,<br/>새로운 입력이 들어오면 그 때 true 리턴. ctrl + z 키가 입력되면 입력 끝이므로 false 리턴 </td>
+  </tr>
+</table>
+
 ##### java.util.StringTokenizer클래스
 
  - StringTokenizer클래스
