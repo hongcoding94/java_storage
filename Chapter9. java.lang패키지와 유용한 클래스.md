@@ -497,7 +497,7 @@
     <td>객체가 null인경우 예외 발생</td>
   </tr>
   <tr>
-    <tdT></td>
+    <tdT>T</td>
     <td>requireNonNull(T obj, String message)</td>
     <td>객체가 null 인경우 에외 발생<br/>(주어진 예외 메시지 포함)</td>
   </tr>
@@ -517,6 +517,81 @@
     <td>객체의 toString() 리턴 값 리턴,<br/>첫 번째 매개 값이 null인 경우 두번째 매개 값 리턴</td>
   </tr>
 </table>
+
+<br/>❓. T로 받는 다는 의미는 무엇일까? - 타입
+
+- equlas() & deepEquals()
+> - equlas()
+> 문자열을 비교할 때 가장 많이 쓰는 Objects 클래스 중 하나로 <br/>
+> 반환 형태는 true & false로 반환하며 java.util.Object의 내용 속 equals는 아래와 같다.
+> ```java
+> public static boolean equals(Object a, Object b) {
+>   return (a == b) || (a != null && a.equals(b));
+> }
+>   /*
+>    * 반환을 할 때 두가지를 체크 한다.
+>    * 1. (a == b) : a와 b의 타입이 같니?
+>    * 또한(둘중 하나가 맞다면)
+>    * 2. (a != null && a.equals(b)) : a가 null 아니라면 a와 b를 비교해봐
+>    */
+> ```
+> 
+> - deepEquals()
+> equls에서는 단순 문자열을 비교 했다면 deepEquals에서는 객체까지도 비교하며<br/>
+> 반환 형태는 equals와 동일하게 true & false로 반환하며 java.utile.Obacject의 내용 속 deepEquals는 아래와 같다.
+> ```java
+> public static boolean deepEquals(Object a, Object b) {
+>   if (a == b)
+>      return true;
+>   else if (a == null || b == null)
+>      return false;
+>   else
+>     return Arrays.deepEquals0(a, b);
+> }
+> 
+>  /*
+>   * 1. if 조건에서 a와 b가 동등하다면 true를 반환
+>   * 2. if 조건이 아니라면 else if 조건으로 a 그리고 b 둘중 하나라도 null이라면 false를 반환
+>   * 3. 위 두 조건다 아니라면 Arrays 클래스의 deepEquals() 메소드를 이용하여 반환하라
+>   */
+> ```
+
+- hash() & hashCode()
+> <br/>
+> - hash()
+> ```java
+> 
+> ```
+> 
+> - hashCode()
+> ```java
+> 
+> ```
+
+- isNull() & nonNull(), requireNonNull()
+> <br/>
+> 
+> - isNull()
+> ```java
+> 
+> ```
+> 
+> - nonNull()
+> ```java
+> 
+> ```
+>  
+> - requireNonNull()
+> ```java
+> 
+> ```
+
+- toString()
+> <br/>
+> 
+> ```java
+> 
+> ```
 
 
 ##### java.util.Random클래스
