@@ -557,31 +557,33 @@
 > ```
 
 - hash() & hashCode()
-> <br/>
 > - hash()
+> <br/>
 > ```java
 > 
 > ```
 > 
 > - hashCode()
+> <br/>
 > ```java
 > 
 > ```
 
 - isNull() & nonNull(), requireNonNull()
-> <br/>
-> 
 > - isNull()
+> <br/>
 > ```java
 > 
 > ```
 > 
 > - nonNull()
+> <br/>
 > ```java
 > 
 > ```
 >  
 > - requireNonNull()
+> <br/>
 > ```java
 > 
 > ```
