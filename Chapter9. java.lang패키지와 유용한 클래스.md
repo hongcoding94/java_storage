@@ -558,32 +558,41 @@
 
 - hash() & hashCode()
 > - hash()
-> <br/>
+> 주어진 매개값들로 이용하여 해시코드를 생성하는 역할이며<br/>
+> 반환 형태는 int로 반환하며 java.util.Object 내용 hash는 아래와 같다.
 > ```java
-> 
+> public static int hash(Object... values) {
+>    return Arrays.hashCode(values);
+> }
 > ```
 > 
 > - hashCode()
-> <br/>
+> 주어진 매개값들로 배열을 생성하고, Arrays.hashCode(Obhects[])를 호출해서 해시코드를 얻고, 값을 리턴한다.<br/>
+> 반환 형태는 hash와 동일하게
 > ```java
-> 
+> public static int hashCode(Object o) {
+>    return o != null ? o.hashCode() : 0;
+> }
 > ```
 
 - isNull() & nonNull(), requireNonNull()
 > - isNull()
 > <br/>
+> 
 > ```java
 > 
 > ```
 > 
 > - nonNull()
 > <br/>
+> 
 > ```java
 > 
 > ```
 >  
 > - requireNonNull()
 > <br/>
+> 
 > ```java
 > 
 > ```
