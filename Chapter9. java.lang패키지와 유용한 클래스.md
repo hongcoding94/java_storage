@@ -559,7 +559,7 @@
 - hash() & hashCode()
 > - hash()
 > 주어진 매개값들로 이용하여 해시코드를 생성하는 역할이며<br/>
-> 반환 형태는 int로 반환하며 java.util.Object 내용 hash는 아래와 같다.
+> 반환 형태는 int로 반환하며 java.util.Objects의 내용 속 hash는 아래와 같다.
 > ```java
 > public static int hash(Object... values) {
 >    return Arrays.hashCode(values);
@@ -568,7 +568,7 @@
 > 
 > - hashCode()
 > 주어진 매개값들로 배열을 생성하고, Arrays.hashCode(Obhects[])를 호출해서 해시코드를 얻고, 값을 리턴한다.<br/>
-> 반환 형태는 hash와 동일하게
+> 반환 형태는 hash와 동일하게 int로 반환하며 java.util.Objects의 내용 속 hashCode는 아래와 같다.
 > ```java
 > public static int hashCode(Object o) {
 >    return o != null ? o.hashCode() : 0;
@@ -577,31 +577,41 @@
 
 - isNull() & nonNull(), requireNonNull()
 > - isNull()
-> <br/>
-> 
+> isNull()메소드는 매개 값이 null일 경우 체크한다.<br/>
+> 반환 형태는 타입(Type)통해서 반환하며 boolean 형태로 반환하며 java.util.Objects의 내용 속 isNull은 아래와 같다.
 > ```java
-> 
+> public static boolean isNull(Object obj) {
+>     return obj == null;
+> }
 > ```
 > 
 > - nonNull()
-> <br/>
-> 
+> nonNull()메소드는 isNull과 반대로 매개값이 null 아닌 경우를 체크한다.<br/>
+> 반환형태는 isNull과 동일하게 boolean형태로 반환하며 java.util.Objects의 내용 속 nonNull은 아래와 같다.
 > ```java
-> 
+> public static boolean nonNull(Object obj) {
+>     return obj != null;
+> }
 > ```
 >  
 > - requireNonNull()
 > <br/>
 > 
 > ```java
-> 
+> public static <T> T requireNonNull(T obj, Supplier<String> messageSupplier) {
+>     if (obj == null)
+>         throw new NullPointerException(messageSupplier.get());
+>     return obj;
+> }
 > ```
 
 - toString()
-> <br/>
-> 
+> 객체의 문자 정보를 리턴한다.<br/>
+> 반환 방식은 해당 객체의 문자를 반환하거나 혹은 데이터가 없을 경우 nullDefault를 리턴한다.
 > ```java
-> 
+> public static String toString(Object o) {
+>     return String.valueOf(o);
+> }
 > ```
 
 
