@@ -62,7 +62,15 @@
 ## java.time패키지
 
 ##### java.time패키지의 핵심 클래스
-
+ 
+ - java.time 패키지의 핵심 클래스
+ > 날짜와 시간이 별도로 분리되어 있어 따로 사용할 수 있고, 합쳐진 클래스로 사용할 수 있다.
+ >  - LocalDate : 날짜
+ >  - LocalTime : 시간
+ >  - Instant : 날짜 시간 초단위로 나타냄(타임스탬프)
+ >  - LocalDateTime : 날짜 시간
+ >  - ZonedDateTime : 날짜 시간 시간대
+ 
 ##### LocalDate와 LocalTime
 
 ##### Instant
