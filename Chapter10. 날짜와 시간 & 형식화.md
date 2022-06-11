@@ -16,7 +16,7 @@
   - [3-5. TemporalAdjusters](https://github.com/hongcoding94/java_storage/blob/main/Chapter10.%20%EB%82%A0%EC%A7%9C%EC%99%80%20%EC%8B%9C%EA%B0%84%20&%20%ED%98%95%EC%8B%9D%ED%99%94.md#temporaladjusters "TemporalAdjusters")
   - [3-6. Period와 Duration](https://github.com/hongcoding94/java_storage/blob/main/Chapter10.%20%EB%82%A0%EC%A7%9C%EC%99%80%20%EC%8B%9C%EA%B0%84%20&%20%ED%98%95%EC%8B%9D%ED%99%94.md#period%EC%99%80-duration "Period와 Duration")
   - [3-7. 파싱과 포맷](https://github.com/hongcoding94/java_storage/blob/main/Chapter10.%20%EB%82%A0%EC%A7%9C%EC%99%80%20%EC%8B%9C%EA%B0%84%20&%20%ED%98%95%EC%8B%9D%ED%99%94.md#%ED%8C%8C%EC%8B%B1%EA%B3%BC-%ED%8F%AC%EB%A7%B7 "파싱과 포맷")
-4. [참고 문서 / 블로그]( "참고 문서 / 블로그")
+4. [참고 문서 / 블로그](https://github.com/hongcoding94/java_storage/blob/main/Chapter10.%20%EB%82%A0%EC%A7%9C%EC%99%80%20%EC%8B%9C%EA%B0%84%20&%20%ED%98%95%EC%8B%9D%ED%99%94.md#%EC%B0%B8%EA%B3%A0-%EB%AC%B8%EC%84%9C--%EB%B8%94%EB%A1%9C%EA%B7%B8 "참고 문서 / 블로그")
 
 
 ## 날짜와 시간
@@ -51,4 +51,4 @@
 ##### 파싱과 포맷
 
 ## 참고 문서 / 블로그
-1. [서적]
+1. [서적] 남궁성님의 Java의 정석 3rd Edition
