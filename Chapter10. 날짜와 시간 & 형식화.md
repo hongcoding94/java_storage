@@ -24,10 +24,26 @@
 ##### calendar와 date
 
 
+
 ## 형식화 클래스
 
 ##### DecimalFormat
 
+ - DecimalFormat이란? 
+ > 10진수의 값을 원하는 포멧으로 변경해주는 numberFormat의 구상 서브 클래스 
+
+ **!Tip1.** [DecimalFormat의 자세한 설명](http://cris.joongbu.ac.kr/course/2019-1/jcp/api/java/text/DecimalFormat.html)
+
+ - DecimalFormat의 사용 방법
+ >  - DecimalFormat을 이용하면 숫자 데이터를 정수, 부동소수점, 금액 등의 다양한 형식으로 표현
+ >  - 반대로 일정한 형식의 텍스트 데이터를 숫자로 쉽게 변환
+ >  - 형식화 클래스는 패턴을 정의하는 것이 전부
+
+ - Decimalformat의 코드 문법
+ ```java
+ 
+ ```
+ 
 ##### SimpleDateFormat
 
 ##### ChoiceFormat
