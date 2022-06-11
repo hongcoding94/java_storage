@@ -46,6 +46,15 @@
  
 ##### SimpleDateFormat
 
+ - SimpleDateFormat이란?
+ > Java7버전에서 제공하는 클래스이며 역할은 아래와 같다.
+ >  - String을 파싱하여 Date 객체를 생성한다.
+ >  - Date 객체를 formatting하여. String 한다.
+ 
+ 
+ - SimpleDateFormat을 쓰지 말아야하는 이유
+ > 
+
 ##### ChoiceFormat
 
 ##### MessageFormat
