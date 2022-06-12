@@ -41,7 +41,22 @@
 
  - Decimalformat의 코드 문법
  ```java
+ // 선언 - 문법 선언
+ DecimalFormat testDF1 = new DecimalFormat();
+ // 선언 - 특정 format방식으로 지원
+ DecimalFormat testDF2 = new DecimalFormat("0000,0000.00"); // 만자리
  
+ double num = testDF1.parse("123,456.78");
+ double num2 = testDF2.parse("123,456.78");
+ 
+ System.out.println("출력 값_1 : " + num.format(num));
+ System.out.println("출력 값_2 : " + num2.format(num2));
+ ```
+ 
+ - 출력 결과
+ ```text
+ 출력 값_1 : 123,456.78
+ 출력 값_2 : 123,456.78
  ```
  
 ##### SimpleDateFormat
