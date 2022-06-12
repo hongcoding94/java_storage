@@ -74,7 +74,19 @@
 
 ##### ChoiceFormat
 
+ - ChoiceFormat이란?
+ > 특정 범위에 속하는 값을 문자열로 변환
+
+ - ChoiceFormat 문법
+ >
+
 ##### MessageFormat
+
+ - MessageFormat이란?
+ > 데이터를 정해진 양식에 맞게 메시지를 출력
+
+ - MessageFormat 문법
+ > 
 
 ## java.time패키지
 
