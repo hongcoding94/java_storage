@@ -66,9 +66,11 @@
  >  - String을 파싱하여 Date 객체를 생성한다.
  >  - Date 객체를 formatting하여. String 한다.
  
- 
  - SimpleDateFormat을 쓰지 말아야하는 이유
- > 
+ > Referemce 문서 내에 " SimpleDateFormat은 Multi-Thread 환경에서 Safe하지 않는다"라는 내용이 있다.<br/>
+ > 즉, 의도치 않은 오류로 인한 결과값이 저장된다면 크게 문제가 발생할 수 있다. ➡️ *해결 방법은 아래 Tip2를 참조*
+
+ **!Tip2.** [pranne1224님의 Java-SimpleDateFormat-위험성과 해결방법](https://velog.io/@pranne1224/Java-SimpleDateFormat-%EC%9C%84%ED%97%98%EC%84%B1)
 
 ##### ChoiceFormat
 
@@ -100,3 +102,4 @@
 
 ## 참고 문서 / 블로그
 1. [서적] 남궁성님의 Java의 정석 3rd Edition
+2. [홈페이지] [delftstack 변수 유형 확인하기](https://www.delftstack.com/ko/howto/java/how-to-check-type-of-a-variable-in-java/)
