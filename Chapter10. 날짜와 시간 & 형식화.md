@@ -91,6 +91,64 @@
  - DecimalFormat이란? 
  > 10진수의 값을 원하는 포멧으로 변경해주는 numberFormat의 구상 서브 클래스 
 
+ - DecimalFormat 문법 정의
+    <table>
+        <tr>
+            <td>0</td>
+            <td>10진수(빈자리는 0)</td>
+            <td>0<br>0.0<br>00000.000</td>
+            <td>123<br>123.4<br>00123.400</td>
+        </tr>
+        <tr>
+            <td>#</td>
+            <td>10진수(빈자리 비워둠)</td>
+            <td>#<br>#.#<br>#####.###</td>
+            <td>123<br>123.4<br>123.4</td>
+        </tr>
+        <tr>
+            <td>.</td>
+            <td>소수점</td>
+            <td>#.0</td>
+            <td>123.4</td>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td>음수 기호</td>
+            <td>+#.0<br>-#.0</td>
+            <td>+123.4<br>-123.4</td>
+        </tr>
+        <tr>
+            <td>,</td>
+            <td>단위 구분</td>
+            <td>#,###.0</td>
+            <td>1,234,567.8</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>지수 문자</td>
+            <td>0.0E0</td>
+            <td>1.2E6</td>
+        </tr>
+        <tr>
+            <td>;</td>
+            <td>양수와 음수의 패턴을 모두 기술할 경우, 패턴 구분자</td>
+            <td>+#,###;-#,###</td>
+            <td>+1,234(양수일 때)<br>-1,234(음수일 때)</td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td>% 문자</td>
+            <td>#.# %</td>
+            <td>123.4 %</td>
+        </tr>
+        <tr>
+            <td>\u00A4</td>
+            <td>통화 기호</td>
+            <td>\u00A4 #,###</td>
+            <td>\(돈 모양) 1,234,567</td>
+        </tr>
+    </table>
+
  **!Tip1.** [DecimalFormat의 자세한 설명](http://cris.joongbu.ac.kr/course/2019-1/jcp/api/java/text/DecimalFormat.html)
 
  - DecimalFormat의 사용 방법
@@ -124,6 +182,64 @@
  > Java7버전에서 제공하는 클래스이며 역할은 아래와 같다.
  >  - String을 파싱하여 Date 객체를 생성한다.
  >  - Date 객체를 formatting하여. String 한다.
+ 
+ - SimpleDateFormat 문법 정의
+    <table>
+        <tr>
+            <th>문법</th>
+            <th>문법 내용</th>
+            <th>문법</th>
+            <th>문법 내용</th>
+        </tr>
+        <tr>
+            <td>y</td>
+            <td>년</td>
+            <td>H</td>
+            <td>시(0~23)</td>
+        </tr>
+        <tr>
+            <td>M</td>
+            <td>월</td>
+            <td>h</td>
+            <td>시(1~12)</td>
+        </tr>
+        <tr>
+            <td>d</td>
+            <td>일</td>
+            <td>K</td>
+            <td>시(0~11)</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>월 구분이 없는 일(1~365)</td>
+            <td>k</td>
+            <td>시(0~24)</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>요일</td>
+            <td>m</td>
+            <td>분</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>오전/오후</td>
+            <td>s</td>
+            <td>초</td>
+        </tr>
+        <tr>
+            <td>w</td>
+            <td>년의 몇 번째 주</td>
+            <td>S</td>
+            <td>밀리세컨드(1/1000초)</td>
+        </tr>
+        <tr>
+            <td>W</td>
+            <td>월의 몇 번째 주</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
  
  - SimpleDateFormat을 쓰지 말아야하는 이유
  > Referemce 문서 내에 " SimpleDateFormat은 Multi-Thread 환경에서 Safe하지 않는다"라는 내용이 있다.<br/>
@@ -160,6 +276,71 @@
  >  - ZonedDateTime : 특정 타임존의 날짜 및 시간(날짜 + 시간 + 시간대)
  
 ##### LocalDate와 LocalTime
+
+
+- LocalDate와 LocalTime 클래스 메소드 정의
+<table>
+    <tr style="height: 20px;">
+        <td style="width: 33.3333%; height: 20px;"><b>클래스</b></td>
+        <td style="width: 33.3333%; height: 20px;"><b>메소드</b></td>
+        <td style="width: 33.3333%; height: 20px;"><b>설명</b></td>
+    </tr>
+    <tr style="height: 20px;">
+        <td style="width: 33.3333%; height: 20px;"><b>LocalDate</b></td>
+        <td style="width: 33.3333%; height: 20px;">inr getYear()</td>
+        <td style="width: 33.3333%; height: 20px;">년</td>
+    </tr>
+    <tr style="height: 20px;">
+        <td style="width: 33.3333%; height: 20px;">&nbsp;</td>
+        <td style="width: 33.3333%; height: 20px;">Month getMonth()</td>
+        <td style="width: 33.3333%; height: 20px;">Month 열거값</td>
+    </tr>
+    <tr style="height: 20px;">
+        <td style="width: 33.3333%; height: 20px;">&nbsp;</td>
+        <td style="width: 33.3333%; height: 20px;">int getMonthValue()</td>
+        <td style="width: 33.3333%; height: 20px;">월</td>
+    </tr>
+    <tr style="height: 20px;">
+        <td style="width: 33.3333%; height: 20px;">&nbsp;</td>
+        <td style="width: 33.3333%; height: 20px;">int getDayOfYear</td>
+        <td style="width: 33.3333%; height: 20px;">일년의 몇 번째 일</td>
+    </tr>
+    <tr style="height: 20px;">
+        <td style="width: 33.3333%; height: 20px;">&nbsp;</td>
+        <td style="width: 33.3333%; height: 20px;">int getDayOfMonth()</td>
+        <td style="width: 33.3333%; height: 20px;">월의 몇 번째 일</td>
+    </tr>
+    <tr style="height: 20px;">
+        <td style="width: 33.3333%; height: 20px;">&nbsp;</td>
+        <td style="width: 33.3333%; height: 20px;">DayOfWeek getDayOfWeek()</td>
+        <td style="width: 33.3333%; height: 20px;">요일</td>
+    </tr>
+    <tr style="height: 20px;">
+        <td style="width: 33.3333%; height: 20px;">&nbsp;</td>
+        <td style="width: 33.3333%; height: 20px;">boolean isLeapYear()</td>
+        <td style="width: 33.3333%; height: 20px;">윤년 여부</td>
+    </tr>
+    <tr style="height: 20px;">
+        <td style="width: 33.3333%; height: 20px;"><b>LocalTime</b></td>
+        <td style="width: 33.3333%; height: 20px;">int getHour()</td>
+        <td style="width: 33.3333%; height: 20px;">시간</td>
+    </tr>
+    <tr style="height: 20px;">
+        <td style="width: 33.3333%; height: 20px;">&nbsp;</td>
+        <td style="width: 33.3333%; height: 20px;">int getMinute()</td>
+        <td style="width: 33.3333%; height: 20px;">분</td>
+    </tr>
+    <tr style="height: 20px;">
+        <td style="width: 33.3333%; height: 20px;">&nbsp;</td>
+        <td style="width: 33.3333%; height: 20px;">int getSecond()</td>
+        <td style="width: 33.3333%; height: 20px;">초</td>
+    </tr>
+    <tr style="height: 20px;">
+        <td style="width: 33.3333%; height: 20px;">&nbsp;</td>
+        <td style="width: 33.3333%; height: 20px;">int getNano()</td>
+        <td style="width: 33.3333%; height: 20px;">나노초 리턴</td>
+    </tr>
+</table>
 
 ##### Instant
 
