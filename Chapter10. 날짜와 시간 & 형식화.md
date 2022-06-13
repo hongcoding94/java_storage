@@ -26,7 +26,7 @@
  - Calendar와 Date
  > - Calendar 클래스 : 추상클래스이기 떄문에 직접 객체를 생성할 수 없고,<br/>
  > 메서드를 통해서 완전히 구현된 클래스의 인스턴스를 얻어야한다.
- > - Date 클래스 : 디폴트 생성자 현재의 날짜와 시간을 가진 객체를 생성<br/>
+ > - Date 클래스 : 컴퓨터의 현재 날짜와 시간을 가진 객체를 생성<br/>
  > 하지만, 공식문서를 참조하면 **더 이상 사용하지 않으며 언제 지원을<br/>안 하는 메소드이므로 사용을 지양하라는 내용이 있다.**
  >      - 공식문서 참조 내용 
  >      ![image](https://user-images.githubusercontent.com/66407386/173265363-8ce6e0cd-9d18-4bcf-aef6-d355898d4579.png)
@@ -156,8 +156,8 @@
  >  - LocalDate : 날짜
  >  - LocalTime : 시간
  >  - Instant : 날짜 시간 초단위로 나타냄(타임스탬프)
- >  - LocalDateTime : 날짜 시간
- >  - ZonedDateTime : 날짜 시간 시간대
+ >  - LocalDateTime : 로컬 날짜 및 시간(날짜 + 시간)
+ >  - ZonedDateTime : 특정 타임존의 날짜 및 시간(날짜 + 시간 + 시간대)
  
 ##### LocalDate와 LocalTime
 
