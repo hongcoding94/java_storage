@@ -253,13 +253,38 @@
 
  **!Tip2.** [pranne1224님의 Java-SimpleDateFormat-위험성과 해결방법](https://velog.io/@pranne1224/Java-SimpleDateFormat-%EC%9C%84%ED%97%98%EC%84%B1)
 
+ - SimpleDateFormat 문법
+ > ```java
+ > SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+ > Date d = new Date();
+ > System.out.println(df.format(d)); // SimpleDateFormat은 Date 클래스만 사용가능
+ > // Calendar class를 사용하려면, Date class로 변환해주어야한다
+ > ```
+
 ##### ChoiceFormat
 
  - ChoiceFormat이란?
  > 특정 범위에 속하는 값을 문자열로 변환
 
  - ChoiceFormat 문법
- >
+ > - 두 배열로 치환하기
+ > ```java
+ > double[] limits = {60, 70, 80, 90}; //오름차순으로
+ > String[] grades = {"D", "C", "B", "A"};
+ > int[] scores = {100, 95, 88, 70, 52, 60, 70};
+ > ChoiceFormat form = new ChoiceFormat(limits, grades); // 범위배열, 결과값 배열
+ > for(int i=0; i<scores.length; i++) {
+ >     System.out.println(scores[i] + " : "+ form.format(scores[i])); // 결과값: A,A,B,C,D,D,C
+ > ```
+ > 
+ > - 패턴으로 치환하기
+ > ```java
+ > String pattern = "60#D|70#C|80<B|90#A"; // #는 경계값을 범위에 포함, <포함시키지 않음
+ > int[] scores = {91, 90, 80, 88, 70, 52, 60};
+ > ChoiceFormat form = new ChoiceFormat(pattern);
+ > for(int i=0; i < scores.length; i++) {
+ >     System.out.println(scores[i] + " : " + form.format(scores[i])); // 결과값: A,A,C,B,C,D,D
+ > ```
 
 ##### MessageFormat
 
@@ -267,7 +292,19 @@
  > 데이터를 정해진 양식에 맞게 메시지를 출력
 
  - MessageFormat 문법
+ > - print
+ > ```java
+ > String pattern ="VALUES ({0}',''{1}'',{2},''{3}'')";
+ > Object[] argument = {22.02221, "29세", "경기도", "학생"};
+ > System.out.println(MessageFormat.format(pattern, argument)); //{숫자 부분에 데이터가 출력된다.}
+ > ```
  > 
+ > - parse
+ > ```java
+ > pattern = "{0},{1},{2},{3}"
+ > MessageFormat mf = new MessageFormat(pattern);
+ > Object[] objs = mf.parse(String 객체); //패턴을 따라 {}안에 있는 데이터값을 obj 객체 배열로 변환
+ > ```
 
 ## java.time패키지
 
