@@ -23,7 +23,64 @@
 
 ##### calendar와 date
 
+ - Calendar와 Date
+ > - Calendar 클래스 : 추상클래스이기 떄문에 직접 객체를 생성할 수 없고,<br/>
+ > 메서드를 통해서 완전히 구현된 클래스의 인스턴스를 얻어야한다.
+ > - Date 클래스 : 디폴트 생성자 현재의 날짜와 시간을 가진 객체를 생성<br/>
+ > 하지만, 공식문서를 참조하면 **더 이상 사용하지 않으며 언제 지원을 안하는 메소드이므로 사용을 지양하라는 내용이 있다.**
 
+ - Date 🔄 Calendar
+     - Date ➡️ Calendar
+     > ```java
+     > import java.util.Calendar;
+     > import java.util.Date; 
+     > 
+     > public class DateToCalendar {    
+     > 	public static void main(String[] args) {                
+     > 
+     > 	    // 1. 현재 날짜 Date 구하기        
+     > 	    Date date = new Date();         
+     > 
+     > 	    // 2. Calendar 객체 생성        
+     > 	    Calendar calendar = Calendar.getInstance();         
+     > 
+     > 	    // 3. Date 객체를 Calendar로 변환        
+     > 	    calendar.setTime(date);         
+     > 
+     >  	    // 4. Date, Calendar 객체 출력        
+     >  	    System.out.println("날짜 : " + date);     
+     >  	    System.out.println("캘린더 : " + calendar.getTime());   
+     > 	}
+     > }
+     > ```
+     > - 출력결과
+     > ```text
+     > 날짜 : Sun Jun 20 20:17:48 KST 2021  
+     > 캘린더 : Sun Jun 20 20:17:48 KST 2021   
+     > ```
+
+    - Calendar ➡️ Date
+    >  ```java
+    > import java.util.Calendar;
+    > import java.util.Date;
+    > import java.util.GregorianCalendar; 
+    > public class CalendarToDate {   
+    > 	public static void main(String[] args) {
+    >       // 1. 2021년 6월 20일로 Calendar 생성        
+    > 		Calendar calendar = new GregorianCalendar(2021, 6, 20);         
+    > 
+    > 		// 2. Calendar를 Date로 변경        
+    > 		Date date = calendar.getTime();        
+    > 
+    > 		// 3. Date 출력       
+    > 		System.out.println("날짜 : " + date);
+    > 	}
+    > }
+    > ```
+    > - 출력결과
+    > ```text
+    > 날짜 : Tue Jul 20 00:00:00 KST 2021
+    > ```
 
 ## 형식화 클래스
 
@@ -115,3 +172,4 @@
 ## 참고 문서 / 블로그
 1. [서적] 남궁성님의 Java의 정석 3rd Edition
 2. [홈페이지] [delftstack 변수 유형 확인하기](https://www.delftstack.com/ko/howto/java/how-to-check-type-of-a-variable-in-java/)
+3. [블로그] [devkuma님의 Date 클래스](https://www.devkuma.com/docs/java/date-class/)
