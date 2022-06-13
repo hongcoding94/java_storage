@@ -94,6 +94,12 @@
  - DecimalFormat 문법 정의
     <table>
         <tr>
+            <th>문법</th>
+            <th>문법 내용</th>
+            <th>적용 문법</th>
+            <th>반응 문법</th>
+        </tr>
+        <tr>
             <td>0</td>
             <td>10진수(빈자리는 0)</td>
             <td>0<br>0.0<br>00000.000</td>
