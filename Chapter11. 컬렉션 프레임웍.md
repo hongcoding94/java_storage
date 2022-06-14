@@ -249,6 +249,9 @@
 >      </tr>
 >   </table>
 
+- Set 인터페이스
+> 저장 순서가 유지되지 않고 중복을 허용하지 않는 컬렉션을 구현하는데 사용
+> ![image](https://user-images.githubusercontent.com/66407386/173524353-da2476d6-7571-4069-94e0-31080bc667bd.png)
 > - java.util.Set의 메소드 종류
 > <table>
 >  <tr>
@@ -277,7 +280,48 @@
 >     </td>
 >  </tr>
 > </table>
-> 
+>
+>  - Set 인터페이스에 정의된 메서드
+>   <table>
+>      <tr>
+>           <th>메서드</th>
+>           <th>설명</th>
+>      </tr>
+>      <tr>
+>           <td>
+>               boolean addAll(Collection c)
+>           </td>
+>           <td>
+>               지정된 Collection(c)의 객체들을 Collection에 추가 - [합집합]
+>           </td>
+>      </tr>
+>      <tr>
+>           <td>
+>               boolean containsAll(Collectiokn c)
+>           </td>
+>           <td>
+>               지정된 Collection의 객체들이 Collection에 포함되어 있는지 확인 - [부분집합]
+>           </td>
+>      </tr>
+>      <tr>
+>           <td>
+>               boolean removeAll(Collection c)
+>           </td>
+>           <td>
+>               지정된 Collectiokn에 포함된 객체들을 삭제 - [차집합]
+>           </td>
+>      </tr>
+>      <tr>
+>           <td>
+>               boolean retainAll(Collection c)
+>           </td>
+>           <td>
+>               지정된 Collection에 포함된 객체만을 남기고 나머지 Collection에서 삭제 - [교집합]
+>           </td>
+>      </tr>
+>   </table>
+
+
 >  - java.util.Map의 메소드 종류
 > <table>
 >  <tr>
