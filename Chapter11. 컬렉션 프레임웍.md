@@ -322,7 +322,11 @@
 >   </table>
 
 
->  - java.util.Map의 메소드 종류
+- Map 인터페이스
+> 저장 순서가 유지되지 않고 키는 중복을 허용하지 않고 값은 중복을 허용하는 컬렉션을 구현하는데 사용<br />
+> ※ 저장 순서를 유지 해야하는 경우, Map 인터페이스의 구현체 중에 LinkedHashMap을 사용
+>
+> - java.util.Map의 메소드 종류
 > <table>
 >  <tr>
 >     <th>메소드</th>
@@ -360,6 +364,89 @@
 >     HashMap과 큰 차이는 없지만 파일 입출력을 지원한다.
 >     </td>
 >  </tr>
+> </table>
+>
+> - Map 인터페이스에 정의된 메서드
+> <table>
+>    <tr>
+>         <th>메서드</th>
+>         <th>설명</th>
+>    </tr>
+>    <tr>
+>         <td>
+>               Object put(Object key, object value)
+>         </td>
+>         <td>
+>               Key 객체에 Value 객체를 연결하여 Map에 저장
+>         </td>
+>    </tr>
+>    <tr>
+>         <td>
+>               void putAll(Map t)
+>         </td>
+>         <td>
+>               지정된 Map의 모든 Key-Value 한쌍을 추가
+>         </td>
+>    </tr>
+>    <tr>
+>         <td>
+>               boolean containsKey(Object key)
+>         </td>
+>         <td>
+>               지정된 Key 객체와 일치하는 Map의 Key객체가 있는지 확인
+>         </td>
+>    </tr>
+>    <tr>
+>         <td>
+>               boolean containsValue(Object value)
+>         </td>
+>         <td>
+>               지정된 Value 객체와 일치하는 Map의 Value 객체가 있는지 확인
+>         </td>
+>    </tr>
+>    <tr>
+>         <td>
+>               Object get(Object key)
+>         </td>
+>         <td>
+>               지정된 Key 객체와 일치하는 Value 객체를 찾아서 반환
+>         </td>
+>    </tr>
+>    <tr>
+>         <td>
+>               Object remove(Object key)
+>         </td>
+>         <td>
+>               지정된 Key객체와 일치하는 key-Value 객체를 삭제
+>         </td>
+>    </tr>
+>    <tr>
+>         <td>
+>               Set entrySet()
+>         </td>
+>         <td>
+>               Map에 저장되어 있는 Key-Value 한쌍을<br />
+>               Map.Entry타입의 객체로 저장한 Set으로 반환
+>         </td>
+>    </tr>
+>    <tr>
+>         <td>
+>               Set keySet()
+>         </td>
+>         <td>
+>               Map에 저장된 모든 key 객체를 반환
+>         </td>
+>
+>    </tr>
+>    <tr>
+>         <td>
+>               Collection values()
+>         </td>
+>         <td>
+>               Map에 저장된 모든 Value 객체를 반환
+>         </td>
+>
+>    </tr>
 > </table>
 
 ##### ArrayList
