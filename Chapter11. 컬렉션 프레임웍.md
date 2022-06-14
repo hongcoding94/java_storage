@@ -115,7 +115,7 @@
  > 	단, 추가 혹은 삭제는 용이하나 탐색하는 속도가 많이 느리다는 단점을 가지고있다.
  >     </td>
  > </tr>
- > </table> <br />
+ > </table>
 
  > - java.util.Set의 메소드 종류
  > <table>
@@ -125,13 +125,17 @@
  >  </tr>
  >  <tr>
  >     <td>HashSet</td>
- >     <td></td>
+ >     <td>
+ >	Hashing / Map 의 조합<br />
+ >      즉, 키와 값 두쌍으로 데이터를 보관하는 자료 구조이다.<br />
+ >      키는 맵에 오직 유일해야하며 값은 중복된 값이여도 문제가 없다.
+ >     </td>
  >  </tr>
  >  <tr>
  >     <td>TreeSet</td>
  >     <td></td>
  >  </tr>
- > </table> <br />
+ > </table>
 
  > - java.util.Map의 메소드 종류
  > <table>
@@ -155,7 +159,7 @@
  >     <td>Properties</td>
  >     <td></td>
  >  </tr>
- > </table> <br />
+ > </table>
 
 ##### ArrayList
 
