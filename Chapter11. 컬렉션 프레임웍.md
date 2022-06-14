@@ -95,8 +95,6 @@
                 List 컬렉션 인터페이스를 구현하는 클래스<br/>
                 일반 배열과 ArrayList는 인덱스로 객체를 관리한다는 점은 동일하지만,<br/>
                 <B>크기를 동적</B>으로 늘릴 수 있다는 점에서 차이가 있다.
-		<br/>
-		<img src="https://user-images.githubusercontent.com/66407386/173502482-24de70f2-ac3f-46c9-a8df-a4cd8a846637.png">
             </td>
         </tr>
         <tr>
@@ -105,8 +103,6 @@
                 ArrayLsit와 동일한 구조를 가지며 배열의 크기가 동적으로 작동하며<br/>
                 항상 동기화 되어 있어 Collection 프레임워크 없이 메서드를 사용 가능<br/>
                 <b>단, 동기화 특징상 스레드가 아닌 환경에서는 거의 사용 하지 않는다.</b> 
-		<br/>
-                <img src="https://user-images.githubusercontent.com/66407386/173502053-6ebc7021-0ab7-4954-90bf-3b29eec8804f.png">
             </td>
         </tr>  
         <tr>
@@ -116,16 +112,20 @@
 		쉽게 설명을 하자면 해당 건물(공간) 안에 직원(값)의 배분을 한층한칸씩 차례대로<br/>
 		배분하는 것이 아닌 건물(공간) 안의 방을 빈 공간을 찾아 배분한다.<br/>
 		만약 이해가 되지 않는다면 <b>"참고 문서 / 블로그 2번을 참조하자"</b> <br/>
-		단, 추가 혹은 삭제는 용이하나 탐색하는 속도가 많이 느리다는 단점을 가지고있다. <br/>
-		<br/>
-		<img src="https://user-images.githubusercontent.com/66407386/173503205-5b5f501e-5e4b-4443-abbb-69e44a047bda.png">
+		단, 추가 혹은 삭제는 용이하나 탐색하는 속도가 많이 느리다는 단점을 가지고있다.
 	    </td>
         </tr>
     </table>
 
 ##### ArrayList
 
+  <br/>
+  <img src="https://user-images.githubusercontent.com/66407386/173502482-24de70f2-ac3f-46c9-a8df-a4cd8a846637.png">
+
 ##### LinkedList
+
+  <br/>
+  <img src="https://user-images.githubusercontent.com/66407386/173503205-5b5f501e-5e4b-4443-abbb-69e44a047bda.png">
 
 ##### Stack과 Queue
 
