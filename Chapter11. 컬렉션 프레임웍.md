@@ -165,16 +165,24 @@
  >     <td>
  >      키와 값을 데이터를 저장하는 자료구조이며 자료구조 중 하나로 빠르게 데이터를 검색할 수 있는 자료구조<br />
  >	즉, 내부적으로 배열을 사용하여 데이터를 저장 하기 때문이다.<br /> 
- >	(각각의 Key에 해시 함수를 적용해 배열의 고유한 index를 생성)
+ >	<b>(각각의 Key에 해시 함수를 적용해 배열의 고유한 index를 생성)</b>
  >     </td>
  >  </tr>
  >  <tr>
  >     <td>TreeMap</td>
- >     <td></td>
+ >     <td>
+ >     이진트리를 기반으로 한 Map 컬렉션<br />
+ >     TreeSet과의 차이점은 TreeSet은 그냥 값만 저장한다면 TreeMap은 키와 값이 저장된 Map, Etnry를 저장한다<br />
+ >     또한 TreeMap에 객체를 저장하면 자동으로 정렬되는데, 키는 저장과 동시에 자동 오름차순으로 정렬되고<br />
+ >     숫자 타입일 경우에는 값으로, 문자열 타입일 경우에는 유니코드로 정렬
+ >     </td>
  >  </tr>
  >  <tr>
  >     <td>Properties</td>
- >     <td></td>
+ >     <td>
+ >     HashTbles의 하위 클래스이며 HashTables를 상속을 받았기 떄문에 Map의 속성 키와 값을 갖는다.<br />
+ >     HashMap과 큰 차이는 없지만 파일 입출력을 지원한다.
+ >     </td>
  >  </tr>
  > </table>
 
@@ -215,3 +223,4 @@
 1. [서적] 남궁성님의 Java의 정석 3rd Edition
 2. [블로그] [opentutorials님의 Data Structure(자료구조)](https://opentutorials.org/module/1335/8821)
 3. [블로그] [yoongrammer님의 [자료구조] 이진 탐색 트리 (BST, Binary Search Tree)](https://yoongrammer.tistory.com/71)
+4. [블로그] [망나니개발자님의 [자료구조] 해시테이블(HashTable)이란?](https://mangkyu.tistory.com/102)
