@@ -137,7 +137,12 @@
  >  </tr>
  >  <tr>
  >     <td>TreeSet</td>
- >     <td></td>
+ >     <td>
+ >	HashSet과 비슷하게 구조를 가져와서 중복 데이터를 저장하지 않고 <br />
+ >	저장 순서를 유지하지 않는다는 성질을 가진다.<br />
+ >      단, TreeSet은 이진 탐색 트리(BinarySearchTree) 구조로 되어 있다.<br />
+ >	이진 탐색 트리 이해하기 ➡️ [클릭](https://yoongrammer.tistory.com/71)
+ >     </td>
  >  </tr>
  > </table>
 
@@ -151,13 +156,17 @@
  >     <td>HashMap</td>
  >     <td>
  >	Hashing(키 값에 직접 산술적인 연산을 적용하여 테이블의 주소를 게산하여 항목에 접근) / Map 의 조합<br />
- >      즉, 키와 값 두쌍으로 데이터를 보관하는 자료 구조이다.<br />
+ >      즉, 키와 값 한쌍으로 데이터를 보관하는 자료 구조이다.<br />
  >      키는 맵에 오직 유일해야하며 값은 중복된 값이여도 문제가 없다.
  >	</td>
  >  </tr>
  >  <tr>
  >     <td>HashTable</td>
- >     <td></td>
+ >     <td>
+ >      키와 값을 데이터를 저장하는 자료구조이며 자료구조 중 하나로 빠르게 데이터를 검색할 수 있는 자료구조<br />
+ >	즉, 내부적으로 배열을 사용하여 데이터를 저장 하기 때문이다.<br /> 
+ >	(각각의 Key에 해시 함수를 적용해 배열의 고유한 index를 생성)
+ >     </td>
  >  </tr>
  >  <tr>
  >     <td>TreeMap</td>
@@ -205,3 +214,4 @@
 ## 참고 문서 / 블로그
 1. [서적] 남궁성님의 Java의 정석 3rd Edition
 2. [블로그] [opentutorials님의 Data Structure(자료구조)](https://opentutorials.org/module/1335/8821)
+3. [블로그] [yoongrammer님의 [자료구조] 이진 탐색 트리 (BST, Binary Search Tree)](https://yoongrammer.tistory.com/71)
