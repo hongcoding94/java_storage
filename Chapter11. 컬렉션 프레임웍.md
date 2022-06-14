@@ -136,40 +136,119 @@
  </tr>
 </table>
 
-> - java.util.List의 메소드 종류
-> <table>
-> <tr>
->     <th>메소드</th>
->     <th>내용</th>
-> </tr>    
-> <tr>
->     <td>ArrayList</td>
->     <td>
-> 	List 컬렉션 인터페이스를 구현하는 클래스<br/>
-> 	일반 배열과 ArrayList는 인덱스로 객체를 관리한다는 점은 동일하지만,<br/>
-> 	<B>크기를 동적</B>으로 늘릴 수 있다는 점에서 차이가 있다.
->     </td>
-> </tr>
-> <tr>
->     <td>Verctor</td>
->     <td>
-> 	ArrayLsit와 동일한 구조를 가지며 배열의 크기가 동적으로 작동하며<br/>
-> 	항상 동기화 되어 있어 Collection 프레임워크 없이 메서드를 사용 가능<br/>
-> 	<b>단, 동기화 특징상 스레드가 아닌 환경에서는 거의 사용 하지 않는다.</b> 
->     </td>
-> </tr>  
-> <tr>
->     <td>LinkedList</td>
->     <td>
-> 	각 노드가 데이터와 포인터를 가지고 한줄로 연결되어 있는 방식의 자료구조<br/>
-> 	쉽게 설명을 하자면 해당 건물(공간) 안에 직원(값)의 배분을 한층한칸씩 차례대로<br/>
-> 	배분하는 것이 아닌 건물(공간) 안의 방을 빈 공간을 찾아 배분한다.<br/>
-> 	만약 이해가 되지 않는다면 <b>"참고 문서 / 블로그 2번을 참조하자"</b> <br/>
-> 	단, 추가 혹은 삭제는 용이하나 탐색하는 속도가 많이 느리다는 단점을 가지고있다.
->     </td>
-> </tr>
-> </table>
+- List 인터페이스
+>  저장 순서가 유지되고 중복을 허용하는 컬렉션을 구현하는데 사용 <br />
+>  ![image](https://user-images.githubusercontent.com/66407386/173521625-b04b3ae5-a385-4229-8f5e-10dc1bd459f9.png)
+>   - java.util.List의 메소드 종류
+>   <table>
+>   <tr>
+>       <th>메소드</th>
+>       <th>내용</th>
+>   </tr>    
+>   <tr>
+>       <td>ArrayList</td>
+>       <td>
+>   	List 컬렉션 인터페이스를 구현하는 클래스<br/>
+>   	일반 배열과 ArrayList는 인덱스로 객체를 관리한다는 점은 동일하지만,<br/>
+>   	<B>크기를 동적</B>으로 늘릴 수 있다는 점에서 차이가 있다.
+>       </td>
+>   </tr>
+>   <tr>
+>       <td>Verctor</td>
+>       <td>
+>   	ArrayLsit와 동일한 구조를 가지며 배열의 크기가 동적으로 작동하며<br/>
+>   	항상 동기화 되어 있어 Collection 프레임워크 없이 메서드를 사용 가능<br/>
+>   	<b>단, 동기화 특징상 스레드가 아닌 환경에서는 거의 사용 하지 않는다.</b> 
+>       </td>
+>   </tr>  
+>   <tr>
+>       <td>LinkedList</td>
+>       <td>
+>   	각 노드가 데이터와 포인터를 가지고 한줄로 연결되어 있는 방식의 자료구조<br/>
+>   	쉽게 설명을 하자면 해당 건물(공간) 안에 직원(값)의 배분을 한층한칸씩 차례대로<br/>
+>   	배분하는 것이 아닌 건물(공간) 안의 방을 빈 공간을 찾아 배분한다.<br/>
+>   	만약 이해가 되지 않는다면 <b>"참고 문서 / 블로그 2번을 참조하자"</b> <br/>
+>   	단, 추가 혹은 삭제는 용이하나 탐색하는 속도가 많이 느리다는 단점을 가지고있다.
+>       </td>
+>   </tr>
+>   </table>
 > 
+>   - List 인터페이스에 정의된 메서드
+>   <table>
+>      <tr>
+>           <th>메서드</th>
+>           <th>설명</th>
+>      </tr>
+>      <tr>
+>           <td>
+>               void add(int index, Object e)<br />
+>               boolean addAll(int idnex, Collection c)
+>           </td>
+>           <td>
+>               지정된 위치(index)에 객체(e - element) 또는 컬렉션에 포함된 객체들을 추가
+>           </td>
+>      </tr>
+>      <tr>
+>           <td>
+>               Object get(int index)
+>           </td>
+>           <td>
+>               지정된 위치(index)에 있는 객체를 반환
+>          </td>
+>      </tr>
+>      <tr>
+>           <td>
+>               int indexOf(Object o)
+>           </td>
+>           <td>
+>               지정된 객체의 위치(index)를 반환<br />
+>               (List의 마지막 요소부터 순방향으로 찾음)
+>           </td>
+>      </tr>
+>      <tr>
+>           <td>
+>               int lastIndexOf(Object o)
+>           </td>
+>           <td>
+>               지정된 객체의 위치(index)를 반환<br />
+>               (List의 마지막 요소부터 역방향으로 찾음)
+>           </td>
+>      </tr>
+>      <tr>
+>           <td>
+>               Object remove(int index)
+>           </td>
+>           <td>
+>               지정된 위치(index)에 있는 객체를 삭제하고 삭제된 객체를 반환
+>           </td>
+>      </tr>
+>      <tr>
+>           <td>
+>               Object set(int index, Object e)
+>           </td>
+>           <td>
+>               지정된 위치(index)에 객체(e - element) 저장 
+>           </td>
+>      </tr>
+>      <tr>
+>           <td>
+>               void sort(Comparator c)
+>           </td>
+>           <td>
+>               지정된 비교자(comparator)로 List를 정렬
+>           </td>
+>      </tr>
+>      <tr>
+>           <td>
+>               List SubList(int fromIndex, int tolndex)
+>           </td>
+>           <td>
+>               지정된 범위(fromIndex부터 toIndex)에 있는 객체를 반환<br />
+>               (일부만 뽑아내어 새로운 List 생성)
+>           </td>
+>      </tr>
+>   </table>
+
 > - java.util.Set의 메소드 종류
 > <table>
 >  <tr>
