@@ -137,317 +137,317 @@
 </table>
 
 - List 인터페이스
->  저장 순서가 유지되고 중복을 허용하는 컬렉션을 구현하는데 사용 <br />
->  ![image](https://user-images.githubusercontent.com/66407386/173521625-b04b3ae5-a385-4229-8f5e-10dc1bd459f9.png)
->   - java.util.List의 메소드 종류
->   <table>
->   <tr>
->       <th>메소드</th>
->       <th>내용</th>
->   </tr>    
->   <tr>
->       <td>ArrayList</td>
->       <td>
->   	List 컬렉션 인터페이스를 구현하는 클래스<br/>
->   	일반 배열과 ArrayList는 인덱스로 객체를 관리한다는 점은 동일하지만,<br/>
->   	<B>크기를 동적</B>으로 늘릴 수 있다는 점에서 차이가 있다.
->       </td>
->   </tr>
->   <tr>
->       <td>Verctor</td>
->       <td>
->   	ArrayLsit와 동일한 구조를 가지며 배열의 크기가 동적으로 작동하며<br/>
->   	항상 동기화 되어 있어 Collection 프레임워크 없이 메서드를 사용 가능<br/>
->   	<b>단, 동기화 특징상 스레드가 아닌 환경에서는 거의 사용 하지 않는다.</b> 
->       </td>
->   </tr>  
->   <tr>
->       <td>LinkedList</td>
->       <td>
->   	각 노드가 데이터와 포인터를 가지고 한줄로 연결되어 있는 방식의 자료구조<br/>
->   	쉽게 설명을 하자면 해당 건물(공간) 안에 직원(값)의 배분을 한층한칸씩 차례대로<br/>
->   	배분하는 것이 아닌 건물(공간) 안의 방을 빈 공간을 찾아 배분한다.<br/>
->   	만약 이해가 되지 않는다면 <b>"참고 문서 / 블로그 2번을 참조하자"</b> <br/>
->   	단, 추가 혹은 삭제는 용이하나 탐색하는 속도가 많이 느리다는 단점을 가지고있다.
->       </td>
->   </tr>
->   </table>
-> 
->   - List 인터페이스에 정의된 메서드
->   <table>
->      <tr>
->           <th>메서드</th>
->           <th>설명</th>
->      </tr>
->      <tr>
->           <td>
->               void add(int index, Object e)<br />
->               boolean addAll(int idnex, Collection c)
->           </td>
->           <td>
->               지정된 위치(index)에 객체(e - element) 또는 컬렉션에 포함된 객체들을 추가
->           </td>
->      </tr>
->      <tr>
->           <td>
->               Object get(int index)
->           </td>
->           <td>
->               지정된 위치(index)에 있는 객체를 반환
->          </td>
->      </tr>
->      <tr>
->           <td>
->               int indexOf(Object o)
->           </td>
->           <td>
->               지정된 객체의 위치(index)를 반환<br />
->               (List의 마지막 요소부터 순방향으로 찾음)
->           </td>
->      </tr>
->      <tr>
->           <td>
->               int lastIndexOf(Object o)
->           </td>
->           <td>
->               지정된 객체의 위치(index)를 반환<br />
->               (List의 마지막 요소부터 역방향으로 찾음)
->           </td>
->      </tr>
->      <tr>
->           <td>
->               Object remove(int index)
->           </td>
->           <td>
->               지정된 위치(index)에 있는 객체를 삭제하고 삭제된 객체를 반환
->           </td>
->      </tr>
->      <tr>
->           <td>
->               Object set(int index, Object e)
->           </td>
->           <td>
->               지정된 위치(index)에 객체(e - element) 저장 
->           </td>
->      </tr>
->      <tr>
->           <td>
->               void sort(Comparator c)
->           </td>
->           <td>
->               지정된 비교자(comparator)로 List를 정렬
->           </td>
->      </tr>
->      <tr>
->           <td>
->               List SubList(int fromIndex, int tolndex)
->           </td>
->           <td>
->               지정된 범위(fromIndex부터 toIndex)에 있는 객체를 반환<br />
->               (일부만 뽑아내어 새로운 List 생성)
->           </td>
->      </tr>
->   </table>
-
-- Set 인터페이스
-> 저장 순서가 유지되지 않고 중복을 허용하지 않는 컬렉션을 구현하는데 사용
-> ![image](https://user-images.githubusercontent.com/66407386/173524353-da2476d6-7571-4069-94e0-31080bc667bd.png)
-> - java.util.Set의 메소드 종류
-> <table>
->  <tr>
->     <th>메소드</th>
->     <th>내용</th>
->  </tr>
->  <tr>
->     <td>HashSet</td>
->     <td>
->     순서대로 입력되지 않고, 일정하게 유지되지 않으며 HashSet은 null 요소도<br/>
->     허용하지만 중복을 허용하지 않는다.<br />
->     <br />
->     ❓ Why - 중복을 어떻게 걸러내는거지?<br />
->     객체를 저장 하기 전 hashCode메소드를 호출하여 해시코드를 얻어 저장되어<br />
->     있는 객체들의 해시코드와 비교한 뒤 같은 해시 코드가 있다면<br />
->     두객체를 비교하여 동일한 객체로 판단시 중복 저장을 하지 않는다.
->     </td>
->  </tr>
->  <tr>
->     <td>TreeSet</td>
->     <td>
-> 	HashSet과 비슷하게 구조를 가져와서 중복 데이터를 저장하지 않고 <br />
-> 	저장 순서를 유지하지 않는다는 성질을 가진다.<br />
->      단, TreeSet은 이진 탐색 트리(BinarySearchTree) 구조로 되어 있다.<br />
-> 	이진 탐색 트리 이해하기 ➡️ [클릭](https://yoongrammer.tistory.com/71)
->     </td>
->  </tr>
-> </table>
->
->  - Set 인터페이스에 정의된 메서드
->   <table>
->      <tr>
->           <th>메서드</th>
->           <th>설명</th>
->      </tr>
->      <tr>
->           <td>
->               boolean addAll(Collection c)
->           </td>
->           <td>
->               지정된 Collection(c)의 객체들을 Collection에 추가 - [합집합]
->           </td>
->      </tr>
->      <tr>
->           <td>
->               boolean containsAll(Collectiokn c)
->           </td>
->           <td>
->               지정된 Collection의 객체들이 Collection에 포함되어 있는지 확인 - [부분집합]
->           </td>
->      </tr>
->      <tr>
->           <td>
->               boolean removeAll(Collection c)
->           </td>
->           <td>
->               지정된 Collectiokn에 포함된 객체들을 삭제 - [차집합]
->           </td>
->      </tr>
->      <tr>
->           <td>
->               boolean retainAll(Collection c)
->           </td>
->           <td>
->               지정된 Collection에 포함된 객체만을 남기고 나머지 Collection에서 삭제 - [교집합]
->           </td>
->      </tr>
->   </table>
-
-
-- Map 인터페이스
-> 저장 순서가 유지되지 않고 키는 중복을 허용하지 않고 값은 중복을 허용하는 컬렉션을 구현하는데 사용<br />
-> ※ 저장 순서를 유지 해야하는 경우, Map 인터페이스의 구현체 중에 LinkedHashMap을 사용
->
-> - java.util.Map의 메소드 종류
-> <table>
->  <tr>
->     <th>메소드</th>
->     <th>내용</th>
->  </tr>
->  <tr>
->     <td>HashMap</td>
->     <td>
-> 	Hashing(키 값에 직접 산술적인 연산을 적용하여 테이블의 주소를 게산하여 항목에 접근) / Map 의 조합<br />
->      즉, 키와 값 한쌍으로 데이터를 보관하는 자료 구조이다.<br />
->      키는 맵에 오직 유일해야하며 값은 중복된 값이여도 문제가 없다.
-> 	</td>
->  </tr>
->  <tr>
->     <td>HashTable</td>
->     <td>
->      키와 값을 데이터를 저장하는 자료구조이며 자료구조 중 하나로 빠르게 데이터를 검색할 수 있는 자료구조<br />
-> 	즉, 내부적으로 배열을 사용하여 데이터를 저장 하기 때문이다.<br /> 
-> 	<b>(각각의 Key에 해시 함수를 적용해 배열의 고유한 index를 생성)</b>
->     </td>
->  </tr>
->  <tr>
->     <td>TreeMap</td>
->     <td>
->     이진트리를 기반으로 한 Map 컬렉션<br />
->     TreeSet과의 차이점은 TreeSet은 그냥 값만 저장한다면 TreeMap은 키와 값이 저장된 Map, Etnry를 저장한다<br />
->     또한 TreeMap에 객체를 저장하면 자동으로 정렬되는데, 키는 저장과 동시에 자동 오름차순으로 정렬되고<br />
->     숫자 타입일 경우에는 값으로, 문자열 타입일 경우에는 유니코드로 정렬
->     </td>
->  </tr>
->  <tr>
->     <td>Properties</td>
->     <td>
->     HashTbles의 하위 클래스이며 HashTables를 상속을 받았기 떄문에 Map의 속성 키와 값을 갖는다.<br />
->     HashMap과 큰 차이는 없지만 파일 입출력을 지원한다.
->     </td>
->  </tr>
-> </table>
->
-> - Map 인터페이스에 정의된 메서드
-> <table>
->    <tr>
->         <th>메서드</th>
->         <th>설명</th>
->    </tr>
->    <tr>
->         <td>
->               Object put(Object key, object value)
->         </td>
->         <td>
->               Key 객체에 Value 객체를 연결하여 Map에 저장
->         </td>
->    </tr>
->    <tr>
->         <td>
->               void putAll(Map t)
->         </td>
->         <td>
->               지정된 Map의 모든 Key-Value 한쌍을 추가
->         </td>
->    </tr>
->    <tr>
->         <td>
->               boolean containsKey(Object key)
->         </td>
->         <td>
->               지정된 Key 객체와 일치하는 Map의 Key객체가 있는지 확인
->         </td>
->    </tr>
->    <tr>
->         <td>
->               boolean containsValue(Object value)
->         </td>
->         <td>
->               지정된 Value 객체와 일치하는 Map의 Value 객체가 있는지 확인
->         </td>
->    </tr>
->    <tr>
->         <td>
->               Object get(Object key)
->         </td>
->         <td>
->               지정된 Key 객체와 일치하는 Value 객체를 찾아서 반환
->         </td>
->    </tr>
->    <tr>
->         <td>
->               Object remove(Object key)
->         </td>
->         <td>
->               지정된 Key객체와 일치하는 key-Value 객체를 삭제
->         </td>
->    </tr>
->    <tr>
->         <td>
->               Set entrySet()
->         </td>
->         <td>
->               Map에 저장되어 있는 Key-Value 한쌍을<br />
->               Map.Entry타입의 객체로 저장한 Set으로 반환
->         </td>
->    </tr>
->    <tr>
->         <td>
->               Set keySet()
->         </td>
->         <td>
->               Map에 저장된 모든 key 객체를 반환
->         </td>
->
->    </tr>
->    <tr>
->         <td>
->               Collection values()
->         </td>
->         <td>
->               Map에 저장된 모든 Value 객체를 반환
->         </td>
->
->    </tr>
-> </table>
+   >  저장 순서가 유지되고 중복을 허용하는 컬렉션을 구현하는데 사용 <br />
+   >  ![image](https://user-images.githubusercontent.com/66407386/173521625-b04b3ae5-a385-4229-8f5e-10dc1bd459f9.png)
+   >   - java.util.List의 메소드 종류
+   >   <table>
+   >   <tr>
+   >       <th>메소드</th>
+   >       <th>내용</th>
+   >   </tr>    
+   >   <tr>
+   >       <td>ArrayList</td>
+   >       <td>
+   >   	List 컬렉션 인터페이스를 구현하는 클래스<br/>
+   >   	일반 배열과 ArrayList는 인덱스로 객체를 관리한다는 점은 동일하지만,<br/>
+   >   	<B>크기를 동적</B>으로 늘릴 수 있다는 점에서 차이가 있다.
+   >       </td>
+   >   </tr>
+   >   <tr>
+   >       <td>Verctor</td>
+   >       <td>
+   >   	ArrayLsit와 동일한 구조를 가지며 배열의 크기가 동적으로 작동하며<br/>
+   >   	항상 동기화 되어 있어 Collection 프레임워크 없이 메서드를 사용 가능<br/>
+   >   	<b>단, 동기화 특징상 스레드가 아닌 환경에서는 거의 사용 하지 않는다.</b> 
+   >       </td>
+   >   </tr>  
+   >   <tr>
+   >       <td>LinkedList</td>
+   >       <td>
+   >   	각 노드가 데이터와 포인터를 가지고 한줄로 연결되어 있는 방식의 자료구조<br/>
+   >   	쉽게 설명을 하자면 해당 건물(공간) 안에 직원(값)의 배분을 한층한칸씩 차례대로<br/>
+   >   	배분하는 것이 아닌 건물(공간) 안의 방을 빈 공간을 찾아 배분한다.<br/>
+   >   	만약 이해가 되지 않는다면 <b>"참고 문서 / 블로그 2번을 참조하자"</b> <br/>
+   >   	단, 추가 혹은 삭제는 용이하나 탐색하는 속도가 많이 느리다는 단점을 가지고있다.
+   >       </td>
+   >   </tr>
+   >   </table>
+   > 
+   >   - List 인터페이스에 정의된 메서드
+   >   <table>
+   >      <tr>
+   >           <th>메서드</th>
+   >           <th>설명</th>
+   >      </tr>
+   >      <tr>
+   >           <td>
+   >               void add(int index, Object e)<br />
+   >               boolean addAll(int idnex, Collection c)
+   >           </td>
+   >           <td>
+   >               지정된 위치(index)에 객체(e - element) 또는 컬렉션에 포함된 객체들을 추가
+   >           </td>
+   >      </tr>
+   >      <tr>
+   >           <td>
+   >               Object get(int index)
+   >           </td>
+   >           <td>
+   >               지정된 위치(index)에 있는 객체를 반환
+   >          </td>
+   >      </tr>
+   >      <tr>
+   >           <td>
+   >               int indexOf(Object o)
+   >           </td>
+   >           <td>
+   >               지정된 객체의 위치(index)를 반환<br />
+   >               (List의 마지막 요소부터 순방향으로 찾음)
+   >           </td>
+   >      </tr>
+   >      <tr>
+   >           <td>
+   >               int lastIndexOf(Object o)
+   >           </td>
+   >           <td>
+   >               지정된 객체의 위치(index)를 반환<br />
+   >               (List의 마지막 요소부터 역방향으로 찾음)
+   >           </td>
+   >      </tr>
+   >      <tr>
+   >           <td>
+   >               Object remove(int index)
+   >           </td>
+   >           <td>
+   >               지정된 위치(index)에 있는 객체를 삭제하고 삭제된 객체를 반환
+   >           </td>
+   >      </tr>
+   >      <tr>
+   >           <td>
+   >               Object set(int index, Object e)
+   >           </td>
+   >           <td>
+   >               지정된 위치(index)에 객체(e - element) 저장 
+   >           </td>
+   >      </tr>
+   >      <tr>
+   >           <td>
+   >               void sort(Comparator c)
+   >           </td>
+   >           <td>
+   >               지정된 비교자(comparator)로 List를 정렬
+   >           </td>
+   >      </tr>
+   >      <tr>
+   >           <td>
+   >               List SubList(int fromIndex, int tolndex)
+   >           </td>
+   >           <td>
+   >               지정된 범위(fromIndex부터 toIndex)에 있는 객체를 반환<br />
+   >               (일부만 뽑아내어 새로운 List 생성)
+   >           </td>
+   >      </tr>
+   >   </table>
+   
+   - Set 인터페이스
+   > 저장 순서가 유지되지 않고 중복을 허용하지 않는 컬렉션을 구현하는데 사용
+   > ![image](https://user-images.githubusercontent.com/66407386/173524353-da2476d6-7571-4069-94e0-31080bc667bd.png)
+   > - java.util.Set의 메소드 종류
+   > <table>
+   >  <tr>
+   >     <th>메소드</th>
+   >     <th>내용</th>
+   >  </tr>
+   >  <tr>
+   >     <td>HashSet</td>
+   >     <td>
+   >     순서대로 입력되지 않고, 일정하게 유지되지 않으며 HashSet은 null 요소도<br/>
+   >     허용하지만 중복을 허용하지 않는다.<br />
+   >     <br />
+   >     ❓ Why - 중복을 어떻게 걸러내는거지?<br />
+   >     객체를 저장 하기 전 hashCode메소드를 호출하여 해시코드를 얻어 저장되어<br />
+   >     있는 객체들의 해시코드와 비교한 뒤 같은 해시 코드가 있다면<br />
+   >     두객체를 비교하여 동일한 객체로 판단시 중복 저장을 하지 않는다.
+   >     </td>
+   >  </tr>
+   >  <tr>
+   >     <td>TreeSet</td>
+   >     <td>
+   > 	HashSet과 비슷하게 구조를 가져와서 중복 데이터를 저장하지 않고 <br />
+   > 	저장 순서를 유지하지 않는다는 성질을 가진다.<br />
+   >      단, TreeSet은 이진 탐색 트리(BinarySearchTree) 구조로 되어 있다.<br />
+   > 	이진 탐색 트리 이해하기 ➡️ [클릭](https://yoongrammer.tistory.com/71)
+   >     </td>
+   >  </tr>
+   > </table>
+   >
+   >  - Set 인터페이스에 정의된 메서드
+   >   <table>
+   >      <tr>
+   >           <th>메서드</th>
+   >           <th>설명</th>
+   >      </tr>
+   >      <tr>
+   >           <td>
+   >               boolean addAll(Collection c)
+   >           </td>
+   >           <td>
+   >               지정된 Collection(c)의 객체들을 Collection에 추가 - [합집합]
+   >           </td>
+   >      </tr>
+   >      <tr>
+   >           <td>
+   >               boolean containsAll(Collectiokn c)
+   >           </td>
+   >           <td>
+   >               지정된 Collection의 객체들이 Collection에 포함되어 있는지 확인 - [부분집합]
+   >           </td>
+   >      </tr>
+   >      <tr>
+   >           <td>
+   >               boolean removeAll(Collection c)
+   >           </td>
+   >           <td>
+   >               지정된 Collectiokn에 포함된 객체들을 삭제 - [차집합]
+   >           </td>
+   >      </tr>
+   >      <tr>
+   >           <td>
+   >               boolean retainAll(Collection c)
+   >           </td>
+   >           <td>
+   >               지정된 Collection에 포함된 객체만을 남기고 나머지 Collection에서 삭제 - [교집합]
+   >           </td>
+   >      </tr>
+   >   </table>
+   
+   
+   - Map 인터페이스
+   > 저장 순서가 유지되지 않고 키는 중복을 허용하지 않고 값은 중복을 허용하는 컬렉션을 구현하는데 사용<br />
+   > ※ 저장 순서를 유지 해야하는 경우, Map 인터페이스의 구현체 중에 LinkedHashMap을 사용
+   >
+   > - java.util.Map의 메소드 종류
+   > <table>
+   >  <tr>
+   >     <th>메소드</th>
+   >     <th>내용</th>
+   >  </tr>
+   >  <tr>
+   >     <td>HashMap</td>
+   >     <td>
+   > 	Hashing(키 값에 직접 산술적인 연산을 적용하여 테이블의 주소를 게산하여 항목에 접근) / Map 의 조합<br />
+   >      즉, 키와 값 한쌍으로 데이터를 보관하는 자료 구조이다.<br />
+   >      키는 맵에 오직 유일해야하며 값은 중복된 값이여도 문제가 없다.
+   > 	</td>
+   >  </tr>
+   >  <tr>
+   >     <td>HashTable</td>
+   >     <td>
+   >      키와 값을 데이터를 저장하는 자료구조이며 자료구조 중 하나로 빠르게 데이터를 검색할 수 있는 자료구조<br />
+   > 	즉, 내부적으로 배열을 사용하여 데이터를 저장 하기 때문이다.<br /> 
+   > 	<b>(각각의 Key에 해시 함수를 적용해 배열의 고유한 index를 생성)</b>
+   >     </td>
+   >  </tr>
+   >  <tr>
+   >     <td>TreeMap</td>
+   >     <td>
+   >     이진트리를 기반으로 한 Map 컬렉션<br />
+   >     TreeSet과의 차이점은 TreeSet은 그냥 값만 저장한다면 TreeMap은 키와 값이 저장된 Map, Etnry를 저장한다<br />
+   >     또한 TreeMap에 객체를 저장하면 자동으로 정렬되는데, 키는 저장과 동시에 자동 오름차순으로 정렬되고<br />
+   >     숫자 타입일 경우에는 값으로, 문자열 타입일 경우에는 유니코드로 정렬
+   >     </td>
+   >  </tr>
+   >  <tr>
+   >     <td>Properties</td>
+   >     <td>
+   >     HashTbles의 하위 클래스이며 HashTables를 상속을 받았기 떄문에 Map의 속성 키와 값을 갖는다.<br />
+   >     HashMap과 큰 차이는 없지만 파일 입출력을 지원한다.
+   >     </td>
+   >  </tr>
+   > </table>
+   >
+   > - Map 인터페이스에 정의된 메서드
+   > <table>
+   >    <tr>
+   >         <th>메서드</th>
+   >         <th>설명</th>
+   >    </tr>
+   >    <tr>
+   >         <td>
+   >               Object put(Object key, object value)
+   >         </td>
+   >         <td>
+   >               Key 객체에 Value 객체를 연결하여 Map에 저장
+   >         </td>
+   >    </tr>
+   >    <tr>
+   >         <td>
+   >               void putAll(Map t)
+   >         </td>
+   >         <td>
+   >               지정된 Map의 모든 Key-Value 한쌍을 추가
+   >         </td>
+   >    </tr>
+   >    <tr>
+   >         <td>
+   >               boolean containsKey(Object key)
+   >         </td>
+   >         <td>
+   >               지정된 Key 객체와 일치하는 Map의 Key객체가 있는지 확인
+   >         </td>
+   >    </tr>
+   >    <tr>
+   >         <td>
+   >               boolean containsValue(Object value)
+   >         </td>
+   >         <td>
+   >               지정된 Value 객체와 일치하는 Map의 Value 객체가 있는지 확인
+   >         </td>
+   >    </tr>
+   >    <tr>
+   >         <td>
+   >               Object get(Object key)
+   >         </td>
+   >         <td>
+   >               지정된 Key 객체와 일치하는 Value 객체를 찾아서 반환
+   >         </td>
+   >    </tr>
+   >    <tr>
+   >         <td>
+   >               Object remove(Object key)
+   >         </td>
+   >         <td>
+   >               지정된 Key객체와 일치하는 key-Value 객체를 삭제
+   >         </td>
+   >    </tr>
+   >    <tr>
+   >         <td>
+   >               Set entrySet()
+   >         </td>
+   >         <td>
+   >               Map에 저장되어 있는 Key-Value 한쌍을<br />
+   >               Map.Entry타입의 객체로 저장한 Set으로 반환
+   >         </td>
+   >    </tr>
+   >    <tr>
+   >         <td>
+   >               Set keySet()
+   >         </td>
+   >         <td>
+   >               Map에 저장된 모든 key 객체를 반환
+   >         </td>
+   >
+   >    </tr>
+   >    <tr>
+   >         <td>
+   >               Collection values()
+   >         </td>
+   >         <td>
+   >               Map에 저장된 모든 Value 객체를 반환
+   >         </td>
+   >
+   >    </tr>
+   > </table>
 
 ##### ArrayList
 
