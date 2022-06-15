@@ -486,10 +486,12 @@
    >
    > // ArrayList 값 출력 - while
    > Iterator iter = isList.iterator();
-   > while(iter.hasNext()){//다음값이 있는지 체크
+   >
+   > while(iter.hasNext()){
    >     System.out.println(iter.next());
    > }
    > ```
+   >
    
 ##### LinkedList
 
