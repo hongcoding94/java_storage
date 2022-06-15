@@ -450,48 +450,49 @@
 > </table>
 
 ##### ArrayList
-  - ArrayList이란?
-  > List 인터페이스를 상속받은 클래스이며 크기가 가변적으로 변하는 선형리스트<br/>
-  > 일반적인 배열과 같은 순차리스트이며 인덱스로 내부의 객체를 관리한다는 점이 비슷하지만<br/>
-  > 한번 생성하면 크기가 변하지 않은 배열과 달리 ArrayList는 객체들이 추가되어 저장 용량이<br/>
-  > 초과한다면 **자동으로 부족한 크기만큼 저장용량이 늘어난다는 특징**
+
+   - ArrayList이란?
+      > List 인터페이스를 상속받은 클래스이며 크기가 가변적으로 변하는 선형리스트<br/>
+      > 일반적인 배열과 같은 순차리스트이며 인덱스로 내부의 객체를 관리한다는 점이 비슷하지만<br/>
+      > 한번 생성하면 크기가 변하지 않은 배열과 달리 ArrayList는 객체들이 추가되어 저장 용량이<br/>
+      > 초과한다면 **자동으로 부족한 크기만큼 저장용량이 늘어난다는 특징**
 
   <br/>
   <img src="https://user-images.githubusercontent.com/66407386/173502482-24de70f2-ac3f-46c9-a8df-a4cd8a846637.png">
 
    - ArrayList 선언
-   > ```java
-   > // ArrayList 선언
-   > ArrayList isList = new ArrayList();
-   > 
-   > // ArrayList 타입 설정
-   > ArrayList<Type> isListType = new ArrayList<Type>(용량); 
-   >
-   > // ArrayList 추가
-   > isList.add(데이터 입력);
-   >
-   > // ArrayList 부분삭제
-   > isList.remove(index);
-   >
-   > // ArrayList 전체 삭제
-   > isList.clear();
-   >
-   > // ArrayList 사이즈 크기 구하기
-   > System.out.println(isList.size());
-   >
-   > // ArrayList 값 출력 - for문
-   > for(Integer i : isList) {
-   >     System.out.println(i);
-   > }
-   >
-   > // ArrayList 값 출력 - while
-   > Iterator iter = isList.iterator();
-   >
-   > while(iter.hasNext()){
-   >     System.out.println(iter.next());
-   > }
-   > ```
-   >
+      > ```java
+      > // ArrayList 선언
+      > ArrayList isList = new ArrayList();
+      > 
+      > // ArrayList 타입 설정
+      > ArrayList<Type> isListType = new ArrayList<Type>(용량); 
+      >
+      > // ArrayList 추가
+      > isList.add(데이터 입력);
+      >
+      > // ArrayList 부분삭제
+      > isList.remove(index);
+      >
+      > // ArrayList 전체 삭제
+      > isList.clear();
+      >
+      > // ArrayList 사이즈 크기 구하기
+      > System.out.println(isList.size());
+      >
+      > // ArrayList 값 출력 - for문
+      > for(Integer i : isList) {
+      >     System.out.println(i);
+      > }
+      >
+      > // ArrayList 값 출력 - while
+      > Iterator iter = isList.iterator();
+      >
+      > while(iter.hasNext()){
+      >     System.out.println(iter.next());
+      > }
+      > ```
+      >
    
 ##### LinkedList
 
