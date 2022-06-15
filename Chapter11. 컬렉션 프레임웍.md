@@ -485,14 +485,20 @@
       >     System.out.println(i);
       > }
       >
-      > // ArrayList 값 출력 - while
+      > // ArrayList 값 출력 - while문
       > Iterator iter = isList.iterator();
       >
       > while(iter.hasNext()){
       >     System.out.println(iter.next());
       > }
       > ```
+      
+   - ArrayList 사용예제
+      > ```java 
       >
+      >
+      >
+      > ```
    
 ##### LinkedList
 
