@@ -209,7 +209,7 @@
   </tr>
   <tr>
     <td>저장소</td>
-    <td>String ppol</td>
+    <td>String pool</td>
     <td>Heap Memory</td>
     <td>Heap Memory</td>
   </tr>
