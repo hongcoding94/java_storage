@@ -73,11 +73,11 @@
  > 
 
  - 기본 함수형 인터페이스 및 설명 그리고 예제
- > A. Runnable : 인자를 받지 않고 리턴 값도 없는 인터페이스
- > B. Supplier : 인자를 받지 않고 T타입의 객체를 리턴
- > C. Consumer : T타입의 객체를 인자로 받고 리턴 값이 없음
- > D. Function<T[함수에 대한 입력 유형], R[함수 결과의 유형]> : T타입의 인자를 받고, R타입의 객체를 반환 
- > E. Predicate : T타입 인자를 받고 결과로 Boolean<true, false>으로 리턴
+ > A. Runnable : 인자를 받지 않고 리턴 값도 없는 인터페이스,<br/>
+ > B. Supplier : 인자를 받지 않고 T타입의 객체를 리턴<br/>
+ > C. Consumer : T타입의 객체를 인자로 받고 리턴 값이 없음<br/>
+ > D. Function<T[함수에 대한 입력 유형], R[함수 결과의 유형]> : T타입의 인자를 받고, R타입의 객체를 반환<br/>
+ > E. Predicate : T타입 인자를 받고 결과로 Boolean<true, false>으로 리턴<br/>
 
 ##### java.util.function 패키지
 
