@@ -22,13 +22,76 @@
 ## 람다식
 
 ##### 람다식이란?
+ - 람다식이란? 
+ > 함수명을 선언하고 사용하는 것이 아닌 식별자 없이 실행 가능한 함수
+ > 절차형 프로그래밍, 객체지향 프로그래밍과는 사뭇 다르게 함수의 구현과 호출만으로 프로그램을 만드는 방식인 함수형
+   프로그래밍에서 자주 사용
+ > 자바 8부터 지원하며 람다식을 익명<s>함수</s>(객체)를 만드는 것인데 **익명함수**는 일급 객체 특징을 가지고 있다.
+ >  - 익명 <s>함수</s>객체(anonymous function) : 익명함수라고 부르지만 자바에서는 함수가 혼자 존재 할 수 없기<br/>
+ >                                              때문에 익명 객체라고 맞는 표현이다. 
+ >  - 익명 객체를 쓰는 이유 : 한시적(일시적)으로 사용하며 후에 재사용이 되지 않는다.<br />
+ >                          즉, 프로그램에서 일시적으로 한번만 사용되고 버려지는 객체라 생각하면 편하다.<br/>
+ >                          때문에 재사용성이 없으며 확장성을 활용하는 것이 유지보수에 안 좋을 때 사용하는 것이다. 
+
+ **!Tip0.** [익명 클래스](https://mommoo.tistory.com/16)
+ **!Tip1.** [익명 객체](https://velog.io/@yeonnex/%EC%9E%90%EB%B0%94%EC%97%90%EC%84%9C-%EB%9E%8C%EB%8B%A4%EC%8B%9D%EC%9D%80-%EC%9D%B5%EB%AA%85%ED%95%A8%EC%88%98-%EC%9D%B5%EB%AA%85%EA%B0%9D%EC%B2%B4)
+ 
+ - 람다식 문법 
+ > ```java
+ > (매개변수목록) -> {실행문}
+ > 
+ > // 예시
+ > public interface Compare {
+ >  public int compareTo(int value1, int value2);
+ > }
+ > 
+ > public class CompareExam {
+ >    public static void exec(Compara compara) {
+ >      int i = 10;
+ >      int k = 20;
+ >      int value = compara.compareTo(i, k);
+ >      
+ >      System.out.println(value);
+ >    }
+ >    
+ >    public static void main(String[] args) {
+ >      exec((i, k) -> {
+ >        return k - k;
+ >      });
+ >    }
+ > }
+ > ```
 
 ##### 람다식 작성하기
 
 ##### 함수형 인터페이스(Functional Interface)
 
+ - 함수형 인터페이스(functional interface)란?
+ > 1개의 추상 메소드를 갖고 있는 인터페이스를 지칭한다. 현업에서 SAM(Single Abstract Method)으로 이야기한다.
+
+ - 함수형 인터페이스를 사용하는 이유
+ > 
+
+ - 기본 함수형 인터페이스 및 설명 그리고 예제
+ > A. Runnable : 인자를 받지 않고 리턴 값도 없는 인터페이스
+ > B. Supplier : 인자를 받지 않고 T타입의 객체를 리턴
+ > C. Consumer : T타입의 객체를 인자로 받고 리턴 값이 없음
+ > D. Function<T[함수에 대한 입력 유형], R[함수 결과의 유형]> : T타입의 인자를 받고, R타입의 객체를 반환 
+ > E. Predicate : T타입 인자를 받고 결과로 Boolean<true, false>으로 리턴
+
 ##### java.util.function 패키지
 
+- 람다와 jav.util.function패키지의 어떠한 연관성?
+> 위에서 말했듯 람다식을 다루기 위한 인터페이스를 함수형 인터페이스라 말하지만 function 패키지에 일반적으로<br/>
+> 자주 쓰이는 형식의 메서드를 함수형 인터페이스로 미리 정의 했기 때문이다.
+
+- function 패키지를 사용하는 이유
+> 1. 함수형 인터페이스를 계속 정의 하지 않고 재사용이 가능하다.
+> 2. 메서드의 타입이 비슷하다. 제네릭 메서드로 정의하면 매개변수나 반환타입이 달라도 문제가 되지 않는다.
+> 3. 함수형 인터페이스에 정의된 메서드 이름이 통일되고, 재사용성이나 유지보수에도 좋다.
+
+**!Tip3.**[java.util.function 패키지가 제공하는 메소드 정리](https://javaplant.tistory.com/34)
+ 
 ##### Function의 합성과 Predicate의 결합
 
 ##### 메서드 참조
