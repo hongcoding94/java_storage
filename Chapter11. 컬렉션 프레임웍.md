@@ -656,16 +656,64 @@
    >
    
    - Stack과 Queue의 예제
-   > Stack 예제
    > ```java
+   > import java.util.Stack;
+   > import java.util.LinkedList;
+   > import java.util.Queue;
    > 
+   > public class Main { 
+   >   public static void main(String[] args) { 
+   >     
+   >     Stack<String> infoStack = new Stack<String>();
+   >     Queue<String> infoQueue = new LinkedList<String>();
+   >     
+   >     System.out.println("데이터 입력합니다.");
+   >     System.out.println("Stack 데이터 입력 순 : 1 → 2 → 3 → 4 Stack 데이터 총 입력 사이즈 : 4 개");
+   >     System.out.println("Queue 데이터 입력 순 : 1 → 2 → 3 → 4 Queue 데이터 총 입력 사이즈 : 4 개");
+   > 
+   >     
+   >     // 데이터 입력
+   >     infoStack.push("Stack 대기 1번");
+   >     infoStack.push("Stack 대기 2번");
+   >     infoStack.push("Stack 대기 3번");
+   >     infoStack.push("Stack 대기 4번");
+   >     
+   >     infoQueue.offer("Queue 대기 1번");
+   >     infoQueue.offer("Queue 대기 2번");    
+   >     infoQueue.offer("Queue 대기 3번");    
+   >     infoQueue.offer("Queue 대기 4번");
+   >     
+   >     
+   >     // 결과 출력
+   >     System.out.println("\n===== Stack =====");
+   > 
+   > 	int s = infoStack.size();
+   > 	System.out.println("Stack의 사이즈 : " + s + "\n");
+   > 	
+   > 	for(int i=0; i< s; i++) {
+   >     	System.out.println("Stack 출력 데이터는? : " + infoStack.pop());
+   >     }
+   >     
+   >     
+   >     System.out.println("\n===== Queue =====");
+   > 	
+   >     int q = infoQueue.size();
+   > 	System.out.println("Stack의 사이즈 : " + q + "\n");
+   > 	
+   > 	for(int k = 0; k< q; k++) {
+   >     	System.out.println("Queue 출력 데이터는? : " + infoQueue.poll());
+   >     }
+   >     
+   >     System.out.println("\n데이터 출력을 종료합니다.");
+   >     
+   >   } 
+   > }
    > ```
    > <br/>
-   >
-   > Queue 예제
-   > ```java
-   > 
-   > ```
+   
+   - 출력 결과<br/>
+   ![image](https://user-images.githubusercontent.com/66407386/174470346-9dfe017d-b0c9-453d-a068-29e9e50b9a65.png)
+   
    
 ##### Iterator, ListIterator, Enumeration
 
@@ -693,3 +741,4 @@
 2. [블로그] [opentutorials님의 Data Structure(자료구조)](https://opentutorials.org/module/1335/8821)
 3. [블로그] [yoongrammer님의 [자료구조] 이진 탐색 트리 (BST, Binary Search Tree)](https://yoongrammer.tistory.com/71)
 4. [블로그] [망나니개발자님의 [자료구조] 해시테이블(HashTable)이란?](https://mangkyu.tistory.com/102)
+5. [블로그] [튜나 개발일기님의 [자료구조]스택(Stack),큐(Queue) 개념/비교/활용예시](https://devuna.tistory.com/22)
