@@ -495,16 +495,135 @@
       
    - ArrayList 사용예제
       > ```java 
-      >
-      >
-      >
+      > import java.util.ArrayList;
+      > 
+      > public class Main { 
+      >   public static void main(String[] args) { 
+      >     ArrayList<String> list = new ArrayList<String>();
+      >     list.add("사과");
+      >     list.add("포도");
+      >     list.add("청포도");
+      >     list.add("참외");
+      >     
+      >     // 삭제 전 리스트
+      >     System.out.println("\n===== 삭제 전 리스트 =====");
+      >     System.out.print("현재 사이즈는? : " + list.size() + "\n");
+      >     for(String i : list) {
+      >     	System.out.print(" " + i);
+      >     } 
+      >     
+      >     // 삭제 전 리스트의 정렬과 값 알아보기
+      >     System.out.println("\n\n===== 삭제 전 내부 리스트 ====="); 
+      >     for(int k = 0; k<list.size(); k ++) {
+      >     	System.out.println("[숫자] - " + k + " / [값] - " + list.get(k));
+      >     }
+      >     
+      >     // 청포도 삭제하기
+      >     System.out.println("\n청포도를 삭제합니다.");
+      >     list.remove(2);
+      >     
+      >     // 삭제 전 리스트의 정렬과 값 알아보기
+      >     System.out.println("\n===== 삭제 후 내부 리스트 ====="); 
+      >     for(int n = 0; n<list.size(); n ++) {
+      >     	System.out.println("[숫자] - " + n + " / [값] - " + list.get(n));
+      >     }
+      >     
+      >     // 삭제 후 리스트
+      >     System.out.println("\n===== 삭제 후 리스트 ====="); 
+      >     System.out.print("현재 사이즈는? : " + list.size() + "\n");
+      >     for(String i : list) {
+      >     	System.out.print(" " + i);
+      >     }
+      >     
+      >     
+      >     System.out.println("\n\n===== 현재 index & has Value =====");
+      >     int listCount = list.size();
+      >     
+      >     for(int i = 0; i<listCount; i++) {
+      >     	System.out.println("[숫자] - " + i + " / [값] - " + list.get(i));
+      >     }
+      > 
+      >   } 
+      > }
       > ```
+   
+  - 출력결과<br/>
+  ![image](https://user-images.githubusercontent.com/66407386/174467282-95878698-dbfa-4ce3-8bc2-b8f99e2ad1a0.png)
+
    
 ##### LinkedList
 
   <br/>
   <img src="https://user-images.githubusercontent.com/66407386/173503205-5b5f501e-5e4b-4443-abbb-69e44a047bda.png">
 
+   
+   - 
+  
+   - LinkedList사용예제
+   > ```java
+   > import java.util.LinkedList;
+   > 
+   > public class Main { 
+   >   public static void main(String[] args) { 
+   >     LinkedList<String> link = new LinkedList<>();
+   > 	
+   >     link.add("C++");
+   >     link.add("C#");
+   >     link.add("python");
+   >     link.add(2, ".net");   
+   > 
+   > 	System.out.println("======== 데이터 수정 전 ========");
+   > 
+   >     int linkCount = link.size();
+   >     
+   > 	for(int i = 0; i< linkCount; i++) {
+   >     	System.out.println("[index] - " + i + " / [value] - " + link.get(i));
+   >     }
+   >     
+   >     System.out.println("\n======== 데이터 수정 후 ========");
+   >     
+   >     int linkCount2 = link.size();
+   >     
+   >     link.add(0, "Java");
+   >     link.add(2, "2번째 리스트은 내꺼! '.net'은 저리갓");
+   >     
+   > 	for(int k = 0; k < linkCount2; k++) {
+   >     	System.out.println("[index] - " + k + " / [value] - " + link.get(k));
+   >     }
+   >  
+   >     System.out.println("\n특정 데이터를 삭제중입니다.");
+   >     link.remove("2번째 리스트은 내꺼! '.net'은 저리갓");
+   >  
+   >     System.out.println("\n======== 데이터 부분 삭제 후 ========");
+   >     
+   >     int linkCount3 = link.size();
+   >     
+   > 	for(int j = 0; j < linkCount3; j++) {
+   >     	System.out.println("[index] - " + j + " / [value] - " + link.get(j));
+   >     }   
+   >     
+   >     System.out.println("\n전체 데이터를 삭제중입니다.");
+   >     link.clear();
+   >     
+   >     int linkCount4 = link.size();
+   >     
+   >     if(linkCount4 == 0) {
+   >     	System.out.println("\n데이터가 존재하지 않습니다.");
+   >     } else {
+   >     	for(int j = 0; j < linkCount4; j++) {
+   >     		System.out.println("[index] - " + j + " / [value] - " + link.get(j));
+   >     	}
+   >     }
+   >     
+   >   } 
+   > }
+   > ```
+   
+   - 출력결과<br/>
+   ![image](https://user-images.githubusercontent.com/66407386/174468041-91e222a3-1cba-498e-8b9b-2b479f3aeb24.png)
+
+  
+   
 ##### Stack과 Queue
 
 ##### Iterator, ListIterator, Enumeration
