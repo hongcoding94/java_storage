@@ -555,9 +555,16 @@
 
   <br/>
   <img src="https://user-images.githubusercontent.com/66407386/173503205-5b5f501e-5e4b-4443-abbb-69e44a047bda.png">
-
    
-   - 
+   - LinkedList이란?
+   > 위 사진을 보이듯, 노드들이 참조 체인으로 연결되어 있으며 각 노드들은 다음에 위치한 노드들의 참조를 들고 있다.<br/>
+   > 사용자는 LinkedList의 첫 번째 노드부터 따라가면서 원하는 데이터를 조회한다.<br/>
+   >
+   > ArrayList처럼 추가 되거나 중간에 있는 데이터가 삭제되면 리스트를 땡거나 뒤로 미는 동작이 없다.<br/>
+   > 앞쪽에 위치한 노드의 참조를 변경한다.<br/>
+   > 
+   > 단점으로는 모든 노드를 참조하면서 이동하기 때문에 검색 성능이 많이 떨어진다
+   
   
    - LinkedList사용예제
    > ```java
@@ -622,10 +629,44 @@
    - 출력결과<br/>
    ![image](https://user-images.githubusercontent.com/66407386/174468041-91e222a3-1cba-498e-8b9b-2b479f3aeb24.png)
 
-  
    
 ##### Stack과 Queue
 
+   - Stack과 Queue의 개념
+   >   - Stack(스택)
+   >   어원 :  쌓다, 포개다라는 의미의 어원을 가지고 있다.<br/>
+   >   
+   >   어원을 토대로 스택 자료구조는 해당 데이터를 차곡차곡 쌓아 올린 형태의 자료구조라 생각하면 편하다.<br/>
+   >   즉, 스택의 구조는 후입선출(Last-In-First-Out)으로 가장 마지막에 삽입된 자료가 가장 먼저 삭제 된다는 <br/>
+   >   구조를 가지고 있다.<br/>
+   >     
+   >   Stack의 참고 이미지<br/>
+   >   ![image](https://user-images.githubusercontent.com/66407386/174468957-cf46c8e3-9386-46a0-9b44-6239e3417a17.png)
+   >   <br/>
+   >
+   >   - Queue(큐)
+   >   어원 : 기다리며 늘어선 줄, 장사진등 여러가지의 어원을 가지고있다.<br/>
+   >   
+   >   어원을 토대로 큐 자료구조는 해당 데이터를 들어오는 순서 대로 처리하는 형태의 자료구조라 생각하면 편하다.<br/>
+   >   즉, 큐의 구조는 선입선출(First-In-First-Out)으로 가장 먼저 들어온 자료가 가장 먼저 삭제 된다는 구조를 가지고 있다.<br/>
+   >   
+   >   Queue의 참고<br/>
+   >   ![image](https://user-images.githubusercontent.com/66407386/174468977-44e14aca-09e4-4972-8c54-0400a2c9f447.png)
+   >   <br/>
+   >
+   
+   - Stack과 Queue의 예제
+   > Stack 예제
+   > ```java
+   > 
+   > ```
+   > <br/>
+   >
+   > Queue 예제
+   > ```java
+   > 
+   > ```
+   
 ##### Iterator, ListIterator, Enumeration
 
 ##### Arrays
