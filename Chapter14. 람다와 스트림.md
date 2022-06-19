@@ -94,11 +94,33 @@
  
 ##### Function의 합성과 Predicate의 결합
 
+ - Predicate란?
+ > argument를 받아 Bollean값을 반환하는 함수형 인터페이스
+ >  ➡️ 향후 예제 만들어 보기
+
+ - Founction과 Predicate를 
+
+ - Function의 합성과 Predicate의 결합
+
 ##### 메서드 참조
+
+ - 메소드 참조(Method References)란?
+ > 이미 존재하는 이름을 가진 메소드를 람다로 사용하도록 참조<br />
+ > 즉, 일반 함수를 람다 형태로 사용할 수 있도록 해준다. 또한 메소드를 호출(실행)하는 것이 아니라 참조만<br />
+ > 하기 때문에, 이름 뒤에 소괄호는 쓰지 않는다.
+
+ - 메서드 참조 방법
+ >
 
 ## 스트림(stream)
 
 ##### 스트림이란?
+
+ - 스트림이란?
+ > 스트림과 람다를 활용하여 이전보다 간결하고 향상된 방법으로 collection으로 처리한다.<br />
+ > 순차(sequential), 병렬(parallel) 두 종류가 존재<br />
+ > 순차 stream은 싱글 쓰레드가 순차적으로 처리되며 병렬 stream은 fork/join 프레임워크로 <br />
+ > 메서들에 의해 병렬로 처리된다.
 
 ##### 스트림 만들기
 
@@ -106,13 +128,16 @@
 
 ##### Optional〈T〉와 OptionalInt
 
-#####  스트림의 최종연산
+##### 스트림의 최종연산
 
 ##### collect()
 
-#####  Collector구현하기
+##### Collector구현하기
 
 ##### 스트림의 변환
 
 ## 참고 문서 / 블로그
 1. [서적] 남궁성님의 Java의 정석 3rd Edition
+2. [블로그] [동현 유님의 람다와 스트림](https://letsmakemyselfprogrammer.tistory.com/105)
+3. [블로그] [책 읽는 개발자_테드님의 [Java]람다(Lambda)와 java.util.function패키지](https://scshim.tistory.com/73)
+4. [블로그] [ryan-han님의 자바의 정석 - 람다식(Lambda Expression)](https://ryan-han.com/post/java/java-lambda/)
