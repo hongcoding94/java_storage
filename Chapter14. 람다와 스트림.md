@@ -124,6 +124,40 @@
 
 ##### 스트림 만들기
 
+ -
+ > ```java
+ > import java.util.ArrayList;
+ > import java.util.Iterator;
+ >
+ > public class Main {
+ > 	public static void main(String[] args) {
+ > 		// 일반적인 방식
+ > 		List<String> list1 = Arrays.asList("공무원", "경찰", "검찰", "조사관");
+ > 		Iterator<String> iterator = list1.iterator();
+ > 		while(iterator.hasNext()) {
+ > 			String job = iterator.next();
+ > 			System.out.println(job);
+ > 		}
+ > 
+ > 		// Stream 사용
+ > 		List<String> list2 = Arrays.asList("공무원", "경찰", "검찰", "조사관");
+ > 		Stream<String> ns = list2.stream();
+ > 		stream.forEach ( ns -> System.out.println(ns) );
+ > 	}
+ > }
+ > ```
+ >	- Stream이 제공하는 대부분의 요소 처리 메소드는 함수적 인터페이스 매개 타입을 가지기<br />
+ >        때문에 람다식 또는 메소드 참조를 이용해서 요소 처리 내용을 매개값으로 전달
+ >      - 내부 반복자를 사용하므로 병렬 처리가 가능하다.
+
+ - 내부 반복자와 외부 반복자란?
+ > 내부 반복자<br />
+ >  ➡️ 개발자가 코드로 직접 컬렉션의 요소를 반복해서 가져오는 코드패턴<br />
+ > 외부 반복자<br />
+ >  ➡️ 컬렉션 배부에서 요소들을 반복시키며, 개발자는 요소당 처리해야 할 코드만 제공하는 코드 패턴<br />
+ > &nbsp; &nbsp; &nbsp;즉, 먼티 코어 CPU를 최대한 활용하기 위해 요소들을 분배시켜 병렬 작업을 할 수 있도록<br />
+ > &nbsp; &nbsp; &nbsp;효율적으로 요소를 반복시킨다.
+
 ##### 스트림 중간연산
 
 ##### Optional〈T〉와 OptionalInt
