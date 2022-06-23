@@ -98,9 +98,22 @@
  > argument를 받아 Bollean값을 반환하는 함수형 인터페이스
  >  ➡️ 향후 예제 만들어 보기
 
- - Founction과 Predicate를 
-
  - Function의 합성과 Predicate의 결합
+ > ```java
+ > public class Main() {
+ >  public static void main(String[] args) {
+ >    Predicate<Integer> p = i -> i < 100;
+ >    Predicate<Integer> q = i -> i < 200;
+ >    Predicate<Integer> r = i -> i % 2 == 0;
+ >    Predicate<Integer> notP = p.negate();	//i >= 100
+ >    
+ >    // 100 <= i && (i < 200 || i % 2 == 0)
+ >    Predicate<Integer> all = notP.and(q.or(r));
+ >    System.out.println(all.test(150));	//true
+ >  }
+ > }
+ > ```
+ >  - 이처럼 and(), or(), negate()로 여러 조건식을 하나로 합칠 수 있다.
 
 ##### 메서드 참조
 
@@ -110,8 +123,16 @@
  > 하기 때문에, 이름 뒤에 소괄호는 쓰지 않는다.
 
  - 메서드 참조 방법
- >
-
+ > ```text
+ > '클래스 이름::메서드 이름' 또는 '참조변수::메서드 이름'으로 바꿀 수 있다. 
+ > ```
+  
+ - 생성자의 메서드 참조
+ > 생성자를 호출하는 람다식 메서드 참조로 변환할 수 있다? 없다? / ⭕ - 있다.<br />
+ > **매개변수가 있는 생성자라면** 매개변수의 개수에 따라 알맞은 함수형 인터페이스를 사용하면 되며<br />
+ > 필요하다면 함수형 인터페이스를 새로 정의해야한다. <br /> <br />
+ > ✔️ : 메서드 참조는 람다식을 static변수처럼 다룰 수 있게 해준다. **텍스트** or **코드 압축**로 사용한다.
+  
 ## 스트림(stream)
 
 ##### 스트림이란?
@@ -124,7 +145,7 @@
 
 ##### 스트림 만들기
 
- -
+ - 스트림 만들기
  > ```java
  > import java.util.ArrayList;
  > import java.util.Iterator;
@@ -152,7 +173,7 @@
 
  - 내부 반복자와 외부 반복자란?
  > 내부 반복자<br />
- >  ➡️ 개발자가 코드로 직접 컬렉션의 요소를 반복해서 가져오는 코드패턴<br />
+ >  ➡️ 개발자가 코드로 직접 컬렉션의 요소를 반복해서 가져오는 코드패턴<br /><br />
  > 외부 반복자<br />
  >  ➡️ 컬렉션 배부에서 요소들을 반복시키며, 개발자는 요소당 처리해야 할 코드만 제공하는 코드 패턴<br />
  > &nbsp; &nbsp; &nbsp;즉, 먼티 코어 CPU를 최대한 활용하기 위해 요소들을 분배시켜 병렬 작업을 할 수 있도록<br />
@@ -175,3 +196,4 @@
 2. [블로그] [동현 유님의 람다와 스트림](https://letsmakemyselfprogrammer.tistory.com/105)
 3. [블로그] [책 읽는 개발자_테드님의 [Java]람다(Lambda)와 java.util.function패키지](https://scshim.tistory.com/73)
 4. [블로그] [ryan-han님의 자바의 정석 - 람다식(Lambda Expression)](https://ryan-han.com/post/java/java-lambda/)
+5. [블로그] [qkrdmstn1014님의 Java의 정석 - chapter 14](https://velog.io/@qkrdmstn1014/Java%EC%9D%98-%EC%A0%95%EC%84%9D-chapter-14)
