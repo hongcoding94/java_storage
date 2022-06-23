@@ -33,8 +33,8 @@
  >                          즉, 프로그램에서 일시적으로 한번만 사용되고 버려지는 객체라 생각하면 편하다.<br/>
  >                          때문에 재사용성이 없으며 확장성을 활용하는 것이 유지보수에 안 좋을 때 사용하는 것이다. 
 
- **!Tip0.** [익명 클래스](https://mommoo.tistory.com/16)
- **!Tip1.** [익명 객체](https://velog.io/@yeonnex/%EC%9E%90%EB%B0%94%EC%97%90%EC%84%9C-%EB%9E%8C%EB%8B%A4%EC%8B%9D%EC%9D%80-%EC%9D%B5%EB%AA%85%ED%95%A8%EC%88%98-%EC%9D%B5%EB%AA%85%EA%B0%9D%EC%B2%B4)
+ **!Tip0.** [익명 클래스](https://mommoo.tistory.com/16)<br />
+ **!Tip1.** [익명 객체](https://velog.io/@yeonnex/%EC%9E%90%EB%B0%94%EC%97%90%EC%84%9C-%EB%9E%8C%EB%8B%A4%EC%8B%9D%EC%9D%80-%EC%9D%B5%EB%AA%85%ED%95%A8%EC%88%98-%EC%9D%B5%EB%AA%85%EA%B0%9D%EC%B2%B4)<br />
  
  - 람다식 문법 
  > ```java
