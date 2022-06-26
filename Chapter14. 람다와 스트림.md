@@ -181,8 +181,75 @@
 
 ##### 스트림 중간연산
 
-##### Optional〈T〉와 OptionalInt
+ - 중간 연산자
+ <table>
+  <tr>
+   <th>연산</th>
+   <th>변환값</th>
+   <th>연산 인수</th>
+   <th>함수 디스크립터</th>
+   <th>설명</th>
+  </tr>
+  <tr>
+    <td>filter</td>
+    <td>Stream<T></td>
+    <td>Predicate<T></td>
+    <td>T -> blooean</td>
+    <td>조건에 안 맞는 요소 제외</td>
+  </tr>
+  <tr>
+    <td>map</td>
+    <td>Stream<T></td>
+    <td>Function<T,R></td>
+    <td>T -> R</td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>limit</td>
+    <td>Stream<T></td>
+    <td> </td>
+    <td> </td>
+    <td>스트림의 일부를 잘라냄</td>
+  </tr>
+  <tr>
+    <td>sorted</td>
+    <td>Stream<T></td>
+    <td>Comparator<T></td>
+    <td>(T,T) -> int</td>
+    <td>스트림의 요소를 정렬</td>
+  </tr>
+  <tr>
+    <td>distinct</td>
+    <td>Stream<T></td>
+    <td> </td>
+    <td>중복을 제거</td>
+    <td> </td>
+  </tr>
+ </table>
 
+ **중간 연산은 map()과 FlatMap()이 많이 사용된다.**
+  
+ **Tip4.** [스트림의 중간연산자 총정리](https://jamie95.tistory.com/54)<br />
+ **Tip5.** [스트림 중간연산자 예제(filter 메서드)](https://dev-kani.tistory.com/28)<br />
+ **Tip6.** [스트림 중간연산자 예제(distinct 메서드)](https://dev-kani.tistory.com/29?category=805336)<br />
+ **Tip7.** [스트림을 이용한 가독성 좋은 코드](https://jeong-pro.tistory.com/165)
+
+##### Optional〈T〉와 OptionalInt
+  
+  - Optional〈T〉와 OptionalInt
+  > java.util.Optional은 JDK1.8 추가 되었으며 Optional<T\>은 지네릭 클래스로 "T타입의 객체"를 감싸는 ***래퍼 클래스***<br />
+  > 때문에 Optional타입의 객체는 모든 타입의 참조변수를 담을 수 있다.<br />
+  >    - 예시
+  >    >```java
+  >    > public final class optional<T> {
+  >    >  private final T value;  // T타입의 참조변수
+  >    >  // ...
+  >    > }
+  >    > ```
+  >    > <br />
+  >    > Optional 객체에 담아서 반환하며 매번 반복된 결과를 체크하지 않고 Optional에 정의된 메서드를 통해서<br />
+  >    > 간단하게 처리가 가능하며 if문을 사용하지 않고 NullPoniterException이 발생하지 않는 코드를 작성 할 수 있다.
+  
 ##### 스트림의 최종연산
 
 ##### collect()
@@ -193,7 +260,10 @@
 
 ## 참고 문서 / 블로그
 1. [서적] 남궁성님의 Java의 정석 3rd Edition
-2. [블로그] [동현 유님의 람다와 스트림](https://letsmakemyselfprogrammer.tistory.com/105)
-3. [블로그] [책 읽는 개발자_테드님의 [Java]람다(Lambda)와 java.util.function패키지](https://scshim.tistory.com/73)
-4. [블로그] [ryan-han님의 자바의 정석 - 람다식(Lambda Expression)](https://ryan-han.com/post/java/java-lambda/)
-5. [블로그] [qkrdmstn1014님의 Java의 정석 - chapter 14](https://velog.io/@qkrdmstn1014/Java%EC%9D%98-%EC%A0%95%EC%84%9D-chapter-14)
+2. [포럼] [이종우님의 Java8 람다](https://www.slideshare.net/rheehot1/java8-57541617)
+3. [블로그] [동현 유님의 람다와 스트림](https://letsmakemyselfprogrammer.tistory.com/105)
+4. [블로그] [책 읽는 개발자_테드님의 [Java]람다(Lambda)와 java.util.function패키지](https://scshim.tistory.com/73)
+5. [블로그] [ryan-han님의 자바의 정석 - 람다식(Lambda Expression)](https://ryan-han.com/post/java/java-lambda/)
+6. [블로그] [qkrdmstn1014님의 Java의 정석 - chapter 14](https://velog.io/@qkrdmstn1014/Java%EC%9D%98-%EC%A0%95%EC%84%9D-chapter-14)
+7. [포럼] [최범균님의 자바8 스트림API에 대해서](https://www.slideshare.net/madvirus/8-api)
+8. [블로그] [injoon2019님의 자바-OptionalT와-OptionalInt](https://velog.io/@injoon2019/%EC%9E%90%EB%B0%94-OptionalT%EC%99%80-OptionalInt)
