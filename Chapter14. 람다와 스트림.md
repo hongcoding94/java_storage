@@ -64,6 +64,70 @@
 
 ##### 람다식 작성하기
 
+ - 람다식 사용법
+ > ```java
+ > (매개변수, ...) -> { 실행문 ... }
+ > ```
+
+ - 람다식 사용 예제
+ >    - 예제 
+ >    ```java
+ >    @FunctionalInterface
+ >    interface Say{
+ >        int someting(int a,int b);
+ >    }
+ >    class Person{
+ >        public void hi(Say line) {
+ >    	      int number = line.someting(3,4);
+ >    	      System.out.println("Number is "+number);
+ >        }
+ >    }
+ >    ```
+ >    
+ >    - 람다식 사용 안했을 때
+ >    ```java
+ >    Person rin = new Person();
+ >    rin.hi(new Say() {
+ >        public int someting(int a, int b) {
+ >          System.out.println("My Name is Coding-Factory");
+ >          System.out.println("Nice to meet you");
+ >          System.out.println("parameter number is "+a+","+b);
+ >          return 7;
+ >        }
+ >    });
+ >    ```
+ >    
+ >    - 람다식 사용했을 때
+ >    ```java
+ >    Person rin = new Person();
+ >    rin.hi((a,b) ->{
+ >        System.out.println("This is Coding-Factory!");
+ >        System.out.println("Tank you Lamda");
+ >    	  System.out.println("parameter number is "+a+","+b);
+ >        return 7;
+ >    });
+ >    ```
+ >    
+ >    ```출력 결과
+ >    This is Coding-Factory!
+ >    Tank you Lamda
+ >    parameter number is 3, 4
+ >    Number is 7
+ >    ```
+
+- 람다식의 장단점
+>   - 장점
+>     1. 코드를 간결하게 작성가능
+>     2. 코드가 간결하며 개발자의 의도가 명확히 들어나며 가독성이 향상
+>     3. 함수를 만드는 과정없이 한번에 처리 할 수 있기 때문에 코딩 작성 소요시간이 줄어든다.
+>     4. 병렬프로그래밍이 용이
+>     
+>   - 단점
+>     1. 람다를 사용하면서 만드는 무명함수는 재사용이 불가
+>     2. 디버깅이 다소 어렵다.
+>     3. 람다를 남발하면 코드의 가독성이 불가능하며 중복생성 가능이 매우 높음
+>     4. 재귀로 만들 경우에 다소 부적합한면이 있음
+
 ##### 함수형 인터페이스(Functional Interface)
 
  - 함수형 인터페이스(functional interface)란?
@@ -181,7 +245,7 @@
 
 ##### 스트림 중간연산
 
- - 중간 연산자
+ - 중간 연산자 : 필터링 및 맵핑등 원하는 결과만 보여주는 **중간 작업**
  <table>
   <tr>
    <th>연산</th>
@@ -252,11 +316,58 @@
   
 ##### 스트림의 최종연산
 
+  - 최종 연산 : 최종적으로 결과를 생성하는 작업
+    <table>
+      <tr>
+        <th>최종연산의 종류</th>
+        <th>역할</th>
+        <th>메소드</th>
+      </tr>
+      <tr>
+        <td>Calculating</td>
+        <td>요소의 통계 및 연산</td>
+        <td>sum(), count(), min(), max(), average()</td>
+      </tr>
+      <tr>
+        <td>Reduction</td>
+        <td>요소의 소모</td>
+        <td>reduce()</td>
+      </tr>
+      <tr>
+        <td>Collecting</td>
+        <td>요소의 수집</td>
+        <td>collect()</td>
+      </tr>
+      <tr>
+        <td>Matching</td>
+        <td>요소의 검사</td>
+        <td>anyMatch(), allMatch(), noneMatch()</td>
+      </tr>
+      <tr>
+        <td>Searching</td>
+        <td>요소의 검색</td>
+        <td>findFirst(), findAny()</td>
+      </tr>
+      <tr>
+        <td>Iterating</td>
+        <td>요소의 출력</td>
+        <td>forEach()</td>
+      </tr>
+    </table>
+  
+  **!Tip8.** [최종연산 예제](https://choonsik-lab.tistory.com/94)
+  
 ##### collect()
+  
+  
 
 ##### Collector구현하기
+  
+  
 
 ##### 스트림의 변환
+  
+  
 
 ## 참고 문서 / 블로그
 1. [서적] 남궁성님의 Java의 정석 3rd Edition
@@ -267,3 +378,4 @@
 6. [블로그] [qkrdmstn1014님의 Java의 정석 - chapter 14](https://velog.io/@qkrdmstn1014/Java%EC%9D%98-%EC%A0%95%EC%84%9D-chapter-14)
 7. [포럼] [최범균님의 자바8 스트림API에 대해서](https://www.slideshare.net/madvirus/8-api)
 8. [블로그] [injoon2019님의 자바-OptionalT와-OptionalInt](https://velog.io/@injoon2019/%EC%9E%90%EB%B0%94-OptionalT%EC%99%80-OptionalInt)
+9. [홈페이지] [CodeJava의 terminal Operation Stream](https://www.codejava.net/java-core/collections/java-8-stream-terminal-operations-examples)
