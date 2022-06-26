@@ -293,10 +293,10 @@
 
  **중간 연산은 map()과 FlatMap()이 많이 사용된다.**
   
- **Tip4.** [스트림의 중간연산자 총정리](https://jamie95.tistory.com/54)<br />
- **Tip5.** [스트림 중간연산자 예제(filter 메서드)](https://dev-kani.tistory.com/28)<br />
- **Tip6.** [스트림 중간연산자 예제(distinct 메서드)](https://dev-kani.tistory.com/29?category=805336)<br />
- **Tip7.** [스트림을 이용한 가독성 좋은 코드](https://jeong-pro.tistory.com/165)
+ **!Tip4.** [스트림의 중간연산자 총정리](https://jamie95.tistory.com/54)<br />
+ **!Tip5.** [스트림 중간연산자 예제(filter 메서드)](https://dev-kani.tistory.com/28)<br />
+ **!Tip6.** [스트림 중간연산자 예제(distinct 메서드)](https://dev-kani.tistory.com/29?category=805336)<br />
+ **!Tip7.** [스트림을 이용한 가독성 좋은 코드](https://jeong-pro.tistory.com/165)
 
 ##### Optional〈T〉와 OptionalInt
   
