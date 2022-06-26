@@ -378,4 +378,5 @@
 6. [블로그] [qkrdmstn1014님의 Java의 정석 - chapter 14](https://velog.io/@qkrdmstn1014/Java%EC%9D%98-%EC%A0%95%EC%84%9D-chapter-14)
 7. [포럼] [최범균님의 자바8 스트림API에 대해서](https://www.slideshare.net/madvirus/8-api)
 8. [블로그] [injoon2019님의 자바-OptionalT와-OptionalInt](https://velog.io/@injoon2019/%EC%9E%90%EB%B0%94-OptionalT%EC%99%80-OptionalInt)
-9. [홈페이지] [CodeJava의 terminal Operation Stream](https://www.codejava.net/java-core/collections/java-8-stream-terminal-operations-examples)
+9. [홈페이지] [CodeJava](https://www.codejava.net/java-core/collections/java-8-stream-terminal-operations-examples)
+10.[홈페이지] [journaldev](https://www.journaldev.com/32457/java-stream-collect-method-examples0
