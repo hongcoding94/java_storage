@@ -425,14 +425,14 @@
   
 
 ## 참고 문서 / 블로그
-1. [서적] 남궁성님의 Java의 정석 3rd Edition
-2. [포럼] [이종우님의 Java8 람다](https://www.slideshare.net/rheehot1/java8-57541617)
-3. [블로그] [동현 유님의 람다와 스트림](https://letsmakemyselfprogrammer.tistory.com/105)
-4. [블로그] [책 읽는 개발자_테드님의 [Java]람다(Lambda)와 java.util.function패키지](https://scshim.tistory.com/73)
-5. [블로그] [ryan-han님의 자바의 정석 - 람다식(Lambda Expression)](https://ryan-han.com/post/java/java-lambda/)
-6. [블로그] [qkrdmstn1014님의 Java의 정석 - chapter 14](https://velog.io/@qkrdmstn1014/Java%EC%9D%98-%EC%A0%95%EC%84%9D-chapter-14)
-7. [포럼] [최범균님의 자바8 스트림API에 대해서](https://www.slideshare.net/madvirus/8-api)
-8. [블로그] [injoon2019님의 자바-OptionalT와-OptionalInt](https://velog.io/@injoon2019/%EC%9E%90%EB%B0%94-OptionalT%EC%99%80-OptionalInt)
-9. [홈페이지] [CodeJava](https://www.codejava.net/java-core/collections/java-8-stream-terminal-operations-examples)<br />
-10.[홈페이지] [journaldev](https://www.journaldev.com/32457/java-stream-collect-method-examples0)<br />
-11.[블로그] [아빠개발자님의 Java Collectors](https://daddyprogrammer.org/post/1163/java-collectors/)<br />
+1.  [서적]     남궁성님의 Java의 정석 3rd Edition
+2.  [포럼]     [이종우님의 Java8 람다](https://www.slideshare.net/rheehot1/java8-57541617)
+3.  [블로그]   [동현 유님의 람다와 스트림](https://letsmakemyselfprogrammer.tistory.com/105)
+4.  [블로그]   [책 읽는 개발자_테드님의 [Java]람다(Lambda)와 java.util.function패키지](https://scshim.tistory.com/73)
+5.  [블로그]   [ryan-han님의 자바의 정석 - 람다식(Lambda Expression)](https://ryan-han.com/post/java/java-lambda/)
+6.  [블로그]   [qkrdmstn1014님의 Java의 정석 - chapter 14](https://velog.io/@qkrdmstn1014/Java%EC%9D%98-%EC%A0%95%EC%84%9D-chapter-14)
+7.  [포럼]     [최범균님의 자바8 스트림API에 대해서](https://www.slideshare.net/madvirus/8-api)
+8.  [블로그]   [injoon2019님의 자바-OptionalT와-OptionalInt](https://velog.io/@injoon2019/%EC%9E%90%EB%B0%94-OptionalT%EC%99%80-OptionalInt)
+9.  [홈페이지] [CodeJava](https://www.codejava.net/java-core/collections/java-8-stream-terminal-operations-examples)
+10. [홈페이지] [journaldev](https://www.journaldev.com/32457/java-stream-collect-method-examples0)
+11. [블로그]   [아빠개발자님의 Java Collectors](https://daddyprogrammer.org/post/1163/java-collectors/)
