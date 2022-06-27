@@ -362,7 +362,62 @@
   
 
 ##### Collector구현하기
-  
+
+ - Collectors
+ > 미리 정의된 모든 구현은 Collectors 클래스에서 찾을 수 있다.<br />
+ > 가독성을 높이기 ㅜ이해서 다음과 같이 정적 import를 사용하는 것이 일반적이다.
+ > ```java
+ > import static java.util.stream.Collectors.*;
+ > ``` 
+ >
+ > 혹은 아래와 같이 사용할 Collctor만 개별 선언한다. - [주로 많이 사용하는 toList, toMap, toSet]
+ >
+ > ```java
+ > import static java.util.stream.Collectors.toList;
+ > import static java.util.stream.Collectors.toMap;
+ > import static java.util.stream.Collectors.toSet;
+ > ```
+
+ - Collectors종류
+    <table>
+      <tr>
+        <th>인터페이스</th>
+        <th>구현 클래스</th>
+        <th>특징</th>
+      </tr>
+      <tr>
+        <td>List</td>
+        <td>
+	    LinkedList<br />
+	    Stack<br />
+	    Vector<br />
+	    ArrayList
+        </td>
+        <td>순서가 있는 데이터의 집합, 데이터의 중복을 허용함</td>
+      </tr>
+      <tr>
+        <td>Set</td>
+        <td>
+	    HashSet<br />
+	    TreeSet
+        </td>
+        <td>순서를 유지하지 않는 데이터의 집합, 데이터의 중복을 허용하지 않음</td>
+      </tr>
+      <tr>
+        <td>Map</td>
+        <td>
+	    HashMap<br />
+	    TreeMap<br />
+	    HashTable<br />
+	    Properties
+        </td>
+        <td>
+	    키(Key)와 값(value)의 쌀으로 이루어진 데이터의 집<br />
+	    순서는 유지되지 않고, 키는 중복을 허용하지 않으며 값의 중복을 허용함
+        </td>
+      </tr>
+    </table>
+
   
 
 ##### 스트림의 변환
