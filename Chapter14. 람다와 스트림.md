@@ -434,4 +434,5 @@
 7. [포럼] [최범균님의 자바8 스트림API에 대해서](https://www.slideshare.net/madvirus/8-api)
 8. [블로그] [injoon2019님의 자바-OptionalT와-OptionalInt](https://velog.io/@injoon2019/%EC%9E%90%EB%B0%94-OptionalT%EC%99%80-OptionalInt)
 9. [홈페이지] [CodeJava](https://www.codejava.net/java-core/collections/java-8-stream-terminal-operations-examples)
-10.[홈페이지] [journaldev](https://www.journaldev.com/32457/java-stream-collect-method-examples0
+10.[홈페이지] [journaldev](https://www.journaldev.com/32457/java-stream-collect-method-examples0)
+11.[블로그] [아빠개발자님의 Java Collectors](https://daddyprogrammer.org/post/1163/java-collectors/)
