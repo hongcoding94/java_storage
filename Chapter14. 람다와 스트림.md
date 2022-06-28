@@ -359,13 +359,23 @@
   
 ##### collect()
   
-  
+  - 스트림의 요소를 수집하는 최종 연산
+  > collect()가 스트림의 요소를 수집하기 위한 수집 방법이 정의된 것이 collector.<br />
+  > collectsms Collector 인터페이스를 구현한 것.
+  > ```text
+  > collect() 스트림의 최종 연산. 매개변수로 collector가 필요
+  > collector 인터페이스 collector는 인터페이스를 구현
+  > collectors 클래스. static 메세드로 미리 작성된 collector를 제공
+  > ```
+ 
+  - collect()의  매개변수 타입은 collector인데. 매개변수가 collector를 구현한 클래스의 객체이어야 한다.<br />
+    collect()는 이 객체에 구현된 방법 대로 스트림의 요소를 수집
 
 ##### Collector구현하기
 
  - Collectors
  > 미리 정의된 모든 구현은 Collectors 클래스에서 찾을 수 있다.<br />
- > 가독성을 높이기 ㅜ이해서 다음과 같이 정적 import를 사용하는 것이 일반적이다.
+ > 가독성을 높이기 해서 다음과 같이 정적 import를 사용하는 것이 일반적이다.
  > ```java
  > import static java.util.stream.Collectors.*;
  > ``` 
@@ -418,11 +428,74 @@
       </tr>
     </table>
 
-  
-
 ##### 스트림의 변환
   
-  
+  - 형변환 방식
+  <table>
+     <tr>
+	     <th>형변환</th>
+	     <th>스트림 종류</th>
+	     <th>변환 메서드</th>
+     </tr>
+     <tr>
+	     <td>Stream</td>
+	     <td>IntStream</td>
+	     <td>mapToInt(ToIntFunction Mapper)</td>
+     </tr>
+     <tr>
+	     <td></td>
+	     <td>LongStream</td>
+	     <td>MapTolong(ToLongFunction Mapper)</td>  
+     </tr>
+     <tr>
+	     <td></td>
+	     <td>DoubleStream</td>
+	     <td>mapToDouble (ToDoubleFunction Mapper)</td>  
+     </tr>
+     <tr>
+	     <td>IntStream</td>
+	     <td>Stream</td>
+	     <td>boxed()</td>  
+     </tr>
+     <tr>
+	     <td>LongStream</td>
+	     <td>Stream</td>
+	     <td>boxed()</td>  
+     </tr>
+     <tr>
+	     <td>DoubleStream</td>
+	     <td>Stream</td>
+	     <td>boxed()</td>  
+     </tr>
+     <tr>
+	     <td>Stream</td>
+	     <td>Stream</td>
+	     <td>flatMap (Function Mapper)</td>  
+     </tr>
+     <tr>
+	     <td>Stream</td>
+	     <td>IntStream</td>
+	     <td>flatMapToInt (Function Mapper)</td>  
+     </tr>
+     <tr>
+	     <td>Stream</td>
+	     <td>LongStream</td>
+	     <td>flatMapToLong (Function Mapper)</td>  
+     </tr>
+     <tr>
+	     <td>Stream</td>
+	     <td>DoubleStream</td>
+	     <td>flatMapToDouble (Function Mapper)</td>  
+     </tr>
+     <tr>
+	     <td>Collection, List, Set</td>
+	     <td>Stream</td>
+	     <td>stream()</td>  
+     </tr>
+  </tbale>
+	
+	
+	
 
 ## 참고 문서 / 블로그
 1.  [서적]     남궁성님의 Java의 정석 3rd Edition
@@ -436,3 +509,4 @@
 9.  [홈페이지] [CodeJava](https://www.codejava.net/java-core/collections/java-8-stream-terminal-operations-examples)
 10. [홈페이지] [journaldev](https://www.journaldev.com/32457/java-stream-collect-method-examples0)
 11. [블로그]   [아빠개발자님의 Java Collectors](https://daddyprogrammer.org/post/1163/java-collectors/)
+13. [블로그]   [haenny님의 스트림 변환](https://haenny.tistory.com/293)
