@@ -430,7 +430,7 @@
 
 ##### 스트림의 변환
 
-- 안녕하세요
+- 
 > <table>
 >    <tr>
 >      <th>형변환</th>
@@ -493,7 +493,6 @@
 >      <td>stream()</td>  
 >    </tr>
 > </table>
-	
 
 ## 참고 문서 / 블로그
 1.  [서적]     남궁성님의 Java의 정석 3rd Edition
@@ -508,3 +507,4 @@
 10. [홈페이지] [journaldev](https://www.journaldev.com/32457/java-stream-collect-method-examples0)
 11. [블로그]   [아빠개발자님의 Java Collectors](https://daddyprogrammer.org/post/1163/java-collectors/)
 13. [블로그]   [haenny님의 스트림 변환](https://haenny.tistory.com/293)
+14. [블로그]   [제리님의 Stream](https://jerry92k.tistory.com/18)
