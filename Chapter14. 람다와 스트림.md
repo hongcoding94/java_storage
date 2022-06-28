@@ -429,72 +429,8 @@
     </table>
 
 ##### 스트림의 변환
-  
-  - 형변환 방식
-  <table>
-     <tr>
-	     <th>형변환</th>
-	     <th>스트림 종류</th>
-	     <th>변환 메서드</th>
-     </tr>
-     <tr>
-	     <td>Stream</td>
-	     <td>IntStream</td>
-	     <td>mapToInt(ToIntFunction Mapper)</td>
-     </tr>
-     <tr>
-	     <td></td>
-	     <td>LongStream</td>
-	     <td>MapTolong(ToLongFunction Mapper)</td>  
-     </tr>
-     <tr>
-	     <td></td>
-	     <td>DoubleStream</td>
-	     <td>mapToDouble (ToDoubleFunction Mapper)</td>  
-     </tr>
-     <tr>
-	     <td>IntStream</td>
-	     <td>Stream</td>
-	     <td>boxed()</td>  
-     </tr>
-     <tr>
-	     <td>LongStream</td>
-	     <td>Stream</td>
-	     <td>boxed()</td>  
-     </tr>
-     <tr>
-	     <td>DoubleStream</td>
-	     <td>Stream</td>
-	     <td>boxed()</td>  
-     </tr>
-     <tr>
-	     <td>Stream</td>
-	     <td>Stream</td>
-	     <td>flatMap (Function Mapper)</td>  
-     </tr>
-     <tr>
-	     <td>Stream</td>
-	     <td>IntStream</td>
-	     <td>flatMapToInt (Function Mapper)</td>  
-     </tr>
-     <tr>
-	     <td>Stream</td>
-	     <td>LongStream</td>
-	     <td>flatMapToLong (Function Mapper)</td>  
-     </tr>
-     <tr>
-	     <td>Stream</td>
-	     <td>DoubleStream</td>
-	     <td>flatMapToDouble (Function Mapper)</td>  
-     </tr>
-     <tr>
-	     <td>Collection, List, Set</td>
-	     <td>Stream</td>
-	     <td>stream()</td>  
-     </tr>
-  </tbale>
-	
-	
+
+
 	
 
 ## 참고 문서 / 블로그
