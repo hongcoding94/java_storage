@@ -20,7 +20,7 @@
     - [3-2. 표준 애너테이션](https://github.com/hongcoding94/java_storage/blob/main/Chapter12.%20%EC%A7%80%EB%84%A4%EB%A6%AD%EC%8A%A4,%20%EC%97%B4%EA%B1%B0%ED%98%95,%20%EC%95%A0%EB%84%88%ED%85%8C%EC%9D%B4%EC%85%98.md#%ED%91%9C%EC%A4%80-%EC%95%A0%EB%84%88%ED%85%8C%EC%9D%B4%EC%85%98)
     - [3-3. 메타 애너테이션](https://github.com/hongcoding94/java_storage/blob/main/Chapter12.%20%EC%A7%80%EB%84%A4%EB%A6%AD%EC%8A%A4,%20%EC%97%B4%EA%B1%B0%ED%98%95,%20%EC%95%A0%EB%84%88%ED%85%8C%EC%9D%B4%EC%85%98.md#%EB%A9%94%ED%83%80-%EC%95%A0%EB%84%88%ED%85%8C%EC%9D%B4%EC%85%98)
     - [3-4. 애너테이션 타입 정의하기](https://github.com/hongcoding94/java_storage/blob/main/Chapter12.%20%EC%A7%80%EB%84%A4%EB%A6%AD%EC%8A%A4,%20%EC%97%B4%EA%B1%B0%ED%98%95,%20%EC%95%A0%EB%84%88%ED%85%8C%EC%9D%B4%EC%85%98.md#%EC%95%A0%EB%84%88%ED%85%8C%EC%9D%B4%EC%85%98-%ED%83%80%EC%9E%85-%EC%A0%95%EC%9D%98%ED%95%98%EA%B8%B0)
-4. [참고문서 / 블로그]()
+4. [참고문서 / 블로그](https://github.com/hongcoding94/java_storage/blob/main/Chapter12.%20%EC%A7%80%EB%84%A4%EB%A6%AD%EC%8A%A4,%20%EC%97%B4%EA%B1%B0%ED%98%95,%20%EC%95%A0%EB%84%88%ED%85%8C%EC%9D%B4%EC%85%98.md#%EC%B0%B8%EA%B3%A0-%EB%AC%B8%EC%84%9C--%EB%B8%94%EB%A1%9C%EA%B7%B8)
 
 ## 지네릭스(Generics
 
